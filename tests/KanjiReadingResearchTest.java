@@ -320,18 +320,20 @@ public class KanjiReadingResearchTest {
     }
 
     private static void testPrimaryReadingsInDatasets() throws Exception {
-        System.out.println("  Testing primary readings existence in JSON dataset files...");
+        System.out.println("  Testing primary readings in JSON dataset files (restored state)...");
         File canFile = new File("app/src/main/assets/kanji_dataset.json");
         String canJson = readFile(canFile);
-        assert canJson.contains("\"primary_onyomi\":") : "kanji_dataset.json missing primary_onyomi";
-        assert canJson.contains("\"primary_kunyomi\":") : "kanji_dataset.json missing primary_kunyomi";
+        // Canonical dataset has been restored — primary_onyomi/kunyomi must NOT be present
+        assert !canJson.contains("\"primary_onyomi\":") : "kanji_dataset.json must NOT contain primary_onyomi after restoration";
+        assert !canJson.contains("\"primary_kunyomi\":") : "kanji_dataset.json must NOT contain primary_kunyomi after restoration";
 
+        // Additional dataset still carries primary readings (untouched)
         File addFile = new File("app/src/main/assets/kanji_additional_dataset.json");
         String addJson = readFile(addFile);
         assert addJson.contains("\"primary_onyomi\":") : "kanji_additional_dataset.json missing primary_onyomi";
         assert addJson.contains("\"primary_kunyomi\":") : "kanji_additional_dataset.json missing primary_kunyomi";
 
-        System.out.println("  [PASS] Primary readings fields confirmed across both kanji datasets.");
+        System.out.println("  [PASS] Canonical dataset clean (no primary fields); additional dataset still enriched.");
     }
 
     private static String readFile(File file) throws Exception {
