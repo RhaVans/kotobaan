@@ -76,6 +76,11 @@ public class MainActivity extends Activity {
     private View mKanjiSubContainer;
     private Button mBtnKanjiSub613;
     private Button mBtnKanjiSubAdditional;
+    private View mKanjiReadingModeContainer;
+    private Button mBtnMainKanjiModeOnyomi;
+    private Button mBtnMainKanjiModeKunyomi;
+    private Button mBtnMainKanjiModeBoth;
+    private String mKanjiReadingMode = "both";
     private FlashcardView.StartSide mCurrentFrontMode = FlashcardView.StartSide.KANJI;
     private List<LearningObject> mActiveDeck = new ArrayList<>();
     private IngatLupaEngine mEngine;
@@ -179,6 +184,10 @@ public class MainActivity extends Activity {
         mKanjiSubContainer = findViewById(R.id.kanji_subsection_container);
         mBtnKanjiSub613 = findViewById(R.id.btn_kanji_sub_613);
         mBtnKanjiSubAdditional = findViewById(R.id.btn_kanji_sub_additional);
+        mKanjiReadingModeContainer = findViewById(R.id.kanji_reading_mode_container);
+        mBtnMainKanjiModeOnyomi = findViewById(R.id.btn_main_kanji_mode_onyomi);
+        mBtnMainKanjiModeKunyomi = findViewById(R.id.btn_main_kanji_mode_kunyomi);
+        mBtnMainKanjiModeBoth = findViewById(R.id.btn_main_kanji_mode_both);
         mTxtDeckStatus = findViewById(R.id.txt_deck_status);
         mProgressDeck = findViewById(R.id.progress_deck);
 
@@ -233,6 +242,32 @@ public class MainActivity extends Activity {
                 switchKanjiSubSection("ADDITIONAL");
             }
         });
+
+        // Kanji Reading Mode switcher
+        if (mBtnMainKanjiModeOnyomi != null) {
+            mBtnMainKanjiModeOnyomi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    switchKanjiReadingMode("onyomi");
+                }
+            });
+        }
+        if (mBtnMainKanjiModeKunyomi != null) {
+            mBtnMainKanjiModeKunyomi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    switchKanjiReadingMode("kunyomi");
+                }
+            });
+        }
+        if (mBtnMainKanjiModeBoth != null) {
+            mBtnMainKanjiModeBoth.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    switchKanjiReadingMode("both");
+                }
+            });
+        }
 
         // Front Mode buttons
         mBtnModeKanji.setOnClickListener(new View.OnClickListener() {
@@ -392,8 +427,13 @@ public class MainActivity extends Activity {
         } else {
             mCurrentFrontMode = FlashcardView.StartSide.KANJI;
         }
+        mKanjiReadingMode = mPrefs.getKanjiReadingMode();
+        if (mFlashcardView != null) {
+            mFlashcardView.setKanjiReadingMode(mKanjiReadingMode);
+        }
         updateFrontModeVisuals();
         updateToolbarVisuals();
+        updateKanjiReadingModeVisuals();
     }
 
     private void switchSection(String section) {
@@ -418,6 +458,40 @@ public class MainActivity extends Activity {
                 updateKanjiSubVisuals();
             }
         }
+        if (mKanjiReadingModeContainer != null) {
+            mKanjiReadingModeContainer.setVisibility(isKotoba ? View.GONE : View.VISIBLE);
+            if (!isKotoba) {
+                updateKanjiReadingModeVisuals();
+            }
+        }
+    }
+
+    private void switchKanjiReadingMode(String mode) {
+        if (mode == null || mKanjiReadingMode.equalsIgnoreCase(mode)) return;
+        mKanjiReadingMode = mode.toLowerCase();
+        mPrefs.setKanjiReadingMode(mKanjiReadingMode);
+        if (mSound != null) mSound.playToggle();
+        updateKanjiReadingModeVisuals();
+        if (mFlashcardView != null) {
+            mFlashcardView.setKanjiReadingMode(mKanjiReadingMode);
+        }
+        bindCurrentCard();
+    }
+
+    private void updateKanjiReadingModeVisuals() {
+        if (mBtnMainKanjiModeOnyomi == null || mBtnMainKanjiModeKunyomi == null || mBtnMainKanjiModeBoth == null) return;
+        boolean isOnyomi = "onyomi".equalsIgnoreCase(mKanjiReadingMode);
+        boolean isKunyomi = "kunyomi".equalsIgnoreCase(mKanjiReadingMode);
+        boolean isBoth = "both".equalsIgnoreCase(mKanjiReadingMode);
+
+        mBtnMainKanjiModeOnyomi.setBackgroundResource(isOnyomi ? R.drawable.bg_segmented_active : android.R.color.transparent);
+        mBtnMainKanjiModeOnyomi.setTextColor(getColor(isOnyomi ? R.color.colorOnPrimary : R.color.colorTextSecondary));
+
+        mBtnMainKanjiModeKunyomi.setBackgroundResource(isKunyomi ? R.drawable.bg_segmented_active : android.R.color.transparent);
+        mBtnMainKanjiModeKunyomi.setTextColor(getColor(isKunyomi ? R.color.colorOnPrimary : R.color.colorTextSecondary));
+
+        mBtnMainKanjiModeBoth.setBackgroundResource(isBoth ? R.drawable.bg_segmented_active : android.R.color.transparent);
+        mBtnMainKanjiModeBoth.setTextColor(getColor(isBoth ? R.color.colorOnPrimary : R.color.colorTextSecondary));
     }
 
     private void switchKanjiSubSection(String sub) {
@@ -584,7 +658,7 @@ public class MainActivity extends Activity {
             mProgressDeck.setProgress(total > 0 ? (int) (((float) current / total) * 100) : 0);
         }
 
-        mFlashcardView.bind(item, mCurrentFrontMode, mPrefs.isFuriganaEnabled(), mPrefs.isRomajiEnabled());
+        mFlashcardView.bind(item, mCurrentFrontMode, mPrefs.isFuriganaEnabled(), mPrefs.isRomajiEnabled(), mKanjiReadingMode);
     }
 
     private void navigatePrev() {
@@ -660,7 +734,32 @@ public class MainActivity extends Activity {
                     }
                 }
         );
+        dialog.setOnKanjiReadingModeChangedListener(new LibraryFilterDialog.OnKanjiReadingModeChangedListener() {
+            @Override
+            public void onReadingModeChanged(String newMode) {
+                mKanjiReadingMode = newMode;
+                if (mFlashcardView != null) {
+                    mFlashcardView.setKanjiReadingMode(newMode);
+                }
+                updateKanjiReadingModeVisuals();
+                bindCurrentCard();
+            }
+        });
         dialog.show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        String savedMode = mPrefs.getKanjiReadingMode();
+        if (savedMode != null && !savedMode.equalsIgnoreCase(mKanjiReadingMode)) {
+            mKanjiReadingMode = savedMode;
+            if (mFlashcardView != null) {
+                mFlashcardView.setKanjiReadingMode(mKanjiReadingMode);
+            }
+            updateKanjiReadingModeVisuals();
+            bindCurrentCard();
+        }
     }
 
     private void showVoiceSettingsDialog() {

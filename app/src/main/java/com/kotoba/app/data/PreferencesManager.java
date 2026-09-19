@@ -24,6 +24,7 @@ public class PreferencesManager {
     private static final String KEY_TTS_VOICE_NAME = "pref_tts_voice_name";
     private static final String KEY_TTS_SPEED = "pref_tts_speed";
     private static final String KEY_TTS_PITCH = "pref_tts_pitch";
+    private static final String KEY_KANJI_READING_MODE = "kanji_reading_mode";
 
     private static PreferencesManager sInstance;
     private final SharedPreferences mPrefs;
@@ -159,5 +160,14 @@ public class PreferencesManager {
 
     public void setTtsPitch(float pitch) {
         mPrefs.edit().putFloat(KEY_TTS_PITCH, pitch).apply();
+    }
+
+    public String getKanjiReadingMode() {
+        return mPrefs.getString(KEY_KANJI_READING_MODE, "both");
+    }
+
+    public void setKanjiReadingMode(String mode) {
+        if (mode == null || mode.trim().isEmpty()) mode = "both";
+        mPrefs.edit().putString(KEY_KANJI_READING_MODE, mode.toLowerCase().trim()).apply();
     }
 }

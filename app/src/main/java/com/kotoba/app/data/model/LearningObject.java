@@ -214,6 +214,148 @@ public class LearningObject implements Serializable {
         return sb.toString();
     }
 
+    public String getPrimaryOnyomi() {
+        if (detailsJson != null && detailsJson.contains("\"primary_onyomi\":")) {
+            String val = extractJsonString(detailsJson, "primary_onyomi");
+            return (!val.trim().isEmpty() && !"null".equalsIgnoreCase(val.trim())) ? val.trim() : null;
+        }
+        List<String> ons = getOnyomiList();
+        return (ons != null && !ons.isEmpty()) ? ons.get(0) : null;
+    }
+
+    public String getPrimaryKunyomi() {
+        if (detailsJson != null && detailsJson.contains("\"primary_kunyomi\":")) {
+            String val = extractJsonString(detailsJson, "primary_kunyomi");
+            return (!val.trim().isEmpty() && !"null".equalsIgnoreCase(val.trim())) ? val.trim() : null;
+        }
+        List<String> kuns = getKunyomiList();
+        if (kuns != null && !kuns.isEmpty()) {
+            for (String k : kuns) {
+                if (!k.startsWith("-") && !k.endsWith("-")) {
+                    return k;
+                }
+            }
+            return kuns.get(0);
+        }
+        return null;
+    }
+
+    public String getPrimaryOnyomiRomaji() {
+        String val = extractJsonString(detailsJson, "primary_onyomi_romaji");
+        if (val != null && !val.trim().isEmpty() && !val.equals("null")) {
+            return val.trim();
+        }
+        List<String> rList = getOnyomiRomajiList();
+        return (rList != null && !rList.isEmpty()) ? rList.get(0) : "";
+    }
+
+    public String getPrimaryKunyomiRomaji() {
+        String val = extractJsonString(detailsJson, "primary_kunyomi_romaji");
+        if (val != null && !val.trim().isEmpty() && !val.equals("null")) {
+            return val.trim();
+        }
+        List<String> rList = getKunyomiRomajiList();
+        return (rList != null && !rList.isEmpty()) ? rList.get(0) : "";
+    }
+
+    public KanjiVocabExample getPrimaryKunyomiExample() {
+        if (detailsJson == null || detailsJson.isEmpty()) return null;
+        String needle = "\"primary_kunyomi_example\":";
+        int start = detailsJson.indexOf(needle);
+        if (start < 0) return null;
+        int oStart = detailsJson.indexOf('{', start + needle.length());
+        if (oStart < 0) return null;
+        int oEnd = detailsJson.indexOf('}', oStart);
+        if (oEnd < 0) return null;
+        String objStr = detailsJson.substring(oStart, oEnd + 1);
+        String word = extractJsonString(objStr, "word");
+        String rd = extractJsonString(objStr, "reading");
+        if (word.isEmpty()) return null;
+        return new KanjiVocabExample(word, rd, "", "", "KUNYOMI");
+    }
+
+    public String getLearnerOnyomiDisplay() {
+        String on = getPrimaryOnyomi();
+        return "音: " + (on != null && !on.isEmpty() ? on : "—");
+    }
+
+    public String getLearnerKunyomiDisplay() {
+        String kun = getPrimaryKunyomi();
+        return "訓: " + (kun != null && !kun.isEmpty() ? kun : "—");
+    }
+
+    public String getLearnerBothReadingDisplay() {
+        String on = getPrimaryOnyomi();
+        String kun = getPrimaryKunyomi();
+        StringBuilder sb = new StringBuilder();
+        sb.append("音: ").append(on != null && !on.isEmpty() ? on : "—");
+        sb.append("\n");
+        sb.append("訓: ").append(kun != null && !kun.isEmpty() ? kun : "—");
+        return sb.toString();
+    }
+
+    public String getLearnerReadingDisplay(String readingMode) {
+        String mode = (readingMode != null) ? readingMode.toLowerCase().trim() : "both";
+        if ("onyomi".equals(mode)) return getLearnerOnyomiDisplay();
+        if ("kunyomi".equals(mode)) return getLearnerKunyomiDisplay();
+        return getLearnerBothReadingDisplay();
+    }
+
+    public String getLearnerRomajiDisplay(String readingMode) {
+        String mode = (readingMode != null) ? readingMode.toLowerCase().trim() : "both";
+        String onR = getPrimaryOnyomiRomaji();
+        String kunR = getPrimaryKunyomiRomaji();
+        if ("onyomi".equals(mode)) return onR != null ? onR : "";
+        if ("kunyomi".equals(mode)) return kunR != null ? kunR : "";
+        if (onR != null && !onR.isEmpty() && kunR != null && !kunR.isEmpty()) {
+            return onR + " / " + kunR;
+        }
+        return (onR != null && !onR.isEmpty()) ? onR : ((kunR != null && !kunR.isEmpty()) ? kunR : "");
+    }
+
+    public String getTtsTarget(String readingMode) {
+        if (type != Type.KANJI) {
+            return (reading != null && !reading.trim().isEmpty() && !reading.trim().equals("—"))
+                    ? reading.trim()
+                    : japanese;
+        }
+
+        String mode = (readingMode != null) ? readingMode.toLowerCase().trim() : "both";
+        String pOn = getPrimaryOnyomi();
+        String pKun = getPrimaryKunyomi();
+        KanjiVocabExample kunEx = getPrimaryKunyomiExample();
+
+        if ("onyomi".equals(mode)) {
+            if (pOn != null && !pOn.trim().isEmpty() && !pOn.equals("—")) {
+                return pOn.trim();
+            }
+            return (reading != null && !reading.trim().isEmpty() && !reading.trim().equals("—")) ? reading.trim() : japanese;
+        } else if ("kunyomi".equals(mode)) {
+            if (kunEx != null && kunEx.getReading() != null && !kunEx.getReading().isEmpty()) {
+                return kunEx.getReading().trim();
+            }
+            if (pKun != null && !pKun.trim().isEmpty() && !pKun.equals("—")) {
+                return pKun.replace(".", "").replace("-", "").trim();
+            }
+            if (pOn != null && !pOn.trim().isEmpty() && !pOn.equals("—")) {
+                return pOn.trim();
+            }
+            return (reading != null && !reading.trim().isEmpty() && !reading.trim().equals("—")) ? reading.trim() : japanese;
+        } else { // "both" -> strictly default to primary Kun'yomi for learner listening/comprehension
+            if (kunEx != null && kunEx.getReading() != null && !kunEx.getReading().isEmpty()) {
+                return kunEx.getReading().trim();
+            }
+            if (pKun != null && !pKun.trim().isEmpty() && !pKun.equals("—")) {
+                return pKun.replace(".", "").replace("-", "").trim();
+            }
+            // Fallback to primary On'yomi if no Kun'yomi exists (e.g. 校)
+            if (pOn != null && !pOn.trim().isEmpty() && !pOn.equals("—")) {
+                return pOn.trim();
+            }
+            return (reading != null && !reading.trim().isEmpty() && !reading.trim().equals("—")) ? reading.trim() : japanese;
+        }
+    }
+
     public String getDualReadingDisplay() {
         String dual = extractJsonString(detailsJson, "dual_reading");
         if (dual != null && !dual.trim().isEmpty()) {
@@ -302,8 +444,17 @@ public class LearningObject implements Serializable {
         int start = json.indexOf(needle);
         if (start < 0) return "";
         start += needle.length();
-        while (start < json.length() && (json.charAt(start) == ' ' || json.charAt(start) == '\"')) {
+        while (start < json.length() && (json.charAt(start) == ' ' || json.charAt(start) == '\t' || json.charAt(start) == '\r' || json.charAt(start) == '\n')) {
             start++;
+        }
+        if (start >= json.length()) return "";
+        if (json.startsWith("null", start)) {
+            return "";
+        }
+        if (json.charAt(start) == '\"') {
+            start++;
+        } else {
+            return "";
         }
         int end = start;
         while (end < json.length() && json.charAt(end) != '\"') {

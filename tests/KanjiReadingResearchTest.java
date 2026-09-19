@@ -19,9 +19,12 @@ public class KanjiReadingResearchTest {
         testOkuriganaPreservationContract();
         testCanonicalKanjiDatasetDualReadings();
         testAdditionalKanjiDatasetDualReadings();
+        testPrimaryReadingsAndLearnerDisplay();
+        testTtsDeterministicReadings();
+        testPrimaryReadingsInDatasets();
 
         System.out.println("============================================================");
-        System.out.println("KANJI READING RESEARCH & DUAL READING TESTS PASSED (6/6)");
+        System.out.println("KANJI READING RESEARCH & DUAL READING TESTS PASSED (9/9)");
         System.out.println("============================================================");
     }
 
@@ -207,6 +210,121 @@ public class KanjiReadingResearchTest {
         assert json.contains("\"vocab_examples\":") : "Additional dataset missing vocab_examples field";
 
         System.out.println("  [PASS] 2,119 additional kanji dual readings confirmed in JSON asset.");
+    }
+
+    private static void testPrimaryReadingsAndLearnerDisplay() {
+        System.out.println("  Testing primary readings & learner displays in LearningObject...");
+        String detailsJson = "{"
+                + "\"onyomi\":[\"ショク\",\"ジキ\"],"
+                + "\"onyomi_romaji\":[\"shoku\",\"jiki\"],"
+                + "\"kunyomi\":[\"た.べる\",\"く.う\",\"く.らう\"],"
+                + "\"kunyomi_romaji\":[\"taberu\",\"kuu\",\"kurau\"],"
+                + "\"primary_onyomi\":\"ショク\","
+                + "\"primary_onyomi_romaji\":\"shoku\","
+                + "\"primary_kunyomi\":\"た.べる\","
+                + "\"primary_kunyomi_romaji\":\"taberu\","
+                + "\"primary_kunyomi_example\":{\"word\":\"食べる\",\"reading\":\"たべる\",\"romaji\":\"taberu\",\"meaning\":\"Makan\"},"
+                + "\"dual_reading\":\"音: ショク、ジキ / 訓: た.べる、く.う、く.らう\""
+                + "}";
+
+        LearningObject lo = new LearningObject(
+                "kanji_test_shoku",
+                LearningObject.Type.KANJI,
+                null,
+                "N5",
+                "食",
+                "たべる",
+                "taberu",
+                "Makan",
+                "Badge",
+                "Group",
+                1,
+                detailsJson
+        );
+
+        assert "ショク".equals(lo.getPrimaryOnyomi()) : "Expected primary onyomi 'ショク', got: " + lo.getPrimaryOnyomi();
+        assert "shoku".equals(lo.getPrimaryOnyomiRomaji()) : "Expected primary onyomi romaji 'shoku'";
+        assert "た.べる".equals(lo.getPrimaryKunyomi()) : "Expected primary kunyomi 'た.べる', got: " + lo.getPrimaryKunyomi();
+        assert "taberu".equals(lo.getPrimaryKunyomiRomaji()) : "Expected primary kunyomi romaji 'taberu'";
+
+        KanjiVocabExample ex = lo.getPrimaryKunyomiExample();
+        assert ex != null : "Expected non-null primary_kunyomi_example";
+        assert "食べる".equals(ex.getWord()) : "Expected word '食べる'";
+        assert "たべる".equals(ex.getReading()) : "Expected reading 'たべる'";
+
+        // Learner reading displays
+        assert "音: ショク".equals(lo.getLearnerReadingDisplay("onyomi")) : "Expected '音: ショク', got: " + lo.getLearnerReadingDisplay("onyomi");
+        assert "訓: た.べる".equals(lo.getLearnerReadingDisplay("kunyomi")) : "Expected '訓: た.べる', got: " + lo.getLearnerReadingDisplay("kunyomi");
+        assert "音: ショク\n訓: た.べる".equals(lo.getLearnerReadingDisplay("both")) : "Expected '音: ショク\n訓: た.べる', got: " + lo.getLearnerReadingDisplay("both");
+
+        // Learner romaji displays
+        assert "shoku".equals(lo.getLearnerRomajiDisplay("onyomi")) : "Expected 'shoku', got: " + lo.getLearnerRomajiDisplay("onyomi");
+        assert "taberu".equals(lo.getLearnerRomajiDisplay("kunyomi")) : "Expected 'taberu', got: " + lo.getLearnerRomajiDisplay("kunyomi");
+        assert "shoku / taberu".equals(lo.getLearnerRomajiDisplay("both")) : "Expected 'shoku / taberu', got: " + lo.getLearnerRomajiDisplay("both");
+
+        System.out.println("  [PASS] Primary readings and learner displays verified.");
+    }
+
+    private static void testTtsDeterministicReadings() {
+        System.out.println("  Testing deterministic TTS reading targets across modes...");
+
+        // Kanji with dual readings (食)
+        String shokuJson = "{"
+                + "\"onyomi\":[\"ショク\",\"ジキ\"],"
+                + "\"kunyomi\":[\"た.べる\",\"く.う\"],"
+                + "\"primary_onyomi\":\"ショク\","
+                + "\"primary_kunyomi\":\"た.べる\","
+                + "\"primary_kunyomi_example\":{\"word\":\"食べる\",\"reading\":\"たべる\"}"
+                + "}";
+        LearningObject loShoku = new LearningObject("shoku", LearningObject.Type.KANJI, null, "N5", "食", "たべる", "taberu", "Makan", "B", "G", 1, shokuJson);
+
+        assert "ショク".equals(loShoku.getTtsTarget("onyomi")) : "In Onyomi mode, TTS must speak primary onyomi";
+        assert "たべる".equals(loShoku.getTtsTarget("kunyomi")) : "In Kunyomi mode, TTS must speak primary kunyomi example reading";
+        assert "たべる".equals(loShoku.getTtsTarget("both")) : "In Both mode, TTS must strictly speak primary Kun'yomi first!";
+
+        // Kango-only kanji (校 - no kun'yomi)
+        String kouJson = "{"
+                + "\"onyomi\":[\"コウ\"],"
+                + "\"kunyomi\":[],"
+                + "\"primary_onyomi\":\"コウ\","
+                + "\"primary_kunyomi\":null"
+                + "}";
+        LearningObject loKou = new LearningObject("kou", LearningObject.Type.KANJI, null, "N5", "校", "こう", "kou", "Sekolah", "B", "G", 2, kouJson);
+
+        assert "コウ".equals(loKou.getTtsTarget("onyomi")) : "In Onyomi mode, 校 speaks コウ";
+        assert "コウ".equals(loKou.getTtsTarget("kunyomi")) : "In Kunyomi mode, 校 falls back to コウ";
+        assert "コウ".equals(loKou.getTtsTarget("both")) : "In Both mode, 校 falls back to コウ";
+
+        // Kokuji kanji (畑 - no onyomi)
+        String hatakeJson = "{"
+                + "\"onyomi\":[],"
+                + "\"kunyomi\":[\"はた\",\"はたけ\"],"
+                + "\"primary_onyomi\":null,"
+                + "\"primary_kunyomi\":\"はたけ\","
+                + "\"primary_kunyomi_example\":{\"word\":\"畑\",\"reading\":\"はたけ\"}"
+                + "}";
+        LearningObject loHatake = new LearningObject("hatake", LearningObject.Type.KANJI, null, "N3", "畑", "はたけ", "hatake", "Ladang", "B", "G", 3, hatakeJson);
+
+        assert "はたけ".equals(loHatake.getTtsTarget("kunyomi")) : "In Kunyomi mode, 畑 speaks はたけ";
+        assert "はたけ".equals(loHatake.getTtsTarget("both")) : "In Both mode, 畑 speaks はたけ";
+        assert "はたけ".equals(loHatake.getTtsTarget("onyomi")) : "In Onyomi mode, 畑 falls back to はたけ";
+
+        System.out.println("  [PASS] Deterministic TTS targets verified (Kun'yomi-first in Both mode, clean fallback).");
+    }
+
+    private static void testPrimaryReadingsInDatasets() throws Exception {
+        System.out.println("  Testing primary readings existence in JSON dataset files...");
+        File canFile = new File("app/src/main/assets/kanji_dataset.json");
+        String canJson = readFile(canFile);
+        assert canJson.contains("\"primary_onyomi\":") : "kanji_dataset.json missing primary_onyomi";
+        assert canJson.contains("\"primary_kunyomi\":") : "kanji_dataset.json missing primary_kunyomi";
+
+        File addFile = new File("app/src/main/assets/kanji_additional_dataset.json");
+        String addJson = readFile(addFile);
+        assert addJson.contains("\"primary_onyomi\":") : "kanji_additional_dataset.json missing primary_onyomi";
+        assert addJson.contains("\"primary_kunyomi\":") : "kanji_additional_dataset.json missing primary_kunyomi";
+
+        System.out.println("  [PASS] Primary readings fields confirmed across both kanji datasets.");
     }
 
     private static String readFile(File file) throws Exception {

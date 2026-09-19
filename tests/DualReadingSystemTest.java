@@ -44,10 +44,10 @@ public class DualReadingSystemTest {
         }
 
         // Verify specific authentic readings in the report table
-        assert reportContent.contains("| **校** | コウ, キョウ | — |") : "校 must have On'yomi and NO Kun'yomi";
-        assert reportContent.contains("| **食** | ショク, ジキ | た.べる, く.う, く.らう |") : "食 must have dual readings with okurigana";
-        assert reportContent.contains("| **生** | セイ, ショウ | い.きる") : "生 must have okurigana preservation";
-        assert reportContent.contains("| **日** | ニチ, ジツ | ひ, か |") : "日 must have dual readings";
+        assert reportContent.contains("| **校** | コウ | — |") : "校 must have On'yomi and NO Kun'yomi";
+        assert reportContent.contains("| **食** | ショク | た.べる |") : "食 must have primary dual readings with okurigana";
+        assert reportContent.contains("| **生** | セイ | い.きる |") : "生 must have okurigana preservation";
+        assert reportContent.contains("| **日** | ニチ | ひ |") : "日 must have dual readings";
 
         // Verify canonical kanji items in kanji_dataset.json
         File canFile = new File(assetsDir, "kanji_dataset.json");

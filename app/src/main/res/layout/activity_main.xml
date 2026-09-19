@@ -136,6 +136,58 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
+        <!-- Sub-segmented Reading Mode Switcher for Kanji: [ On'yomi | Kun'yomi | Keduanya ] -->
+        <LinearLayout
+            android:id="@+id/kanji_reading_mode_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_kanji_sub_switcher"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bg_segmented_container"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_main_kanji_mode_onyomi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/kanji_reading_mode_onyomi"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_main_kanji_mode_kunyomi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/kanji_reading_mode_kunyomi"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_main_kanji_mode_both"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_segmented_active"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/kanji_reading_mode_both"
+                android:textAllCaps="false"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
         <!-- Deck Status Line -->
         <TextView
             android:id="@+id/txt_deck_status"

@@ -64,10 +64,19 @@ public class FlashcardView extends FrameLayout {
     private StartSide mCurrentStartSide = StartSide.KANJI;
     private boolean mFuriganaEnabled = true;
     private boolean mRomajiEnabled = false;
+    private String mKanjiReadingMode = "both";
 
     private SoundManager mSound;
     private JapaneseSpeechHelper mSpeech;
     private OnCardFlipListener mFlipListener;
+
+    public void setKanjiReadingMode(String mode) {
+        this.mKanjiReadingMode = (mode != null) ? mode.toLowerCase().trim() : "both";
+    }
+
+    public String getKanjiReadingMode() {
+        return mKanjiReadingMode;
+    }
 
     public FlashcardView(Context context) {
         super(context);
@@ -230,6 +239,10 @@ public class FlashcardView extends FrameLayout {
     }
 
     public void bind(LearningObject item, StartSide startSide, boolean furiganaEnabled, boolean romajiEnabled) {
+        bind(item, startSide, furiganaEnabled, romajiEnabled, mKanjiReadingMode);
+    }
+
+    public void bind(LearningObject item, StartSide startSide, boolean furiganaEnabled, boolean romajiEnabled, String kanjiReadingMode) {
         if (mCurrentItem == null || (item != null && !item.getId().equals(mCurrentItem.getId()))) {
             JapaneseSpeechHelper speech = (mSpeech != null) ? mSpeech : JapaneseSpeechHelper.getInstance(getContext());
             if (speech != null) {
@@ -240,6 +253,9 @@ public class FlashcardView extends FrameLayout {
         this.mCurrentStartSide = startSide != null ? startSide : StartSide.KANJI;
         this.mFuriganaEnabled = furiganaEnabled;
         this.mRomajiEnabled = romajiEnabled;
+        if (kanjiReadingMode != null && !kanjiReadingMode.trim().isEmpty()) {
+            this.mKanjiReadingMode = kanjiReadingMode.toLowerCase().trim();
+        }
 
         if (item == null) {
             bindEmpty();
@@ -256,21 +272,36 @@ public class FlashcardView extends FrameLayout {
             mTxtFrontJapanese.setText(item.getJapanese());
             if (mFuriganaEnabled && item.hasKanji()) {
                 mTxtFrontFurigana.setVisibility(View.VISIBLE);
-                mTxtFrontFurigana.setText(item.getReading());
+                if (item.getType() == LearningObject.Type.KANJI) {
+                    if ("onyomi".equals(mKanjiReadingMode)) {
+                        mTxtFrontFurigana.setText(item.getPrimaryOnyomi() != null ? item.getPrimaryOnyomi() : "—");
+                    } else if ("kunyomi".equals(mKanjiReadingMode)) {
+                        mTxtFrontFurigana.setText(item.getPrimaryKunyomi() != null ? item.getPrimaryKunyomi() : "—");
+                    } else {
+                        String k = item.getPrimaryKunyomi();
+                        mTxtFrontFurigana.setText(k != null ? k : (item.getPrimaryOnyomi() != null ? item.getPrimaryOnyomi() : "—"));
+                    }
+                } else {
+                    mTxtFrontFurigana.setText(item.getReading());
+                }
             } else {
                 mTxtFrontFurigana.setVisibility(View.GONE);
             }
             if (mRomajiEnabled && item.getRomaji() != null && !item.getRomaji().isEmpty()) {
                 mTxtFrontRomaji.setVisibility(View.VISIBLE);
-                mTxtFrontRomaji.setText(item.getRomaji());
+                if (item.getType() == LearningObject.Type.KANJI) {
+                    mTxtFrontRomaji.setText(item.getLearnerRomajiDisplay(mKanjiReadingMode));
+                } else {
+                    mTxtFrontRomaji.setText(item.getRomaji());
+                }
             } else {
                 mTxtFrontRomaji.setVisibility(View.GONE);
             }
 
             // BACK: Answer face (Reading + Meaning must NEVER disappear)
             if (item.getType() == LearningObject.Type.KANJI) {
-                // Prominently show the dual reading (On'yomi / Kun'yomi) as the primary answer to the kanji
-                mTxtBackJapanese.setText(item.getDualReadingDisplay());
+                // Prominently show the learner-facing reading according to active reading mode
+                mTxtBackJapanese.setText(item.getLearnerReadingDisplay(mKanjiReadingMode));
                 // Show the kanji ideograph above as reference
                 mTxtBackFurigana.setVisibility(View.VISIBLE);
                 mTxtBackFurigana.setText(item.getJapanese());
@@ -285,9 +316,16 @@ public class FlashcardView extends FrameLayout {
                 mTxtBackFurigana.setVisibility(View.GONE);
             }
 
-            if (mRomajiEnabled && item.getRomaji() != null && !item.getRomaji().isEmpty()) {
-                mTxtBackRomaji.setVisibility(View.VISIBLE);
-                mTxtBackRomaji.setText(item.getRomaji());
+            if (mRomajiEnabled) {
+                String r = (item.getType() == LearningObject.Type.KANJI)
+                        ? item.getLearnerRomajiDisplay(mKanjiReadingMode)
+                        : item.getRomaji();
+                if (r != null && !r.isEmpty()) {
+                    mTxtBackRomaji.setVisibility(View.VISIBLE);
+                    mTxtBackRomaji.setText(r);
+                } else {
+                    mTxtBackRomaji.setVisibility(View.GONE);
+                }
             } else {
                 mTxtBackRomaji.setVisibility(View.GONE);
             }
@@ -301,14 +339,33 @@ public class FlashcardView extends FrameLayout {
         } else if (mCurrentStartSide == StartSide.HIRAGANA) {
             // FRONT: Phonetic Kana reading representation
             mTxtFrontFurigana.setVisibility(View.GONE);
-            String frontReading = (item.getReading() != null && !item.getReading().isEmpty())
-                    ? item.getReading()
-                    : item.getJapanese();
+            String frontReading;
+            if (item.getType() == LearningObject.Type.KANJI) {
+                if ("onyomi".equals(mKanjiReadingMode)) {
+                    frontReading = item.getPrimaryOnyomi() != null ? item.getPrimaryOnyomi() : (item.getReading() != null ? item.getReading() : item.getJapanese());
+                } else if ("kunyomi".equals(mKanjiReadingMode)) {
+                    frontReading = item.getPrimaryKunyomi() != null ? item.getPrimaryKunyomi() : (item.getReading() != null ? item.getReading() : item.getJapanese());
+                } else {
+                    String k = item.getPrimaryKunyomi();
+                    frontReading = k != null ? k : (item.getPrimaryOnyomi() != null ? item.getPrimaryOnyomi() : (item.getReading() != null ? item.getReading() : item.getJapanese()));
+                }
+            } else {
+                frontReading = (item.getReading() != null && !item.getReading().isEmpty())
+                        ? item.getReading()
+                        : item.getJapanese();
+            }
             mTxtFrontJapanese.setText(frontReading);
 
-            if (mRomajiEnabled && item.getRomaji() != null && !item.getRomaji().isEmpty()) {
-                mTxtFrontRomaji.setVisibility(View.VISIBLE);
-                mTxtFrontRomaji.setText(item.getRomaji());
+            if (mRomajiEnabled) {
+                String r = (item.getType() == LearningObject.Type.KANJI)
+                        ? item.getLearnerRomajiDisplay(mKanjiReadingMode)
+                        : item.getRomaji();
+                if (r != null && !r.isEmpty()) {
+                    mTxtFrontRomaji.setVisibility(View.VISIBLE);
+                    mTxtFrontRomaji.setText(r);
+                } else {
+                    mTxtFrontRomaji.setVisibility(View.GONE);
+                }
             } else {
                 mTxtFrontRomaji.setVisibility(View.GONE);
             }
@@ -317,7 +374,7 @@ public class FlashcardView extends FrameLayout {
             mTxtBackJapanese.setText(item.getJapanese());
             if (item.getType() == LearningObject.Type.KANJI) {
                 mTxtBackFurigana.setVisibility(View.VISIBLE);
-                mTxtBackFurigana.setText(item.getDualReadingDisplay());
+                mTxtBackFurigana.setText(item.getLearnerReadingDisplay(mKanjiReadingMode));
             } else if (item.hasKanji()) {
                 mTxtBackFurigana.setVisibility(View.VISIBLE);
                 mTxtBackFurigana.setText(item.getReading());
@@ -325,9 +382,16 @@ public class FlashcardView extends FrameLayout {
                 mTxtBackFurigana.setVisibility(View.GONE);
             }
 
-            if (mRomajiEnabled && item.getRomaji() != null && !item.getRomaji().isEmpty()) {
-                mTxtBackRomaji.setVisibility(View.VISIBLE);
-                mTxtBackRomaji.setText(item.getRomaji());
+            if (mRomajiEnabled) {
+                String r = (item.getType() == LearningObject.Type.KANJI)
+                        ? item.getLearnerRomajiDisplay(mKanjiReadingMode)
+                        : item.getRomaji();
+                if (r != null && !r.isEmpty()) {
+                    mTxtBackRomaji.setVisibility(View.VISIBLE);
+                    mTxtBackRomaji.setText(r);
+                } else {
+                    mTxtBackRomaji.setVisibility(View.GONE);
+                }
             } else {
                 mTxtBackRomaji.setVisibility(View.GONE);
             }
@@ -343,7 +407,7 @@ public class FlashcardView extends FrameLayout {
             mTxtBackJapanese.setText(item.getJapanese());
             if (item.getType() == LearningObject.Type.KANJI) {
                 mTxtBackFurigana.setVisibility(View.VISIBLE);
-                mTxtBackFurigana.setText(item.getDualReadingDisplay());
+                mTxtBackFurigana.setText(item.getLearnerReadingDisplay(mKanjiReadingMode));
             } else if (item.hasKanji() || (item.getReading() != null && !item.getReading().isEmpty())) {
                 mTxtBackFurigana.setVisibility(View.VISIBLE);
                 mTxtBackFurigana.setText(item.getReading());
@@ -351,9 +415,16 @@ public class FlashcardView extends FrameLayout {
                 mTxtBackFurigana.setVisibility(View.GONE);
             }
 
-            if (mRomajiEnabled && item.getRomaji() != null && !item.getRomaji().isEmpty()) {
-                mTxtBackRomaji.setVisibility(View.VISIBLE);
-                mTxtBackRomaji.setText(item.getRomaji());
+            if (mRomajiEnabled) {
+                String r = (item.getType() == LearningObject.Type.KANJI)
+                        ? item.getLearnerRomajiDisplay(mKanjiReadingMode)
+                        : item.getRomaji();
+                if (r != null && !r.isEmpty()) {
+                    mTxtBackRomaji.setVisibility(View.VISIBLE);
+                    mTxtBackRomaji.setText(r);
+                } else {
+                    mTxtBackRomaji.setVisibility(View.GONE);
+                }
             } else {
                 mTxtBackRomaji.setVisibility(View.GONE);
             }
@@ -450,11 +521,9 @@ public class FlashcardView extends FrameLayout {
             return;
         }
 
-        // Authoritative pronunciation source: strictly use reading to guarantee phonetic fidelity
-        // and prevent independent morphological guessing between Front and Back faces
-        String textToSpeak = (mCurrentItem.getReading() != null && !mCurrentItem.getReading().trim().isEmpty() && !mCurrentItem.getReading().trim().equals("—"))
-                ? mCurrentItem.getReading().trim()
-                : mCurrentItem.getJapanese();
+        // Authoritative pronunciation source: strictly use getTtsTarget(mKanjiReadingMode) to guarantee phonetic fidelity
+        // and respect user preference (e.g. kunyomi-first in both mode)
+        String textToSpeak = mCurrentItem.getTtsTarget(mKanjiReadingMode);
 
         PronunciationTarget target = mCurrentItem.isKatakana()
                 ? PronunciationTarget.KATAKANA
@@ -474,9 +543,7 @@ public class FlashcardView extends FrameLayout {
             return;
         }
 
-        String textToSpeak = (mCurrentItem.getReading() != null && !mCurrentItem.getReading().trim().isEmpty() && !mCurrentItem.getReading().trim().equals("—"))
-                ? mCurrentItem.getReading().trim()
-                : mCurrentItem.getJapanese();
+        String textToSpeak = mCurrentItem.getTtsTarget(mKanjiReadingMode);
 
         PronunciationTarget target = mCurrentItem.isKatakana()
                 ? PronunciationTarget.KATAKANA

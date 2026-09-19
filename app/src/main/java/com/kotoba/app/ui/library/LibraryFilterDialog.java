@@ -40,11 +40,20 @@ public class LibraryFilterDialog extends Dialog {
         void onFilterApplied(String title, List<LearningObject> pool);
     }
 
+    public interface OnKanjiReadingModeChangedListener {
+        void onReadingModeChanged(String newMode);
+    }
+
     private final KotobaDatabase mDatabase;
     private final SoundManager mSound;
     private final JapaneseSpeechHelper mSpeech;
     private final boolean mIsKanjiMode;
     private final OnLibraryFilterAppliedListener mListener;
+    private OnKanjiReadingModeChangedListener mReadingModeListener;
+
+    public void setOnKanjiReadingModeChangedListener(OnKanjiReadingModeChangedListener listener) {
+        this.mReadingModeListener = listener;
+    }
 
     private TextView mTxtTitle;
     private ImageButton mBtnVoiceSettings;
@@ -138,6 +147,8 @@ public class LibraryFilterDialog extends Dialog {
                 mSelectedBabs.addAll(savedBabs);
             }
         }
+
+        mKanjiReadingMode = PreferencesManager.getInstance(getContext()).getKanjiReadingMode();
 
         initViews();
         setupListeners();
@@ -271,7 +282,11 @@ public class LibraryFilterDialog extends Dialog {
             mBtnKanjiModeOnyomi.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    mKanjiReadingMode = "ONYOMI";
+                    mKanjiReadingMode = "onyomi";
+                    PreferencesManager.getInstance(getContext()).setKanjiReadingMode(mKanjiReadingMode);
+                    if (mReadingModeListener != null) {
+                        mReadingModeListener.onReadingModeChanged(mKanjiReadingMode);
+                    }
                     if (mSound != null) mSound.playToggle();
                     updateKanjiReadingModeVisuals();
                     if (mAdapter != null) mAdapter.notifyDataSetChanged();
@@ -282,7 +297,11 @@ public class LibraryFilterDialog extends Dialog {
             mBtnKanjiModeKunyomi.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    mKanjiReadingMode = "KUNYOMI";
+                    mKanjiReadingMode = "kunyomi";
+                    PreferencesManager.getInstance(getContext()).setKanjiReadingMode(mKanjiReadingMode);
+                    if (mReadingModeListener != null) {
+                        mReadingModeListener.onReadingModeChanged(mKanjiReadingMode);
+                    }
                     if (mSound != null) mSound.playToggle();
                     updateKanjiReadingModeVisuals();
                     if (mAdapter != null) mAdapter.notifyDataSetChanged();
@@ -293,7 +312,11 @@ public class LibraryFilterDialog extends Dialog {
             mBtnKanjiModeBoth.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    mKanjiReadingMode = "BOTH";
+                    mKanjiReadingMode = "both";
+                    PreferencesManager.getInstance(getContext()).setKanjiReadingMode(mKanjiReadingMode);
+                    if (mReadingModeListener != null) {
+                        mReadingModeListener.onReadingModeChanged(mKanjiReadingMode);
+                    }
                     if (mSound != null) mSound.playToggle();
                     updateKanjiReadingModeVisuals();
                     if (mAdapter != null) mAdapter.notifyDataSetChanged();
@@ -357,9 +380,9 @@ public class LibraryFilterDialog extends Dialog {
 
     private void updateKanjiReadingModeVisuals() {
         if (mBtnKanjiModeOnyomi == null || mBtnKanjiModeKunyomi == null || mBtnKanjiModeBoth == null) return;
-        boolean isOnyomi = "ONYOMI".equals(mKanjiReadingMode);
-        boolean isKunyomi = "KUNYOMI".equals(mKanjiReadingMode);
-        boolean isBoth = "BOTH".equals(mKanjiReadingMode);
+        boolean isOnyomi = "onyomi".equalsIgnoreCase(mKanjiReadingMode);
+        boolean isKunyomi = "kunyomi".equalsIgnoreCase(mKanjiReadingMode);
+        boolean isBoth = "both".equalsIgnoreCase(mKanjiReadingMode);
 
         mBtnKanjiModeOnyomi.setBackgroundResource(isOnyomi ? R.drawable.bg_segmented_active : android.R.color.transparent);
         mBtnKanjiModeOnyomi.setTextColor(getContext().getColor(isOnyomi ? R.color.colorOnPrimary : R.color.colorTextSecondary));
@@ -767,11 +790,11 @@ public class LibraryFilterDialog extends Dialog {
             if (mIsKanjiMode || item.getType() == LearningObject.Type.KANJI) {
                 String displayReading;
                 String displayRomaji;
-                if ("ONYOMI".equals(mKanjiReadingMode)) {
+                if ("onyomi".equalsIgnoreCase(mKanjiReadingMode)) {
                     displayReading = item.getOnyomiDisplay();
                     List<String> rList = item.getOnyomiRomajiList();
                     displayRomaji = (rList != null && !rList.isEmpty()) ? joinStrings(rList, ", ") : "";
-                } else if ("KUNYOMI".equals(mKanjiReadingMode)) {
+                } else if ("kunyomi".equalsIgnoreCase(mKanjiReadingMode)) {
                     displayReading = item.getKunyomiDisplay();
                     List<String> rList = item.getKunyomiRomajiList();
                     displayRomaji = (rList != null && !rList.isEmpty()) ? joinStrings(rList, ", ") : "";
@@ -848,14 +871,11 @@ public class LibraryFilterDialog extends Dialog {
                             ? mSpeech
                             : JapaneseSpeechHelper.getInstance(getContext());
                     if (speech != null) {
-                        String textToSpeak = item.getReading();
-                        if (textToSpeak == null || textToSpeak.trim().isEmpty() || textToSpeak.equals("—")) {
-                            textToSpeak = item.getJapanese();
-                        }
                         if (!speech.isAvailable()) {
                             Toast.makeText(getContext(), "Suara bahasa Jepang belum aktif di perangkat Anda.", Toast.LENGTH_SHORT).show();
                             return;
                         }
+                        String textToSpeak = item.getTtsTarget(mKanjiReadingMode);
                         com.kotoba.app.audio.PronunciationTarget target = item.isKatakana()
                                 ? com.kotoba.app.audio.PronunciationTarget.KATAKANA
                                 : (textToSpeak.equals(item.getJapanese()) ? com.kotoba.app.audio.PronunciationTarget.KANJI : com.kotoba.app.audio.PronunciationTarget.READING);
