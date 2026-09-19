@@ -1,0 +1,59 @@
+# ==============================================================================
+# Git Ignore Configuration for Kotoba / Kotobaan
+# ==============================================================================
+
+# Build outputs & compiler artifacts
+build/
+build_kotobaan/
+bin/
+*.class
+*.dex
+classes.dex
+**/R.java
+
+# Generated APKs & cryptographic signature files
+# Note: Official release binaries are distributed via GitHub Releases or staged in releases/
+*.apk
+*.idsig
+*.aab
+!releases/**/KOTOBAAN.apk
+
+# Archives & raw backup dumps
+*.zip
+*.tar.gz
+*.7z
+*.rar
+
+# Copyrighted raw source documents & textbooks
+NEW SOURCE/
+*.pdf
+!docs/**/*.pdf
+
+# Large intermediate scan data & provenance dumps
+content/scanned_kanji_raw.json
+content/kanji_provenance.json
+content/kanji_dict_ref.json
+
+# Scratch, inspection, and temporary tools
+old_apk_inspect/
+apple-design-skill-main/
+prototypes/
+*.profile*.json
+__pycache__/
+*.py[cod]
+/*.jpg
+/*.jpeg
+
+# Signing keys & local credentials
+*.keystore
+*.jks
+*.p12
+
+# IDE, editor & OS metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+.gradle/
+local.properties

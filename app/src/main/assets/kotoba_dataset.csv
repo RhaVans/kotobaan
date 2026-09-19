@@ -1,0 +1,1115 @@
+id,bab,japanese,furigana,raw_display,romaji,indonesian
+1,1,あの人,あのひと,あの人(ひと),anohito,orang itu
+2,1,あなた,あなた,あなた,anata,anda
+3,1,アメリカ,アメリカ,アメリカ,amerika,Amerika
+4,1,イギリス,イギリス,イギリス,igirisu,Inggris
+5,1,医者,いしゃ,医者(いしゃ),isha,dokter
+6,1,インド,インド,インド,indo,India
+7,1,インドネシア,インドネシア,インドネシア,indoneshia,Indonesia
+8,1,エンジニア,エンジニア,エンジニア,enjinia,insinyur
+9,1,会社いん,かいしゃいん,会社(かいしゃ)いん,kaishain,pegawai perusahaan
+10,1,学せい,がくせい,学(がく)せい,gakusei,mahasiswa
+11,1,韓国,かんこく,韓国(かんこく),kankoku,Korea Selatan
+12,1,研究者,けんきゅうしゃ,研究者(けんきゅうしゃ),kenkyuusha,peneliti
+13,1,こうべびょういん,こうべびょういん,こうべびょういん,koubebyouin,Rumah Sakit Kobe
+14,1,歳,さい,歳(さい),sai,umur
+15,1,社員,しゃいん,社員(しゃいん),shain,pegawai
+16,1,先生,せんせい,先生(せんせい),sensei,guru
+17,1,専門,せんもん,専門(せんもん),senmon,jurusan/keahlian
+18,1,大学,だいがく,大学(だいがく),daigaku,universitas
+19,1,だれ(どなた),だれ,だれ(どなた),dare,siapa
+20,1,中国,ちゅうごく,中国(ちゅうごく),chuugoku,China
+21,1,ドイツ,ドイツ,ドイツ,doitsu,Jerman
+22,1,日本,にほん,日本(にほん),nihon,Jepang
+23,1,病院,びょういん,病院(びょういん),byouin,rumah sakit
+24,1,ブラジル,ブラジル,ブラジル,burajiru,Brasil
+25,1,富士大学,ふじだいがく,富士大学(ふじだいがく),fujidaigaku,Universitas Fuji
+26,1,本,ほん,本(ほん),hon,buku
+27,1,わたし,わたし,わたし,watashi,saya
+28,2,あれ,あれ,あれ,are,itu (jauh)
+29,2,いす,いす,いす,isu,kursi
+30,2,えんぴつ,えんぴつ,えんぴつ,enpitsu,pensil
+31,2,かぎ,かぎ,かぎ,kagi,kunci
+32,2,かさ,かさ,かさ,kasa,payung
+33,2,かばん,かばん,かばん,kaban,tas
+34,2,カメラ,カメラ,カメラ,kamera,kamera
+35,2,車,くるま,車(くるま),kuruma,mobil
+36,2,消しゴム,けしゴム,消(け)しゴム,keshigomu,penghapus pensil
+37,2,これ,これ,これ,kore,ini
+38,2,雑誌,ざっし,雑誌(ざっし),zasshi,majalah
+39,2,じどうしゃ,じどうしゃ,じどうしゃ,jidousha,mobil
+40,2,新聞,しんぶん,新聞(しんぶん),shinbun,koran
+41,2,シャープペンシル,シャープペンシル,シャープペンシル,sha-pupenshiru,pensil mekanik
+42,2,そう,そう,そう,sou,begitu
+43,2,それ,それ,それ,sore,itu
+44,2,違います,ちがいます,違(ちが)います,chigaimasu,bukan/salah
+45,2,机,つくえ,机(つくえ),tsukue,meja
+46,2,手帳,てちょう,手帳(てちょう),techou,buku agenda
+47,2,テープ,テープ,テープ,te-pu,pita kaset
+48,2,テープレコーダー,テープレコーダー,テープレコーダー,te-pureko-da-,tape recorder
+49,2,テレビ,テレビ,テレビ,terebi,televisi
+50,2,時計,とけい,時計(とけい),tokei,jam
+51,2,なん(なに),なん,なん(なに),nan,apa
+52,2,ノート,ノート,ノート,no-to,buku catatan
+53,2,箱,はこ,箱(はこ),hako,kotak
+54,2,ボールペン,ボールペン,ボールペン,bo-rupen,pulpen
+55,2,名刺,めいし,名刺(めいし),meishi,kartu nama
+56,2,ラジオ,ラジオ,ラジオ,rajio,radio
+57,2,ラジカセ,ラジカセ,ラジカセ,rajikase,radio kaset
+58,3,あそこ(あちら),あそこ,あそこ(あちら),asoko,sana (sopan)
+59,3,いくら,いくら,いくら,ikura,berapa harga
+60,3,イタリア,イタリア,イタリア,itaria,Italia
+61,3,うけつけ,うけつけ,うけつけ,uketsuke,meja informasi
+62,3,えん,えん,えん,en,yen
+63,3,えれべーたー,えれべーたー,えれべーたー,erebe-ta-,lift
+64,3,かいだん,かいだん,かいだん,kaidan,tangga
+65,3,会社,かいしゃ,会社(かいしゃ),kaisha,perusahaan
+66,3,教室,きょうしつ,教室(きょうしつ),kyoushitsu,ruang kelas
+67,3,くに,くに,くに,kuni,negara
+68,3,靴,くつ,靴(くつ),kutsu,sepatu
+69,3,事務所,じむしょ,事務所(じむしょ),jimusho,kantor
+70,3,じどうはんばいき,じどうはんばいき,じどうはんばいき,jidouhanbaiki,mesin penjual otomatis
+71,3,食堂,しょくどう,食堂(しょくどう),shokudou,kantin/ruang makan
+72,3,スイス,スイス,スイス,suisu,Swiss
+73,3,すみません,すみません,すみません,sumimasen,permisi/maaf
+74,3,たばこ,たばこ,たばこ,tabako,rokok
+75,3,ちか,ちか,ちか,chika,bawah tanah
+76,3,どうも,どうも,どうも,doumo,terima kasih
+77,3,どこ(どちら),どこ,どこ(どちら),doko,mana (sopan)
+78,3,トイレ(おてあらい),トイレ,トイレ(おてあらい),toire,toilet/kamar kecil
+79,3,ネクタイ,ネクタイ,ネクタイ,nekutai,dasi
+80,3,ひゃく,ひゃく,ひゃく,hyaku,ratus
+81,3,へや,へや,へや,heya,kamar/ruangan
+82,3,まん,まん,まん,man,puluh ribu
+83,3,ワイン,ワイン,ワイン,wain,anggur (minuman)
+84,3,うりば,うりば,うりば,uriba,tempat penjualan
+85,3,エスカレーター,エスカレーター,エスカレーター,esukare-ta-,eskalator
+86,3,かい,かい,かい,kai,lantai/tingkat
+87,3,ぎんこう,ぎんこう,ぎんこう,ginkou,bank
+88,3,こうじょう,こうじょう,こうじょう,koujou,pabrik
+89,3,ここ(こちら),ここ,ここ(こちら),koko,sini (sopan)
+90,3,せん,せん,せん,sen,ribu
+91,3,でんわ,でんわ,でんわ,denwa,telepon
+92,3,りょう,りょう,りょう,ryou,asrama
+93,4,朝,あさ,朝(あさ),asa,pagi
+94,4,あさって,あさって,あさって,asatte,besok lusa
+95,4,明日,あした,明日(あした),ashita,besok
+96,4,今,いま,今(いま),ima,sekarang
+97,4,起きます,おきます,起(お)きます,okimasu,bangun
+98,4,終わります,おわります,終(お)わります,owarimasu,selesai
+99,4,火曜日,かようび,火曜日(かようび),kayoubi,hari selasa
+100,4,木曜日,もくようび,木曜日(もくようび),mokuyoubi,hari kamis
+101,4,金曜日,きんようび,金曜日(きんようび),kinyoubi,hari jumat
+102,4,月曜日,げつようび,月曜日(げつようび),getsuyoubi,hari senin
+103,4,ごご,ごご,ごご,gogo,sore/p.m
+104,4,ごぜん,ごぜん,ごぜん,gozen,pagi/a.m
+105,4,今朝,けさ,今朝(けさ),kesa,tadi pagi
+106,4,今晩,こんばん,今晩(こんばん),konban,malam ini
+107,4,水曜日,すいようび,水曜日(すいようび),suiyoubi,hari rabu
+108,4,土曜日,どようび,土曜日(どようび),doyoubi,hari sabtu
+109,4,日曜日,にちようび,日曜日(にちようび),nichiyoubi,hari minggu
+110,4,大変ですね,たいへんですね,大変(たいへん)ですね,taihendesune,berat ya/sulit ya
+111,4,図書館,としょかん,図書館(としょかん),toshokan,perpustakaan
+112,4,何時,なんじ,何時(なんじ),nanji,jam berapa
+113,4,何分,なんぷん,何分(なんぷん),nanpun,berapa menit
+114,4,何曜日,なんようび,何曜日(なんようび),nanyoubi,hari apa
+115,4,ねます,ねます,ねます,nemasu,tidur
+116,4,はたらきます,はたらきます,はたらきます,hatarakimasu,bekerja
+117,4,ばん(よる),ばん,ばん(よる),ban,malam
+118,4,昼,ひる,昼(ひる),hiru,siang
+119,4,昼休み,ひるやすみ,昼休(ひるやす)み,hiruyasumi,istirahat siang
+120,4,べんきょうします,べんきょうします,べんきょうします,benkyoushimasu,belajar
+121,4,毎朝,まいあさ,毎朝(まいあさ),maiasa,setiap pagi
+122,4,毎晩,まいばん,毎晩(まいばん),maiban,setiap malam
+123,4,毎日,まいにち,毎日(まいにち),mainichi,setiap hari
+124,4,休み,やすみ,休(やす)み,yasumi,libur/istirahat
+125,4,休みます,やすみます,休(やす)みます,yasumimasu,beristirahat/berlibur
+126,4,郵便局,ゆうびんきょく,郵便局(ゆうびんきょく),yuubinkyoku,kantor pos
+127,4,りょう,りょう,りょう,ryou,asrama
+128,4,レストラン,レストラン,レストラン,resutoran,restoran
+129,5,あるきます,あるきます,あるきます,arukimasu,berjalan kaki
+130,5,いつ,いつ,いつ,itsu,kapan
+131,5,いきます,いきます,いきます,ikimasu,pergi
+132,5,駅,えき,駅(えき),eki,stasiun
+133,5,大阪,おおさか,大阪(おおさか),oosaka,Osaka
+134,5,彼女,かのじょ,彼女(かのじょ),kanojo,pacar (wanita)/dia
+135,5,彼,かれ,彼(かれ),kare,pacar (pria)/dia
+136,5,京都,きょうと,京都(きょうと),kyouto,Kyoto
+137,5,きます,きます,きます,kimasu,datang
+138,5,去年,きょねん,去年(きょねん),kyonen,tahun lalu
+139,5,今月,こんげつ,今月(こんげつ),kongetsu,bulan ini
+140,5,今週,こんしゅう,今週(こんしゅう),konshuu,minggu ini
+141,5,今年,ことし,今年(ことし),kotoshi,tahun ini
+142,5,先月,せんげつ,先月(せんげつ),sengetsu,bulan lalu
+143,5,先週,せんしゅう,先週(せんしゅう),senshuu,minggu lalu
+144,5,家族,かぞく,家族(かぞく),kazoku,keluarga
+145,5,じてんしゃ,じてんしゃ,じてんしゃ,jitensha,sepeda
+146,5,新幹線,しんかんせん,新幹線(しんかんせん),shinkansen,kereta super cepat
+147,5,タクシー,タクシー,タクシー,takushi-,taksi
+148,5,地下鉄,ちかてつ,地下鉄(ちかてつ),chikatetsu,kereta bawah tanah
+149,5,次の,つぎの,次(つぎ)の,tsugino,berikutnya
+150,5,テスト,テスト,テスト,tesuto,tes/ujian
+151,5,電車,でんしゃ,電車(でんしゃ),densha,kereta listrik
+152,5,東京,とうきょう,東京(とうきょう),toukyou,Tokyo
+153,5,友達,ともだち,友達(ともだち),tomodachi,teman
+154,5,何日,なんにち,何日(なんにち),nannichi,tanggal berapa
+155,5,何月,なんがつ,何月(なんがつ),nangatsu,bulan apa
+156,5,何年,なんねん,何年(なんねん),nannen,tahun berapa
+157,5,バス,バス,バス,basu,bus
+158,5,飛行機,ひこうき,飛行機(ひこうき),hikouki,pesawat terbang
+159,5,独りで,ひとりで,独(ひと)りで,hitoride,sendirian
+160,5,船,ふね,船(ふね),fune,kapal laut
+161,5,普通,ふつう,普通(ふつう),futsuu,biasa (kereta api)
+162,5,ぼうや,ぼうや,ぼうや,bouya,anak laki-laki
+163,5,来月,らいげつ,来月(らいげつ),raigetsu,bulan depan
+164,5,来週,らいしゅう,来週(らいしゅう),raishuu,minggu depan
+165,5,来年,らいねん,来年(らいねん),rainen,tahun depan
+166,6,会います,あいます,会(あ)います,aimasu,bertemu
+167,6,朝ごはん,あさごはん,朝(あさ)ごはん,asagohan,makan pagi
+168,6,お酒,おさけ,お酒(さけ),osake,sake (arak jepang)
+169,6,お花見,おはなみ,お花見(はなみ),ohanami,melihat bunga sakura
+170,6,買います,かいます,買(か)います,kaimasu,membeli
+171,6,書きます,かきます,書(か)きます,kakimasu,menulis
+172,6,聞きます,ききます,聞(き)きます,kikimasu,mendengar
+173,6,牛乳,ぎゅうにゅう,牛乳(ぎゅうにゅう),gyuunyuu,susu sapi
+174,6,吸います,すいます,吸(す)います,suimasu,merokok/menghisap
+175,6,魚,さかな,魚(さかな),sakana,ikan
+176,6,サッカー,サッカー,サッカー,sakka-,sepak bola
+177,6,雑誌,ざっし,雑誌(ざっし),zasshi,majalah
+178,6,写真,しゃしん,写真(しゃしん),shashin,foto
+179,6,それから,それから,それから,sorekara,setelah itu
+180,6,たまご,たまご,たまご,tamago,telur
+181,6,食べます,たべます,食(た)べます,tabemasu,makan
+182,6,肉,にく,肉(にく),niku,daging
+183,6,飲みます,のみます,飲(の)みます,nomimasu,minum
+184,6,パン,パン,パン,pan,roti
+185,6,昼ごはん,ひるごはん,昼(ひる)ごはん,hirugohan,makan siang
+186,6,ビデオ,ビデオ,ビデオ,bideo,video
+187,6,晩ごはん,ばんごはん,晩(ばん)ごはん,bangohan,makan malam
+188,6,水,みず,水(みず),mizu,air
+189,6,見ます,みます,見(み)ます,mimasu,melihat
+190,6,読みます,よみます,読(よ)みます,yomimasu,membaca
+191,6,店,みせ,店(みせ),mise,toko
+192,6,レポート,レポート,レポート,repo-to,laporan
+193,6,いっしょに,いっしょに,いっしょに,isshoni,bersama-sama
+194,6,えいが,えいが,えいが,eiga,film
+195,6,えいがかん,えいがかん,えいがかん,eigakan,bioskop
+196,6,くだもの,くだもの,くだもの,kudamono,buah-buahan
+197,6,こうちゃ,こうちゃ,こうちゃ,koucha,teh
+198,6,ジュース,ジュース,ジュース,ju-su,jus
+199,6,手紙,てがみ,手紙(てがみ),tegami,surat
+200,6,テニス,テニス,テニス,tenisu,tenis
+201,6,とります,とります,とります,torimasu,mengambil (foto)
+202,6,なに,なに,なに,nani,apa
+203,6,にわ,にわ,にわ,niwa,halaman
+204,6,ビール,ビール,ビール,bi-ru,bir
+205,6,ピンポン,ピンポン,ピンポン,pinpon,tenis meja
+206,6,ロビー,ロビー,ロビー,robi-,lobi
+207,7,あげます,あげます,あげます,agemasu,memberi
+208,7,いただきます,いただきます,いただきます,itadakimasu,menerima
+209,7,えいご,えいご,えいご,eigo,bahasa inggris
+210,7,お金,おかね,お金(かね),okane,uang
+211,7,お父さん,おとうさん,お父(とう)さん,otousan,ayah (orang lain)
+212,7,お母さん,おかあさん,お母(かあ)さん,okaasan,ibu (orang lain)
+213,7,おくさん,おくさん,おくさん,okusan,istri (orang lain)
+214,7,おしえます,おしえます,おしえます,oshiemasu,mengajar
+215,7,紙,かみ,紙(かみ),kami,kertas
+216,7,かします,かします,かします,kashimasu,meminjamkan
+217,7,借ります,かります,借(か)ります,karimasu,meminjam
+218,7,切ります,きります,切(き)ります,kirimasu,memotong
+219,7,きっぷ,きっぷ,きっぷ,kippu,karcis
+220,7,クリスマス,クリスマス,クリスマス,kurisumasu,natal
+221,7,ケータイ,ケータイ,ケータイ,ke-tai,ponsel/HP
+222,7,ごちそうさま,ごちそうさま,ごちそうさま,gochisousama,terima kasih makanannya
+223,7,ごめんください,ごめんください,ごめんください,gomenkudasai,permisi
+224,7,これから,これから,これから,korekara,setelah ini
+225,7,ごはん,ごはん,ごはん,gohan,nasi
+226,7,シャツ,シャツ,シャツ,shatsu,kemeja
+227,7,スプーン,スプーン,スプーン,supu-n,sendok
+228,7,スカート,スカート,スカート,suka-to,rok
+229,7,すき,すき,すき,suki,suka
+230,7,セーター,セーター,セーター,se-ta-,baju hangat/sweater
+231,7,父,ちち,父(ちち),chichi,ayah (sendiri)
+232,7,手,て,手(て),te,tangan
+233,7,テニス,テニス,テニス,tenisu,tenis
+234,7,でんわ,でんわ,でんわ,denwa,telepon
+235,7,どうぞ,どうぞ,どうぞ,douzo,silahkan
+236,7,ナイフ,ナイフ,ナイフ,naifu,pisau
+237,7,なに,なに,なに,nani,apa
+238,7,習います,ならいます,習(なら)います,naraimasu,belajar
+239,7,にほんご,にほんご,にほんご,nihongo,bahasa jepang
+240,7,ネクタイ,ネクタイ,ネクタイ,nekutai,dasi
+241,7,はさみ,はさみ,はさみ,hasami,gunting
+242,7,はし,はし,はし,hashi,sumpit
+243,7,花,はな,花(はな),hana,bunga
+244,7,母,はは,母(はは),haha,ibu (sendiri)
+245,7,パンコン,パンコン,パンコン,pankon,PC/laptop
+246,7,プレゼント,プレゼント,プレゼント,purezento,hadiah
+247,7,まだ,まだ,まだ,mada,belum
+248,7,もう,もう,もう,mou,sudah
+249,7,もらいます,もらいます,もらいます,moraimasu,menerima
+250,7,ようこそ,ようこそ,ようこそ,youkoso,selamat datang
+251,7,レポート,レポート,レポート,repo-to,laporan
+252,8,青い,あおい,青(あお)い,aoi,biru
+253,8,赤い,あかい,赤(あか)い,akai,merah
+254,8,明るい,あかるい,明(あか)るい,akarui,terang
+255,8,朝,あさ,朝(あさ),asa,pagi
+256,8,足,あし,足(あし),ashi,kaki
+257,8,新しい,あたらしい,新(あたら)しい,atarashii,baru
+258,8,暑い,あつい,暑(あつ)い,atsui,panas (cuaca)
+259,8,熱い,あつい,熱(あつ)い,atsui,panas (benda)
+260,8,厚い,あつい,厚(あつ)い,atsui,tebal
+261,8,雨,あめ,雨(あめ),ame,hujan
+262,8,いい(よい),いい,いい(よい),ii,bagus/baik
+263,8,忙しい,いそがしい,忙(いそが)しい,isogashii,sibuk
+264,8,痛い,いたい,痛(いた)い,itai,sakit
+265,8,一日中,いちにちじゅう,一日中(いちにちじゅう),ichinichijuu,seharian
+266,8,いつも,いつも,いつも,itsumo,selalu
+267,8,犬,いぬ,犬(いぬ),inu,anjing
+268,8,今,いま,今(いま),ima,sekarang
+269,8,海,うみ,海(うみ),umi,laut
+270,8,おいしい,おいしい,おいしい,oishii,enak
+271,8,大きい,おおきい,大(おお)きい,ookii,besar
+272,8,遅い,おそい,遅(おそ)い,osoi,lambat/terlambat
+273,8,重い,おもい,重(おも)い,omoi,berat
+274,8,おもしろい,おもしろい,おもしろい,omoshiroi,menarik/lucu
+275,8,音楽,おんがく,音楽(おんがく),ongaku,musik
+276,8,外国,がいこく,外国(がいこく),gaikoku,luar negeri
+277,8,かしゅ,かしゅ,かしゅ,kashu,penyanyi
+278,8,かべ,かべ,かべ,kabe,dinding
+279,8,辛い,からい,辛(から)い,karai,pedas
+280,8,体,からだ,体(からだ),karada,badan
+281,8,借ります,かります,借(か)ります,karimasu,meminjam
+282,8,かわ,かわ,かわ,kawa,sungai
+283,8,かわいい,かわいい,かわいい,kawaii,lucu/manis
+284,8,汚い,きたない,汚(きたな)い,kitanai,kotor
+285,8,喫茶店,きっさてん,喫茶店(きっさてん),kissaten,kedai kopi/kafe
+286,8,切手,きって,切手(きって),kitte,perangko
+287,8,切ります,きります,切(き)ります,kirimasu,memotong
+288,8,きれい(な),きれい,きれい(な),kirei,cantik/bersih
+289,8,暗い,くらい,暗(くら)い,kurai,gelap
+290,8,黒い,くろい,黒(くろ)い,kuroi,hitam
+291,8,げんき(な),げんき,げんき(な),genki,sehat
+292,8,公園,こうえん,公園(こうえん),kouen,taman
+293,8,こども,こども,こども,kodomo,anak
+294,8,魚,さかな,魚(さかな),sakana,ikan
+295,8,寒い,さむい,寒(さむ)い,samui,dingin (cuaca)
+296,8,静か,しずか(な),静(しず)か(な),shizuka(na),tenang/sunyi
+297,8,白い,しろい,白(しろ)い,shiroi,putih
+298,8,しんせつ(な),しんせつ,しんせつ(な),shinsetsu,ramah
+299,8,すずしい,すずしい,すずしい,suzushii,sejuk
+300,8,狭い,せまい,狭(せま)い,semai,sempit
+301,8,高い,たかい,高(たか)い,takai,tinggi/mahal
+302,8,小さい,ちいさい,小(ちい)さい,chiisai,kecil
+303,8,近い,ちかい,近(ちか)い,chikai,dekat
+304,8,つめたい,つめたい,つめたい,tsumetai,dingin (benda)
+305,8,遠い,とおい,遠(とお)い,tooi,jauh
+306,8,所,ところ,所(ところ),tokoro,tempat
+307,8,ながい,ながい,ながい,nagai,panjang
+308,8,賑やか,にぎやか(な),賑(にぎ)やか(な),nigiyaka(na),ramai
+309,8,肉,にく,肉(にく),niku,daging
+310,8,暇,ひま(な),暇(ひま)(な),hima(na),senggang/luang
+311,8,広い,ひろい,広(ひろ)い,hiroi,luas
+312,8,富士山,ふじさん,富士山(ふじさん),fujisan,Gunung Fuji
+313,8,冬,ふゆ,冬(ふゆ),fuyu,musim dingin
+314,8,古い,ふるい,古(ふる)い,furui,kuno/lama
+315,8,町,まち,町(まち),machi,kota
+316,8,短い,みじかい,短(みじか)い,mijikai,pendek
+317,8,むずかしい,むずかしい,むずかしい,muzukashii,sulit
+318,8,寮,りょう,寮(りょう),ryou,asrama
+319,8,旅行,りょこう,旅行(りょこう),ryokou,tamasya/wisata
+320,8,安い,やすい,安(やす)い,yasui,murah
+321,8,山,やま,山(やま),yama,gunung
+322,8,有名,ゆうめい(な),有名(ゆうめい)(な),yuumei(na),terkenal
+323,8,雪,ゆき,雪(ゆき),yuki,salju
+324,8,よい(いい),よい,よい(いい),yoi,bagus/baik
+325,8,料理,りょうり,料理(りょうり),ryouri,masakan
+326,8,わるい,わるい,わるい,warui,jelek/buruk
+327,9,あし,あし,あし,ashi,kaki
+328,9,あたま,あたま,あたま,atama,kepala
+329,9,あまり,あまり,あまり,amari,tidak begitu
+330,9,イタリア語,イタリアご,イタリア語(ご),itariago,bahasa italia
+331,9,うた,うた,うた,uta,lagu
+332,9,え,え,え,e,gambar/lukisan
+333,9,音楽,おんがく,音楽(おんがく),ongaku,musik
+334,9,外国語,がいこくご,外国語(がいこくご),gaikokugo,bahasa asing
+335,9,かぶき,かぶき,かぶき,kabuki,kabuki (teater tradisional jepang)
+336,9,カラオケ,カラオケ,カラオケ,karaoke,karaoke
+337,9,漢字,かんじ,漢字(かんじ),kanji,kanji
+338,9,クラシック,クラシック,クラシック,kurashikku,musik klasik
+339,9,こまかいお金,こまかいおかね,こまかいお金(かね),komakaiokane,uang kecil/receh
+340,9,コンサート,コンサート,コンサート,konsa-to,konser
+341,9,ゴルフ,ゴルフ,ゴルフ,gorufu,golf
+342,9,酒,さけ,酒(さけ),sake,sake/minuman keras
+343,9,じかん,じかん,じかん,jikan,waktu
+344,9,じ,じ,じ,ji,huruf
+345,9,ジャズ,ジャズ,ジャズ,jazu,jazz
+346,9,じょうず(な),じょうず,じょうず(な),jouzu,pandai/pintar
+347,9,すき(な),すき,すき(な),suki,suka
+348,9,スポーツ,スポーツ,スポーツ,supo-tsu,olahraga
+349,9,ぜんぜん,ぜんぜん,ぜんぜん,zenzen,sama sekali (tidak)
+350,9,ダンス,ダンス,ダンス,dansu,tarian/dansa
+351,9,チケット,チケット,チケット,chiketto,tiket
+352,9,どうして,どうして,どうして,doushite,mengapa/kenapa
+353,9,どんな,どんな,どんな,donna,seperti apa
+354,9,たくさん,たくさん,たくさん,takusan,banyak
+355,9,なぜ,なぜ,なぜ,naze,mengapa
+356,9,ならいごと,ならいごと,ならいごと,naraigoto,les/kursus
+357,9,にほんご,にほんご,にほんご,nihongo,bahasa jepang
+358,9,ひらがな,ひらがな,ひらがな,hiragana,hiragana
+359,9,へた(な),へた,へた(な),heta,kurang pandai/bodoh
+360,9,ポップス,ポップス,ポップス,poppusu,musik pop
+361,9,まちあわせ,まちあわせ,まちあわせ,machiawase,janji temu
+362,9,もの,もの,もの,mono,barang/benda
+363,9,よく,よく,よく,yoku,sering/dengan baik
+364,9,わかる,わかる,わかる,wakaru,mengerti/paham
+365,9,ロック,ロック,ロック,rokku,musik rock
+366,10,あいだ,あいだ,あいだ,aida,antara
+367,10,うえ,うえ,うえ,ue,atas
+368,10,うしろ,うしろ,うしろ,ushiro,belakang
+369,10,うけつけ,うけつけ,うけつけ,uketsuke,resepsionis/meja informasi
+370,10,えき,えき,えき,eki,stasiun
+371,10,男の人,おとこのひと,男(おとこ)の人(ひと),otokonohito,laki-laki dewasa
+372,10,女の人,おんなのひと,女(おんな)の人(ひと),onnanohito,perempuan dewasa
+373,10,きっさてん,きっさてん,きっさてん,kissaten,kedai kopi/kafe
+374,10,きって,きって,きって,kitte,perangko
+375,10,ぎんこう,ぎんこう,ぎんこう,ginkou,bank
+376,10,こうえん,こうえん,こうえん,kouen,taman
+377,10,こうばん,こうばん,こうばん,kouban,pos polisi
+378,10,した,した,した,shita,bawah
+379,10,じてんしゃ,じてんしゃ,じてんしゃ,jitensha,sepeda
+380,10,じどうしゃ,じどうしゃ,じどうしゃ,jidousha,mobil
+381,10,スーパー,スーパー,スーパー,su-pa-,supermarket
+382,10,ちか,ちか,ちか,chika,bawah tanah
+383,10,ちかく,ちかく,ちかく,chikaku,dekat
+384,10,つくえ,つくえ,つくえ,tsukue,meja
+385,10,となり,となり,となり,tonari,sebelah/tetangga
+386,10,なか,なか,なか,naka,dalam
+387,10,はこ,はこ,はこ,hako,kotak
+388,10,はし,はし,はし,hashi,jembatan
+389,10,はなや,はなや,はなや,hanaya,toko bunga
+390,10,パンや,パンや,パンや,panya,toko roti
+391,10,ひだり,ひだり,ひだり,hidari,kiri
+392,10,びょういん,びょういん,びょういん,byouin,rumah sakit
+393,10,ポスト,ポスト,ポスト,posuto,kotak pos
+394,10,本だな,ほんだな,本(ほん)だな,hondana,rak buku
+395,10,本や,ほんや,本(ほん)や,honya,toko buku
+396,10,まえ,まえ,まえ,mae,depan
+397,10,みぎ,みぎ,みぎ,migi,kanan
+398,10,ゆうびんきょく,ゆうびんきょく,ゆうびんきょく,yuubinkyoku,kantor pos
+399,10,レストラン,レストラン,レストラン,resutoran,restoran
+400,10,れいぞうこ,れいぞうこ,れいぞうこ,reizouko,kulkas
+401,11,いくつ,いくつ,いくつ,ikutsu,berapa buah
+402,11,いちご,いちご,いちご,ichigo,strawberry
+403,11,いぬ,いぬ,いぬ,inu,anjing
+404,11,おくります,おくります,おくります,okurimasu,mengirim
+405,11,おねえさん,おねえさん,おねえさん,oneesan,kakak perempuan (orang lain)
+406,11,きゅうけいします,きゅうけいします,きゅうけいします,kyuukeishimasu,beristirahat (一時休むこと/sebentar)
+407,11,きょうだい,きょうだい,きょうだい,kyoudai,saudara kandung
+408,11,くつ下,くつした,くつ下(した),kutsushita,kaos kaki
+409,11,けんがくします,けんがくします,けんがくします,kengakushimasu,meninjau
+410,11,国さい電話,こくさいでんわ,国(こく)さい電話(でんわ),kokusaidenwa,telepon internasional
+411,11,コンサート,コンサート,コンサート,konsa-to,konser
+412,11,じしゅうします,じしゅうします,じしゅうします,jishuushimasu,belajar sendiri
+413,11,じっしゅう生,じっしゅうせい,じっしゅう生(せい),jisshuusei,peserta praktek keterampilan
+414,11,食じします,しょくじします,食(しょく)じします,shokujishimasu,makan
+415,11,だから,だから,だから,dakara,oleh karena itu
+416,11,だんじきします,だんじきします,だんじきします,danjikishimasu,berpuasa
+417,11,Tシャツ,ティーシャツ,T(ティー)シャツ,ti-shatsu,kaos
+418,11,ドーナツ,ドーナツ,ドーナツ,do-natsu,donat
+419,11,どのくらい,どのくらい,どのくらい,donokurai,berapa lama?
+420,11,トレーニングセンター,トレーニングセンター,トレーニングセンター,tore-ningusenta-,training center/tempat pelatihan
+421,11,バナナ,バナナ,バナナ,banana,pisang
+422,11,半年,はんとし,半年(はんとし),hantoshi,setengah tahun
+423,11,ハンバーガー,ハンバーガー,ハンバーガー,hanba-ga-,hamburger
+424,11,ふうとう,ふうとう,ふうとう,fuutou,amplop
+425,11,みかん,みかん,みかん,mikan,jeruk
+426,11,ミルク,ミルク,ミルク,miruku,susu
+427,11,もうすぐ,もうすぐ,もうすぐ,mousugu,akan segera
+428,11,りょうしん,りょうしん,りょうしん,ryoushin,bapak dan ibu/kedua orang tua
+429,12,雨,あめ,雨(あめ),ame,hujan
+430,12,おまつり,おまつり,おまつり,omatsuri,perayaan/festival
+431,12,かき,かき,かき,kaki,kesemak/buah kesemek
+432,12,きせつ,きせつ,きせつ,kisetsu,musim
+433,12,きっぷ,きっぷ,きっぷ,kippu,karcis
+434,12,くもり,くもり,くもり,kumori,berawan
+435,12,けしき,けしき,けしき,keshiki,pemandangan
+436,12,けっこんしき,けっこんしき,けっこんしき,kekkonshiki,upacara pernikahan
+437,12,ずっと,ずっと,ずっと,zutto,jauh lebih/pasti(terus menerus)
+438,12,ちょうみりょう,ちょうみりょう,ちょうみりょう,choumiryou,bumbu masakan
+439,12,どちら,どちら,どちら,dochira,yang mana?
+440,12,なし,なし,なし,nashi,buah pir
+441,12,花火,はなび,花火(はなび),hanabi,kembang api
+442,12,花見,はなみ,花見(はなみ),hanami,melihat-lihat bunga(Sakura)
+443,12,はやい,はやい,はやい,hayai,cepat
+444,12,べんり,べんり,べんり,benri,praktis
+445,12,ホテル,ホテル,ホテル,hoteru,hotel
+446,12,もみじ,もみじ,もみじ,momiji,pohon momiji (daunnya berbah warna pada musim semi)
+447,12,やきゅう,やきゅう,やきゅう,yakyuu,base ball
+448,12,ラブストーリー,ラブストーリー,ラブストーリー,rabusuto-ri-,Love story/cerita cinta
+449,12,ワイン,ワイン,ワイン,wain,anggur putih (minuman anggur)
+450,12,わかい,わかい,わかい,wakai,muda
+451,13,うさぎ,うさぎ,うさぎ,usagi,kelinci
+452,13,うんどうします,うんどうします,うんどうします,undoushimasu,berolahraga
+453,13,かえします,かえします,かえします,kaeshimasu,mengembalikan
+454,13,きゅうりょう,きゅうりょう,きゅうりょう,kyuuryou,gaji
+455,13,ごうかくします,ごうかくします,ごうかくします,goukakushimasu,berhasil dalam ujian/lulus
+456,13,スニーカー,スニーカー,スニーカー,suni-ka-,sepatu kets/sepatu olahraga
+457,13,スポーツクラブ,スポーツクラブ,スポーツクラブ,supo-tsukurabu,perkumpulan olahraga
+458,13,タイプ,タイプ,タイプ,taipu,tipe
+459,13,ちょ金します,ちょきんします,ちょ金(きん)します,chokinshimasu,menabung
+460,13,つかれます,つかれます,つかれます,tsukaremasu,cape/lelah
+461,13,とうろくします,とうろくします,とうろくします,tourokushimasu,mendaftarkan
+462,13,どこか,どこか,どこか,dokoka,sesuatu tempat
+463,13,何か,なにか,何(なに)か,nanika,sesuatu/untuk benda
+464,13,ほしい,ほしい,ほしい,hoshii,ingin
+465,13,むかえます,むかえます,むかえます,mukaemasu,menjemput
+466,13,ようせつ,ようせつ,ようせつ,yousetsu,LAS(menyambung logam)
+467,14,言います,いいます,言(い)います,iimasu,berkata
+468,14,いっしょうけんめい,いっしょうけんめい,いっしょうけんめい,isshoukenmei,bersungguh-sungguh
+469,14,いむしつ,いむしつ,いむしつ,imushitsu,ruang perawatan/tempat praktek dokter(klinik)
+470,14,エアコン,エアコン,エアコン,eakon,AC(Air Conditioner)
+471,14,おくさん,おくさん,おくさん,okusan,nyonya/istri orang lain
+472,14,おぼえます,おぼえます,おぼえます,oboemasu,mengingat
+473,14,かど,かど,かど,kado,belokan
+474,14,きっさてん,きっさてん,きっさてん,kissaten,kedai kopi/cafe
+475,14,きゅうきゅうしゃ,きゅうきゅうしゃ,きゅうきゅうしゃ,kyuukyuusha,ambulance
+476,14,空こう,くうこう,空(くう)こう,kuukou,bandara
+477,14,けっこうです,けっこうです,けっこうです,kekkoudesu,cukup
+478,14,さぎょうふく,さぎょうふく,さぎょうふく,sagyoufuku,pakaian kerja
+479,14,しお,しお,しお,shio,garam
+480,14,しょうらい,しょうらい,しょうらい,shourai,masa depan
+481,14,スキーします,スキーします,スキーします,suki-shimasu,bermain ski
+482,14,スケートします,スケートします,スケートします,suke-toshimasu,bermain sket
+483,14,せつめいします,せつめいします,せつめいします,setsumeishimasu,menguraikan/menjelaskan
+484,14,ちず,ちず,ちず,chizu,peta
+485,14,ちゅうりんじょう,ちゅうりんじょう,ちゅうりんじょう,chuurinjou,tempat parkir sepeda
+486,14,ちょうれい,ちょうれい,ちょうれい,chourei,apel pagi
+487,14,つかいかた,つかいかた,つかいかた,tsukaikata,cara penggunaan
+488,14,つま,つま,つま,tsuma,istri (sendiri)
+489,14,手つだいます,てつだいます,手(て)つだいます,tetsudaimasu,membantu
+490,14,とび,とび,とび,tobi,mendirikan perancah bangunan
+491,14,のうき,のうき,のうき,nouki,batas waktu
+492,14,パスポート,パスポート,パスポート,pasupo-to,paspor
+493,14,話します,はなします,話(はな)します,hanashimasu,berbicara
+494,14,プール,プール,プール,pu-ru,kolam renang
+495,14,ふります,ふります,ふります,furimasu,turun(hujan)
+496,14,まがります,まがります,まがります,magarimasu,berbelok/belok
+497,14,まちます,まちます,まちます,machimasu,menunggu
+498,14,むすこ,むすこ,むすこ,musuko,anak laki-laki (sendiri)
+499,14,もちます,もちます,もちます,mochimasu,membawa
+500,14,ゆっくり,ゆっくり,ゆっくり,yukkuri,perlahan-lahan
+501,14,よびます,よびます,よびます,yobimasu,memanggil
+502,14,ロッカールーム,ロッカールーム,ロッカールーム,rokka-ru-mu,ruang locker
+503,15,あけます,あけます,あけます,akemasu,membuka
+504,15,あつまります,あつまります,あつまります,atsumarimasu,berkumpul
+505,15,後で,あとで,後(あと)で,atode,nanti
+506,15,アパート,アパート,アパート,apa-to,apartemen
+507,15,入口,いりぐち,入口(いりぐち),iriguchi,pintu masuk
+508,15,いしゃ,いしゃ,いしゃ,isha,dokter
+509,15,いろいろな,いろいろな,いろいろな,iroirona,bermacam-macam/macam-macam
+510,15,うたいます,うたいます,うたいます,utaimasu,bernyanyi
+511,15,うります,うります,うります,urimasu,menjual
+512,15,え,え,え,e,gambar
+513,15,エンジニア,エンジニア,エンジニア,enjinia,ahli mesin
+514,15,大ぜい,おおぜい,大(おお)ぜい,oozei,banyak (orang)
+515,15,おかし,おかし,おかし,okashi,makanan ringan
+516,15,おきます,おきます,おきます,okimasu,meletakan/meletakkan
+517,15,外国,がいこく,外国(がいこく),gaikoku,luar negeri
+518,15,かまいません,かまいません,かまいません,kamaimasen,tidak apa-apa/tidak masalah
+519,15,きそく,きそく,きそく,kisoku,peraturan
+520,15,きます,きます,きます,kimasu,memakai (pakaian)
+521,15,けっこんします,けっこんします,けっこんします,kekkonshimasu,menikah
+522,15,高校生,こうこうせい,高校生(こうこうせい),koukousei,murid SMU
+523,15,こえ,こえ,こえ,koe,suara
+524,15,コップ,コップ,コップ,koppu,gelas
+525,15,コンピューター,コンピューター,コンピューター,konpyu-ta-,komputer
+526,15,さき,さき,さき,saki,tadi
+527,15,さわります,さわります,さわります,sawarimasu,menyentuh
+528,15,時間,じかん,時間(じかん),jikan,waktu
+529,15,しつもんします,しつもんします,しつもんします,shitsumonshimasu,bertanya
+530,15,しめます,しめます,しめます,shimemasu,menutup
+531,15,じゅうしょ,じゅうしょ,じゅうしょ,juusho,alamat
+532,15,小学校,しょうがっこう,小学校(しょうがっこう),shougakkou,SD (Sekolah Dasar)
+533,15,しります,しります,しります,shirimasu,mengetahui/mengenal
+534,15,すみます,すみます,すみます,sumimasu,tinggal/menetap
+535,15,せつめい書,せつめいしょ,せつめい書(しょ),setsumeisho,buku panduan/buku penjelasan
+536,15,たいへん,たいへん,たいへん,taihen,repot
+537,15,たとえば,たとえば,たとえば,tatoeba,misalnya/contoh
+538,15,中学校,ちゅうがっこう,中学校(ちゅうがっこう),chuugakkou,SMP
+539,15,つとめます,つとめます,つとめます,tsutomemasu,bekerja
+540,15,手ぶくろ,てぶくろ,手(て)ぶくろ,tebukuro,sarung tangan
+541,15,出ます,でます,出(で)ます,demasu,keluar
+542,15,出口,でぐち,出口(でぐち),deguchi,pintu keluar
+543,15,ドア,ドア,ドア,doa,pintu
+544,15,とおリます,とおリます,とおリます,toorimasu,melewati/melalui
+545,15,長い,ながい,長(なが)い,nagai,panjang
+546,15,にもつ,にもつ,にもつ,nimotsu,barang bawaan
+547,15,入ります,はいります,入(はい)ります,hairimasu,masuk
+548,15,はきます,はきます,はきます,hakimasu,"memakai (sepatu, celana dll)"
+549,15,はん長,はんちょう,はん長(ちょう),hanchou,kepala regu
+550,15,びじゅつかん,びじゅつかん,びじゅつかん,bijutsukan,gedung kesenian
+551,15,左がわ,ひだりがわ,左(ひだり)がわ,hidarigawa,sebelah kiri
+552,15,ふとい,ふとい,ふとい,futoi,gemuk
+553,15,ほそい,ほそい,ほそい,hosoi,kurus
+554,15,右がわ,みぎがわ,右(みぎ)がわ,migigawa,sebelah kanan
+555,15,ワイヤー,ワイヤー,ワイヤー,waiya-,kawat
+556,16,上げます,あげます,上(あ)げます,agemasu,mengangkat
+557,16,あたまがいい,あたまがいい,あたまがいい,atamagaii,pintar
+558,16,後かたづけ,あとかたづけ,後(あと)かたづけ,atokatazuke,merapikan kembali
+559,16,あびます,あびます,あびます,abimasu,mandi
+560,16,あらいます,あらいます,あらいます,araimasu,mencuci
+561,16,いろ,いろ,いろ,iro,warna
+562,16,おふろ,おふろ,おふろ,ofuro,bak berendam
+563,16,おります,おります,おります,orimasu,turun
+564,16,買いものします,かいものします,買(か)いものします,kaimonoshimasu,berbelanja
+565,16,カーテン,カーテン,カーテン,ka-ten,gorden/tirai
+566,16,かお,かお,かお,kao,muka/wajah
+567,16,かがみ,かがみ,かがみ,kagami,cermin
+568,16,かぎをかけます,かぎをかけます,かぎをかけます,kagiwokakemasu,mengunci
+569,16,確認します,かくにんします,確認(かくにん)します,kakuninshimasu,menegaskan kembali
+570,16,かみ,かみ,かみ,kami,kertas/rambut
+571,16,カレーライス,カレーライス,カレーライス,kare-raisu,nasi kare
+572,16,危険,きけん,危険(きけん),kiken,bahaya
+573,16,ケーキ,ケーキ,ケーキ,ke-ki,kue (tar)
+574,16,子ども,こども,子(こ)ども,kodomo,anak-anak
+575,16,さんぽします,さんぽします,さんぽします,sanposhimasu,jalan-jalan
+576,16,じっしゅうします,じっしゅうします,じっしゅうします,jisshuushimasu,praktek
+577,16,シャワー,シャワー,シャワー,shawa-,mandi shower
+578,16,じゅんびします,じゅんびします,じゅんびします,junbishimasu,mempersiapkan
+579,16,じょうぶ,じょうぶ,じょうぶ,joubu,kuat
+580,16,せまい,せまい,せまい,semai,sempit
+581,16,そります,そります,そります,sorimasu,mencukur (kumis/jenggot)
+582,16,ダンス,ダンス,ダンス,dansu,tarian/dansa
+583,16,電話をかけます,でんわをかけます,電話(でんわ)をかけます,denwawokakemasu,menelepon
+584,16,どうぐ,どうぐ,どうぐ,dougu,alat-alat/peralatan
+585,16,なおします,なおします,なおします,naoshimasu,memperbaiki
+586,16,人ぎょう,にんぎょう,人(にん)ぎょう,ningyou,boneka
+587,16,のりかえます,のりかえます,のりかえます,norikaemasu,berganti kendaraan
+588,16,のります,のります,のります,norimasu,naik
+589,16,バスてい,バスてい,バスてい,basutei,halte bis
+590,16,はな,はな,はな,hana,hidung
+591,16,ひげ,ひげ,ひげ,hige,kumis/jenggot
+592,16,びょう気,びょうき,びょう気(き),byouki,sakit
+593,16,ひらきます,ひらきます,ひらきます,hirakimasu,membuka
+594,16,ふべん,ふべん,ふべん,fuben,tidak praktis
+595,16,べんとう,べんとう,べんとう,bentou,bekal makan (siang)
+596,16,ほうこくします,ほうこくします,ほうこくします,houkokushimasu,melapor
+597,16,マイク,マイク,マイク,maiku,mic
+598,16,みがきます,みがきます,みがきます,migakimasu,menggosok
+599,16,道,みち,道(みち),michi,jalan
+600,16,目,め,目(め),me,mata
+601,16,めがねをかけます,めがねをかけます,めがねをかけます,meganewokakemasu,memakai kacamata
+602,16,わたります,わたります,わたります,watarimasu,menyebrang
+603,17,あぶない,あぶない,あぶない,abunai,berbahaya
+604,17,カード,カード,カード,ka-do,kartu
+605,17,かいとうようし,かいとうようし,かいとうようし,kaitouyoushi,lembar jawaban
+606,17,火気厳禁,かきげんきん,火気厳禁(かきげんきん),kakigenkin,dilarang keras menyalakan api
+607,17,かぶります,かぶります,かぶります,kaburimasu,memakai (topi)
+608,17,きっ手,きって,きっ手(て),kitte,perangko
+609,17,禁煙,きんえん,禁煙(きんえん),kinen,larangan merokok
+610,17,禁止,きんし,禁止(きんし),kinshi,larangan
+611,17,こと,こと,こと,koto,hal
+612,17,さとう,さとう,さとう,satou,gula
+613,17,ざんぎょうします,ざんぎょうします,ざんぎょうします,zangyoushimasu,lembur
+614,17,じぶん,じぶん,じぶん,jibun,diri sendiri
+615,17,しまいます,しまいます,しまいます,shimaimasu,menyimpan
+616,17,しんごう,しんごう,しんごう,shingou,lampu lalu lintas
+617,17,しんぱいします,しんぱいします,しんぱいします,shinpaishimasu,khawatir
+618,17,スイッチ,スイッチ,スイッチ,suicchi,saklar
+619,17,たいせつ,たいせつ,たいせつ,taisetsu,penting
+620,17,たいそうします,たいそうします,たいそうします,taisoushimasu,senam
+621,17,立入禁止,たちいりきんし,立入禁止(たちいりきんし),tachiirikinshi,dilarang masuk
+622,17,立ちます,たちます,立(た)ちます,tachimasu,berdiri
+623,17,つくります,つくります,つくります,tsukurimasu,membuat
+624,17,電話ばんごう,でんわばんごう,電話(でんわ)ばんごう,denwabangou,nomor telepon
+625,17,とまります,とまります,とまります,tomarimasu,berhenti
+626,17,なります,なります,なります,narimasu,menjadi
+627,17,何でも,なんでも,何(なん)でも,nandemo,apa saja/apa pun
+628,17,にっき,にっき,にっき,nikki,buku harian
+629,17,ぬぎます,ぬぎます,ぬぎます,nugimasu,menanggalkan
+630,17,はしります,はしります,はしります,hashirimasu,lari
+631,17,はらいます,はらいます,はらいます,haraimasu,membayar
+632,17,ばんごうじゅん,ばんごうじゅん,ばんごうじゅん,bangoujun,urutan nomor
+633,17,火,ひ,火(ひ),hi,api
+634,17,ベルトコンベヤー,ベルトコンベヤー,ベルトコンベヤー,berutokonbeya-,belt-conveyor/sabuk konveyor
+635,17,ヘルメット,ヘルメット,ヘルメット,herumetto,helm
+636,17,ペンケース,ペンケース,ペンケース,penke-su,kotak pensil
+637,17,ほかの,ほかの,ほかの,hokano,yang lain
+638,17,保護帽,ほごぼう,保護帽(ほごぼう),hogobou,pelindung kepala
+639,17,ボタン,ボタン,ボタン,botan,tombol
+640,17,まもります,まもります,まもります,mamorimasu,mentaati
+641,17,見せます,みせます,見(み)せます,misemasu,memperlihatkan
+642,17,みぶんしょうめいしょ,みぶんしょうめいしょ,みぶんしょうめいしょ,mibunshoumeisho,Kartu Tanda Pengenal
+643,17,よごします,よごします,よごします,yogoshimasu,mengotori/kotor
+644,17,れんらくします,れんらくします,れんらくします,renrakushimasu,menghubungi
+645,17,わすれます,わすれます,わすれます,wasuremasu,lupa
+646,17,わたします,わたします,わたします,watashimasu,menyerahkan
+647,18,あいさつします,あいさつします,あいさつします,aisatsushimasu,memberikan salam
+648,18,うけます,うけます,うけます,ukemasu,menempuh/mengikuti
+649,18,うんどう会,うんどうかい,うんどう会(かい),undoukai,pertandingan olahraga
+650,18,およぎます,およぎます,およぎます,oyogimasu,berenang
+651,18,ガス,ガス,ガス,gasu,gas
+652,18,かならず,かならず,かならず,kanarazu,pasti
+653,18,かんがえます,かんがえます,かんがえます,kangaemasu,berpikir
+654,18,きこく,きこく,きこく,kikoku,pulang ke tanah air
+655,18,ギター,ギター,ギター,gita-,gitar
+656,18,しゅっぱつ,しゅっぱつ,しゅっぱつ,shuppatsu,keberangkatan
+657,18,しゅみ,しゅみ,しゅみ,shumi,hobi
+658,18,せいせき,せいせき,せいせき,seiseki,hasil
+659,18,大会,たいかい,大会(たいかい),taikai,turnamen
+660,18,ちゃんと,ちゃんと,ちゃんと,chanto,dengan benar/teliti
+661,18,つり,つり,つり,tsuri,pancing
+662,18,手じゅん,てじゅん,手(て)じゅん,tejun,prosedur/urutan
+663,18,できます,できます,できます,dekimasu,dapat/bisa
+664,18,点検します,てんけんします,点検(てんけん)します,tenkenshimasu,memeriksa
+665,18,ノックします,ノックします,ノックします,nokkushimasu,mengetuk
+666,18,ひきます,ひきます,ひきます,hikimasu,bermain alat musik
+667,18,ピンポン,ピンポン,ピンポン,pinpon,pingpong
+668,18,ぶんかいします,ぶんかいします,ぶんかいします,bunkaishimasu,membongkar
+669,18,ボーリング,ボーリング,ボーリング,bo-ringu,bowling
+670,18,もえないゴミ,もえないゴミ,もえないゴミ,moenaigomi,sampah tidak dapat di bakar
+671,18,もえるゴミ,もえるゴミ,もえるゴミ,moerugomi,sampah dapat dibakar
+672,18,もとせん,もとせん,もとせん,motosen,kran utama
+673,19,うみ,うみ,うみ,umi,laut
+674,19,おとします,おとします,おとします,otoshimasu,menjatuhkan
+675,19,おなかがいっぱいです,おなかがいっぱいです,おなかがいっぱいです,onakagaippaidesu,kenyang/perut kenyang
+676,19,おばあさん,おばあさん,おばあさん,obaasan,nenek (orang lain)
+677,19,かじ,かじ,かじ,kaji,kebakaran
+678,19,風,かぜ,風(かぜ),kaze,angin
+679,19,木,き,木(き),ki,pohon
+680,19,きもの,きもの,きもの,kimono,pakaian khas Jepang
+681,19,じこ,じこ,じこ,jiko,kecelakaan
+682,19,じしん,じしん,じしん,jishin,gempa bumi
+683,19,しにます,しにます,しにます,shinimasu,meninggal
+684,19,ストーブ,ストーブ,ストーブ,suto-bu,alat pemanas ruangan
+685,19,たいいんします,たいいんします,たいいんします,taiinshimasu,meninggalkan rumah sakit
+686,19,たいふう,たいふう,たいふう,taifuu,topan
+687,19,だんだん,だんだん,だんだん,dandan,sedikit demi sedikit
+688,19,ディズニーランド,ディズニーランド,ディズニーランド,dizuni-rando,disney land
+689,19,テーブル,テーブル,テーブル,te-buru,meja
+690,19,天気,てんき,天気(てんき),tenki,cuaca
+691,19,とびます,とびます,とびます,tobimasu,terbang
+692,19,なつ休み,なつやすみ,なつ休(やす)み,natsuyasumi,libur musim panas
+693,19,にゅういんします,にゅういんします,にゅういんします,nyuuinshimasu,masuk rumah sakit
+694,19,のど,のど,のど,nodo,tenggorokan
+695,19,のどがかわきます,のどがかわきます,のどがかわきます,nodogakawakimasu,haus
+696,19,のぼります,のぼります,のぼります,noborimasu,mendaki/memanjat
+697,19,ふね,ふね,ふね,fune,kapal laut
+698,19,やけます,やけます,やけます,yakemasu,terbakar
+699,19,ゆうべ,ゆうべ,ゆうべ,yuube,tadi malam
+700,19,ゆき,ゆき,ゆき,yuki,salju
+701,20,足元注意,あしもとちゅうい,足元注意(あしもとちゅうい),ashimotochuui,hati-hati melangkah
+702,20,あな,あな,あな,ana,lubang
+703,20,あやまります,あやまります,あやまります,ayamarimasu,minta maaf
+704,20,安全ぐつ,あんぜんぐつ,安全(あんぜん)ぐつ,anzengutsu,sepatu pengaman
+705,20,オイル,オイル,オイル,oiru,OLI/minyak pelumas
+706,20,おきば,おきば,おきば,okiba,tempat menyimpan barang
+707,20,おこります,おこります,おこります,okorimasu,marah
+708,20,かいしょうします,かいしょうします,かいしょうします,kaishoushimasu,menghilangkan
+709,20,かんかく,かんかく,かんかく,kankaku,jarak
+710,20,ざいりょう,ざいりょう,ざいりょう,zairyou,bahan baku
+711,20,さげます,さげます,さげます,sagemasu,menurunkan
+712,20,さわぎます,さわぎます,さわぎます,sawagimasu,gaduh/ribut
+713,20,じゅんばん,じゅんばん,じゅんばん,junban,urutan
+714,20,頭上注意,ずじょうちゅうい,頭上注意(ずじょうちゅうい),zujouchuui,hati-hati sebelah atas
+715,20,ストレス,ストレス,ストレス,sutoresu,stres
+716,20,ぜい金,ぜいきん,ぜい金(きん),zeikin,pajak
+717,20,整理整頓,せいりせいとん,整理整頓(せいりせいとん),seiriseiton,menyusun merapikan
+718,20,大ごえ,おおごえ,大(おお)ごえ,oogoe,suara keras
+719,20,駐輪禁止,ちゅうりんきんし,駐輪禁止(ちゅうりんきんし),chuurinkinshi,dilarang parkir sepeda
+720,20,ちょっと,ちょっと,ちょっと,chotto,sebentar/sedikit
+721,20,てつくず,てつくず,てつくず,tetsukuzu,sampah serbuk besi
+722,20,てっぱん,てっぱん,てっぱん,teppan,plat besi
+723,20,どけます,どけます,どけます,dokemasu,memindahkan/menyingkirkan
+724,20,とめます,とめます,とめます,tomemasu,menghentikan
+725,20,とりかえます,とりかえます,とりかえます,torikaemasu,menukar/mengganti
+726,20,ドリル,ドリル,ドリル,doriru,bor
+727,20,なきます,なきます,なきます,nakimasu,menangis
+728,20,はなをかみます,はなをかみます,はなをかみます,hanawokamimasu,membuang ingus
+729,20,ふまん,ふまん,ふまん,fuman,tidak puas
+730,20,ふりょうひん,ふりょうひん,ふりょうひん,furyouhin,barang cacat
+731,20,防塵マスク,ぼうじんマスク,防塵(ぼうじん)マスク,boujinmasuku,masker pelindung
+732,20,指差呼称励行,ゆびさしこしょうれいこう,指差呼称励行(ゆびさしこしょうれいこう),yubisashikoshoureikou,pelaksanaan dengan menunjuk jari
+733,20,レバー,レバー,レバー,reba-,tuas
+734,20,わらいます,わらいます,わらいます,waraimasu,tertawa
+735,21,うごかします,うごかします,うごかします,ugokashimasu,menggerakkan
+736,21,おつり,おつり,おつり,otsuri,uang kembalian
+737,21,おと,おと,おと,oto,bunyi
+738,21,きちんと,きちんと,きちんと,kichinto,dengan rapi
+739,21,くすりや,くすりや,くすりや,kusuriya,toko obat/apotik
+740,21,けんこうしんだん,けんこうしんだん,けんこうしんだん,kenkoushindan,pemeriksaan kesehatan
+741,21,けんぶつします,けんぶつします,けんぶつします,kenbutsushimasu,melancong/berwisata
+742,21,こうばん,こうばん,こうばん,kouban,pos polisi
+743,21,こまかい,こまかい,こまかい,komakai,kecil/recehan
+744,21,こまります,こまります,こまります,komarimasu,susah
+745,21,さがします,さがします,さがします,sagashimasu,mencari
+746,21,さきます,さきます,さきます,sakimasu,mekar
+747,21,さくら,さくら,さくら,sakura,bunga sakura
+748,21,さら,さら,さら,sara,piring
+749,21,しじ,しじ,しじ,shiji,perintah/petunjuk
+750,21,セーター,セーター,セーター,se-ta-,baju hangat/sweater
+751,21,そうさします,そうさします,そうさします,sousashimasu,mengoperasikan
+752,21,たいてい,たいてい,たいてい,taitei,biasanya/pada umumnya
+753,21,ちょうちん,ちょうちん,ちょうちん,chouchin,lampion
+754,21,ちります,ちります,ちります,chirimasu,gugur
+755,21,出かけます,でかけます,出(で)かけます,dekakemasu,keluar rumah/pergi keluar
+756,21,なくします,なくします,なくします,nakushimasu,menghilangkan
+757,21,はし,はし,はし,hashi,sumpit
+758,21,ばしょ,ばしょ,ばしょ,basho,tempat
+759,21,ぶひん,ぶひん,ぶひん,buhin,suku cadang/onderdil
+760,21,マニュアル,マニュアル,マニュアル,manyuaru,buku panduan
+761,21,まわします,まわします,まわします,mawashimasu,memutar
+762,21,ミーティング,ミーティング,ミーティング,mi-tingu,rapat
+763,21,やります,やります,やります,yarimasu,melakukan/mengerjakan
+764,21,れんしゅうします,れんしゅうします,れんしゅうします,renshuushimasu,berlatih
+765,22,おゆ,おゆ,おゆ,oyu,air panas
+766,22,かぐ,かぐ,かぐ,kagu,perabotan rumah/mebel
+767,22,かびん,かびん,かびん,kabin,vas bunga
+768,22,きいろい,きいろい,きいろい,kiiroi,kuning
+769,22,くみたてます,くみたてます,くみたてます,kumitatemasu,merakit
+770,22,こしょうします,こしょうします,こしょうします,koshoushimasu,rusak
+771,22,このへん,このへん,このへん,konohen,disekitar sini
+772,22,こんど,こんど,こんど,kondo,yang akan datang/lain kali
+773,22,さいふ,さいふ,さいふ,saifu,dompet
+774,22,さそいます,さそいます,さそいます,sasoimasu,mengajak
+775,22,ざんねん,ざんねん,ざんねん,zannen,menyesal/sayang
+776,22,すいはんき,すいはんき,すいはんき,suihanki,rice cooker/penanak nasi
+777,22,スープ,スープ,スープ,su-pu,sup
+778,22,たきます,たきます,たきます,takimasu,menanak nasi/memasak
+779,22,なべ,なべ,なべ,nabe,panci
+780,22,ならびます,ならびます,ならびます,narabimasu,berbaris/antri
+781,22,ならべます,ならべます,ならべます,narabemasu,menjejerkan/menyusun
+782,22,にます,にます,にます,nimasu,merebus
+783,22,のせます,のせます,のせます,nosemasu,menempatkan
+784,22,ビル,ビル,ビル,biru,gedung
+785,22,フライパン,フライパン,フライパン,furaipan,wajan penggorengan
+786,22,ほうちょう,ほうちょう,ほうちょう,houchou,pisau dapur
+787,22,やかん,やかん,やかん,yakan,teko/cerek/ketel
+788,22,やきます,やきます,やきます,yakimasu,membakar
+789,22,やくそく,やくそく,やくそく,yakusoku,janji
+790,22,わかします,わかします,わかします,wakashimasu,merebus/memanaskan
+791,23,いなか,いなか,いなか,inaka,desa
+792,23,おかしい,おかしい,おかしい,okashii,aneh/ganjil
+793,23,おぼん休み,おぼんやすみ,おぼん休(やす)み,obonyasumi,libur obong
+794,23,おもさ,おもさ,おもさ,omosa,beratnya
+795,23,かぞえます,かぞえます,かぞえます,kazoemasu,menghitung
+796,23,きめます,きめます,きめます,kimemasu,menetapkan/memutuskan
+797,23,下がります,さがります,下(さ)がります,sagarimasu,turun
+798,23,しゅっせきします,しゅっせきします,しゅっせきします,shussekishimasu,hadir/menghadiri
+799,23,しらべます,しらべます,しらべます,shirabemasu,memeriksa/mengecek
+800,23,そうだんします,そうだんします,そうだんします,soudanshimasu,musyawarah
+801,23,たのみます,たのみます,たのみます,tanomimasu,meminta
+802,23,たります,たります,たります,tarimasu,cukup
+803,23,とじます,とじます,とじます,tojimasu,menutup
+804,23,長さ,ながさ,長(なが)さ,nagasa,panjangnya
+805,23,はかります,はかります,はかります,hakarimasu,mengukur
+806,23,ひろば,ひろば,ひろば,hiroba,lapangan
+807,23,フィルム,フィルム,フィルム,firumu,klise/negatif film
+808,23,ふく,ふく,ふく,fuku,pakaian
+809,23,まにあいます,まにあいます,まにあいます,maniaimasu,tepat waktu
+810,23,もどります,もどります,もどります,modorimasu,kembali
+811,23,やめます,やめます,やめます,yamemasu,berhenti
+812,23,ランプ,ランプ,ランプ,ranpu,lampu
+813,24,あきます,あきます,あきます,akimasu,terbuka
+814,24,あつめます,あつめます,あつめます,atsumemasu,mengumpulkan
+815,24,安全ひょうしき,あんぜんひょうしき,安全(あんぜん)ひょうしき,anzenhyoushiki,tanda keselamatan kerja
+816,24,入れます,いれます,入(い)れます,iremasu,memasukkan
+817,24,うごきます,うごきます,うごきます,ugokimasu,bergerak
+818,24,駅いん,えきいん,駅(えき)いん,ekiin,pegawai stasiun
+819,24,おします,おします,おします,oshimasu,menekan
+820,24,かかります,かかります,かかります,kakarimasu,tergantung/terkunci
+821,24,かけます,かけます,かけます,kakemasu,menggantungkan/mengunci
+822,24,かぜをひきます,かぜをひきます,かぜをひきます,kazewohikimasu,masuk angin/flu
+823,24,カレンダー,カレンダー,カレンダー,karenda-,kalender
+824,24,きゅうに,きゅうに,きゅうに,kyuuni,tiba tiba
+825,24,ころびます,ころびます,ころびます,korobimasu,terjatuh
+826,24,こわします,こわします,こわします,kowashimasu,merusak
+827,24,さします,さします,さします,sashimasu,menancapkan/menusukkan/menunjuk
+828,24,しばらく,しばらく,しばらく,shibaraku,sebentar/tidak lama kemudian
+829,24,しまります,しまります,しまります,shimarimasu,tertutup
+830,24,せんぷうき,せんぷうき,せんぷうき,senpuuki,kipas angin
+831,24,そうじき,そうじき,そうじき,soujiki,alat penghisap debu
+832,24,たんす,たんす,たんす,tansu,lemari
+833,24,つきます,つきます,つきます,tsukimasu,menyala
+834,24,つけます,つけます,つけます,tsukemasu,menyalakan
+835,24,ていでん,ていでん,ていでん,teiden,mati listrik
+836,24,トラック,トラック,トラック,torakku,truk
+837,24,はります,はります,はります,harimasu,menempelkan
+838,24,ひきだし,ひきだし,ひきだし,hikidashi,laci
+839,24,ひょうし,ひょうし,ひょうし,hyoushi,sampul/jilid (buku)
+840,24,へんじ,へんじ,へんじ,henji,jawaban
+841,24,ホーム,ホーム,ホーム,ho-mu,peron
+842,24,ホワイトボード,ホワイトボード,ホワイトボード,howaitobo-do,papan tulis putih
+843,24,本だな,ほんだな,本(ほん)だな,hondana,rak buku
+844,24,まちがえます,まちがえます,まちがえます,machigaemasu,bersalah/salah/keliru
+845,24,まわります,まわります,まわります,mawarimasu,berputar
+846,24,もんだいしゅう,もんだいしゅう,もんだいしゅう,mondaishuu,kumpulan soal/lembar soal
+847,25,じゃがいも,じゃがいも,じゃがいも,jagaimo,kentang
+848,25,しゅうちゅうします,しゅうちゅうします,しゅうちゅうします,shuuchuushimasu,konsentrasi
+849,25,しょう月,しょうがつ,しょう月(がつ),shougatsu,tahun baru
+850,25,たおれます,たおれます,たおれます,taoremasu,tumbang/roboh
+851,25,ちょうせつします,ちょうせつします,ちょうせつします,chousetsushimasu,menyetel
+852,25,つづけます,つづけます,つづけます,tsuzukemasu,melanjutkan
+853,25,つよい,つよい,つよい,tsuyoi,kuat/kencang
+854,25,とうもろこし,とうもろこし,とうもろこし,toumorokoshi,jagung
+855,25,ねだん,ねだん,ねだん,nedan,harga
+856,25,はれます,はれます,はれます,haremasu,cerah
+857,25,日の出,ひので,日(ひ)の出(で),hinode,matahari terbit
+858,25,ふきます,ふきます,ふきます,fukimasu,bertiup
+859,25,ボート,ボート,ボート,bo-to,kapal boot
+860,25,ボーナス,ボーナス,ボーナス,bo-nasu,bonus
+861,25,ゆうがた,ゆうがた,ゆうがた,yuugata,petang/sore
+862,25,よてい,よてい,よてい,yotei,rencana
+863,25,リーダー,リーダー,リーダー,ri-da-,ketua
+864,26,~階,かい,〜階(かい),kai,LANTAI ~
+865,26,赤信号,あかしんごう,赤信号(あかしんごう),akashingou,LAMPU MERAH
+866,26,音,おと,音(おと),oto,SUARA BENDA MATI / BUNYI
+867,26,重い,おもい,重い(おもい),omoi,BERAT
+868,26,泳ぎ方,およぎかた,泳ぎ方(およぎかた),oyogikata,CARA BERENANG
+869,26,ガイドブック,ガイドブック,ガイドブック,gaidobukku,BUKU PETUNJUK
+870,26,機械,きかい,機械(きかい),kikai,MESIN
+871,26,規則,きそく,規則(きそく),kisoku,PERATURAN
+872,26,牛肉,ぎゅうにく,牛肉(ぎゅうにく),gyuuniku,DAGING SAPI
+873,26,曇り,くもり,曇り(くもり),kumori,BERAWAN / MENDUNG
+874,26,組み立てます,くみたてます,組み立てます(くみたてます),kumitatemasu,MERAKIT
+875,26,声,こえ,声(こえ),koe,SUARA
+876,26,魚,さかな,魚(さかな),sakana,IKAN
+877,26,残念,ざんねん,残念(ざんねん),zannen,SAYANG / DISESALKAN
+878,26,新宿,しんじゅく,新宿(しんじゅく),shinjuku,SHINJUKU
+879,26,数学,すうがく,数学(すうがく),suugaku,ILMU MATEMATIKA
+880,26,ストレス解消,ストレスかいしょう,ストレス解消(ストレスかいしょう),sutoresukaishou,MENGHILANGKAN STRES
+881,26,つもり,つもり,つもり,tsumori,TUJUAN / MAKSUD
+882,26,鳥,とり,鳥(とり),tori,BURUNG
+883,26,荷物,にもつ,荷物(にもつ),nimotsu,BARANG BAWAAN
+884,26,運びます,はこびます,運びます(はこびます),hakobimasu,MEMBAWA / MENGANGKUT
+885,26,二十歳,はたち,二十歳(はたち),hatachi,UMUR 20 TAHUN
+886,26,晴れる,はれる,晴れる(はれる),hareru,CERAH
+887,26,富士山,ふじさん,富士山(ふじさん),fujisan,GUNUNG FUJI
+888,26,豚肉,ぶたにく,豚肉(ぶたにく),butaniku,DAGING BABI
+889,26,ほとんど,ほとんど,ほとんど,hotondo,HAMPIR
+890,26,本当,ほんとう,本当(ほんとう),hontou,BENAR-BENAR
+891,26,マンション,マンション,マンション,manshon,MANSHION / APARTEMEN
+892,26,持ちます,もちます,持ちます(もちます),mochimasu,MEMBAWA
+893,26,家賃,やちん,家賃(やちん),yachin,BIAYA SEWA RUMAH
+894,26,アルバイト,アルバイト,アルバイト,arubaito,KERJA SAMBILAN / PART TIME
+895,26,一生懸命,いっしょうけんめい,一生懸命(いっしょうけんめい),isshoukenmei,BERSUNGGUH-SUNGGUH
+896,26,映画,えいが,映画(えいが),eiga,FILM
+897,26,お酒,おさけ,お酒(おさけ),osake,SAKE (MINUMAN KERAS JEPANG)
+898,26,弟,おとうと,弟(おとうと),otouto,ADIK LAKI-LAKI (SENDIRI)
+899,26,踊り,おどり,踊り(おどり),odori,TARIAN
+900,26,思います,おもいます,思います(おもいます),omoimasu,MEMIKIRKAN / MENGIRA
+901,26,漢字,かんじ,漢字(かんじ),kanji,HURUF KANJI
+902,26,警官,けいかん,警官(けいかん),keikan,POLISI
+903,26,警察,けいさつ,警察(けいさつ),keisatsu,KANTOR POLISI
+904,26,結婚式,けっこんしき,結婚式(けっこんしき),kekkonshiki,UPACARA PERNIKAHAN
+905,26,公園,こうえん,公園(こうえん),kouen,TAMAN
+906,26,合格します,ごうかくします,合格します(ごうかくします),goukakushimasu,LULUS
+907,26,高校,こうこう,高校(こうこう),koukou,SMA
+908,26,交差点,こうさてん,交差点(こうさてん),kousaten,PERSIMPANGAN / PEREMPATAN
+909,26,子供,こども,子供(こども),kodomo,ANAK
+910,26,試験,しけん,試験(しけん),shiken,UJIAN
+911,26,自分,じぶん,自分(じぶん),jibun,DIRI SENDIRI
+912,26,将来,しょうらい,将来(しょうらい),shourai,MASA DEPAN
+913,26,ぜひ,ぜひ,ぜひ,zehi,TENTU / PASTI
+914,27,専門学校,せんもんがっこう,専門学校(せんもんがっこう),senmongakkou,SEKOLAH KEJURUAN
+915,27,卒業します,そつぎょうします,卒業します(そつぎょうします),sotsugyoushimasu,TAMAT / LULUS SEKOLAH
+916,27,大変,たいへん,大変(たいへん),taihen,BERAT / SULIT
+917,27,建てます,たてます,建てます(たてます),tatemasu,MENDIRIKAN
+918,27,貯金します,ちょきんします,貯金します(ちょきんします),chokinshimasu,MENABUNG
+919,27,冷たい,つめたい,冷たい(つめたい),tsumetai,DINGIN (BENDA)
+920,27,泊まります,とまります,泊まります(とまります),tomarimasu,MENGINAP
+921,27,喉が渇きます,のどがかわきます,喉が渇きます(のどがかわきます),nodogakawakimasu,HAUS
+922,27,登ります,のぼります,登ります(のぼります),noborimasu,MENDAKI / MEMANJAT
+923,27,部屋,へや,部屋(へや),heya,KAMAR
+924,27,僕,ぼく,僕(ぼく),boku,SAYA / AKU (LAKI-LAKI)
+925,27,又,また,又(また),mata,LAGI
+926,27,店,みせ,店(みせ),mise,TOKO
+927,27,焼きます,やきます,焼きます(やきます),yakimasu,MEMBAKAR
+928,27,夢,ゆめ,夢(ゆめ),yume,IMPIAN / CITA-CITA
+929,27,渡ります,わたります,渡ります(わたります),watarimasu,MENYEBERANG
+930,27,暖かい,あたたかい,暖かい(あたたかい),atatakai,HANGAT
+931,27,映画館,えいがかん,映画館(えいがかん),eigakan,BIOSKOP
+932,27,送ります,おくります,送ります(おくります),okurimasu,MENGANTAR
+933,27,落ちます,おちます,落ちます(おちます),ochimasu,JATUH
+934,27,面白い,おもしろい,面白い(おもしろい),omoshiroi,MENARIK
+935,27,降ります,おります,降ります(おります),orimasu,TURUN KENDARAAN
+936,27,傘,かさ,傘(かさ),kasa,PAYUNG
+937,27,看板,かんばん,看板(かんばん),kanban,PAPAN REKLAME
+938,27,切れます,きれます,切れます(きれます),kiremasu,PUTUS
+939,27,喧嘩,けんか,喧嘩(けんか),kenka,BERKELAHI / BERTENGKAR
+940,27,声をかけます,こえをかけます,声をかけます(こえをかけます),koewokakemasu,MENYAPA
+941,27,コマーシャル CM,コマーシャル CM,コマーシャル CM,koma-sharu CM,IKLAN TV
+942,27,転びます,ころびます,転びます(ころびます),korobimasu,TERJATUH
+943,27,授業,じゅぎょう,授業(じゅぎょう),jugyou,PELAJARAN
+944,27,宿題,しゅくだい,宿題(しゅくだい),shukudai,PEKERJAAN RUMAH
+945,27,凄い,すごい,凄い(すごい),sugoi,HEBAT / LUAR BIASA
+946,27,空,そら,空(そら),sora,LANGIT
+947,27,そろそろ,そろそろ,そろそろ,sorosoro,TIDAK LAMA LAGI / SEBENTAR LAGI
+948,27,大切な,たいせつな,大切な(たいせつな),taisetsuna,PENTING / BERHARGA
+949,27,台風,たいふう,台風(たいふう),taifuu,TOPAN
+950,27,倒れます,たおれます,倒れます(たおれます),taoremasu,TUMBANG / ROBOH
+951,27,中止,ちゅうし,中止(ちゅうし),chuushi,PEMBERHENTIAN / PEMBATALAN
+952,27,強い,つよい,強い(つよい),tsuyoi,KUAT / KENCANG
+953,27,天気予報,てんきよほう,天気予報(てんきよほう),tenkiyohou,PRAKIRAAN CUACA
+954,27,電線,でんせん,電線(でんせん),densen,KAWAT LISTRIK
+955,27,図書館,としょかん,図書館(としょかん),toshokan,PERPUSTAKAAN
+956,27,泣きます,なきます,泣きます(なきます),nakimasu,MENANGIS
+957,27,匂い,におい,匂い(におい),nioi,BAU
+958,27,発車します,はっしゃします,発車します(はっしゃします),hasshashimasu,"BERANGKAT (KEBERANGKATAN BIS, MOBIL, KERETA DLL)"
+959,27,半分,はんぶん,半分(はんぶん),hanbun,SEPARUH / SETENGAH
+960,27,服,ふく,服(ふく),fuku,PAKAIAN
+961,27,ぶつかります,ぶつかります,ぶつかります,butsukarimasu,MENABRAK
+962,27,ポール,ポール,ポール,po-ru,TIANG
+963,27,真面目,まじめ,真面目(まじめ),majime,TEKUN / SERIUS / RAJIN
+964,28,不味い,まずい,不味い(まずい),mazui,TIDAK ENAK
+965,28,問題,もんだい,問題(もんだい),mondai,MASALAH
+966,28,約束,やくそく,約束(やくそく),yakusoku,JANJI
+967,28,止みます,やみます,止みます(やみます),yamimasu,BERHENTI (HUJAN)
+968,28,良さそうな,よさそうな,良さそうな(よさそうな),yosasouna,KELIHATANNYA BAIK
+969,28,ラーメン屋,ラーメンや,ラーメン屋(ラーメンや),ra-menya,KEDAI RAMEN
+970,28,(〜が) たのしみです,(〜が) たのしみです,(〜が) たのしみです,(~ga) tanoshimidesu,MENUNGGU ~ DENGAN SENANG HATI
+971,28,〜によると,〜によると,〜によると,~niyoruto,MENURUT ~
+972,28,甘い,あまい,甘い(あまい),amai,MANIS
+973,28,案内します,あんないします,案内します(あんないします),annaishimasu,MEMANDU
+974,28,上野,うえの,上野(うえの),ueno,UENO (NAMA KOTA DI TOKYO)
+975,28,受けます,うけます,受けます(うけます),ukemasu,MENGIKUTI (UJIAN)
+976,28,奥さん,おくさん,奥さん(おくさん),okusan,ISTRI (ORANG LAIN)
+977,28,送って行きます,おくっていきます,送って行きます(おくっていきます),okutteikimasu,PERGI MENGANTAR
+978,28,お祭り,おまつり,お祭り(おまつり),omatsuri,FESTIVAL / PERAYAAN
+979,28,可愛い,かわいい,可愛い(かわいい),kawaii,MANIS / CANTIK
+980,28,危険,きけん,危険(きけん),kiken,BAHAYA
+981,28,クラス会,クラスかい,クラス会(クラスかい),kurasukai,PERTEMUAN KELAS / REUNI
+982,28,現場,げんば,現場(げんば),genba,TEMPAT LAPANGAN KERJA
+983,28,混みます,こみます,混みます(こみます),komimasu,PENUH ORANG
+984,28,残業,ざんぎょう,残業(ざんぎょう),zangyou,LEMBUR
+985,28,事故,じこ,事故(じこ),jiko,KECELAKAAN
+986,28,支社,ししゃ,支社(ししゃ),shisha,KANTOR CABANG
+987,28,空きます,すきます,空きます(すきます),sukimasu,TIDAK PENUH ORANG
+988,28,ちょうど,ちょうど,ちょうど,choudo,PAS
+989,28,釣り,つり,釣り(つり),tsuri,MEMANCING IKAN
+990,28,なかなか,なかなか,なかなか,nakanaka,SUSAH ~
+991,28,並びます,ならびます,並びます(ならびます),narabimasu,ANTRI
+992,28,苦い,にがい,苦い(にがい),nigai,PAHIT
+993,28,ニュース,ニュース,ニュース,nyu-su,BERITA
+994,28,値段,ねだん,値段(ねだん),nedan,HARGA
+995,28,北海道,ほっかいどう,北海道(ほっかいどう),hokkaidou,HOKKAIDO
+996,28,本社,ほんしゃ,本社(ほんしゃ),honsha,KANTOR PUSAT
+997,28,町,まち,町(まち),machi,KOTA
+998,28,野菜,やさい,野菜(やさい),yasai,SAYUR
+999,28,用事,ようじ,用事(ようじ),youji,KEPERLUAN
+1000,28,１３億人,１３おくにん,１３億人(１３おくにん),13okunin,1.300.000.000 ORANG
+1001,28,愛します,あいします,愛します(あいします),aishimasu,MENCINTAI
+1002,28,朝寝坊,あさねぼう,朝寝坊(あさねぼう),asanebou,BANGUN KESIANGAN
+1003,28,犬,いぬ,犬(いぬ),inu,ANJING
+1004,28,嫌な,いやな,嫌な(いやな),iyana,TIDAK MENYENANGKAN
+1005,28,駅員室,えきいんしつ,駅員室(えきいんしつ),ekiinshitsu,RUANGAN PEGAWAI STASIUN
+1006,28,遅れます,おくれます,遅れます(おくれます),okuremasu,TERLAMBAT
+1007,28,起こします,おこします,起こします(おこします),okoshimasu,MEMBANGUNKAN
+1008,28,行います,おこないます,行います(おこないます),okonaimasu,MELAKSANAKAN
+1009,28,改札口,かいさつぐち,改札口(かいさつぐち),kaisatsuguchi,PINTU MASUK / KELUAR PEMERIKSAAN KARCIS
+1010,28,歌手,かしゅ,歌手(かしゅ),kashu,PENYANYI
+1011,28,悲しい,かなしい,悲しい(かなしい),kanashii,SEDIH
+1012,28,噛みます,かみます,噛みます(かみます),kamimasu,MENGGIGIT
+1013,28,季節,きせつ,季節(きせつ),kisetsu,MUSIM
+1014,29,指示,しじ,指示(しじ),shiji,PERINTAH
+1015,29,背中,せなか,背中(せなか),senaka,PUNGGUNG
+1016,29,尊敬,そんけい,尊敬(そんけい),sonkei,KEHORMATAN
+1017,29,捕まえます,つかまえます,捕まえます(つかまえます),tsukamaemasu,MENANGKAP
+1018,29,泥棒,どろぼう,泥棒(どろぼう),dorobou,PENCURI
+1019,29,殴ります,なぐります,殴ります(なぐります),nagurimasu,MEMUKUL (MENINJU)
+1020,29,逃げます,にげます,逃げます(にげます),nigemasu,KABUR / MELARIKAN DIRI
+1021,29,日記,にっき,日記(にっき),nikki,BUKU HARIAN / DIARY
+1022,29,盗まれます,ぬすまれます,盗まれます(ぬすまれます),nusumaremasu,DICURI
+1023,29,ばかり,ばかり,ばかり,bakari,MELULU
+1024,29,拾います,ひろいます,拾います(ひろいます),hiroimasu,MEMUNGUT
+1025,29,踏まれます,ふまれます,踏まれます(ふまれます),fumaremasu,DIINJAK
+1026,29,不良品,ふりょうひん,不良品(ふりょうひん),furyouhin,BARANG CACAT
+1027,29,ペナルティー,ペナルティー,ペナルティー,penaruti-,HUKUMAN
+1028,29,褒めます,ほめます,褒めます(ほめます),homemasu,MEMUJI
+1029,29,目覚し時計,めざましどけい,目覚し時計(めざましどけい),mezamashidokei,JAM BEKER
+1030,29,破れます,やぶれます,破れます(やぶれます),yaburemasu,ROBEK
+1031,29,若い,わかい,若い(わかい),wakai,MUDA
+1032,29,割ります,わります,割ります(わります),warimasu,MEMECAHKAN
+1033,29,安心,あんしん,安心(あんしん),anshin,LEGA
+1034,29,痛い,いたい,痛い(いたい),itai,SAKIT
+1035,29,お客さん,おきゃくさん,お客さん(おきゃくさん),okyakusan,TAMU
+1036,29,お年より,おとしより,お年より(おとしより),otoshiyori,ORANG YANG SUDAH TUA
+1037,29,かわいそう,かわいそう,かわいそう,kawaisou,KASIHAN
+1038,29,嫌います,きらいます,嫌います(きらいます),kiraimasu,MEMBENCI
+1039,29,薬,くすり,薬(くすり),kusuri,OBAT
+1040,29,結果,けっか,結果(けっか),kekka,HASIL
+1041,29,検査,けんさ,検査(けんさ),kensa,PEMERIKSAAN
+1042,29,断ります,ことわります,断ります(ことわります),kotowarimasu,MENOLAK
+1043,29,怖い,こわい,怖い(こわい),kowai,TAKUT / MENAKUTKAN
+1044,29,週末,しゅうまつ,週末(しゅうまつ),shuumatsu,AKHIR MINGGU / AKHIR PEKAN
+1045,29,心配,しんぱい,心配(しんぱい),shinpai,KHAWATIR
+1046,29,進めます,すすめます,進めます(すすめます),susumemasu,MENAWARKAN
+1047,29,絶対,ぜったい,絶対(ぜったい),zettai,PASTI
+1048,29,入院,にゅういん,入院(にゅういん),nyuuin,DIRAWAT DI RUMAH SAKIT / OPNAME
+1049,29,半年,はんとし,半年(はんとし),hantoshi,SETENGAH TAHUN
+1050,29,冷やします,ひやします,冷やします(ひやします),hiyashimasu,MENDINGINKAN
+1051,29,申し込みます,もうしこみます,申し込みます(もうしこみます),moushikomimasu,MENDAFTAR
+1052,29,模擬試験,もぎしけん,模擬試験(もぎしけん),mogishiken,UJIAN PERCOBAAN
+1053,29,戻ります,もどります,戻ります(もどります),modorimasu,KEMBALI
+1054,29,雪,ゆき,雪(ゆき),yuki,SALJU
+1055,29,赤ちゃん,あかちゃん,赤ちゃん(あかちゃん),akachan,BAYI
+1056,29,秋葉原,あきはばら,秋葉原(あきはばら),akihabara,AKIHABARA
+1057,29,いいにおい,いいにおい,いいにおい,iinioi,BAU YANG ENAK
+1058,29,移します,うつします,移します(うつします),utsushimasu,MEMINDAHKAN
+1059,29,叔母,おば,叔母(おば),oba,BIBI (SENDIRI)
+1060,29,乾電池,かんでんち,乾電池(かんでんち),kandenchi,BATERAI
+1061,29,気づきます,きづきます,気づきます(きづきます),kizukimasu,MENYADARI
+1062,29,恋人,こいびと,恋人(こいびと),koibito,PACAR/KEKASIH
+1063,29,こんな,こんな,こんな,konna,SEPERTI INI
+1064,30,じゃま,じゃま,じゃま,jama,MENGGANGGU
+1065,30,受話器,じゅわき,受話器(じゅわき),juwaki,GAGANG TELEPON
+1066,30,小学生,しょうがくせい,小学生(しょうがくせい),shougakusei,ANAK SD
+1067,30,倉庫,そうこ,倉庫(そうこ),souko,GUDANG
+1068,30,そんな,そんな,そんな,sonna,SEPERTI ITU
+1069,30,宅配便,たくはいびん,宅配便(たくはいびん),takuhaibin,JASA PENGIRIMAN BARANG KE RUMAH
+1070,30,チャイム,チャイム,チャイム,chaimu,BEL/LONCENG
+1071,30,チャイムが鳴る,チャイムがなる,チャイムが鳴る(チャイムがなる),chaimuganaru,BEL BERBUNYI
+1072,30,ドレス,ドレス,ドレス,doresu,GAUN
+1073,30,話中,はなしちゅう,話中(はなしちゅう),hanashichuu,TELEPON SEDANG DIPAKAI
+1074,30,干します,ほします,干します(ほします),hoshimasu,MENJEMUR
+1075,30,濡れます,ぬれます,濡れます(ぬれます),nuremasu,BASAH
+1076,30,外れます,はずれます,外れます(はずれます),hazuremasu,LEPAS TIDAK PAS
+1077,30,泣き声,なきごえ,泣き声(なきごえ),nakigoe,SUARA TANGIS
+1078,30,日本製,にほんせい,日本製(にほんせい),nihonsei,BUATAN JEPANG
+1079,30,メモを取ります,メモをとります,メモを取ります(メモをとります),memowotorimasu,MENCATAT
+1080,30,やっぱり/やはり,やっぱり/やはり,やっぱり/やはり,yappari/yahari,MEMANG/TENTU/SEPERTI TELAH SAYA BAYANGKAN
+1081,30,留守,るす,留守(るす),rusu,TIDAK ADA DI RUMAH
+1082,30,連絡します,れんらくします,連絡します(れんらくします),renrakushimasu,MENGHUBUNGI
+1083,30,ロープ,ロープ,ロープ,ro-pu,TAMBANG
+1084,30,１０年ぶり,１０ねんぶり,１０年ぶり(１０ねんぶり),10nenburi,SESUDAH 10 TAHUN
+1085,30,お宅,おたく,お宅(おたく),otaku,RUMAH / KEDIAMAN
+1086,30,経済,けいざい,経済(けいざい),keizai,EKONOMI
+1087,30,専門家,せんもんか,専門家(せんもんか),senmonka,AHLI / SPESIALISASI
+1088,30,勤めます,つとめます,勤めます(つとめます),tsutomemasu,BERTUGAS / BEKERJA
+1089,30,伝言,でんごん,伝言(でんごん),dengon,PESAN (LISAN)
+1090,30,討論会,とうろんかい,討論会(とうろんかい),touronkai,PERTEMUAN / ACARA DISKUSI
+1091,30,日本中,にほんじゅう,日本中(にほんじゅう),nihonjuu,SELURUH JEPANG
+1092,30,まあまあ,まあまあ,まあまあ,maamaa,LUMAYAN
+1093,30,ようこそ,ようこそ,ようこそ,youkoso,SELAMAT DATANG
+1094,30,祝います,いわいます,祝います(いわいます),iwaimasu,MERAYAKANI
+1095,30,おかげ,おかげ,おかげ,okage,BERKAT BANTUAN
+1096,30,驚きます,おどろきます,驚きます(おどろきます),odorokimasu,TERKEJUT
+1097,30,おもちゃ,おもちゃ,おもちゃ,omocha,MAINAN
+1098,30,記念写真,きねんしゃしん,記念写真(きねんしゃしん),kinenshashin,FOTO KENANG-KENANGAN
+1099,30,記念日,きねんび,記念日(きねんび),kinenbi,HARI PERINGATAN
+1100,30,空港,くうこう,空港(くうこう),kuukou,BANDARA
+1101,30,サンタクロース,サンタクロース,サンタクロース,santakuro-su,SANTA CLAUS
+1102,30,字,じ,字(じ),ji,HURUF
+1103,30,辞書,じしょ,辞書(じしょ),jisho,KAMUS
+1104,30,招待します,しょうたいします,招待します(しょうたいします),shoutaishimasu,MENGUNDANG
+1105,30,相談します,そうだんします,相談します(そうだんします),soudanshimasu,BERKONSULTASI
+1106,30,助けます,たすけます,助けます(たすけます),tasukemasu,MENOLONG
+1107,30,チケット,チケット,チケット,chiketto,TIKET
+1108,30,動物園,どうぶつえん,動物園(どうぶつえん),doubutsuen,KEBUN BINATANG
+1109,30,習います,ならいます,習います(ならいます),naraimasu,BELAJAR
+1110,30,人形,にんぎょう,人形(にんぎょう),ningyou,BONEKA
+1111,30,無事/無事に,ぶじ/ぶじに,無事/無事に(ぶじ/ぶじに),buji/bujini,DENGAN SELAMAT
+1112,30,プレゼントします,プレゼントします,プレゼントします,purezentoshimasu,MEMBERIKAN HADIAH
+1113,30,用意します,よういします,用意します(よういします),youishimasu,MEMPERSIAPKAN
+1114,31,形,かたち,形(かたち),katachi,BENTUK

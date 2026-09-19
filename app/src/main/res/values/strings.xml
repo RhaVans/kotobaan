@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KOTOBA</string>
+    <string name="app_author">RhaVans - LPK X JAPAN</string>
+    <string name="app_description">Kotoba Flashcard Japanese Vocabulary App</string>
+
+    <!-- Sections -->
+    <string name="section_kotoba">Kosakata</string>
+    <string name="section_kanji">Kanji</string>
+
+    <!-- Front Modes -->
+    <string name="btn_mode_kanji">Kanji</string>
+    <string name="btn_mode_hiragana">Hiragana</string>
+    <string name="btn_mode_arti">Arti (ID)</string>
+
+    <!-- Navigation & Card Actions -->
+    <string name="action_previous">Sebelumnya</string>
+    <string name="action_flip">Balik</string>
+    <string name="action_next">Berikutnya</string>
+    <string name="action_furigana">Furigana</string>
+    <string name="action_romaji">Romaji</string>
+    <string name="action_filter">Filter Bab</string>
+    <string name="action_filter_kanji">Filter Group Kanji</string>
+    <string name="action_shuffle">Acak Kartu</string>
+    <string name="action_theme">Ganti Tema</string>
+    <string name="action_sound">Suara</string>
+    <string name="card_tap_to_flip">Ketuk kartu untuk melihat arti</string>
+
+    <!-- Dialog Actions & Labels -->
+    <string name="btn_apply_filter">Terapkan Filter</string>
+    <string name="btn_select_all">Pilih Semua</string>
+    <string name="btn_clear_all">Hapus Semua</string>
+    <string name="btn_close">Tutup</string>
+    <string name="title_select_bab">Pilih Bab Belajar</string>
+    <string name="title_select_kanji_group">Pilih Group Kanji</string>
+    <string name="title_library_filter">Pustaka &amp; Filter</string>
+    <string name="label_bab_format">Bab %1$d</string>
+    <string name="label_kanji_group_format">Group %1$s</string>
+    <string name="label_all_babs">Semua Bab</string>
+    <string name="label_bab_summary_format">%1$d Bab Aktif • %2$d Total Kotoba</string>
+    <string name="label_kanji_summary_format">%1$d Group Aktif • %2$d Total Kanji</string>
+    <string name="label_apply_with_count">Terapkan (%1$d Kata)</string>
+    <string name="label_kanji_apply_with_count">Terapkan (%1$d Kanji)</string>
+    <string name="label_bab_card_format">%1$d kata</string>
+    <string name="label_kanji_card_format">%1$d kanji</string>
+    <string name="label_card_counter">%1$d / %2$d</string>
+    <string name="label_deck_progress">Deck Progress</string>
+    <string name="label_romaji_prefix">Romaji: %1$s</string>
+    <string name="msg_empty_selection_guard">Pilih minimal satu Bab untuk belajar.</string>
+    <string name="msg_empty_kanji_guard">Pilih minimal satu Group Kanji untuk belajar.</string>
+    <string name="msg_tts_missing">Suara bahasa Jepang belum terpasang. Buka pengaturan?</string>
+
+    <!-- Ingat / Lupa Active Recall & Pure Recovery -->
+    <string name="action_ingat">Ingat</string>
+    <string name="action_lupa">Lupa</string>
+    <string name="label_recovery_banner">Putaran Pemulihan #%1$d • %2$d kata diulang</string>
+    <string name="msg_cycle_complete">Siklus selesai. Semua kata berhasil diingat.</string>
+
+    <!-- Pustaka Vocabulary Browser -->
+    <string name="title_library">Pustaka</string>
+    <string name="msg_empty_pustaka_title">Tidak ada Kotoba</string>
+    <string name="msg_empty_pustaka_desc">Tidak ada kosakata yang cocok dengan filter aktif.</string>
+    <string name="btn_practice_flashcard_format">Pelajari di Flashcard (%1$d Kata)</string>
+    <string name="btn_practice_kanji_format">Pelajari di Flashcard (%1$d Kanji)</string>
+    <string name="chip_type_adj">Kata Sifat</string>
+    <string name="label_bab_all">Semua Bab</string>
+    <string name="label_group_all">Semua Group</string>
+    <string name="kanji_sub_613">613 Formal</string>
+    <string name="kanji_sub_additional">Tambahan</string>
+</resources>

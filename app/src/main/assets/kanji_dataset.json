@@ -1,0 +1,6132 @@
+[
+  {
+    "id": 1,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "魚",
+    "reading": "さかな",
+    "indonesian": "Ikan",
+    "romaji": "sakana",
+    "section": "KANJI"
+  },
+  {
+    "id": 2,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "肉",
+    "reading": "にく",
+    "indonesian": "Daging",
+    "romaji": "niku",
+    "section": "KANJI"
+  },
+  {
+    "id": 3,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "卵",
+    "reading": "たまご",
+    "indonesian": "Telur",
+    "romaji": "tamago",
+    "section": "KANJI"
+  },
+  {
+    "id": 4,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "水",
+    "reading": "みず",
+    "indonesian": "Air",
+    "romaji": "mizu",
+    "section": "KANJI"
+  },
+  {
+    "id": 5,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "食べます",
+    "reading": "たべます",
+    "indonesian": "Makan",
+    "romaji": "tabemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 6,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "飲みます",
+    "reading": "のみます",
+    "indonesian": "Minum",
+    "romaji": "nomimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 7,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "大きい",
+    "reading": "おおきい",
+    "indonesian": "Besar",
+    "romaji": "ookii",
+    "section": "KANJI"
+  },
+  {
+    "id": 8,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "小さい",
+    "reading": "ちいさい",
+    "indonesian": "Kecil",
+    "romaji": "chiisai",
+    "section": "KANJI"
+  },
+  {
+    "id": 9,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "新しい",
+    "reading": "あたらしい",
+    "indonesian": "Baru",
+    "romaji": "atarashii",
+    "section": "KANJI"
+  },
+  {
+    "id": 10,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "古い",
+    "reading": "ふるい",
+    "indonesian": "Lama, usang",
+    "romaji": "furui",
+    "section": "KANJI"
+  },
+  {
+    "id": 11,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "～時",
+    "reading": "～じ",
+    "indonesian": "~ jam",
+    "romaji": "~ji",
+    "section": "KANJI"
+  },
+  {
+    "id": 12,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "～分",
+    "reading": "～ふん、ぷん、ぶん",
+    "indonesian": "~ menit",
+    "romaji": "~fun, pun, bun",
+    "section": "KANJI"
+  },
+  {
+    "id": 13,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "～半",
+    "reading": "～はん",
+    "indonesian": "~ setengah",
+    "romaji": "~han",
+    "section": "KANJI"
+  },
+  {
+    "id": 14,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "月曜日",
+    "reading": "げつようび",
+    "indonesian": "Senin",
+    "romaji": "getsuyoubi",
+    "section": "KANJI"
+  },
+  {
+    "id": 15,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "火曜日",
+    "reading": "かようび",
+    "indonesian": "Selasa",
+    "romaji": "kayoubi",
+    "section": "KANJI"
+  },
+  {
+    "id": 16,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "水曜日",
+    "reading": "すいようび",
+    "indonesian": "Rabo",
+    "romaji": "suiyoubi",
+    "section": "KANJI"
+  },
+  {
+    "id": 17,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "木曜日",
+    "reading": "もくようび",
+    "indonesian": "Kamis",
+    "romaji": "mokuyoubi",
+    "section": "KANJI"
+  },
+  {
+    "id": 18,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "金曜日",
+    "reading": "きんようび",
+    "indonesian": "Jumat",
+    "romaji": "kinyoubi",
+    "section": "KANJI"
+  },
+  {
+    "id": 19,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "土曜日",
+    "reading": "どようび",
+    "indonesian": "Sabtu",
+    "romaji": "doyoubi",
+    "section": "KANJI"
+  },
+  {
+    "id": 20,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "日曜日",
+    "reading": "にちようび",
+    "indonesian": "Minggu",
+    "romaji": "nichiyoubi",
+    "section": "KANJI"
+  },
+  {
+    "id": 21,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "言います",
+    "reading": "いいます",
+    "indonesian": "Berkata",
+    "romaji": "iimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 22,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "話します",
+    "reading": "はなします",
+    "indonesian": "Berbicara",
+    "romaji": "hanashimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 23,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "読みます",
+    "reading": "よみます",
+    "indonesian": "Membaca",
+    "romaji": "yomimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 24,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "見ます",
+    "reading": "みます",
+    "indonesian": "Melihat",
+    "romaji": "mimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 25,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "聞きます",
+    "reading": "ききます",
+    "indonesian": "Mendengarkan",
+    "romaji": "kikimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 26,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "書きます",
+    "reading": "かきます",
+    "indonesian": "Menulis",
+    "romaji": "kakimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 27,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "一",
+    "reading": "いち",
+    "indonesian": "Satu",
+    "romaji": "ichi",
+    "section": "KANJI"
+  },
+  {
+    "id": 28,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "二",
+    "reading": "に",
+    "indonesian": "Dua",
+    "romaji": "ni",
+    "section": "KANJI"
+  },
+  {
+    "id": 29,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "三",
+    "reading": "さん",
+    "indonesian": "Tiga",
+    "romaji": "san",
+    "section": "KANJI"
+  },
+  {
+    "id": 30,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "四",
+    "reading": "よん、し",
+    "indonesian": "Empat",
+    "romaji": "yon, shi",
+    "section": "KANJI"
+  },
+  {
+    "id": 31,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "五",
+    "reading": "ご",
+    "indonesian": "Lima",
+    "romaji": "go",
+    "section": "KANJI"
+  },
+  {
+    "id": 32,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "六",
+    "reading": "ろく",
+    "indonesian": "Enam",
+    "romaji": "roku",
+    "section": "KANJI"
+  },
+  {
+    "id": 33,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "七",
+    "reading": "なな、しち",
+    "indonesian": "Tujuh",
+    "romaji": "nana, shichi",
+    "section": "KANJI"
+  },
+  {
+    "id": 34,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "八",
+    "reading": "はち",
+    "indonesian": "Delapan",
+    "romaji": "hachi",
+    "section": "KANJI"
+  },
+  {
+    "id": 35,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "九",
+    "reading": "きゅう",
+    "indonesian": "Sembilan",
+    "romaji": "kyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 36,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "十",
+    "reading": "じゅう",
+    "indonesian": "Sepuluh",
+    "romaji": "jiyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 37,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "～年",
+    "reading": "～ねん",
+    "indonesian": "~ tahun",
+    "romaji": "~nen",
+    "section": "KANJI"
+  },
+  {
+    "id": 38,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "～月",
+    "reading": "～がつ",
+    "indonesian": "~ bulan",
+    "romaji": "~gatsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 39,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "～日",
+    "reading": "～にち",
+    "indonesian": "~ tanggal",
+    "romaji": "~nichi",
+    "section": "KANJI"
+  },
+  {
+    "id": 40,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "東",
+    "reading": "ひがし",
+    "indonesian": "Timur",
+    "romaji": "higashi",
+    "section": "KANJI"
+  },
+  {
+    "id": 41,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "西",
+    "reading": "にし",
+    "indonesian": "Barat",
+    "romaji": "nishi",
+    "section": "KANJI"
+  },
+  {
+    "id": 42,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "南",
+    "reading": "みなみ",
+    "indonesian": "Selatan",
+    "romaji": "minami",
+    "section": "KANJI"
+  },
+  {
+    "id": 43,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "北",
+    "reading": "きた",
+    "indonesian": "Utara",
+    "romaji": "kita",
+    "section": "KANJI"
+  },
+  {
+    "id": 44,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "～口",
+    "reading": "～ぐち",
+    "indonesian": "~ pintu",
+    "romaji": "~guchi",
+    "section": "KANJI"
+  },
+  {
+    "id": 45,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "東口",
+    "reading": "ひがしぐち",
+    "indonesian": "Pintu timur",
+    "romaji": "higashiguchi",
+    "section": "KANJI"
+  },
+  {
+    "id": 46,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "西口",
+    "reading": "にしぐち",
+    "indonesian": "Pintu barat",
+    "romaji": "nishiguchi",
+    "section": "KANJI"
+  },
+  {
+    "id": 47,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "南口",
+    "reading": "みなみぐち",
+    "indonesian": "Pintu selatan",
+    "romaji": "minamiguchi",
+    "section": "KANJI"
+  },
+  {
+    "id": 48,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "北口",
+    "reading": "きたぐち",
+    "indonesian": "Pintu utara",
+    "romaji": "kitaguchi",
+    "section": "KANJI"
+  },
+  {
+    "id": 49,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "買います",
+    "reading": "かいます",
+    "indonesian": "Membeli",
+    "romaji": "kaimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 50,
+    "group": 1,
+    "group_label": "01–50",
+    "kanji": "買い物",
+    "reading": "かいもの",
+    "indonesian": "Belanja",
+    "romaji": "kaimono",
+    "section": "KANJI"
+  },
+  {
+    "id": 51,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "お金",
+    "reading": "おかね",
+    "indonesian": "Uang",
+    "romaji": "okane",
+    "section": "KANJI"
+  },
+  {
+    "id": 52,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "～円",
+    "reading": "～えん",
+    "indonesian": "~ yen",
+    "romaji": "~en",
+    "section": "KANJI"
+  },
+  {
+    "id": 53,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "百",
+    "reading": "ひゃく",
+    "indonesian": "100",
+    "romaji": "hyaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 54,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "千",
+    "reading": "せん",
+    "indonesian": "1000",
+    "romaji": "sen",
+    "section": "KANJI"
+  },
+  {
+    "id": 55,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "万",
+    "reading": "まん",
+    "indonesian": "10000",
+    "romaji": "man",
+    "section": "KANJI"
+  },
+  {
+    "id": 56,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "百円",
+    "reading": "ひゃくえん",
+    "indonesian": "100 yen",
+    "romaji": "hyakuen",
+    "section": "KANJI"
+  },
+  {
+    "id": 57,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "千円",
+    "reading": "せんえん",
+    "indonesian": "1000 yen",
+    "romaji": "senen",
+    "section": "KANJI"
+  },
+  {
+    "id": 58,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "一万円",
+    "reading": "いちまんえん",
+    "indonesian": "10000 yen",
+    "romaji": "ichimanen",
+    "section": "KANJI"
+  },
+  {
+    "id": 59,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "行きます",
+    "reading": "いきます",
+    "indonesian": "Pergi",
+    "romaji": "ikimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 60,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "来ます",
+    "reading": "きます",
+    "indonesian": "Datang",
+    "romaji": "kimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 61,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "会います",
+    "reading": "あいます",
+    "indonesian": "Bertemu",
+    "romaji": "aimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 62,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "休みます",
+    "reading": "やすみます",
+    "indonesian": "Libur,istirahat",
+    "romaji": "yasumimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 63,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "日本",
+    "reading": "にほん",
+    "indonesian": "Jepang",
+    "romaji": "nihon",
+    "section": "KANJI"
+  },
+  {
+    "id": 64,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "東京",
+    "reading": "とうきょう",
+    "indonesian": "Tokyo",
+    "romaji": "toukyou",
+    "section": "KANJI"
+  },
+  {
+    "id": 65,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "私",
+    "reading": "わたし",
+    "indonesian": "Saya",
+    "romaji": "watashi",
+    "section": "KANJI"
+  },
+  {
+    "id": 66,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "父",
+    "reading": "ちち",
+    "indonesian": "Ayah",
+    "romaji": "chichi",
+    "section": "KANJI"
+  },
+  {
+    "id": 67,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "母",
+    "reading": "はは",
+    "indonesian": "Ibu",
+    "romaji": "haha",
+    "section": "KANJI"
+  },
+  {
+    "id": 68,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "子供",
+    "reading": "こども",
+    "indonesian": "Anak",
+    "romaji": "kodomo",
+    "section": "KANJI"
+  },
+  {
+    "id": 69,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "男",
+    "reading": "おとこ",
+    "indonesian": "Laki-laki",
+    "romaji": "otoko",
+    "section": "KANJI"
+  },
+  {
+    "id": 70,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "女",
+    "reading": "おんな",
+    "indonesian": "Perempuan",
+    "romaji": "onna",
+    "section": "KANJI"
+  },
+  {
+    "id": 71,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "人",
+    "reading": "ひと",
+    "indonesian": "Orang",
+    "romaji": "hito",
+    "section": "KANJI"
+  },
+  {
+    "id": 72,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "お父さん",
+    "reading": "おとうさん",
+    "indonesian": "Ayah (orang lain)",
+    "romaji": "otousan",
+    "section": "KANJI"
+  },
+  {
+    "id": 73,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "お母さん",
+    "reading": "おかあさん",
+    "indonesian": "Ibu (orang lain)",
+    "romaji": "okaasan",
+    "section": "KANJI"
+  },
+  {
+    "id": 74,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "何人",
+    "reading": "なんにん",
+    "indonesian": "Berapa orang?",
+    "romaji": "nannin",
+    "section": "KANJI"
+  },
+  {
+    "id": 75,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "国",
+    "reading": "くに",
+    "indonesian": "Negara",
+    "romaji": "kuni",
+    "section": "KANJI"
+  },
+  {
+    "id": 76,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "外国",
+    "reading": "がいこく",
+    "indonesian": "Luar negri",
+    "romaji": "gaikoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 77,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "～語",
+    "reading": "～ご",
+    "indonesian": "~ Bahasa",
+    "romaji": "~go",
+    "section": "KANJI"
+  },
+  {
+    "id": 78,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "日本語",
+    "reading": "にほんご",
+    "indonesian": "Bahasa jepang",
+    "romaji": "nihongo",
+    "section": "KANJI"
+  },
+  {
+    "id": 79,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "英語",
+    "reading": "えいご",
+    "indonesian": "Bahasa inggris",
+    "romaji": "eigo",
+    "section": "KANJI"
+  },
+  {
+    "id": 80,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "中国語",
+    "reading": "ちゅうごくご",
+    "indonesian": "Bahasa china",
+    "romaji": "chuugokugo",
+    "section": "KANJI"
+  },
+  {
+    "id": 81,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "～人",
+    "reading": "～じん／～にん",
+    "indonesian": "~ orang",
+    "romaji": "~jin/~nin",
+    "section": "KANJI"
+  },
+  {
+    "id": 82,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "日本人",
+    "reading": "にほんじん",
+    "indonesian": "Orang jepang",
+    "romaji": "nihonjin",
+    "section": "KANJI"
+  },
+  {
+    "id": 83,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "好き",
+    "reading": "すき",
+    "indonesian": "Suka",
+    "romaji": "suki",
+    "section": "KANJI"
+  },
+  {
+    "id": 84,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "本",
+    "reading": "ほん",
+    "indonesian": "Buku",
+    "romaji": "hon",
+    "section": "KANJI"
+  },
+  {
+    "id": 85,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "読書",
+    "reading": "どくしょ",
+    "indonesian": "Bacaan",
+    "romaji": "dokusho",
+    "section": "KANJI"
+  },
+  {
+    "id": 86,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "何",
+    "reading": "なに",
+    "indonesian": "Apa?",
+    "romaji": "nani",
+    "section": "KANJI"
+  },
+  {
+    "id": 87,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "春",
+    "reading": "はる",
+    "indonesian": "Musim semi",
+    "romaji": "haru",
+    "section": "KANJI"
+  },
+  {
+    "id": 88,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "夏",
+    "reading": "なつ",
+    "indonesian": "Musim panas",
+    "romaji": "natsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 89,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "秋",
+    "reading": "あき",
+    "indonesian": "Musim gugur",
+    "romaji": "aki",
+    "section": "KANJI"
+  },
+  {
+    "id": 90,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "冬",
+    "reading": "ふゆ",
+    "indonesian": "Musim dingin",
+    "romaji": "fuyu",
+    "section": "KANJI"
+  },
+  {
+    "id": 91,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "今",
+    "reading": "いま",
+    "indonesian": "Sekarang",
+    "romaji": "ima",
+    "section": "KANJI"
+  },
+  {
+    "id": 92,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "花",
+    "reading": "はな",
+    "indonesian": "Bunga",
+    "romaji": "hana",
+    "section": "KANJI"
+  },
+  {
+    "id": 93,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "海",
+    "reading": "うみ",
+    "indonesian": "Laut",
+    "romaji": "umi",
+    "section": "KANJI"
+  },
+  {
+    "id": 94,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "山",
+    "reading": "やま",
+    "indonesian": "Gunung",
+    "romaji": "yama",
+    "section": "KANJI"
+  },
+  {
+    "id": 95,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "川",
+    "reading": "かわ",
+    "indonesian": "Sungai",
+    "romaji": "kawa",
+    "section": "KANJI"
+  },
+  {
+    "id": 96,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "今日",
+    "reading": "きょう",
+    "indonesian": "Hari ini",
+    "romaji": "kyou",
+    "section": "KANJI"
+  },
+  {
+    "id": 97,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "天気",
+    "reading": "てんき",
+    "indonesian": "Cuaca",
+    "romaji": "tenki",
+    "section": "KANJI"
+  },
+  {
+    "id": 98,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "晴れ",
+    "reading": "はれ",
+    "indonesian": "Cerah",
+    "romaji": "hare",
+    "section": "KANJI"
+  },
+  {
+    "id": 99,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "雨",
+    "reading": "あめ",
+    "indonesian": "Hujan",
+    "romaji": "ame",
+    "section": "KANJI"
+  },
+  {
+    "id": 100,
+    "group": 2,
+    "group_label": "51–100",
+    "kanji": "雪",
+    "reading": "ゆき",
+    "indonesian": "Salju",
+    "romaji": "yuki",
+    "section": "KANJI"
+  },
+  {
+    "id": 101,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "雲",
+    "reading": "くも",
+    "indonesian": "Mendung",
+    "romaji": "kumo",
+    "section": "KANJI"
+  },
+  {
+    "id": 102,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "風",
+    "reading": "かぜ",
+    "indonesian": "Angin",
+    "romaji": "kaze",
+    "section": "KANJI"
+  },
+  {
+    "id": 103,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "空",
+    "reading": "そら",
+    "indonesian": "Langit",
+    "romaji": "sora",
+    "section": "KANJI"
+  },
+  {
+    "id": 104,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "町",
+    "reading": "まち",
+    "indonesian": "Kota",
+    "romaji": "machi",
+    "section": "KANJI"
+  },
+  {
+    "id": 105,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "店",
+    "reading": "みせ",
+    "indonesian": "Toko",
+    "romaji": "mise",
+    "section": "KANJI"
+  },
+  {
+    "id": 106,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "人気",
+    "reading": "にんき",
+    "indonesian": "Popularitas, ketenaran",
+    "romaji": "ninki",
+    "section": "KANJI"
+  },
+  {
+    "id": 107,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "多い",
+    "reading": "おおい",
+    "indonesian": "Banyak",
+    "romaji": "ooi",
+    "section": "KANJI"
+  },
+  {
+    "id": 108,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "少ない",
+    "reading": "すくない",
+    "indonesian": "Sedikit",
+    "romaji": "sukunai",
+    "section": "KANJI"
+  },
+  {
+    "id": 109,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "高い",
+    "reading": "たかい",
+    "indonesian": "Mahal",
+    "romaji": "takai",
+    "section": "KANJI"
+  },
+  {
+    "id": 110,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "安い",
+    "reading": "やすい",
+    "indonesian": "Murah",
+    "romaji": "yasui",
+    "section": "KANJI"
+  },
+  {
+    "id": 111,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "広い",
+    "reading": "ひろい",
+    "indonesian": "Luas",
+    "romaji": "hiroi",
+    "section": "KANJI"
+  },
+  {
+    "id": 112,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "道",
+    "reading": "みち",
+    "indonesian": "Jalan",
+    "romaji": "michi",
+    "section": "KANJI"
+  },
+  {
+    "id": 113,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "通り",
+    "reading": "とおり",
+    "indonesian": "Jalan",
+    "romaji": "toori",
+    "section": "KANJI"
+  },
+  {
+    "id": 114,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "右",
+    "reading": "みぎ",
+    "indonesian": "Kanan",
+    "romaji": "migi",
+    "section": "KANJI"
+  },
+  {
+    "id": 115,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "左",
+    "reading": "ひだり",
+    "indonesian": "Kiri",
+    "romaji": "hidari",
+    "section": "KANJI"
+  },
+  {
+    "id": 116,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "一つ",
+    "reading": "ひとつ",
+    "indonesian": "Satu buah",
+    "romaji": "hitotsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 117,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "二つ",
+    "reading": "ふたつ",
+    "indonesian": "Dua buah",
+    "romaji": "futatsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 118,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "赤い",
+    "reading": "あかい",
+    "indonesian": "Merah",
+    "romaji": "akai",
+    "section": "KANJI"
+  },
+  {
+    "id": 119,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "青い",
+    "reading": "あおい",
+    "indonesian": "Biru",
+    "romaji": "aoi",
+    "section": "KANJI"
+  },
+  {
+    "id": 120,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "黒い",
+    "reading": "くろい",
+    "indonesian": "Hitam",
+    "romaji": "kuroi",
+    "section": "KANJI"
+  },
+  {
+    "id": 121,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "白い",
+    "reading": "しろい",
+    "indonesian": "Putih",
+    "romaji": "shiroi",
+    "section": "KANJI"
+  },
+  {
+    "id": 122,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "時間",
+    "reading": "じかん",
+    "indonesian": "Waktu",
+    "romaji": "jikan",
+    "section": "KANJI"
+  },
+  {
+    "id": 123,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "場所",
+    "reading": "ばしょ",
+    "indonesian": "Tempat",
+    "romaji": "basho",
+    "section": "KANJI"
+  },
+  {
+    "id": 124,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "駅",
+    "reading": "えき",
+    "indonesian": "Stasiun",
+    "romaji": "eki",
+    "section": "KANJI"
+  },
+  {
+    "id": 125,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "日",
+    "reading": "ひ",
+    "indonesian": "Matahari",
+    "romaji": "hi",
+    "section": "KANJI"
+  },
+  {
+    "id": 126,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "出かけます",
+    "reading": "でかけます",
+    "indonesian": "Meninggalkan rumah",
+    "romaji": "dekakemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 127,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "待ちます",
+    "reading": "まちます",
+    "indonesian": "Menunggu",
+    "romaji": "machimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 128,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "止まります",
+    "reading": "とまります",
+    "indonesian": "Berhenti",
+    "romaji": "tomarimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 129,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "食事",
+    "reading": "しょくじ",
+    "indonesian": "Makan bersama",
+    "romaji": "shokuji",
+    "section": "KANJI"
+  },
+  {
+    "id": 130,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "仕事",
+    "reading": "しごと",
+    "indonesian": "Pekerjaan",
+    "romaji": "shigoto",
+    "section": "KANJI"
+  },
+  {
+    "id": 131,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "前",
+    "reading": "まえ",
+    "indonesian": "Sebelum",
+    "romaji": "mae",
+    "section": "KANJI"
+  },
+  {
+    "id": 132,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "後",
+    "reading": "あと",
+    "indonesian": "Setelah",
+    "romaji": "ato",
+    "section": "KANJI"
+  },
+  {
+    "id": 133,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "朝",
+    "reading": "あさ",
+    "indonesian": "Pagi",
+    "romaji": "asa",
+    "section": "KANJI"
+  },
+  {
+    "id": 134,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "昼",
+    "reading": "ひる",
+    "indonesian": "Siang",
+    "romaji": "hiru",
+    "section": "KANJI"
+  },
+  {
+    "id": 135,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "夜",
+    "reading": "よる",
+    "indonesian": "Malam",
+    "romaji": "yoru",
+    "section": "KANJI"
+  },
+  {
+    "id": 136,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "乗ります",
+    "reading": "のります",
+    "indonesian": "Naik",
+    "romaji": "norimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 137,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "学校",
+    "reading": "がっこう",
+    "indonesian": "Sekolahan",
+    "romaji": "gakkou",
+    "section": "KANJI"
+  },
+  {
+    "id": 138,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "小学校",
+    "reading": "しょうがっこう",
+    "indonesian": "SD",
+    "romaji": "shougakkou",
+    "section": "KANJI"
+  },
+  {
+    "id": 139,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "中学校",
+    "reading": "ちゅうがっこう",
+    "indonesian": "SMP",
+    "romaji": "chuugakkou",
+    "section": "KANJI"
+  },
+  {
+    "id": 140,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "高校",
+    "reading": "こうこう",
+    "indonesian": "SMA",
+    "romaji": "koukou",
+    "section": "KANJI"
+  },
+  {
+    "id": 141,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "大学",
+    "reading": "だいがく",
+    "indonesian": "Universitas",
+    "romaji": "daigaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 142,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "先生",
+    "reading": "せんせい",
+    "indonesian": "Guru",
+    "romaji": "sensei",
+    "section": "KANJI"
+  },
+  {
+    "id": 143,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "学生",
+    "reading": "がくせい",
+    "indonesian": "Murid, siswa",
+    "romaji": "gakusei",
+    "section": "KANJI"
+  },
+  {
+    "id": 144,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "～年生",
+    "reading": "～ねんせい",
+    "indonesian": "Kelas ~",
+    "romaji": "~nensei",
+    "section": "KANJI"
+  },
+  {
+    "id": 145,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "勉強",
+    "reading": "べんきょう",
+    "indonesian": "Pelajaran",
+    "romaji": "benkyou",
+    "section": "KANJI"
+  },
+  {
+    "id": 146,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "文化",
+    "reading": "ぶんか",
+    "indonesian": "Kebudayaan",
+    "romaji": "bunka",
+    "section": "KANJI"
+  },
+  {
+    "id": 147,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "音楽",
+    "reading": "おんがく",
+    "indonesian": "Musik",
+    "romaji": "ongaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 148,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "旅行",
+    "reading": "りょこう",
+    "indonesian": "Wisata",
+    "romaji": "ryokou",
+    "section": "KANJI"
+  },
+  {
+    "id": 149,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "留学",
+    "reading": "りゅうがく",
+    "indonesian": "Belajar di luar negri",
+    "romaji": "ryuugaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 150,
+    "group": 3,
+    "group_label": "101–150",
+    "kanji": "友達",
+    "reading": "ともだち",
+    "indonesian": "Teman",
+    "romaji": "tomodachi",
+    "section": "KANJI"
+  },
+  {
+    "id": 151,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "楽しい",
+    "reading": "たのしい",
+    "indonesian": "Gembira",
+    "romaji": "tanoshii",
+    "section": "KANJI"
+  },
+  {
+    "id": 152,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "週",
+    "reading": "しゅう",
+    "indonesian": "Minggu",
+    "romaji": "shuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 153,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "～回",
+    "reading": "～かい",
+    "indonesian": "~kali",
+    "romaji": "~kai",
+    "section": "KANJI"
+  },
+  {
+    "id": 154,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "食べ物",
+    "reading": "たべもの",
+    "indonesian": "Makanan",
+    "romaji": "tabemono",
+    "section": "KANJI"
+  },
+  {
+    "id": 155,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "飲物",
+    "reading": "のみもの",
+    "indonesian": "Minuman",
+    "romaji": "nomimono",
+    "section": "KANJI"
+  },
+  {
+    "id": 156,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "お茶",
+    "reading": "おちゃ",
+    "indonesian": "Teh hijau",
+    "romaji": "ocha",
+    "section": "KANJI"
+  },
+  {
+    "id": 157,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "お酒",
+    "reading": "おさけ",
+    "indonesian": "Sake",
+    "romaji": "osake",
+    "section": "KANJI"
+  },
+  {
+    "id": 158,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "作ります",
+    "reading": "つくります",
+    "indonesian": "Membuat",
+    "romaji": "tsukurimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 159,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "持っていきます",
+    "reading": "もっていきます",
+    "indonesian": "Membawa pergi",
+    "romaji": "motteikimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 160,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "お願いします",
+    "reading": "おねがいします",
+    "indonesian": "Tolong",
+    "romaji": "onegaishimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 161,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "料理",
+    "reading": "りょうり",
+    "indonesian": "Masakan",
+    "romaji": "ryouri",
+    "section": "KANJI"
+  },
+  {
+    "id": 162,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "味",
+    "reading": "あじ",
+    "indonesian": "Rasa",
+    "romaji": "aji",
+    "section": "KANJI"
+  },
+  {
+    "id": 163,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "色",
+    "reading": "いろ",
+    "indonesian": "Warna",
+    "romaji": "iro",
+    "section": "KANJI"
+  },
+  {
+    "id": 164,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "野菜",
+    "reading": "やさい",
+    "indonesian": "Sayuran",
+    "romaji": "yasai",
+    "section": "KANJI"
+  },
+  {
+    "id": 165,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "少し",
+    "reading": "すこし",
+    "indonesian": "Sedikit",
+    "romaji": "sukoshi",
+    "section": "KANJI"
+  },
+  {
+    "id": 166,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "中",
+    "reading": "なか",
+    "indonesian": "Dalam",
+    "romaji": "naka",
+    "section": "KANJI"
+  },
+  {
+    "id": 167,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "入っています",
+    "reading": "はいっています",
+    "indonesian": "Masuk",
+    "romaji": "haitteimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 168,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "会社",
+    "reading": "かいしゃ",
+    "indonesian": "Perusahaan",
+    "romaji": "kaisha",
+    "section": "KANJI"
+  },
+  {
+    "id": 169,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "本社",
+    "reading": "ほんしゃ",
+    "indonesian": "Kantor pusat",
+    "romaji": "honsha",
+    "section": "KANJI"
+  },
+  {
+    "id": 170,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "支社",
+    "reading": "ししゃ",
+    "indonesian": "Kantor cabang",
+    "romaji": "shisha",
+    "section": "KANJI"
+  },
+  {
+    "id": 171,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "出張",
+    "reading": "しゅっちょう",
+    "indonesian": "Dinas luar kota",
+    "romaji": "shucchou",
+    "section": "KANJI"
+  },
+  {
+    "id": 172,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "空港",
+    "reading": "くうこう",
+    "indonesian": "Bandara",
+    "romaji": "kuukou",
+    "section": "KANJI"
+  },
+  {
+    "id": 173,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "出発",
+    "reading": "しゅっぱつ",
+    "indonesian": "Keberangkatan",
+    "romaji": "shuppatsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 174,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "到着",
+    "reading": "とうちゃく",
+    "indonesian": "Kedatangan",
+    "romaji": "touchaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 175,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "午前",
+    "reading": "ごぜん",
+    "indonesian": "Pagi (sebelum jam 12 siang)",
+    "romaji": "gozen",
+    "section": "KANJI"
+  },
+  {
+    "id": 176,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "午後",
+    "reading": "ごご",
+    "indonesian": "Sore / malam (setelah jam 12 siang)",
+    "romaji": "gogo",
+    "section": "KANJI"
+  },
+  {
+    "id": 177,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "自分",
+    "reading": "じぶん",
+    "indonesian": "Sendiri",
+    "romaji": "jibun",
+    "section": "KANJI"
+  },
+  {
+    "id": 178,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "電話",
+    "reading": "でんわ",
+    "indonesian": "Telepon",
+    "romaji": "denwa",
+    "section": "KANJI"
+  },
+  {
+    "id": 179,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "電気",
+    "reading": "でんき",
+    "indonesian": "Listrik",
+    "romaji": "denki",
+    "section": "KANJI"
+  },
+  {
+    "id": 180,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "電車",
+    "reading": "でんしゃ",
+    "indonesian": "Kereta",
+    "romaji": "densha",
+    "section": "KANJI"
+  },
+  {
+    "id": 181,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "車",
+    "reading": "くるま",
+    "indonesian": "Mobil",
+    "romaji": "kuruma",
+    "section": "KANJI"
+  },
+  {
+    "id": 182,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "送ります",
+    "reading": "おくります",
+    "indonesian": "Mengirim",
+    "romaji": "okurimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 183,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "使います",
+    "reading": "つかいます",
+    "indonesian": "Menggunakan",
+    "romaji": "tsukaimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 184,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "借ります",
+    "reading": "かります",
+    "indonesian": "Meminjam",
+    "romaji": "karimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 185,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "体",
+    "reading": "からだ",
+    "indonesian": "Badan",
+    "romaji": "karada",
+    "section": "KANJI"
+  },
+  {
+    "id": 186,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "頭",
+    "reading": "あたま",
+    "indonesian": "Kepala",
+    "romaji": "atama",
+    "section": "KANJI"
+  },
+  {
+    "id": 187,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "目",
+    "reading": "め",
+    "indonesian": "Mata",
+    "romaji": "me",
+    "section": "KANJI"
+  },
+  {
+    "id": 188,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "口",
+    "reading": "くち",
+    "indonesian": "Mulut",
+    "romaji": "kuchi",
+    "section": "KANJI"
+  },
+  {
+    "id": 189,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "耳",
+    "reading": "みみ",
+    "indonesian": "Telinga",
+    "romaji": "mimi",
+    "section": "KANJI"
+  },
+  {
+    "id": 190,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "手",
+    "reading": "て",
+    "indonesian": "Tangan",
+    "romaji": "te",
+    "section": "KANJI"
+  },
+  {
+    "id": 191,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "足",
+    "reading": "あし",
+    "indonesian": "Kaki",
+    "romaji": "ashi",
+    "section": "KANJI"
+  },
+  {
+    "id": 192,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "上",
+    "reading": "うえ",
+    "indonesian": "Atas",
+    "romaji": "ue",
+    "section": "KANJI"
+  },
+  {
+    "id": 193,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "下",
+    "reading": "した",
+    "indonesian": "Bawah",
+    "romaji": "shita",
+    "section": "KANJI"
+  },
+  {
+    "id": 194,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "毎～",
+    "reading": "まい～",
+    "indonesian": "~ setiap",
+    "romaji": "mai~",
+    "section": "KANJI"
+  },
+  {
+    "id": 195,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "毎朝",
+    "reading": "まいあさ",
+    "indonesian": "setiap pagi",
+    "romaji": "maiasa",
+    "section": "KANJI"
+  },
+  {
+    "id": 196,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "毎日",
+    "reading": "まいにち",
+    "indonesian": "Setiap hari",
+    "romaji": "mainichi",
+    "section": "KANJI"
+  },
+  {
+    "id": 197,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "週末",
+    "reading": "しゅうまつ",
+    "indonesian": "Akhir pekan",
+    "romaji": "shuumatsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 198,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "元気",
+    "reading": "げんき",
+    "indonesian": "Sehat",
+    "romaji": "genki",
+    "section": "KANJI"
+  },
+  {
+    "id": 199,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "外",
+    "reading": "そと",
+    "indonesian": "Luar",
+    "romaji": "soto",
+    "section": "KANJI"
+  },
+  {
+    "id": 200,
+    "group": 4,
+    "group_label": "151–200",
+    "kanji": "起きます",
+    "reading": "おきます",
+    "indonesian": "Bangun tidur",
+    "romaji": "okimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 201,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "歩きます",
+    "reading": "あるきます",
+    "indonesian": "Berjalan",
+    "romaji": "arukimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 202,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "走ります",
+    "reading": "はしります",
+    "indonesian": "Berlari",
+    "romaji": "hashirimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 203,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "泳ぎます",
+    "reading": "およぎます",
+    "indonesian": "Berenang",
+    "romaji": "oyogimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 204,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "お祝い",
+    "reading": "おいわい",
+    "indonesian": "Perayaan",
+    "romaji": "oiwai",
+    "section": "KANJI"
+  },
+  {
+    "id": 205,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "誕生日",
+    "reading": "たんじょうび",
+    "indonesian": "Ulang tahun",
+    "romaji": "tanjoubi",
+    "section": "KANJI"
+  },
+  {
+    "id": 206,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "結婚",
+    "reading": "けっこん",
+    "indonesian": "Pernikahan",
+    "romaji": "kekkon",
+    "section": "KANJI"
+  },
+  {
+    "id": 207,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "絵",
+    "reading": "え",
+    "indonesian": "Gambar, lukisan",
+    "romaji": "e",
+    "section": "KANJI"
+  },
+  {
+    "id": 208,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "写真",
+    "reading": "しゃしん",
+    "indonesian": "Foto",
+    "romaji": "shashin",
+    "section": "KANJI"
+  },
+  {
+    "id": 209,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "時計",
+    "reading": "とけい",
+    "indonesian": "Jam",
+    "romaji": "tokei",
+    "section": "KANJI"
+  },
+  {
+    "id": 210,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "着ます",
+    "reading": "きます",
+    "indonesian": "Memakai pakaian",
+    "romaji": "kimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 211,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "先～",
+    "reading": "せん～",
+    "indonesian": "~lalu",
+    "romaji": "sen~",
+    "section": "KANJI"
+  },
+  {
+    "id": 212,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "先週",
+    "reading": "せんしゅう",
+    "indonesian": "Minggu lalu",
+    "romaji": "senshuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 213,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "今月",
+    "reading": "こんげつ",
+    "indonesian": "Bulan ini",
+    "romaji": "kongetsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 214,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "来年",
+    "reading": "らいねん",
+    "indonesian": "Tahun depan",
+    "romaji": "rainen",
+    "section": "KANJI"
+  },
+  {
+    "id": 215,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "今年",
+    "reading": "ことし",
+    "indonesian": "Tahun ini",
+    "romaji": "kotoshi",
+    "section": "KANJI"
+  },
+  {
+    "id": 216,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "去年",
+    "reading": "きょねん",
+    "indonesian": "Tahun lalu",
+    "romaji": "kyonen",
+    "section": "KANJI"
+  },
+  {
+    "id": 217,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "家",
+    "reading": "いえ",
+    "indonesian": "Rumah",
+    "romaji": "ie",
+    "section": "KANJI"
+  },
+  {
+    "id": 218,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "思います",
+    "reading": "おもいます",
+    "indonesian": "Mengira",
+    "romaji": "omoimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 219,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "自己紹介",
+    "reading": "じこしょうかい",
+    "indonesian": "Perkenalan",
+    "romaji": "jikoshoukai",
+    "section": "KANJI"
+  },
+  {
+    "id": 220,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "名前",
+    "reading": "なまえ",
+    "indonesian": "Nama",
+    "romaji": "namae",
+    "section": "KANJI"
+  },
+  {
+    "id": 221,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "意味",
+    "reading": "いみ",
+    "indonesian": "Arti",
+    "romaji": "imi",
+    "section": "KANJI"
+  },
+  {
+    "id": 222,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "本屋",
+    "reading": "ほんや",
+    "indonesian": "Toko buku",
+    "romaji": "honya",
+    "section": "KANJI"
+  },
+  {
+    "id": 223,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "近く",
+    "reading": "ちかく",
+    "indonesian": "Dekat",
+    "romaji": "chikaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 224,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "住みます",
+    "reading": "すみます",
+    "indonesian": "Tinggal",
+    "romaji": "sumimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 225,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "働きます",
+    "reading": "はたらきます",
+    "indonesian": "Bekerja",
+    "romaji": "hatarakimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 226,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "～番目",
+    "reading": "～ばんめ",
+    "indonesian": "Urutan yang ~",
+    "romaji": "~banme",
+    "section": "KANJI"
+  },
+  {
+    "id": 227,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "兄",
+    "reading": "あに",
+    "indonesian": "Kakak laki2 (sendiri)",
+    "romaji": "ani",
+    "section": "KANJI"
+  },
+  {
+    "id": 228,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "兄いさん",
+    "reading": "おにいさん",
+    "indonesian": "Kakak laki2 (orang lain)",
+    "romaji": "oniisan",
+    "section": "KANJI"
+  },
+  {
+    "id": 229,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "姉",
+    "reading": "あね",
+    "indonesian": "Kakak perempuan (sendiri)",
+    "romaji": "ane",
+    "section": "KANJI"
+  },
+  {
+    "id": 230,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "お姉さん",
+    "reading": "おねえさん",
+    "indonesian": "Kakak perempuan (orang lain)",
+    "romaji": "oneesan",
+    "section": "KANJI"
+  },
+  {
+    "id": 231,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "弟",
+    "reading": "おとうと",
+    "indonesian": "Adik laki2 (sendiri)",
+    "romaji": "otouto",
+    "section": "KANJI"
+  },
+  {
+    "id": 232,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "妹",
+    "reading": "いもうと",
+    "indonesian": "Adik perempuan (sendiri)",
+    "romaji": "imouto",
+    "section": "KANJI"
+  },
+  {
+    "id": 233,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "家族",
+    "reading": "かぞく",
+    "indonesian": "Keluarga",
+    "romaji": "kazoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 234,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "長い",
+    "reading": "ながい",
+    "indonesian": "Panjang",
+    "romaji": "nagai",
+    "section": "KANJI"
+  },
+  {
+    "id": 235,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "短い",
+    "reading": "みじかい",
+    "indonesian": "Pendek",
+    "romaji": "mijikai",
+    "section": "KANJI"
+  },
+  {
+    "id": 236,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "低い",
+    "reading": "ひくい",
+    "indonesian": "Rendah",
+    "romaji": "hikui",
+    "section": "KANJI"
+  },
+  {
+    "id": 237,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "上手",
+    "reading": "じょうず",
+    "indonesian": "Pandai",
+    "romaji": "jouzu",
+    "section": "KANJI"
+  },
+  {
+    "id": 238,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "歌",
+    "reading": "うた",
+    "indonesian": "Lagu",
+    "romaji": "uta",
+    "section": "KANJI"
+  },
+  {
+    "id": 239,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "歌います",
+    "reading": "うたいます",
+    "indonesian": "Menyanyi",
+    "romaji": "utaimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 240,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "客",
+    "reading": "きゃく",
+    "indonesian": "Tamu",
+    "romaji": "kyaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 241,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "注文",
+    "reading": "ちゅうもん",
+    "indonesian": "Pesanan",
+    "romaji": "chuumon",
+    "section": "KANJI"
+  },
+  {
+    "id": 242,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "洋食",
+    "reading": "ようしょく",
+    "indonesian": "Makanan barat",
+    "romaji": "youshoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 243,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "和食",
+    "reading": "わしょく",
+    "indonesian": "Makanan jepang",
+    "romaji": "washoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 244,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "牛肉",
+    "reading": "ぎゅうにく",
+    "indonesian": "Daging sapi",
+    "romaji": "gyuuniku",
+    "section": "KANJI"
+  },
+  {
+    "id": 245,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "地方",
+    "reading": "ちほう",
+    "indonesian": "Daerah, wilayah",
+    "romaji": "chihou",
+    "section": "KANJI"
+  },
+  {
+    "id": 246,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "有名",
+    "reading": "ゆうめい",
+    "indonesian": "Terkenal",
+    "romaji": "yuumei",
+    "section": "KANJI"
+  },
+  {
+    "id": 247,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "生",
+    "reading": "なま",
+    "indonesian": "Mentah",
+    "romaji": "nama",
+    "section": "KANJI"
+  },
+  {
+    "id": 248,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "冷たい",
+    "reading": "つめたい",
+    "indonesian": "Dingin (benda)",
+    "romaji": "tsumetai",
+    "section": "KANJI"
+  },
+  {
+    "id": 249,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "ご飯",
+    "reading": "ごはん",
+    "indonesian": "Nasi",
+    "romaji": "gohan",
+    "section": "KANJI"
+  },
+  {
+    "id": 250,
+    "group": 5,
+    "group_label": "201–250",
+    "kanji": "塩",
+    "reading": "しお",
+    "indonesian": "Garam",
+    "romaji": "shio",
+    "section": "KANJI"
+  },
+  {
+    "id": 251,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "全部",
+    "reading": "ぜんぶ",
+    "indonesian": "Semua",
+    "romaji": "zenbu",
+    "section": "KANJI"
+  },
+  {
+    "id": 252,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "～方",
+    "reading": "～かた",
+    "indonesian": "Cara~",
+    "romaji": "~kata",
+    "section": "KANJI"
+  },
+  {
+    "id": 253,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "食べ方",
+    "reading": "たべかた",
+    "indonesian": "Cara makan",
+    "romaji": "tabekata",
+    "section": "KANJI"
+  },
+  {
+    "id": 254,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "熱い",
+    "reading": "あつい",
+    "indonesian": "Panas",
+    "romaji": "atsui",
+    "section": "KANJI"
+  },
+  {
+    "id": 255,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "苦手",
+    "reading": "にがて",
+    "indonesian": "Susah, berat, tidak begitu suka",
+    "romaji": "nigate",
+    "section": "KANJI"
+  },
+  {
+    "id": 256,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "入れます",
+    "reading": "いれます",
+    "indonesian": "Memasukkan",
+    "romaji": "iremasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 257,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "木",
+    "reading": "き",
+    "indonesian": "Pohon",
+    "romaji": "ki",
+    "section": "KANJI"
+  },
+  {
+    "id": 258,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "森",
+    "reading": "もり",
+    "indonesian": "Hutan",
+    "romaji": "mori",
+    "section": "KANJI"
+  },
+  {
+    "id": 259,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "島",
+    "reading": "しま",
+    "indonesian": "Pulau",
+    "romaji": "shima",
+    "section": "KANJI"
+  },
+  {
+    "id": 260,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "自然",
+    "reading": "しぜん",
+    "indonesian": "Alam",
+    "romaji": "shizen",
+    "section": "KANJI"
+  },
+  {
+    "id": 261,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "船",
+    "reading": "ふね",
+    "indonesian": "Kapal",
+    "romaji": "fune",
+    "section": "KANJI"
+  },
+  {
+    "id": 262,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "暑い",
+    "reading": "あつい",
+    "indonesian": "Panas",
+    "romaji": "atsui",
+    "section": "KANJI"
+  },
+  {
+    "id": 263,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "帰ります",
+    "reading": "かえります",
+    "indonesian": "Pulang",
+    "romaji": "kaerimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 264,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "予約します",
+    "reading": "よやくします",
+    "indonesian": "Memesan",
+    "romaji": "yoyakushimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 265,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "運転します",
+    "reading": "うんてんします",
+    "indonesian": "Menyetir",
+    "romaji": "untenshimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 266,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "～中",
+    "reading": "～ちゅう／～じゅう",
+    "indonesian": "Sedang/dalam ~",
+    "romaji": "~chuu/~jiyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 267,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "旅行中",
+    "reading": "りょこうちゅう",
+    "indonesian": "Sedang wisata",
+    "romaji": "ryokouchuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 268,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "観光地",
+    "reading": "かんこうち",
+    "indonesian": "Tempat wisata",
+    "romaji": "kankouchi",
+    "section": "KANJI"
+  },
+  {
+    "id": 269,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "女性",
+    "reading": "じょせい",
+    "indonesian": "Wanita",
+    "romaji": "josei",
+    "section": "KANJI"
+  },
+  {
+    "id": 270,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "男性",
+    "reading": "だんせい",
+    "indonesian": "Pria",
+    "romaji": "dansei",
+    "section": "KANJI"
+  },
+  {
+    "id": 271,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "動物",
+    "reading": "どうぶつ",
+    "indonesian": "Hewan",
+    "romaji": "doubutsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 272,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "空気",
+    "reading": "くうき",
+    "indonesian": "Udara",
+    "romaji": "kuuki",
+    "section": "KANJI"
+  },
+  {
+    "id": 273,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "料金",
+    "reading": "りょうきん",
+    "indonesian": "Biaya / tarif",
+    "romaji": "ryoukin",
+    "section": "KANJI"
+  },
+  {
+    "id": 274,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "無料",
+    "reading": "むりょう",
+    "indonesian": "Gratis",
+    "romaji": "muryou",
+    "section": "KANJI"
+  },
+  {
+    "id": 275,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "明るい",
+    "reading": "あかるい",
+    "indonesian": "Terang",
+    "romaji": "akarui",
+    "section": "KANJI"
+  },
+  {
+    "id": 276,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "便利",
+    "reading": "べんり",
+    "indonesian": "Praktis",
+    "romaji": "benri",
+    "section": "KANJI"
+  },
+  {
+    "id": 277,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "一年中",
+    "reading": "いちねんじゅう",
+    "indonesian": "Dalam satu tahun",
+    "romaji": "ichinenjiyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 278,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "受付",
+    "reading": "うけつけ",
+    "indonesian": "Penerima tamu",
+    "romaji": "uketsuke",
+    "section": "KANJI"
+  },
+  {
+    "id": 279,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "広場",
+    "reading": "ひろば",
+    "indonesian": "Lapangan",
+    "romaji": "hiroba",
+    "section": "KANJI"
+  },
+  {
+    "id": 280,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "問題",
+    "reading": "もんだい",
+    "indonesian": "Soal, masalah",
+    "romaji": "mondai",
+    "section": "KANJI"
+  },
+  {
+    "id": 281,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "同じ",
+    "reading": "おなじ",
+    "indonesian": "Sama",
+    "romaji": "onaji",
+    "section": "KANJI"
+  },
+  {
+    "id": 282,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "集まります",
+    "reading": "あつまります",
+    "indonesian": "Berkumpul",
+    "romaji": "atsumarimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 283,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "始まります",
+    "reading": "はじまります",
+    "indonesian": "Mulai",
+    "romaji": "hajimarimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 284,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "終わります",
+    "reading": "おわります",
+    "indonesian": "Selesai",
+    "romaji": "owarimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 285,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "中止します",
+    "reading": "ちゅうししします",
+    "indonesian": "Mengurungkan, membatalkan",
+    "romaji": "chuushishishimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 286,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "教えます",
+    "reading": "おしえます",
+    "indonesian": "Memberitahu",
+    "romaji": "oshiemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 287,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "祭り",
+    "reading": "まつり",
+    "indonesian": "Perayaan",
+    "romaji": "matsuri",
+    "section": "KANJI"
+  },
+  {
+    "id": 288,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "日本祭り",
+    "reading": "にほんまつり",
+    "indonesian": "Perayaan jepang",
+    "romaji": "nihonmatsuri",
+    "section": "KANJI"
+  },
+  {
+    "id": 289,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "会場",
+    "reading": "かいじょう",
+    "indonesian": "Ruang pertemuan",
+    "romaji": "kaijou",
+    "section": "KANJI"
+  },
+  {
+    "id": 290,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "入場料",
+    "reading": "にゅうじょうりょう",
+    "indonesian": "Tarif masuk",
+    "romaji": "nyuujouryou",
+    "section": "KANJI"
+  },
+  {
+    "id": 291,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "参加者",
+    "reading": "さんかしゃ",
+    "indonesian": "Peserta",
+    "romaji": "sankasha",
+    "section": "KANJI"
+  },
+  {
+    "id": 292,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "急ぎます",
+    "reading": "いそぎます",
+    "indonesian": "Buru-buru",
+    "romaji": "isogimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 293,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "決めます",
+    "reading": "きめます",
+    "indonesian": "Menentukan",
+    "romaji": "kimemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 294,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "知ります",
+    "reading": "しります",
+    "indonesian": "Kenal, tahu",
+    "romaji": "shirimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 295,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "正月",
+    "reading": "しょうがつ",
+    "indonesian": "Tahun baru",
+    "romaji": "shougatsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 296,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "年末",
+    "reading": "ねんまつ",
+    "indonesian": "Akhir tahun",
+    "romaji": "nenmatsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 297,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "年始",
+    "reading": "ねんし",
+    "indonesian": "Awal tahun",
+    "romaji": "nenshi",
+    "section": "KANJI"
+  },
+  {
+    "id": 298,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "親",
+    "reading": "おや",
+    "indonesian": "Orang tua",
+    "romaji": "oya",
+    "section": "KANJI"
+  },
+  {
+    "id": 299,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "忙しい",
+    "reading": "いそがしい",
+    "indonesian": "Sibuk",
+    "romaji": "isogashii",
+    "section": "KANJI"
+  },
+  {
+    "id": 300,
+    "group": 6,
+    "group_label": "251–300",
+    "kanji": "特別",
+    "reading": "とくべつ",
+    "indonesian": "Istimewa, special",
+    "romaji": "tokubetsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 301,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "帰国",
+    "reading": "きこく",
+    "indonesian": "Pulang ke negara",
+    "romaji": "kikoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 302,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "喜びます",
+    "reading": "よろこびます",
+    "indonesian": "Merasa senang/gembira",
+    "romaji": "yorokobimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 303,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "幸せ",
+    "reading": "しあわせ",
+    "indonesian": "Bahagia",
+    "romaji": "shiawase",
+    "section": "KANJI"
+  },
+  {
+    "id": 304,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "成長",
+    "reading": "せいちょう",
+    "indonesian": "Pertumbuhan, perkembangan",
+    "romaji": "seichou",
+    "section": "KANJI"
+  },
+  {
+    "id": 305,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "長生き",
+    "reading": "ながいき",
+    "indonesian": "Umur panjang, hidup lama",
+    "romaji": "nagaiki",
+    "section": "KANJI"
+  },
+  {
+    "id": 306,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "願い事",
+    "reading": "ねがいこと",
+    "indonesian": "Keinginan, kemauan, harapan",
+    "romaji": "negaikoto",
+    "section": "KANJI"
+  },
+  {
+    "id": 307,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "合格",
+    "reading": "ごうかく",
+    "indonesian": "Lulus",
+    "romaji": "goukaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 308,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "試験",
+    "reading": "しけん",
+    "indonesian": "Ujian",
+    "romaji": "shiken",
+    "section": "KANJI"
+  },
+  {
+    "id": 309,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "大人",
+    "reading": "おとな",
+    "indonesian": "Orang Dewasa",
+    "romaji": "otona",
+    "section": "KANJI"
+  },
+  {
+    "id": 310,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "～式（成人式）",
+    "reading": "～しき（せいじんしき）",
+    "indonesian": "Upacara ~(upacara kedewasaan)",
+    "romaji": "~shiki(seijinshiki)",
+    "section": "KANJI"
+  },
+  {
+    "id": 311,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "～市（さいたま市）",
+    "reading": "～し（さいたまし）",
+    "indonesian": "Kota~(kota saitama)",
+    "romaji": "~shi(saitamashi)",
+    "section": "KANJI"
+  },
+  {
+    "id": 312,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "商品",
+    "reading": "しょうひん",
+    "indonesian": "Barang dagangan",
+    "romaji": "shouhin",
+    "section": "KANJI"
+  },
+  {
+    "id": 313,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "電気製品",
+    "reading": "でんきせいひん",
+    "indonesian": "Peralatan listrik",
+    "romaji": "denkiseihin",
+    "section": "KANJI"
+  },
+  {
+    "id": 314,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "電子レンジ",
+    "reading": "でんしレンジ",
+    "indonesian": "Oven",
+    "romaji": "denshirenji",
+    "section": "KANJI"
+  },
+  {
+    "id": 315,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "～機（そうじ機）",
+    "reading": "～き（そうじき）",
+    "indonesian": "Mesin~(mesin penghisap debu)",
+    "romaji": "~ki(soujiki)",
+    "section": "KANJI"
+  },
+  {
+    "id": 316,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "店員",
+    "reading": "てんいん",
+    "indonesian": "Penjaga toko",
+    "romaji": "tenin",
+    "section": "KANJI"
+  },
+  {
+    "id": 317,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "調子",
+    "reading": "ちょうし",
+    "indonesian": "Keadaan, kondisi",
+    "romaji": "choushi",
+    "section": "KANJI"
+  },
+  {
+    "id": 318,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "悪い",
+    "reading": "わるい",
+    "indonesian": "Jelek",
+    "romaji": "warui",
+    "section": "KANJI"
+  },
+  {
+    "id": 319,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "動きます",
+    "reading": "うごきます",
+    "indonesian": "Bergerak",
+    "romaji": "ugokimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 320,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "考えます",
+    "reading": "かんがえます",
+    "indonesian": "Berfikir",
+    "romaji": "kangaemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 321,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "音",
+    "reading": "おと",
+    "indonesian": "Suara",
+    "romaji": "oto",
+    "section": "KANJI"
+  },
+  {
+    "id": 322,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "出ます",
+    "reading": "でます",
+    "indonesian": "Keluar",
+    "romaji": "demasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 323,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "機能",
+    "reading": "きのう",
+    "indonesian": "Fungsi",
+    "romaji": "kinou",
+    "section": "KANJI"
+  },
+  {
+    "id": 324,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "省エネ",
+    "reading": "しょうエネ",
+    "indonesian": "Penghematan energy",
+    "romaji": "shouene",
+    "section": "KANJI"
+  },
+  {
+    "id": 325,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "日本製",
+    "reading": "にほんせい",
+    "indonesian": "Produk/buatan jepang",
+    "romaji": "nihonsei",
+    "section": "KANJI"
+  },
+  {
+    "id": 326,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "重い",
+    "reading": "おもい",
+    "indonesian": "Berat",
+    "romaji": "omoi",
+    "section": "KANJI"
+  },
+  {
+    "id": 327,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "軽い",
+    "reading": "かるい",
+    "indonesian": "Ringan",
+    "romaji": "karui",
+    "section": "KANJI"
+  },
+  {
+    "id": 328,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "静か",
+    "reading": "しずか",
+    "indonesian": "Tenang",
+    "romaji": "shizuka",
+    "section": "KANJI"
+  },
+  {
+    "id": 329,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "早く",
+    "reading": "はやく",
+    "indonesian": "Cepat",
+    "romaji": "hayaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 330,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "方（こっちの方）",
+    "reading": "ほう（こっちのほう）",
+    "indonesian": "Arah(arah disini)",
+    "romaji": "hou(kocchinohou)",
+    "section": "KANJI"
+  },
+  {
+    "id": 331,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "洗います",
+    "reading": "あらいます",
+    "indonesian": "Mencuci",
+    "romaji": "araimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 332,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "満足します",
+    "reading": "まんぞくします",
+    "indonesian": "Puas, merasa puas",
+    "romaji": "manzokushimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 333,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "京都",
+    "reading": "きょうと",
+    "indonesian": "Kyoto",
+    "romaji": "kyouto",
+    "section": "KANJI"
+  },
+  {
+    "id": 334,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "神社",
+    "reading": "じんじゃ",
+    "indonesian": "Kuil sinto",
+    "romaji": "jinja",
+    "section": "KANJI"
+  },
+  {
+    "id": 335,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "お寺",
+    "reading": "おてら",
+    "indonesian": "Kuil",
+    "romaji": "otera",
+    "section": "KANJI"
+  },
+  {
+    "id": 336,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "仏教",
+    "reading": "ぶっきょう",
+    "indonesian": "Agama budha",
+    "romaji": "bukkyou",
+    "section": "KANJI"
+  },
+  {
+    "id": 337,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "歴史",
+    "reading": "れきし",
+    "indonesian": "Sejarah",
+    "romaji": "rekishi",
+    "section": "KANJI"
+  },
+  {
+    "id": 338,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "世界",
+    "reading": "せかい",
+    "indonesian": "Dunia",
+    "romaji": "sekai",
+    "section": "KANJI"
+  },
+  {
+    "id": 339,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "中心",
+    "reading": "ちゅうしん",
+    "indonesian": "Pusat",
+    "romaji": "chuushin",
+    "section": "KANJI"
+  },
+  {
+    "id": 340,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "～世紀（８世紀）",
+    "reading": "～せいき（はっせいき）",
+    "indonesian": "Abad~",
+    "romaji": "~seiki(hasseiki)",
+    "section": "KANJI"
+  },
+  {
+    "id": 341,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "～的",
+    "reading": "～てき",
+    "indonesian": "Berbau~ / ke~ an",
+    "romaji": "~teki",
+    "section": "KANJI"
+  },
+  {
+    "id": 342,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "日本的",
+    "reading": "にほんてき",
+    "indonesian": "Berbau jepang",
+    "romaji": "nihonteki",
+    "section": "KANJI"
+  },
+  {
+    "id": 343,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "歴史的",
+    "reading": "れきしてき",
+    "indonesian": "Bersejarah",
+    "romaji": "rekishiteki",
+    "section": "KANJI"
+  },
+  {
+    "id": 344,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "飲食",
+    "reading": "いんしょく",
+    "indonesian": "Makan minum",
+    "romaji": "inshoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 345,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "禁止",
+    "reading": "きんし",
+    "indonesian": "Larangan",
+    "romaji": "kinshi",
+    "section": "KANJI"
+  },
+  {
+    "id": 346,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "説明",
+    "reading": "せつめい",
+    "indonesian": "Penjelasan",
+    "romaji": "setsumei",
+    "section": "KANJI"
+  },
+  {
+    "id": 347,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "道具",
+    "reading": "どうぐ",
+    "indonesian": "Peralatan",
+    "romaji": "dougu",
+    "section": "KANJI"
+  },
+  {
+    "id": 348,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "博物館",
+    "reading": "はくぶつかん",
+    "indonesian": "Museum",
+    "romaji": "hakubutsukan",
+    "section": "KANJI"
+  },
+  {
+    "id": 349,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "必要",
+    "reading": "ひつよう",
+    "indonesian": "Keperluan, kebutuhan",
+    "romaji": "hitsuyou",
+    "section": "KANJI"
+  },
+  {
+    "id": 350,
+    "group": 7,
+    "group_label": "301–350",
+    "kanji": "～階（２階）",
+    "reading": "～かい（にかい）",
+    "indonesian": "Lantai ~ ( lantai 2 )",
+    "romaji": "~kai(nikai)",
+    "section": "KANJI"
+  },
+  {
+    "id": 351,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "油",
+    "reading": "あぶら",
+    "indonesian": "Minyak, oli",
+    "romaji": "abura",
+    "section": "KANJI"
+  },
+  {
+    "id": 352,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "紙",
+    "reading": "かみ",
+    "indonesian": "Kertas",
+    "romaji": "kami",
+    "section": "KANJI"
+  },
+  {
+    "id": 353,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "温度",
+    "reading": "おんど",
+    "indonesian": "Suhu, derajat",
+    "romaji": "ondo",
+    "section": "KANJI"
+  },
+  {
+    "id": 354,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "活動",
+    "reading": "かつどう",
+    "indonesian": "Kegiatan, aktivitas",
+    "romaji": "katsudou",
+    "section": "KANJI"
+  },
+  {
+    "id": 355,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "会議室",
+    "reading": "かいぎしつ",
+    "indonesian": "Ruang rapat",
+    "romaji": "kaigishitsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 356,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "寒い",
+    "reading": "さむい",
+    "indonesian": "Dingin ( suhu )",
+    "romaji": "samui",
+    "section": "KANJI"
+  },
+  {
+    "id": 357,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "出します",
+    "reading": "だします",
+    "indonesian": "Mengeluarkan, mengirim (surat)",
+    "romaji": "dashimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 358,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "～度（２８度）",
+    "reading": "～ど（にじゅうはちど）",
+    "indonesian": "~derajat ( 28 derajat )",
+    "romaji": "~do(nijiyuuhachido)",
+    "section": "KANJI"
+  },
+  {
+    "id": 359,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "～点（１００点）",
+    "reading": "～てん（１００てん）",
+    "indonesian": "Nilai ~ ( nilai 100 )",
+    "romaji": "~ten(100ten)",
+    "section": "KANJI"
+  },
+  {
+    "id": 360,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "服",
+    "reading": "ふく",
+    "indonesian": "Baju, pakaian",
+    "romaji": "fuku",
+    "section": "KANJI"
+  },
+  {
+    "id": 361,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "自転車",
+    "reading": "じてんしゃ",
+    "indonesian": "Sepeda",
+    "romaji": "jitensha",
+    "section": "KANJI"
+  },
+  {
+    "id": 362,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "自動車",
+    "reading": "じどうしゃ",
+    "indonesian": "Mobil",
+    "romaji": "jidousha",
+    "section": "KANJI"
+  },
+  {
+    "id": 363,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "売ります",
+    "reading": "うります",
+    "indonesian": "Menjual",
+    "romaji": "urimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 364,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "貸します",
+    "reading": "かします",
+    "indonesian": "Meminjamkan",
+    "romaji": "kashimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 365,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "返します",
+    "reading": "かえします",
+    "indonesian": "Mengembalikan",
+    "romaji": "kaeshimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 366,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "変わります",
+    "reading": "かわります",
+    "indonesian": "Mengganti",
+    "romaji": "kawarimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 367,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "～用",
+    "reading": "～よう",
+    "indonesian": "Urusan, keperluan ~",
+    "romaji": "~you",
+    "section": "KANJI"
+  },
+  {
+    "id": 368,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "子供用",
+    "reading": "こどもよう",
+    "indonesian": "Urusan anak",
+    "romaji": "kodomoyou",
+    "section": "KANJI"
+  },
+  {
+    "id": 369,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "人生",
+    "reading": "じんせい",
+    "indonesian": "Kehidupan",
+    "romaji": "jinsei",
+    "section": "KANJI"
+  },
+  {
+    "id": 370,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "歌手",
+    "reading": "かしゅ",
+    "indonesian": "Penyanyi",
+    "romaji": "kashu",
+    "section": "KANJI"
+  },
+  {
+    "id": 371,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "選手",
+    "reading": "せんしゅ",
+    "indonesian": "Atlit, pemain",
+    "romaji": "senshu",
+    "section": "KANJI"
+  },
+  {
+    "id": 372,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "画家",
+    "reading": "がか",
+    "indonesian": "Pelukis",
+    "romaji": "gaka",
+    "section": "KANJI"
+  },
+  {
+    "id": 373,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "作家",
+    "reading": "さっか",
+    "indonesian": "Pengarang",
+    "romaji": "sakka",
+    "section": "KANJI"
+  },
+  {
+    "id": 374,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "入学",
+    "reading": "にゅうがく",
+    "indonesian": "Masuk sekolah",
+    "romaji": "nyuugaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 375,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "卒業",
+    "reading": "そつぎょう",
+    "indonesian": "Lulus",
+    "romaji": "sotsugyou",
+    "section": "KANJI"
+  },
+  {
+    "id": 376,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "病気",
+    "reading": "びょうき",
+    "indonesian": "Sakit",
+    "romaji": "byouki",
+    "section": "KANJI"
+  },
+  {
+    "id": 377,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "若い",
+    "reading": "わかい",
+    "indonesian": "Muda",
+    "romaji": "wakai",
+    "section": "KANJI"
+  },
+  {
+    "id": 378,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "生まれます",
+    "reading": "うまれます",
+    "indonesian": "Lahir",
+    "romaji": "umaremasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 379,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "思い出",
+    "reading": "おもいで",
+    "indonesian": "Kenang-kenangan, kenangan",
+    "romaji": "omoide",
+    "section": "KANJI"
+  },
+  {
+    "id": 380,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "生活",
+    "reading": "せいかつ",
+    "indonesian": "Kehidupan",
+    "romaji": "seikatsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 381,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "映画",
+    "reading": "えいが",
+    "indonesian": "Film",
+    "romaji": "eiga",
+    "section": "KANJI"
+  },
+  {
+    "id": 382,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "夫",
+    "reading": "おっと",
+    "indonesian": "Suami ( sendiri )",
+    "romaji": "otto",
+    "section": "KANJI"
+  },
+  {
+    "id": 383,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "妻",
+    "reading": "つま",
+    "indonesian": "Istri ( sendiri )",
+    "romaji": "tsuma",
+    "section": "KANJI"
+  },
+  {
+    "id": 384,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "両親",
+    "reading": "りょうしん",
+    "indonesian": "Orang tua",
+    "romaji": "ryoushin",
+    "section": "KANJI"
+  },
+  {
+    "id": 385,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "不便",
+    "reading": "ふべん",
+    "indonesian": "Tidak praktis",
+    "romaji": "fuben",
+    "section": "KANJI"
+  },
+  {
+    "id": 386,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "選びます",
+    "reading": "えらびます",
+    "indonesian": "Memilih",
+    "romaji": "erabimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 387,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "寝ます",
+    "reading": "ねます",
+    "indonesian": "Tidur",
+    "romaji": "nemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 388,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "サッカー場",
+    "reading": "サッカーじょう",
+    "indonesian": "Lapangan sepak bola",
+    "romaji": "sakka-jou",
+    "section": "KANJI"
+  },
+  {
+    "id": 389,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "試合",
+    "reading": "しあい",
+    "indonesian": "Pertandingan",
+    "romaji": "shiai",
+    "section": "KANJI"
+  },
+  {
+    "id": 390,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "日曜日",
+    "reading": "にちようび",
+    "indonesian": "Minggu",
+    "romaji": "nichiyoubi",
+    "section": "KANJI"
+  },
+  {
+    "id": 391,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "強い",
+    "reading": "つよい",
+    "indonesian": "Kuat",
+    "romaji": "tsuyoi",
+    "section": "KANJI"
+  },
+  {
+    "id": 392,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "弱い",
+    "reading": "よわい",
+    "indonesian": "Lemah",
+    "romaji": "yowai",
+    "section": "KANJI"
+  },
+  {
+    "id": 393,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "勝ちます",
+    "reading": "かちます",
+    "indonesian": "Menang",
+    "romaji": "kachimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 394,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "負けます",
+    "reading": "まけます",
+    "indonesian": "Kalah",
+    "romaji": "makemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 395,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "～対～（２対１）",
+    "reading": "～たい～（にたいいち）",
+    "indonesian": "~lawan~ ( 2 lawan 1 )",
+    "romaji": "~tai~(nitaiichi)",
+    "section": "KANJI"
+  },
+  {
+    "id": 396,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "庭",
+    "reading": "にわ",
+    "indonesian": "Halaman",
+    "romaji": "niwa",
+    "section": "KANJI"
+  },
+  {
+    "id": 397,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "公園",
+    "reading": "こうえん",
+    "indonesian": "Taman",
+    "romaji": "kouen",
+    "section": "KANJI"
+  },
+  {
+    "id": 398,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "病院",
+    "reading": "びょういん",
+    "indonesian": "Rumah sakit",
+    "romaji": "byouin",
+    "section": "KANJI"
+  },
+  {
+    "id": 399,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "交通",
+    "reading": "こうつう",
+    "indonesian": "Lalu lintas",
+    "romaji": "koutsuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 400,
+    "group": 8,
+    "group_label": "351–400",
+    "kanji": "通勤",
+    "reading": "つうきん",
+    "indonesian": "Perjalanan ke kantor",
+    "romaji": "tsuukin",
+    "section": "KANJI"
+  },
+  {
+    "id": 401,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "安全",
+    "reading": "あんぜん",
+    "indonesian": "Keselamatan",
+    "romaji": "anzen",
+    "section": "KANJI"
+  },
+  {
+    "id": 402,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "危ない",
+    "reading": "あぶない",
+    "indonesian": "Bahaya",
+    "romaji": "abunai",
+    "section": "KANJI"
+  },
+  {
+    "id": 403,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "遠い",
+    "reading": "とおい",
+    "indonesian": "Jauh",
+    "romaji": "tooi",
+    "section": "KANJI"
+  },
+  {
+    "id": 404,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "努めます",
+    "reading": "つとめます",
+    "indonesian": "Bekerja",
+    "romaji": "tsutomemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 405,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "～以上（２時間以上）",
+    "reading": "～いじょう（にじかんいじょう）",
+    "indonesian": "~ lebih ( 2 jam lebih )",
+    "romaji": "~ijou(nijikanijou)",
+    "section": "KANJI"
+  },
+  {
+    "id": 406,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "～以下（６万円以下）",
+    "reading": "～いか（ろくまんえんいか）",
+    "indonesian": "~kurang ( kurang dari 6 man yen )",
+    "romaji": "~ika(rokumanenika)",
+    "section": "KANJI"
+  },
+  {
+    "id": 407,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "海外",
+    "reading": "かいがい",
+    "indonesian": "Luar negri",
+    "romaji": "kaigai",
+    "section": "KANJI"
+  },
+  {
+    "id": 408,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "食生活",
+    "reading": "しょくせいかつ",
+    "indonesian": "Susunan makanan",
+    "romaji": "shokuseikatsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 409,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "健康",
+    "reading": "けんこう",
+    "indonesian": "Kesehatan",
+    "romaji": "kenkou",
+    "section": "KANJI"
+  },
+  {
+    "id": 410,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "家庭料理",
+    "reading": "かていりょうり",
+    "indonesian": "Masakan rumah tangga",
+    "romaji": "kateiryouri",
+    "section": "KANJI"
+  },
+  {
+    "id": 411,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "材料",
+    "reading": "ざいりょう",
+    "indonesian": "Bahan",
+    "romaji": "zairyou",
+    "section": "KANJI"
+  },
+  {
+    "id": 412,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "量",
+    "reading": "りょう",
+    "indonesian": "Jumlah, kuantitas, banyaknya",
+    "romaji": "ryou",
+    "section": "KANJI"
+  },
+  {
+    "id": 413,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "米",
+    "reading": "こめ",
+    "indonesian": "Beras",
+    "romaji": "kome",
+    "section": "KANJI"
+  },
+  {
+    "id": 414,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "～食",
+    "reading": "～しょく",
+    "indonesian": "Makan ~",
+    "romaji": "~shoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 415,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "朝食",
+    "reading": "ちょうしょく",
+    "indonesian": "Makan pagi",
+    "romaji": "choushoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 416,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "昼食",
+    "reading": "ちゅうしょく",
+    "indonesian": "Makan siang",
+    "romaji": "chuushoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 417,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "夕食",
+    "reading": "ゆうしょく",
+    "indonesian": "Makan malam",
+    "romaji": "yuushoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 418,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "外食",
+    "reading": "がいしょく",
+    "indonesian": "Makan di luar",
+    "romaji": "gaishoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 419,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "定食",
+    "reading": "ていしょく",
+    "indonesian": "Makanan dengan menu tetap",
+    "romaji": "teishoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 420,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "住所",
+    "reading": "じゅうしょ",
+    "indonesian": "Alamat",
+    "romaji": "jiyuusho",
+    "section": "KANJI"
+  },
+  {
+    "id": 421,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "訪問",
+    "reading": "ほうもん",
+    "indonesian": "Kunjungan",
+    "romaji": "houmon",
+    "section": "KANJI"
+  },
+  {
+    "id": 422,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "経験",
+    "reading": "けいけん",
+    "indonesian": "Pengalaman",
+    "romaji": "keiken",
+    "section": "KANJI"
+  },
+  {
+    "id": 423,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "親切",
+    "reading": "しんせつ",
+    "indonesian": "Ramah",
+    "romaji": "shinsetsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 424,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "座ります",
+    "reading": "すわります",
+    "indonesian": "Duduk",
+    "romaji": "suwarimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 425,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "立ちます",
+    "reading": "たちます",
+    "indonesian": "Berdiri",
+    "romaji": "tachimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 426,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "～観（人生観）",
+    "reading": "～かん（じんせいかん）",
+    "indonesian": "Pandangan ~ ( pandangan hidup )",
+    "romaji": "~kan(jinseikan)",
+    "section": "KANJI"
+  },
+  {
+    "id": 427,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "約～（約６年間）",
+    "reading": "やく～（やくろくねんかん）",
+    "indonesian": "Kira2, sekitar ( sekitar 6 tahun )",
+    "romaji": "yaku~(yakurokunenkan)",
+    "section": "KANJI"
+  },
+  {
+    "id": 428,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "計画",
+    "reading": "けいかく",
+    "indonesian": "Rencana, program",
+    "romaji": "keikaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 429,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "自信",
+    "reading": "じしん",
+    "indonesian": "Percaya diri",
+    "romaji": "jishin",
+    "section": "KANJI"
+  },
+  {
+    "id": 430,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "方法",
+    "reading": "ほうほう",
+    "indonesian": "Cara",
+    "romaji": "houhou",
+    "section": "KANJI"
+  },
+  {
+    "id": 431,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "目的",
+    "reading": "もくてき",
+    "indonesian": "Tujuan",
+    "romaji": "mokuteki",
+    "section": "KANJI"
+  },
+  {
+    "id": 432,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "難しい",
+    "reading": "むずかしい",
+    "indonesian": "Sulit",
+    "romaji": "muzukashii",
+    "section": "KANJI"
+  },
+  {
+    "id": 433,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "通じます",
+    "reading": "つうじます",
+    "indonesian": "Mengalirkan, menguasai, berhubungan",
+    "romaji": "tsuujimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 434,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "習います",
+    "reading": "ならいます",
+    "indonesian": "Belajar kepada",
+    "romaji": "naraimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 435,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "学びます",
+    "reading": "まなびます",
+    "indonesian": "Belajar",
+    "romaji": "manabimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 436,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "～級",
+    "reading": "～きゅう",
+    "indonesian": "Kelas, tingkat ~",
+    "romaji": "~kyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 437,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "初級",
+    "reading": "しょきゅう",
+    "indonesian": "Kelas dasar",
+    "romaji": "shokyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 438,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "中級",
+    "reading": "ちゅうきゅう",
+    "indonesian": "Kelas menengah",
+    "romaji": "chuukyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 439,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "上級",
+    "reading": "じょうきゅう",
+    "indonesian": "Kelas atas",
+    "romaji": "joukyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 440,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "相手",
+    "reading": "あいて",
+    "indonesian": "Pasangan, lawan",
+    "romaji": "aite",
+    "section": "KANJI"
+  },
+  {
+    "id": 441,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "気持ち",
+    "reading": "きもち",
+    "indonesian": "Perasaan enak",
+    "romaji": "kimochi",
+    "section": "KANJI"
+  },
+  {
+    "id": 442,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "恋人",
+    "reading": "こいびと",
+    "indonesian": "Pacar",
+    "romaji": "koibito",
+    "section": "KANJI"
+  },
+  {
+    "id": 443,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "出会い",
+    "reading": "であい",
+    "indonesian": "Pertemuan",
+    "romaji": "deai",
+    "section": "KANJI"
+  },
+  {
+    "id": 444,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "最近",
+    "reading": "さいきん",
+    "indonesian": "Akhir-akhir ini",
+    "romaji": "saikin",
+    "section": "KANJI"
+  },
+  {
+    "id": 445,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "最高",
+    "reading": "さいこう",
+    "indonesian": "Teratas, tertinggi",
+    "romaji": "saikou",
+    "section": "KANJI"
+  },
+  {
+    "id": 446,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "出席",
+    "reading": "しゅっせき",
+    "indonesian": "Kehadiran",
+    "romaji": "shusseki",
+    "section": "KANJI"
+  },
+  {
+    "id": 447,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "招待",
+    "reading": "しょうたい",
+    "indonesian": "Undangan",
+    "romaji": "shoutai",
+    "section": "KANJI"
+  },
+  {
+    "id": 448,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "～合う（知り合う）",
+    "reading": "～あう（しりあう）",
+    "indonesian": "Cocok ~ ( kenal mengenal )",
+    "romaji": "~au(shiriau)",
+    "section": "KANJI"
+  },
+  {
+    "id": 449,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "社会人",
+    "reading": "しゃかいじん",
+    "indonesian": "Anggota masyarakat",
+    "romaji": "shakaijin",
+    "section": "KANJI"
+  },
+  {
+    "id": 450,
+    "group": 9,
+    "group_label": "401–450",
+    "kanji": "職場",
+    "reading": "しょくば",
+    "indonesian": "Tempat kerja",
+    "romaji": "shokuba",
+    "section": "KANJI"
+  },
+  {
+    "id": 451,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "給料",
+    "reading": "きゅうりょう",
+    "indonesian": "Gaji",
+    "romaji": "kyuuryou",
+    "section": "KANJI"
+  },
+  {
+    "id": 452,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "人間関係",
+    "reading": "にんげんかんけい",
+    "indonesian": "Hubungan antar manusia",
+    "romaji": "ningenkankei",
+    "section": "KANJI"
+  },
+  {
+    "id": 453,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "親友",
+    "reading": "しんゆう",
+    "indonesian": "Teman karib",
+    "romaji": "shinyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 454,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "恋愛",
+    "reading": "れんあい",
+    "indonesian": "Percintaan, asmara",
+    "romaji": "renai",
+    "section": "KANJI"
+  },
+  {
+    "id": 455,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "相談",
+    "reading": "そうだん",
+    "indonesian": "Musyawarah",
+    "romaji": "soudan",
+    "section": "KANJI"
+  },
+  {
+    "id": 456,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "心",
+    "reading": "こころ",
+    "indonesian": "Hati",
+    "romaji": "kokoro",
+    "section": "KANJI"
+  },
+  {
+    "id": 457,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "心配",
+    "reading": "しんぱい",
+    "indonesian": "Khawatir",
+    "romaji": "shinpai",
+    "section": "KANJI"
+  },
+  {
+    "id": 458,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "不安",
+    "reading": "ふあん",
+    "indonesian": "Kegelisahan, kekhawatiran",
+    "romaji": "fuan",
+    "section": "KANJI"
+  },
+  {
+    "id": 459,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "お客様",
+    "reading": "おきゃくさま",
+    "indonesian": "Tamu",
+    "romaji": "okyakusama",
+    "section": "KANJI"
+  },
+  {
+    "id": 460,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "手続き",
+    "reading": "てつづき",
+    "indonesian": "Prosedur",
+    "romaji": "tetsuzuki",
+    "section": "KANJI"
+  },
+  {
+    "id": 461,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "飛行機",
+    "reading": "ひこうき",
+    "indonesian": "Pesawat terbang",
+    "romaji": "hikouki",
+    "section": "KANJI"
+  },
+  {
+    "id": 462,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "変更",
+    "reading": "へんこう",
+    "indonesian": "Perubahan",
+    "romaji": "henkou",
+    "section": "KANJI"
+  },
+  {
+    "id": 463,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "予定",
+    "reading": "よてい",
+    "indonesian": "Rencana",
+    "romaji": "yotei",
+    "section": "KANJI"
+  },
+  {
+    "id": 464,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "利用",
+    "reading": "りよう",
+    "indonesian": "Penggunaan, pemakaian",
+    "romaji": "riyou",
+    "section": "KANJI"
+  },
+  {
+    "id": 465,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "忘れ物",
+    "reading": "わすれもの",
+    "indonesian": "Benda yang tertinggal",
+    "romaji": "wasuremono",
+    "section": "KANJI"
+  },
+  {
+    "id": 466,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "助けます",
+    "reading": "たすけます",
+    "indonesian": "Menolong",
+    "romaji": "tasukemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 467,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "～航空（ＪＦ航空）",
+    "reading": "～こうくう（ＪＦこうくう）",
+    "indonesian": "Penerbangan ~ ( penerbangan JF )",
+    "romaji": "~koukuu(JF koukuu)",
+    "section": "KANJI"
+  },
+  {
+    "id": 468,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "～便（１１５便）",
+    "reading": "～びん（いちいちごびん）",
+    "indonesian": "Penerbangan, pos ( pos 115 )",
+    "romaji": "~bin(ichiichigobin)",
+    "section": "KANJI"
+  },
+  {
+    "id": 469,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "体力",
+    "reading": "たいりょく",
+    "indonesian": "Kekuatan",
+    "romaji": "tairyoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 470,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "協力",
+    "reading": "きょうりょく",
+    "indonesian": "Kerjasama",
+    "romaji": "kyouryoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 471,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "担当",
+    "reading": "たんとう",
+    "indonesian": "Petugas",
+    "romaji": "tantou",
+    "section": "KANJI"
+  },
+  {
+    "id": 472,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "報告",
+    "reading": "ほうこく",
+    "indonesian": "Melapor",
+    "romaji": "houkoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 473,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "連絡",
+    "reading": "れんらく",
+    "indonesian": "Menghubungi",
+    "romaji": "renraku",
+    "section": "KANJI"
+  },
+  {
+    "id": 474,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "募集",
+    "reading": "ぼしゅう",
+    "indonesian": "Penerimaan, perekrutan",
+    "romaji": "boshuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 475,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "輸出",
+    "reading": "ゆしゅつ",
+    "indonesian": "Ekspor",
+    "romaji": "yushutsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 476,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "輸入",
+    "reading": "ゆにゅう",
+    "indonesian": "Impor",
+    "romaji": "yunyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 477,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "会話",
+    "reading": "かいわ",
+    "indonesian": "Percakapan",
+    "romaji": "kaiwa",
+    "section": "KANJI"
+  },
+  {
+    "id": 478,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "形",
+    "reading": "かたち",
+    "indonesian": "Bentuk",
+    "romaji": "katachi",
+    "section": "KANJI"
+  },
+  {
+    "id": 479,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "漢字",
+    "reading": "かんじ",
+    "indonesian": "Kanji",
+    "romaji": "kanji",
+    "section": "KANJI"
+  },
+  {
+    "id": 480,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "答え",
+    "reading": "こたえ",
+    "indonesian": "Jawaban",
+    "romaji": "kotae",
+    "section": "KANJI"
+  },
+  {
+    "id": 481,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "質問",
+    "reading": "しつもん",
+    "indonesian": "Pertanyaan",
+    "romaji": "shitsumon",
+    "section": "KANJI"
+  },
+  {
+    "id": 482,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "正しい",
+    "reading": "ただしい",
+    "indonesian": "Benar",
+    "romaji": "tadashii",
+    "section": "KANJI"
+  },
+  {
+    "id": 483,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "読解",
+    "reading": "どっかい",
+    "indonesian": "Bacaan",
+    "romaji": "dokkai",
+    "section": "KANJI"
+  },
+  {
+    "id": 484,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "表現",
+    "reading": "ひょうげん",
+    "indonesian": "Pengucapan",
+    "romaji": "hyougen",
+    "section": "KANJI"
+  },
+  {
+    "id": 485,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "文",
+    "reading": "ぶん",
+    "indonesian": "Kalimat",
+    "romaji": "bun",
+    "section": "KANJI"
+  },
+  {
+    "id": 486,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "文型",
+    "reading": "ぶんけい",
+    "indonesian": "Pola kalimat",
+    "romaji": "bunkei",
+    "section": "KANJI"
+  },
+  {
+    "id": 487,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "文法",
+    "reading": "ぶんぽう",
+    "indonesian": "Tata Bahasa",
+    "romaji": "bunpou",
+    "section": "KANJI"
+  },
+  {
+    "id": 488,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "もう一度",
+    "reading": "もういちど",
+    "indonesian": "Sekali lagi",
+    "romaji": "mouichido",
+    "section": "KANJI"
+  },
+  {
+    "id": 489,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "例",
+    "reading": "れい",
+    "indonesian": "Contoh",
+    "romaji": "rei",
+    "section": "KANJI"
+  },
+  {
+    "id": 490,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "練習",
+    "reading": "れんしゅう",
+    "indonesian": "latihan",
+    "romaji": "renshuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 491,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "～枚",
+    "reading": "～まい",
+    "indonesian": "~lembar",
+    "romaji": "~mai",
+    "section": "KANJI"
+  },
+  {
+    "id": 492,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "今週",
+    "reading": "こんしゅう",
+    "indonesian": "Minggu ini",
+    "romaji": "konshuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 493,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "今度",
+    "reading": "こんど",
+    "indonesian": "Lain kali, yang akan datang",
+    "romaji": "kondo",
+    "section": "KANJI"
+  },
+  {
+    "id": 494,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "横",
+    "reading": "よこ",
+    "indonesian": "Sebelah",
+    "romaji": "yoko",
+    "section": "KANJI"
+  },
+  {
+    "id": 495,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "押します",
+    "reading": "おします",
+    "indonesian": "Menekan, mendorong",
+    "romaji": "oshimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 496,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "引きます",
+    "reading": "ひきます",
+    "indonesian": "Menarik",
+    "romaji": "hikimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 497,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "温泉",
+    "reading": "おんせん",
+    "indonesian": "Pemandian air panas",
+    "romaji": "onsen",
+    "section": "KANJI"
+  },
+  {
+    "id": 498,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "来週",
+    "reading": "らいしゅう",
+    "indonesian": "Minggu depan",
+    "romaji": "raishuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 499,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "犬",
+    "reading": "いぬ",
+    "indonesian": "Anjing",
+    "romaji": "inu",
+    "section": "KANJI"
+  },
+  {
+    "id": 500,
+    "group": 10,
+    "group_label": "451–500",
+    "kanji": "夕方",
+    "reading": "ゆうがた",
+    "indonesian": "Sore",
+    "romaji": "yuugata",
+    "section": "KANJI"
+  },
+  {
+    "id": 501,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "季節",
+    "reading": "きせつ",
+    "indonesian": "Musim",
+    "romaji": "kisetsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 502,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "昨日",
+    "reading": "きのう",
+    "indonesian": "Kemarin",
+    "romaji": "kinou",
+    "section": "KANJI"
+  },
+  {
+    "id": 503,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "明日",
+    "reading": "あした",
+    "indonesian": "Besok",
+    "romaji": "ashita",
+    "section": "KANJI"
+  },
+  {
+    "id": 504,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "食堂",
+    "reading": "しょくどう",
+    "indonesian": "Kantin",
+    "romaji": "shokudou",
+    "section": "KANJI"
+  },
+  {
+    "id": 505,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "銀行",
+    "reading": "ぎんこう",
+    "indonesian": "Bank",
+    "romaji": "ginkou",
+    "section": "KANJI"
+  },
+  {
+    "id": 506,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "受付",
+    "reading": "うけつけ",
+    "indonesian": "Resepsionis",
+    "romaji": "uketsuke",
+    "section": "KANJI"
+  },
+  {
+    "id": 507,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "門",
+    "reading": "もん",
+    "indonesian": "Pintu gerbang",
+    "romaji": "mon",
+    "section": "KANJI"
+  },
+  {
+    "id": 508,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "登ります",
+    "reading": "のぼります",
+    "indonesian": "Mendaki",
+    "romaji": "noborimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 509,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "教科書",
+    "reading": "きょうかしょ",
+    "indonesian": "Buku panduan",
+    "romaji": "kyoukasho",
+    "section": "KANJI"
+  },
+  {
+    "id": 510,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "教室",
+    "reading": "きょうしつ",
+    "indonesian": "Ruang kelas",
+    "romaji": "kyoushitsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 511,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "参加します",
+    "reading": "さんかします",
+    "indonesian": "Berpartisipasi",
+    "romaji": "sankashimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 512,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "用意します",
+    "reading": "よういします",
+    "indonesian": "Menyiapkan",
+    "romaji": "youishimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 513,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "牛肉",
+    "reading": "ぎゅうにく",
+    "indonesian": "Daging sapi",
+    "romaji": "gyuuniku",
+    "section": "KANJI"
+  },
+  {
+    "id": 514,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "豚肉",
+    "reading": "ぶたにく",
+    "indonesian": "Daging babi",
+    "romaji": "butaniku",
+    "section": "KANJI"
+  },
+  {
+    "id": 515,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "皿",
+    "reading": "さら",
+    "indonesian": "Piring",
+    "romaji": "sara",
+    "section": "KANJI"
+  },
+  {
+    "id": 516,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "お湯",
+    "reading": "おゆ",
+    "indonesian": "Air panas",
+    "romaji": "oyu",
+    "section": "KANJI"
+  },
+  {
+    "id": 517,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "調理方法",
+    "reading": "ちょうりほうほう",
+    "indonesian": "Cara memasak",
+    "romaji": "chourihouhou",
+    "section": "KANJI"
+  },
+  {
+    "id": 518,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "甘い",
+    "reading": "あまい",
+    "indonesian": "Manis",
+    "romaji": "amai",
+    "section": "KANJI"
+  },
+  {
+    "id": 519,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "辛い",
+    "reading": "からい",
+    "indonesian": "Pedas",
+    "romaji": "karai",
+    "section": "KANJI"
+  },
+  {
+    "id": 520,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "数字",
+    "reading": "すうじ",
+    "indonesian": "Angka, bilangan",
+    "romaji": "suuji",
+    "section": "KANJI"
+  },
+  {
+    "id": 521,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "机",
+    "reading": "つくえ",
+    "indonesian": "Meja",
+    "romaji": "tsukue",
+    "section": "KANJI"
+  },
+  {
+    "id": 522,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "都合",
+    "reading": "つごう",
+    "indonesian": "Keadaan",
+    "romaji": "tsugou",
+    "section": "KANJI"
+  },
+  {
+    "id": 523,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "用事",
+    "reading": "ようじ",
+    "indonesian": "Keperluan",
+    "romaji": "youji",
+    "section": "KANJI"
+  },
+  {
+    "id": 524,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "氏名",
+    "reading": "しめい",
+    "indonesian": "Nama lengkap",
+    "romaji": "shimei",
+    "section": "KANJI"
+  },
+  {
+    "id": 525,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "理由",
+    "reading": "りゆう",
+    "indonesian": "Alasan",
+    "romaji": "riyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 526,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "別に",
+    "reading": "べつに",
+    "indonesian": "Beda-beda",
+    "romaji": "betsuni",
+    "section": "KANJI"
+  },
+  {
+    "id": 527,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "連絡先",
+    "reading": "れんらくさき",
+    "indonesian": "Alamat yang dapat dihubungi",
+    "romaji": "renrakusaki",
+    "section": "KANJI"
+  },
+  {
+    "id": 528,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "吸います",
+    "reading": "すいます",
+    "indonesian": "Menghisap",
+    "romaji": "suimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 529,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "取ります",
+    "reading": "とります",
+    "indonesian": "Mengambil",
+    "romaji": "torimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 530,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "伝えます",
+    "reading": "つたえます",
+    "indonesian": "Menyampaikan",
+    "romaji": "tsutaemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 531,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "熱",
+    "reading": "ねつ",
+    "indonesian": "Demam",
+    "romaji": "netsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 532,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "薬",
+    "reading": "くすり",
+    "indonesian": "Obat",
+    "romaji": "kusuri",
+    "section": "KANJI"
+  },
+  {
+    "id": 533,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "医者",
+    "reading": "いしゃ",
+    "indonesian": "Dokter",
+    "romaji": "isha",
+    "section": "KANJI"
+  },
+  {
+    "id": 534,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "～才",
+    "reading": "～さい",
+    "indonesian": "Bakat～／umur～",
+    "romaji": "~sai",
+    "section": "KANJI"
+  },
+  {
+    "id": 535,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "眠い",
+    "reading": "ねむい",
+    "indonesian": "Ngantuk",
+    "romaji": "nemui",
+    "section": "KANJI"
+  },
+  {
+    "id": 536,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "記入します",
+    "reading": "きにゅうします",
+    "indonesian": "Mengisi di kertas",
+    "romaji": "kinyuushimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 537,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "顔",
+    "reading": "かお",
+    "indonesian": "Wajah",
+    "romaji": "kao",
+    "section": "KANJI"
+  },
+  {
+    "id": 538,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "泣きます",
+    "reading": "なきます",
+    "indonesian": "Menangis",
+    "romaji": "nakimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 539,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "会計",
+    "reading": "かいけい",
+    "indonesian": "Pembayaran",
+    "romaji": "kaikei",
+    "section": "KANJI"
+  },
+  {
+    "id": 540,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "電話番号",
+    "reading": "でんわばんごう",
+    "indonesian": "Nomor telepon",
+    "romaji": "denwabangou",
+    "section": "KANJI"
+  },
+  {
+    "id": 541,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "牛乳",
+    "reading": "ぎゅうにゅう",
+    "indonesian": "Susu sapi",
+    "romaji": "gyuunyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 542,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "禁煙",
+    "reading": "きんえん",
+    "indonesian": "Larangan merokok",
+    "romaji": "kinen",
+    "section": "KANJI"
+  },
+  {
+    "id": 543,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "自由",
+    "reading": "じゆう",
+    "indonesian": "Bebas",
+    "romaji": "jiyuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 544,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "切ります",
+    "reading": "きります",
+    "indonesian": "Memotong",
+    "romaji": "kirimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 545,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "焼きます",
+    "reading": "やきます",
+    "indonesian": "Memanggang",
+    "romaji": "yakimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 546,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "旅館",
+    "reading": "りょかん",
+    "indonesian": "Penginapan",
+    "romaji": "ryokan",
+    "section": "KANJI"
+  },
+  {
+    "id": 547,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "遊びます",
+    "reading": "あそびます",
+    "indonesian": "Bermain",
+    "romaji": "asobimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 548,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "調べます",
+    "reading": "しらべます",
+    "indonesian": "Memeriksa",
+    "romaji": "shirabemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 549,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "事故",
+    "reading": "じこ",
+    "indonesian": "Kecelakaan",
+    "romaji": "jiko",
+    "section": "KANJI"
+  },
+  {
+    "id": 550,
+    "group": 11,
+    "group_label": "501–550",
+    "kanji": "故障",
+    "reading": "こしょう",
+    "indonesian": "Kerusakan",
+    "romaji": "koshou",
+    "section": "KANJI"
+  },
+  {
+    "id": 551,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "指定席",
+    "reading": "していせき",
+    "indonesian": "Tempat duduk yang ditetapkan",
+    "romaji": "shiteiseki",
+    "section": "KANJI"
+  },
+  {
+    "id": 552,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "光ります",
+    "reading": "ひかります",
+    "indonesian": "Bercahaya, bersinar",
+    "romaji": "hikarimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 553,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "お知らせ",
+    "reading": "おしらせ",
+    "indonesian": "Pengumuman",
+    "romaji": "oshirase",
+    "section": "KANJI"
+  },
+  {
+    "id": 554,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "水道",
+    "reading": "すいどう",
+    "indonesian": "Ledeng",
+    "romaji": "suidou",
+    "section": "KANJI"
+  },
+  {
+    "id": 555,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "工事",
+    "reading": "こうじ",
+    "indonesian": "Konstruksi",
+    "romaji": "kouji",
+    "section": "KANJI"
+  },
+  {
+    "id": 556,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "場合",
+    "reading": "ばあい",
+    "indonesian": "Kesempatan",
+    "romaji": "baai",
+    "section": "KANJI"
+  },
+  {
+    "id": 557,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "条件",
+    "reading": "じょうけん",
+    "indonesian": "Syarat-syarat, kondisi",
+    "romaji": "jouken",
+    "section": "KANJI"
+  },
+  {
+    "id": 558,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "開きます",
+    "reading": "ひらきます",
+    "indonesian": "Membuka",
+    "romaji": "hirakimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 559,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "生産します",
+    "reading": "せいさんします",
+    "indonesian": "Memproduksi",
+    "romaji": "seisanshimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 560,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "体験",
+    "reading": "たいけん",
+    "indonesian": "Percobaan",
+    "romaji": "taiken",
+    "section": "KANJI"
+  },
+  {
+    "id": 561,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "国際交流",
+    "reading": "こくさいこうりゅう",
+    "indonesian": "Pertukaran budaya internasional",
+    "romaji": "kokusaikouryuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 562,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "申し込みます",
+    "reading": "もうしこみます",
+    "indonesian": "Melamar (pekerjaan)",
+    "romaji": "moushikomimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 563,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "昨年",
+    "reading": "さくねん",
+    "indonesian": "Tahun lalu",
+    "romaji": "sakunen",
+    "section": "KANJI"
+  },
+  {
+    "id": 564,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "毎年",
+    "reading": "まいとし",
+    "indonesian": "Setiap tahun",
+    "romaji": "maitoshi",
+    "section": "KANJI"
+  },
+  {
+    "id": 565,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "袋",
+    "reading": "ふくろ",
+    "indonesian": "Kantong plastik",
+    "romaji": "fukuro",
+    "section": "KANJI"
+  },
+  {
+    "id": 566,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "店長",
+    "reading": "てんちょう",
+    "indonesian": "Manajer toko",
+    "romaji": "tenchou",
+    "section": "KANJI"
+  },
+  {
+    "id": 567,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "全員",
+    "reading": "ぜんいん",
+    "indonesian": "Semuanya",
+    "romaji": "zenin",
+    "section": "KANJI"
+  },
+  {
+    "id": 568,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "習慣",
+    "reading": "しゅうかん",
+    "indonesian": "Kebiasaan",
+    "romaji": "shuukan",
+    "section": "KANJI"
+  },
+  {
+    "id": 569,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "普通",
+    "reading": "ふつう",
+    "indonesian": "Biasa",
+    "romaji": "futsuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 570,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "暗い",
+    "reading": "くらい",
+    "indonesian": "Gelap",
+    "romaji": "kurai",
+    "section": "KANJI"
+  },
+  {
+    "id": 571,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "怒ります",
+    "reading": "おこります",
+    "indonesian": "Marah",
+    "romaji": "okorimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 572,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "入院します",
+    "reading": "にゅういんします",
+    "indonesian": "Masuk rumah sakit",
+    "romaji": "nyuuinshimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 573,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "退院します",
+    "reading": "たいいんします",
+    "indonesian": "Keluar rumah sakit",
+    "romaji": "taiinshimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 574,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "急に",
+    "reading": "きゅうに",
+    "indonesian": "Tiba-tiba",
+    "romaji": "kyuuni",
+    "section": "KANJI"
+  },
+  {
+    "id": 575,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "営業します",
+    "reading": "えいぎょうします",
+    "indonesian": "Mengusahakan",
+    "romaji": "eigyoushimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 576,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "案内します",
+    "reading": "あんないします",
+    "indonesian": "Memandu",
+    "romaji": "annaishimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 577,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "値段",
+    "reading": "ねだん",
+    "indonesian": "Harga",
+    "romaji": "nedan",
+    "section": "KANJI"
+  },
+  {
+    "id": 578,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "価格",
+    "reading": "かかく",
+    "indonesian": "Harga",
+    "romaji": "kakaku",
+    "section": "KANJI"
+  },
+  {
+    "id": 579,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "消費税",
+    "reading": "しょうひぜい",
+    "indonesian": "Pajak konsumen",
+    "romaji": "shouhizei",
+    "section": "KANJI"
+  },
+  {
+    "id": 580,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "税別",
+    "reading": "ぜいべつ",
+    "indonesian": "Harga belum termasuk pajak",
+    "romaji": "zeibetsu",
+    "section": "KANJI"
+  },
+  {
+    "id": 581,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "図書館",
+    "reading": "としょかん",
+    "indonesian": "Perpustakaan",
+    "romaji": "toshokan",
+    "section": "KANJI"
+  },
+  {
+    "id": 582,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "開きます",
+    "reading": "あきます",
+    "indonesian": "Terbuka",
+    "romaji": "akimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 583,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "閉まります",
+    "reading": "しまります",
+    "indonesian": "Tertutup",
+    "romaji": "shimarimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 584,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "利用します",
+    "reading": "りようします",
+    "indonesian": "Menggunakan",
+    "romaji": "riyoushimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 585,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "窓口",
+    "reading": "まどぐち",
+    "indonesian": "Pintu jendela",
+    "romaji": "madoguchi",
+    "section": "KANJI"
+  },
+  {
+    "id": 586,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "郵便局",
+    "reading": "ゆうびんきょく",
+    "indonesian": "Kantor pos",
+    "romaji": "yuubinkyoku",
+    "section": "KANJI"
+  },
+  {
+    "id": 587,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "近所",
+    "reading": "きんじょ",
+    "indonesian": "Tetangga",
+    "romaji": "kinjo",
+    "section": "KANJI"
+  },
+  {
+    "id": 588,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "自動",
+    "reading": "じどう",
+    "indonesian": "Otomatis",
+    "romaji": "jidou",
+    "section": "KANJI"
+  },
+  {
+    "id": 589,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "危険",
+    "reading": "きけん",
+    "indonesian": "Bahaya",
+    "romaji": "kiken",
+    "section": "KANJI"
+  },
+  {
+    "id": 590,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "～種類",
+    "reading": "～しゅるい",
+    "indonesian": "～macam, jenis",
+    "romaji": "~shurui",
+    "section": "KANJI"
+  },
+  {
+    "id": 591,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "消します",
+    "reading": "けします",
+    "indonesian": "Memadamkan",
+    "romaji": "keshimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 592,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "捨てます",
+    "reading": "すてます",
+    "indonesian": "Membuang",
+    "romaji": "sutemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 593,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "分けます",
+    "reading": "わけます",
+    "indonesian": "Membagi",
+    "romaji": "wakemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 594,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "燃えます",
+    "reading": "もえます",
+    "indonesian": "Terbakar",
+    "romaji": "moemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 595,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "設定します",
+    "reading": "せっていします",
+    "indonesian": "Mengeset, menyeting",
+    "romaji": "setteishimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 596,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "地震",
+    "reading": "じしん",
+    "indonesian": "Gempa",
+    "romaji": "jishin",
+    "section": "KANJI"
+  },
+  {
+    "id": 597,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "台風",
+    "reading": "たいふう",
+    "indonesian": "Angin topan",
+    "romaji": "taifuu",
+    "section": "KANJI"
+  },
+  {
+    "id": 598,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "声",
+    "reading": "こえ",
+    "indonesian": "Suara (benda hidup)",
+    "romaji": "koe",
+    "section": "KANJI"
+  },
+  {
+    "id": 599,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "大切な",
+    "reading": "たいせつな",
+    "indonesian": "Penting",
+    "romaji": "taisetsuna",
+    "section": "KANJI"
+  },
+  {
+    "id": 600,
+    "group": 12,
+    "group_label": "551–600",
+    "kanji": "進みます",
+    "reading": "すすみます",
+    "indonesian": "Rekomendasi",
+    "romaji": "susumimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 601,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "授業",
+    "reading": "じゅぎょう",
+    "indonesian": "Pelajaran",
+    "romaji": "jiyugyou",
+    "section": "KANJI"
+  },
+  {
+    "id": 602,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "大変な",
+    "reading": "たいへんな",
+    "indonesian": "Berat (perasaan)",
+    "romaji": "taihenna",
+    "section": "KANJI"
+  },
+  {
+    "id": 603,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "困ります",
+    "reading": "こまります",
+    "indonesian": "Susah",
+    "romaji": "komarimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 604,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "違います",
+    "reading": "ちがいます",
+    "indonesian": "Salah, berbeda",
+    "romaji": "chigaimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 605,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "慣れます",
+    "reading": "なれます",
+    "indonesian": "terbiasa",
+    "romaji": "naremasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 606,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "増えます",
+    "reading": "ふえます",
+    "indonesian": "Bertambah",
+    "romaji": "fuemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 607,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "笑います",
+    "reading": "わらいます",
+    "indonesian": "Tertawa",
+    "romaji": "waraimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 608,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "苦労します",
+    "reading": "くろうします",
+    "indonesian": "Bersakit-sakit ( dalam usaha)",
+    "romaji": "kuroushimasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 609,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "希望",
+    "reading": "きぼう",
+    "indonesian": "Harapan, keinginan",
+    "romaji": "kibou",
+    "section": "KANJI"
+  },
+  {
+    "id": 610,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "特に",
+    "reading": "とくに",
+    "indonesian": "Terutama",
+    "romaji": "tokuni",
+    "section": "KANJI"
+  },
+  {
+    "id": 611,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "建てます",
+    "reading": "たてます",
+    "indonesian": "Mendirikan",
+    "romaji": "tatemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 612,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "続けます",
+    "reading": "つづけます",
+    "indonesian": "Melanjutkan",
+    "romaji": "tsuzukemasu",
+    "section": "KANJI"
+  },
+  {
+    "id": 613,
+    "group": 13,
+    "group_label": "601–613",
+    "kanji": "役に立ちます",
+    "reading": "やくにたちます",
+    "indonesian": "Bermanfaat",
+    "romaji": "yakunitachimasu",
+    "section": "KANJI"
+  }
+]

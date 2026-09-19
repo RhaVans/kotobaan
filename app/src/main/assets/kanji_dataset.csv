@@ -1,0 +1,614 @@
+id,group,group_label,kanji,reading,indonesian,romaji,section
+1,1,01–50,魚,さかな,Ikan,sakana,KANJI
+2,1,01–50,肉,にく,Daging,niku,KANJI
+3,1,01–50,卵,たまご,Telur,tamago,KANJI
+4,1,01–50,水,みず,Air,mizu,KANJI
+5,1,01–50,食べます,たべます,Makan,tabemasu,KANJI
+6,1,01–50,飲みます,のみます,Minum,nomimasu,KANJI
+7,1,01–50,大きい,おおきい,Besar,ookii,KANJI
+8,1,01–50,小さい,ちいさい,Kecil,chiisai,KANJI
+9,1,01–50,新しい,あたらしい,Baru,atarashii,KANJI
+10,1,01–50,古い,ふるい,"Lama, usang",furui,KANJI
+11,1,01–50,～時,～じ,~ jam,~ji,KANJI
+12,1,01–50,～分,～ふん、ぷん、ぶん,~ menit,"~fun, pun, bun",KANJI
+13,1,01–50,～半,～はん,~ setengah,~han,KANJI
+14,1,01–50,月曜日,げつようび,Senin,getsuyoubi,KANJI
+15,1,01–50,火曜日,かようび,Selasa,kayoubi,KANJI
+16,1,01–50,水曜日,すいようび,Rabo,suiyoubi,KANJI
+17,1,01–50,木曜日,もくようび,Kamis,もkuyoubi,KANJI
+18,1,01–50,金曜日,きんようび,Jumat,kinyoubi,KANJI
+19,1,01–50,土曜日,どようび,Sabtu,doyoubi,KANJI
+20,1,01–50,日曜日,にちようび,Minggu,nichiyoubi,KANJI
+21,1,01–50,言います,いいます,Berkata,iimasu,KANJI
+22,1,01–50,話します,はなします,Berbicara,hanashimasu,KANJI
+23,1,01–50,読みます,よみます,Membaca,yomimasu,KANJI
+24,1,01–50,見ます,みます,Melihat,mimasu,KANJI
+25,1,01–50,聞きます,ききます,Mendengarkan,kikimasu,KANJI
+26,1,01–50,書きます,かきます,Menulis,kakimasu,KANJI
+27,1,01–50,一,いち,Satu,ichi,KANJI
+28,1,01–50,二,に,Dua,ni,KANJI
+29,1,01–50,三,さん,Tiga,san,KANJI
+30,1,01–50,四,よん、し,Empat,"yon, shi",KANJI
+31,1,01–50,五,ご,Lima,go,KANJI
+32,1,01–50,六,ろく,Enam,roku,KANJI
+33,1,01–50,七,なな、しち,Tujuh,"nana, shichi",KANJI
+34,1,01–50,八,はち,Delapan,hachi,KANJI
+35,1,01–50,九,きゅう,Sembilan,kyuu,KANJI
+36,1,01–50,十,じゅう,Sepuluh,jiyuu,KANJI
+37,1,01–50,～年,～ねん,~ tahun,~nen,KANJI
+38,1,01–50,～月,～がつ,~ bulan,~gatsu,KANJI
+39,1,01–50,～日,～にち,~ tanggal,~nichi,KANJI
+40,1,01–50,東,ひがし,Timur,higashi,KANJI
+41,1,01–50,西,にし,Barat,nishi,KANJI
+42,1,01–50,南,みなみ,Selatan,minami,KANJI
+43,1,01–50,北,きた,Utara,kita,KANJI
+44,1,01–50,～口,～ぐち,~ pintu,~guchi,KANJI
+45,1,01–50,東口,ひがしぐち,Pintu timur,higashiguchi,KANJI
+46,1,01–50,西口,にしぐち,Pintu barat,nishiguchi,KANJI
+47,1,01–50,南口,みなみぐち,Pintu selatan,minamiguchi,KANJI
+48,1,01–50,北口,きたぐち,Pintu utara,kitaguchi,KANJI
+49,1,01–50,買います,かいます,Membeli,kaimasu,KANJI
+50,1,01–50,買い物,かいもの,Belanja,kaiもno,KANJI
+51,2,51–100,お金,おかね,Uang,okane,KANJI
+52,2,51–100,～円,～えん,~ yen,~en,KANJI
+53,2,51–100,百,ひゃく,100,hyaku,KANJI
+54,2,51–100,千,せん,1000,sen,KANJI
+55,2,51–100,万,まん,10000,man,KANJI
+56,2,51–100,百円,ひゃくえん,100 yen,hyakuen,KANJI
+57,2,51–100,千円,せんえん,1000 yen,senen,KANJI
+58,2,51–100,一万円,いちまんえん,10000 yen,ichimanen,KANJI
+59,2,51–100,行きます,いきます,Pergi,ikimasu,KANJI
+60,2,51–100,来ます,きます,Datang,kimasu,KANJI
+61,2,51–100,会います,あいます,Bertemu,aimasu,KANJI
+62,2,51–100,休みます,やすみます,"Libur,istirahat",yasumimasu,KANJI
+63,2,51–100,日本,にほん,Jepang,nihon,KANJI
+64,2,51–100,東京,とうきょう,Tokyo,toukyou,KANJI
+65,2,51–100,私,わたし,Saya,watashi,KANJI
+66,2,51–100,父,ちち,Ayah,chichi,KANJI
+67,2,51–100,母,はは,Ibu,haha,KANJI
+68,2,51–100,子供,こども,Anak,kodoも,KANJI
+69,2,51–100,男,おとこ,Laki-laki,otoko,KANJI
+70,2,51–100,女,おんな,Perempuan,onna,KANJI
+71,2,51–100,人,ひと,Orang,hito,KANJI
+72,2,51–100,お父さん,おとうさん,Ayah (orang lain),otousan,KANJI
+73,2,51–100,お母さん,おかあさん,Ibu (orang lain),okaasan,KANJI
+74,2,51–100,何人,なんにん,Berapa orang?,nannin,KANJI
+75,2,51–100,国,くに,Negara,kuni,KANJI
+76,2,51–100,外国,がいこく,Luar negri,gaikoku,KANJI
+77,2,51–100,～語,～ご,~ Bahasa,~go,KANJI
+78,2,51–100,日本語,にほんご,Bahasa jepang,nihongo,KANJI
+79,2,51–100,英語,えいご,Bahasa inggris,eigo,KANJI
+80,2,51–100,中国語,ちゅうごくご,Bahasa china,chuugokugo,KANJI
+81,2,51–100,～人,～じん／～にん,~ orang,~jin/~nin,KANJI
+82,2,51–100,日本人,にほんじん,Orang jepang,nihonjin,KANJI
+83,2,51–100,好き,すき,Suka,suki,KANJI
+84,2,51–100,本,ほん,Buku,hon,KANJI
+85,2,51–100,読書,どくしょ,Bacaan,dokusho,KANJI
+86,2,51–100,何,なに,Apa?,nani,KANJI
+87,2,51–100,春,はる,Musim semi,haru,KANJI
+88,2,51–100,夏,なつ,Musim panas,natsu,KANJI
+89,2,51–100,秋,あき,Musim gugur,aki,KANJI
+90,2,51–100,冬,ふゆ,Musim dingin,fuyu,KANJI
+91,2,51–100,今,いま,Sekarang,ima,KANJI
+92,2,51–100,花,はな,Bunga,hana,KANJI
+93,2,51–100,海,うみ,Laut,umi,KANJI
+94,2,51–100,山,やま,Gunung,yama,KANJI
+95,2,51–100,川,かわ,Sungai,kawa,KANJI
+96,2,51–100,今日,きょう,Hari ini,kyou,KANJI
+97,2,51–100,天気,てんき,Cuaca,tenki,KANJI
+98,2,51–100,晴れ,はれ,Cerah,hare,KANJI
+99,2,51–100,雨,あめ,Hujan,ame,KANJI
+100,2,51–100,雪,ゆき,Salju,yuki,KANJI
+101,3,101–150,雲,くも,Mendung,kuも,KANJI
+102,3,101–150,風,かぜ,Angin,kaze,KANJI
+103,3,101–150,空,そら,Langit,sora,KANJI
+104,3,101–150,町,まち,Kota,machi,KANJI
+105,3,101–150,店,みせ,Toko,mise,KANJI
+106,3,101–150,人気,にんき,"Popularitas, ketenaran",ninki,KANJI
+107,3,101–150,多い,おおい,Banyak,ooi,KANJI
+108,3,101–150,少ない,すくない,Sedikit,sukunai,KANJI
+109,3,101–150,高い,たかい,Mahal,takai,KANJI
+110,3,101–150,安い,やすい,Murah,yasui,KANJI
+111,3,101–150,広い,ひろい,Luas,hiroi,KANJI
+112,3,101–150,道,みち,Jalan,michi,KANJI
+113,3,101–150,通り,とおり,Jalan,toori,KANJI
+114,3,101–150,右,みぎ,Kanan,migi,KANJI
+115,3,101–150,左,ひだり,Kiri,hidari,KANJI
+116,3,101–150,一つ,ひとつ,Satu buah,hitotsu,KANJI
+117,3,101–150,二つ,ふたつ,Dua buah,futatsu,KANJI
+118,3,101–150,赤い,あかい,Merah,akai,KANJI
+119,3,101–150,青い,あおい,Biru,aoi,KANJI
+120,3,101–150,黒い,くろい,Hitam,kuroi,KANJI
+121,3,101–150,白い,しろい,Putih,shiroi,KANJI
+122,3,101–150,時間,じかん,Waktu,jikan,KANJI
+123,3,101–150,場所,ばしょ,Tempat,basho,KANJI
+124,3,101–150,駅,えき,Stasiun,eki,KANJI
+125,3,101–150,日,ひ,Matahari,hi,KANJI
+126,3,101–150,出かけます,でかけます,Meninggalkan rumah,dekakemasu,KANJI
+127,3,101–150,待ちます,まちます,Menunggu,machimasu,KANJI
+128,3,101–150,止まります,とまります,Berhenti,tomarimasu,KANJI
+129,3,101–150,食事,しょくじ,Makan bersama,shokuji,KANJI
+130,3,101–150,仕事,しごと,Pekerjaan,shigoto,KANJI
+131,3,101–150,前,まえ,Sebelum,mae,KANJI
+132,3,101–150,後,あと,Setelah,ato,KANJI
+133,3,101–150,朝,あさ,Pagi,asa,KANJI
+134,3,101–150,昼,ひる,Siang,hiru,KANJI
+135,3,101–150,夜,よる,Malam,yoru,KANJI
+136,3,101–150,乗ります,のります,Naik,norimasu,KANJI
+137,3,101–150,学校,がっこう,Sekolahan,gakkou,KANJI
+138,3,101–150,小学校,しょうがっこう,SD,shougakkou,KANJI
+139,3,101–150,中学校,ちゅうがっこう,SMP,chuugakkou,KANJI
+140,3,101–150,高校,こうこう,SMA,koukou,KANJI
+141,3,101–150,大学,だいがく,Universitas,daigaku,KANJI
+142,3,101–150,先生,せんせい,Guru,sensei,KANJI
+143,3,101–150,学生,がくせい,"Murid, siswa",gakusei,KANJI
+144,3,101–150,～年生,～ねんせい,Kelas ~,~nensei,KANJI
+145,3,101–150,勉強,べんきょう,Pelajaran,benkyou,KANJI
+146,3,101–150,文化,ぶんか,Kebudayaan,bunka,KANJI
+147,3,101–150,音楽,おんがく,Musik,ongaku,KANJI
+148,3,101–150,旅行,りょこう,Wisata,ryokou,KANJI
+149,3,101–150,留学,りゅうがく,Belajar di luar negri,ryuugaku,KANJI
+150,3,101–150,友達,ともだち,Teman,toもdachi,KANJI
+151,4,151–200,楽しい,たのしい,Gembira,tanoshii,KANJI
+152,4,151–200,週,しゅう,Minggu,shuu,KANJI
+153,4,151–200,～回,～かい,~kali,~kai,KANJI
+154,4,151–200,食べ物,たべもの,Makanan,tabeもno,KANJI
+155,4,151–200,飲物,のみもの,Minuman,nomiもno,KANJI
+156,4,151–200,お茶,おちゃ,Teh hijau,ocha,KANJI
+157,4,151–200,お酒,おさけ,Sake,osake,KANJI
+158,4,151–200,作ります,つくります,Membuat,tsukurimasu,KANJI
+159,4,151–200,持っていきます,もっていきます,Membawa pergi,もtteikimasu,KANJI
+160,4,151–200,お願いします,おねがいします,Tolong,onegaishimasu,KANJI
+161,4,151–200,料理,りょうり,Masakan,ryouri,KANJI
+162,4,151–200,味,あじ,Rasa,aji,KANJI
+163,4,151–200,色,いろ,Warna,iro,KANJI
+164,4,151–200,野菜,やさい,Sayuran,yasai,KANJI
+165,4,151–200,少し,すこし,Sedikit,sukoshi,KANJI
+166,4,151–200,中,なか,Dalam,naka,KANJI
+167,4,151–200,入っています,はいっています,Masuk,haitteimasu,KANJI
+168,4,151–200,会社,かいしゃ,Perusahaan,kaisha,KANJI
+169,4,151–200,本社,ほんしゃ,Kantor pusat,honsha,KANJI
+170,4,151–200,支社,ししゃ,Kantor cabang,shisha,KANJI
+171,4,151–200,出張,しゅっちょう,Dinas luar kota,shucchou,KANJI
+172,4,151–200,空港,くうこう,Bandara,kuukou,KANJI
+173,4,151–200,出発,しゅっぱつ,Keberangkatan,shuppatsu,KANJI
+174,4,151–200,到着,とうちゃく,Kedatangan,touchaku,KANJI
+175,4,151–200,午前,ごぜん,AM,gozen,KANJI
+176,4,151–200,午後,ごご,PM,gogo,KANJI
+177,4,151–200,自分,じぶん,Sendiri,jibun,KANJI
+178,4,151–200,電話,でんわ,Telepon,denwa,KANJI
+179,4,151–200,電気,でんき,Listrik,denki,KANJI
+180,4,151–200,電車,でんしゃ,Kereta,densha,KANJI
+181,4,151–200,車,くるま,Mobil,kuruma,KANJI
+182,4,151–200,送ります,おくります,Mengirim,okurimasu,KANJI
+183,4,151–200,使います,つかいます,Menggunakan,tsukaimasu,KANJI
+184,4,151–200,借ります,かります,Meminjam,karimasu,KANJI
+185,4,151–200,体,からだ,Badan,karada,KANJI
+186,4,151–200,頭,あたま,Kepala,atama,KANJI
+187,4,151–200,目,め,Mata,me,KANJI
+188,4,151–200,口,くち,Mulut,kuchi,KANJI
+189,4,151–200,耳,みみ,Telinga,mimi,KANJI
+190,4,151–200,手,て,Tangan,te,KANJI
+191,4,151–200,足,あし,Kaki,ashi,KANJI
+192,4,151–200,上,うえ,Atas,ue,KANJI
+193,4,151–200,下,した,Bawah,shita,KANJI
+194,4,151–200,毎～,まい～,~ setiap,mai~,KANJI
+195,4,151–200,毎朝,まいあさ,setiap pagi,maiasa,KANJI
+196,4,151–200,毎日,まいにち,Setiap hari,mainichi,KANJI
+197,4,151–200,週末,しゅうまつ,Akhir pekan,shuumatsu,KANJI
+198,4,151–200,元気,げんき,Sehat,genki,KANJI
+199,4,151–200,外,そと,Luar,soto,KANJI
+200,4,151–200,起きます,おきます,Bangun tidur,okimasu,KANJI
+201,5,201–250,歩きます,あるきます,Berjalan,arukimasu,KANJI
+202,5,201–250,走ります,はしります,Berlari,hashirimasu,KANJI
+203,5,201–250,泳ぎます,およぎます,Berenang,oyogimasu,KANJI
+204,5,201–250,お祝い,おいわい,Perayaan,oiwai,KANJI
+205,5,201–250,誕生日,たんじょうび,Ulang tahun,tanjoubi,KANJI
+206,5,201–250,結婚,けっこん,Pernikahan,kekkon,KANJI
+207,5,201–250,絵,え,"Gambar, lukisan",e,KANJI
+208,5,201–250,写真,しゃしん,Foto,shashin,KANJI
+209,5,201–250,時計,とけい,Jam,tokei,KANJI
+210,5,201–250,着ます,きます,Memakai pakaian,kimasu,KANJI
+211,5,201–250,先～,せん～,~lalu,sen~,KANJI
+212,5,201–250,先週,せんしゅう,Minggu lalu,senshuu,KANJI
+213,5,201–250,今月,こんげつ,Bulan ini,kongetsu,KANJI
+214,5,201–250,来年,らいねん,Tahun depan,rainen,KANJI
+215,5,201–250,今年,ことし,Tahun ini,kotoshi,KANJI
+216,5,201–250,去年,きょねん,Tahun lalu,kyonen,KANJI
+217,5,201–250,家,いえ,Rumah,ie,KANJI
+218,5,201–250,思います,おもいます,Mengira,oもimasu,KANJI
+219,5,201–250,自己紹介,じこしょうかい,Perkenalan,jikoshoukai,KANJI
+220,5,201–250,名前,なまえ,Nama,namae,KANJI
+221,5,201–250,意味,いみ,Arti,imi,KANJI
+222,5,201–250,本屋,ほんや,Toko buku,honya,KANJI
+223,5,201–250,近く,ちかく,Dekat,chikaku,KANJI
+224,5,201–250,住みます,すみます,Tinggal,sumimasu,KANJI
+225,5,201–250,働きます,はたらきます,Bekerja,hatarakimasu,KANJI
+226,5,201–250,～番目,～ばんめ,Urutan yang ~,~banme,KANJI
+227,5,201–250,兄,あに,Kakak laki2 (sendiri),ani,KANJI
+228,5,201–250,兄いさん,おにいさん,Kakak laki2 (orang lain),oniisan,KANJI
+229,5,201–250,姉,あね,Kakak perempuan (sendiri),ane,KANJI
+230,5,201–250,お姉さん,おねえさん,Kakak perempuan (orang lain),oneesan,KANJI
+231,5,201–250,弟,おとうと,Adik laki2 (sendiri),otouto,KANJI
+232,5,201–250,妹,いもうと,Adik perempuan (sendiri),iもuto,KANJI
+233,5,201–250,家族,かぞく,Keluarga,kazoku,KANJI
+234,5,201–250,長い,ながい,Panjang,nagai,KANJI
+235,5,201–250,短い,みじかい,Pendek,mijikai,KANJI
+236,5,201–250,低い,ひくい,Rendah,hikui,KANJI
+237,5,201–250,上手,じょうず,Pandai,jouzu,KANJI
+238,5,201–250,歌,うた,Lagu,uta,KANJI
+239,5,201–250,歌います,うたいます,Menyanyi,utaimasu,KANJI
+240,5,201–250,客,きゃく,Tamu,kyaku,KANJI
+241,5,201–250,注文,ちゅうもん,Pesanan,chuuもn,KANJI
+242,5,201–250,洋食,ようしょく,Makanan barat,youshoku,KANJI
+243,5,201–250,和食,わしょく,Makanan jepang,washoku,KANJI
+244,5,201–250,牛肉,ぎゅうにく,Daging sapi,gyuuniku,KANJI
+245,5,201–250,地方,ちほう,"Daerah, wilayah",chihou,KANJI
+246,5,201–250,有名,ゆうめい,Terkenal,yuumei,KANJI
+247,5,201–250,生,なま,Mentah,nama,KANJI
+248,5,201–250,冷たい,つめたい,Dingin (benda),tsumetai,KANJI
+249,5,201–250,ご飯,ごはん,Nasi,gohan,KANJI
+250,5,201–250,塩,しお,Garam,shio,KANJI
+251,6,251–300,全部,ぜんぶ,Semua,zenbu,KANJI
+252,6,251–300,～方,～かた,Cara~,~kata,KANJI
+253,6,251–300,食べ方,たべかた,Cara makan,tabekata,KANJI
+254,6,251–300,熱い,あつい,Panas,atsui,KANJI
+255,6,251–300,苦手,にがて,"Susah, berat, tidak begitu suka",nigate,KANJI
+256,6,251–300,入れます,いれます,Memasukkan,iremasu,KANJI
+257,6,251–300,木,き,Pohon,ki,KANJI
+258,6,251–300,森,もり,Hutan,もri,KANJI
+259,6,251–300,島,しま,Pulau,shima,KANJI
+260,6,251–300,自然,しぜん,Alam,shizen,KANJI
+261,6,251–300,船,ふね,Kapal,fune,KANJI
+262,6,251–300,暑い,あつい,Panas,atsui,KANJI
+263,6,251–300,帰ります,かえります,Pulang,kaerimasu,KANJI
+264,6,251–300,予約します,よやくします,Memesan,yoyakushimasu,KANJI
+265,6,251–300,運転します,うんてんします,Menyetir,untenshimasu,KANJI
+266,6,251–300,～中,～ちゅう／～じゅう,Sedang/dalam ~,~chuu/~jiyuu,KANJI
+267,6,251–300,旅行中,りょこうちゅう,Sedang wisata,ryokouchuu,KANJI
+268,6,251–300,観光地,かんこうち,Tempat wisata,kankouchi,KANJI
+269,6,251–300,女性,じょせい,Wanita,josei,KANJI
+270,6,251–300,男性,だんせい,Pria,dansei,KANJI
+271,6,251–300,動物,どうぶつ,Hewan,doubutsu,KANJI
+272,6,251–300,空気,くうき,Udara,kuuki,KANJI
+273,6,251–300,料金,りょうきん,Biaya / tarif,ryoukin,KANJI
+274,6,251–300,無料,むりょう,Gratis,muryou,KANJI
+275,6,251–300,明るい,あかるい,Terang,akarui,KANJI
+276,6,251–300,便利,べんり,Praktis,benri,KANJI
+277,6,251–300,一年中,いちねんじゅう,Dalam satu tahun,ichinenjiyuu,KANJI
+278,6,251–300,受付,うけつけ,Penerima tamu,uketsuke,KANJI
+279,6,251–300,広場,ひろば,Lapangan,hiroba,KANJI
+280,6,251–300,問題,もんだい,"Soal, masalah",もndai,KANJI
+281,6,251–300,同じ,おなじ,Sama,onaji,KANJI
+282,6,251–300,集まります,あつまります,Berkumpul,atsumarimasu,KANJI
+283,6,251–300,始まります,はじまります,Mulai,hajimarimasu,KANJI
+284,6,251–300,終わります,おわります,Selesai,owarimasu,KANJI
+285,6,251–300,中止します,ちゅうししします,"Mengurungkan, membatalkan",chuushishishimasu,KANJI
+286,6,251–300,教えます,おしえます,Memberitahu,oshiemasu,KANJI
+287,6,251–300,祭り,まつり,Perayaan,matsuri,KANJI
+288,6,251–300,日本祭り,にほんまつり,Perayaan jepang,nihonmatsuri,KANJI
+289,6,251–300,会場,かいじょう,Ruang pertemuan,kaijou,KANJI
+290,6,251–300,入場料,にゅうじょうりょう,Tarif masuk,nyuujouryou,KANJI
+291,6,251–300,参加者,さんかしゃ,Peserta,sankasha,KANJI
+292,6,251–300,急ぎます,いそぎます,Buru-buru,isogimasu,KANJI
+293,6,251–300,決めます,きめます,Menentukan,kimemasu,KANJI
+294,6,251–300,知ります,しります,"Kenal, tahu",shirimasu,KANJI
+295,6,251–300,正月,しょうがつ,Tahun baru,shougatsu,KANJI
+296,6,251–300,年末,ねんまつ,Akhir tahun,nenmatsu,KANJI
+297,6,251–300,年始,ねんし,Awal tahun,nenshi,KANJI
+298,6,251–300,親,おや,Orang tua,oya,KANJI
+299,6,251–300,忙しい,いそがしい,Sibuk,isogashii,KANJI
+300,6,251–300,特別,とくべつ,"Istimewa, special",tokubetsu,KANJI
+301,7,301–350,帰国,きこく,Pulang ke negara,kikoku,KANJI
+302,7,301–350,喜びます,よろこびます,Merasa senang/gembira,yorokobimasu,KANJI
+303,7,301–350,幸せ,しあわせ,Bahagia,shiawase,KANJI
+304,7,301–350,成長,せいちょう,"Pertumbuhan, perkembangan",seichou,KANJI
+305,7,301–350,長生き,ながいき,"Umur panjang, hidup lama",nagaiki,KANJI
+306,7,301–350,願い事,ねがいこと,"Keinginan, kemauan, harapan",negaikoto,KANJI
+307,7,301–350,合格,ごうかく,Lulus,goukaku,KANJI
+308,7,301–350,試験,しけん,Ujian,shiken,KANJI
+309,7,301–350,大人,おとな,Orang Dewasa,otona,KANJI
+310,7,301–350,～式（成人式）,～しき（せいじんしき）,Upacara ~(upacara kedewasaan),~shiki(seijinshiki),KANJI
+311,7,301–350,～市（さいたま市）,～し（さいたまし）,Kota~(kota saitama),~shi(saitamashi),KANJI
+312,7,301–350,商品,しょうひん,Barang dagangan,shouhin,KANJI
+313,7,301–350,電気製品,でんきせいひん,Peralatan listrik,denkiseihin,KANJI
+314,7,301–350,電子レンジ,でんしレンジ,Oven,denshirenji,KANJI
+315,7,301–350,～機（そうじ機）,～き（そうじき）,Mesin~(mesin penghisap debu),~ki(soujiki),KANJI
+316,7,301–350,店員,てんいん,Penjaga toko,tenin,KANJI
+317,7,301–350,調子,ちょうし,"Keadaan, kondisi",choushi,KANJI
+318,7,301–350,悪い,わるい,Jelek,warui,KANJI
+319,7,301–350,動きます,うごきます,Bergerak,ugokimasu,KANJI
+320,7,301–350,考えます,かんがえます,Berfikir,kangaemasu,KANJI
+321,7,301–350,音,おと,Suara,oto,KANJI
+322,7,301–350,出ます,でます,Keluar,demasu,KANJI
+323,7,301–350,機能,きのう,Fungsi,kinou,KANJI
+324,7,301–350,省エネ,しょうエネ,Penghematan energy,shouene,KANJI
+325,7,301–350,日本製,にほんせい,Produk/buatan jepang,nihonsei,KANJI
+326,7,301–350,重い,おもい,Berat,oもi,KANJI
+327,7,301–350,軽い,かるい,Ringan,karui,KANJI
+328,7,301–350,静か,しずか,Tenang,shizuka,KANJI
+329,7,301–350,早く,はやく,Cepat,hayaku,KANJI
+330,7,301–350,方（こっちの方）,ほう（こっちのほう）,Arah(arah disini),hou(kocchinohou),KANJI
+331,7,301–350,洗います,あらいます,Mencuci,araimasu,KANJI
+332,7,301–350,満足します,まんぞくします,"Puas, merasa puas",manzokushimasu,KANJI
+333,7,301–350,京都,きょうと,Kyoto,kyouto,KANJI
+334,7,301–350,神社,じんじゃ,Kuil sinto,jinja,KANJI
+335,7,301–350,お寺,おてら,Kuil,otera,KANJI
+336,7,301–350,仏教,ぶっきょう,Agama budha,bukkyou,KANJI
+337,7,301–350,歴史,れきし,Sejarah,rekishi,KANJI
+338,7,301–350,世界,せかい,Dunia,sekai,KANJI
+339,7,301–350,中心,ちゅうしん,Pusat,chuushin,KANJI
+340,7,301–350,～世紀（８世紀）,～せいき（はっせいき）,Abad~,~seiki(hasseiki),KANJI
+341,7,301–350,～的,～てき,Berbau~ / ke~ an,~teki,KANJI
+342,7,301–350,日本的,にほんてき,Berbau jepang,nihonteki,KANJI
+343,7,301–350,歴史的,れきしてき,Bersejarah,rekishiteki,KANJI
+344,7,301–350,飲食,いんしょく,Makan minum,inshoku,KANJI
+345,7,301–350,禁止,きんし,Larangan,kinshi,KANJI
+346,7,301–350,説明,せつめい,Penjelasan,setsumei,KANJI
+347,7,301–350,道具,どうぐ,Peralatan,dougu,KANJI
+348,7,301–350,博物館,はくぶつかん,Museum,hakubutsukan,KANJI
+349,7,301–350,必要,ひつよう,"Keperluan, kebutuhan",hitsuyou,KANJI
+350,7,301–350,～階（２階）,～かい（にかい）,Lantai ~ ( lantai 2 ),~kai(nikai),KANJI
+351,8,351–400,油,あぶら,"Minyak, oli",abura,KANJI
+352,8,351–400,紙,かみ,Kertas,kami,KANJI
+353,8,351–400,温度,おんど,"Suhu, derajat",ondo,KANJI
+354,8,351–400,活動,かつどう,"Kegiatan, aktivitas",katsudou,KANJI
+355,8,351–400,会議室,かいぎしつ,Ruang rapat,kaigishitsu,KANJI
+356,8,351–400,寒い,さむい,Dingin ( suhu ),samui,KANJI
+357,8,351–400,出します,だします,"Mengeluarkan, mengirim (surat)",dashimasu,KANJI
+358,8,351–400,～度（２８度）,～ど（にじゅうはちど）,~derajat ( 28 derajat ),~do(nijiyuuhachido),KANJI
+359,8,351–400,～点（１００点）,～てん（１００てん）,Nilai ~ ( nilai 100 ),~ten(100ten),KANJI
+360,8,351–400,服,ふく,"Baju, pakaian",fuku,KANJI
+361,8,351–400,自転車,じてんしゃ,Sepeda,jitensha,KANJI
+362,8,351–400,自動車,じどうしゃ,Mobil,jidousha,KANJI
+363,8,351–400,売ります,うります,Menjual,urimasu,KANJI
+364,8,351–400,貸します,かします,Meminjamkan,kashimasu,KANJI
+365,8,351–400,返します,かえします,Mengembalikan,kaeshimasu,KANJI
+366,8,351–400,変わります,かわります,Mengganti,kawarimasu,KANJI
+367,8,351–400,～用,～よう,"Urusan, keperluan ~",~you,KANJI
+368,8,351–400,子供用,こどもよう,Urusan anak,kodoもyou,KANJI
+369,8,351–400,人生,じんせい,Kehidupan,jinsei,KANJI
+370,8,351–400,歌手,かしゅ,Penyanyi,kashu,KANJI
+371,8,351–400,選手,せんしゅ,"Atlit, pemain",senshu,KANJI
+372,8,351–400,画家,がか,Pelukis,gaka,KANJI
+373,8,351–400,作家,さっか,Pengarang,sakka,KANJI
+374,8,351–400,入学,にゅうがく,Masuk sekolah,nyuugaku,KANJI
+375,8,351–400,卒業,そつぎょう,Lulus,sotsugyou,KANJI
+376,8,351–400,病気,びょうき,Sakit,byouki,KANJI
+377,8,351–400,若い,わかい,Muda,wakai,KANJI
+378,8,351–400,生まれます,うまれます,Lahir,umaremasu,KANJI
+379,8,351–400,思い出,おもいで,"Kenang-kenangan, kenangan",oもide,KANJI
+380,8,351–400,生活,せいかつ,Kehidupan,seikatsu,KANJI
+381,8,351–400,映画,えいが,Film,eiga,KANJI
+382,8,351–400,夫,おっと,Suami ( sendiri ),otto,KANJI
+383,8,351–400,妻,つま,Istri ( sendiri ),tsuma,KANJI
+384,8,351–400,両親,りょうしん,Orang tua,ryoushin,KANJI
+385,8,351–400,不便,ふべん,Tidak praktis,fuben,KANJI
+386,8,351–400,選びます,えらびます,Memilih,erabimasu,KANJI
+387,8,351–400,寝ます,ねます,Tidur,nemasu,KANJI
+388,8,351–400,サッカー場,サッカーじょう,Lapangan sepak bola,sakka-jou,KANJI
+389,8,351–400,試合,しあい,Pertandingan,shiai,KANJI
+390,8,351–400,日曜日,にちようび,Minggu,nichiyoubi,KANJI
+391,8,351–400,強い,つよい,Kuat,tsuyoi,KANJI
+392,8,351–400,弱い,よわい,Lemah,yowai,KANJI
+393,8,351–400,勝ちます,かちます,Menang,kachimasu,KANJI
+394,8,351–400,負けます,まけます,Kalah,makemasu,KANJI
+395,8,351–400,～対～（２対１）,～たい～（にたいいち）,~lawan~ ( 2 lawan 1 ),~tai~(nitaiichi),KANJI
+396,8,351–400,庭,にわ,Halaman,niwa,KANJI
+397,8,351–400,公園,こうえん,Taman,kouen,KANJI
+398,8,351–400,病院,びょういん,Rumah sakit,byouin,KANJI
+399,8,351–400,交通,こうつう,Lalu lintas,koutsuu,KANJI
+400,8,351–400,通勤,つうきん,Perjalanan ke kantor,tsuukin,KANJI
+401,9,401–450,安全,あんぜん,Keselamatan,anzen,KANJI
+402,9,401–450,危ない,あぶない,Bahaya,abunai,KANJI
+403,9,401–450,遠い,とおい,Jauh,tooi,KANJI
+404,9,401–450,努めます,つとめます,Bekerja,tsutomemasu,KANJI
+405,9,401–450,～以上（２時間以上）,～いじょう（にじかんいじょう）,~ lebih ( 2 jam lebih ),~ijou(nijikanijou),KANJI
+406,9,401–450,～以下（６万円以下）,～いか（ろくまんえんいか）,~kurang ( kurang dari 6 man yen ),~ika(rokumanenika),KANJI
+407,9,401–450,海外,かいがい,Luar negri,kaigai,KANJI
+408,9,401–450,食生活,しょくせいかつ,Susunan makanan,shokuseikatsu,KANJI
+409,9,401–450,健康,けんこう,Kesehatan,kenkou,KANJI
+410,9,401–450,家庭料理,かていりょうり,Masakan rumah tangga,kateiryouri,KANJI
+411,9,401–450,材料,ざいりょう,Bahan,zairyou,KANJI
+412,9,401–450,量,りょう,"Jumlah, kuantitas, banyaknya",ryou,KANJI
+413,9,401–450,米,こめ,Beras,kome,KANJI
+414,9,401–450,～食,～しょく,Makan ~,~shoku,KANJI
+415,9,401–450,朝食,ちょうしょく,Makan pagi,choushoku,KANJI
+416,9,401–450,昼食,ちゅうしょく,Makan siang,chuushoku,KANJI
+417,9,401–450,夕食,ゆうしょく,Makan malam,yuushoku,KANJI
+418,9,401–450,外食,がいしょく,Makan di luar,gaishoku,KANJI
+419,9,401–450,定食,ていしょく,Makanan dengan menu tetap,teishoku,KANJI
+420,9,401–450,住所,じゅうしょ,Alamat,jiyuusho,KANJI
+421,9,401–450,訪問,ほうもん,Kunjungan,houもn,KANJI
+422,9,401–450,経験,けいけん,Pengalaman,keiken,KANJI
+423,9,401–450,親切,しんせつ,Ramah,shinsetsu,KANJI
+424,9,401–450,座ります,すわります,Duduk,suwarimasu,KANJI
+425,9,401–450,立ちます,たちます,Berdiri,tachimasu,KANJI
+426,9,401–450,～観（人生観）,～かん（じんせいかん）,Pandangan ~ ( pandangan hidup ),~kan(jinseikan),KANJI
+427,9,401–450,約～（約６年間）,やく～（やくろくねんかん）,"Kira2, sekitar ( sekitar 6 tahun )",yaku~(yakurokunenkan),KANJI
+428,9,401–450,計画,けいかく,"Rencana, program",keikaku,KANJI
+429,9,401–450,自信,じしん,Percaya diri,jishin,KANJI
+430,9,401–450,方法,ほうほう,Cara,houhou,KANJI
+431,9,401–450,目的,もくてき,Tujuan,もkuteki,KANJI
+432,9,401–450,難しい,むずかしい,Sulit,muzukashii,KANJI
+433,9,401–450,通じます,つうじます,"Mengalirkan, menguasai, berhubungan",tsuujimasu,KANJI
+434,9,401–450,習います,ならいます,Belajar kepada,naraimasu,KANJI
+435,9,401–450,学びます,まなびます,Belajar,manabimasu,KANJI
+436,9,401–450,～級,～きゅう,"Kelas, tingkat ~",~kyuu,KANJI
+437,9,401–450,初級,しょきゅう,Kelas dasar,shokyuu,KANJI
+438,9,401–450,中級,ちゅうきゅう,Kelas menengah,chuukyuu,KANJI
+439,9,401–450,上級,じょうきゅう,Kelas atas,joukyuu,KANJI
+440,9,401–450,相手,あいて,"Pasangan, lawan",aite,KANJI
+441,9,401–450,気持ち,きもち,Perasaan enak,kiもchi,KANJI
+442,9,401–450,恋人,こいびと,Pacar,koibito,KANJI
+443,9,401–450,出会い,であい,Pertemuan,deai,KANJI
+444,9,401–450,最近,さいきん,Akhir-akhir ini,saikin,KANJI
+445,9,401–450,最高,さいこう,"Teratas, tertinggi",saikou,KANJI
+446,9,401–450,出席,しゅっせき,Kehadiran,shusseki,KANJI
+447,9,401–450,招待,しょうたい,Undangan,shoutai,KANJI
+448,9,401–450,～合う（知り合う）,～あう（しりあう）,Cocok ~ ( kenal mengenal ),~au(shiriau),KANJI
+449,9,401–450,社会人,しゃかいじん,Anggota masyarakat,shakaijin,KANJI
+450,9,401–450,職場,しょくば,Tempat kerja,shokuba,KANJI
+451,10,451–500,給料,きゅうりょう,Gaji,kyuuryou,KANJI
+452,10,451–500,人間関係,にんげんかんけい,Hubungan antar manusia,ningenkankei,KANJI
+453,10,451–500,親友,しんゆう,Teman karib,shinyuu,KANJI
+454,10,451–500,恋愛,れんあい,"Percintaan, asmara",renai,KANJI
+455,10,451–500,相談,そうだん,Musyawarah,soudan,KANJI
+456,10,451–500,心,こころ,Hati,kokoro,KANJI
+457,10,451–500,心配,しんぱい,Khawatir,shinpai,KANJI
+458,10,451–500,不安,ふあん,"Kegelisahan, kekhawatiran",fuan,KANJI
+459,10,451–500,お客様,おきゃくさま,Tamu,okyakusama,KANJI
+460,10,451–500,手続き,てつづき,Prosedur,tetsuzuki,KANJI
+461,10,451–500,飛行機,ひこうき,Pesawat terbang,hikouki,KANJI
+462,10,451–500,変更,へんこう,Perubahan,henkou,KANJI
+463,10,451–500,予定,よてい,Rencana,yotei,KANJI
+464,10,451–500,利用,りよう,"Penggunaan, pemakaian",riyou,KANJI
+465,10,451–500,忘れ物,わすれもの,Benda yang tertinggal,wasureもno,KANJI
+466,10,451–500,助けます,たすけます,Menolong,tasukemasu,KANJI
+467,10,451–500,～航空（ＪＦ航空）,～こうくう（ＪＦこうくう）,Penerbangan ~ ( penerbangan JF ),~koukuu(ＪＦkoukuu),KANJI
+468,10,451–500,～便（１１５便）,～びん（いちいちごびん）,"Penerbangan, pos ( pos 115 )",~bin(ichiichigobin),KANJI
+469,10,451–500,体力,たいりょく,Kekuatan,tairyoku,KANJI
+470,10,451–500,協力,きょうりょく,Kerjasama,kyouryoku,KANJI
+471,10,451–500,担当,たんとう,Petugas,tantou,KANJI
+472,10,451–500,報告,ほうこく,Melapor,houkoku,KANJI
+473,10,451–500,連絡,れんらく,Menghubungi,renraku,KANJI
+474,10,451–500,募集,ぼしゅう,"Penerimaan, perekrutan",boshuu,KANJI
+475,10,451–500,輸出,ゆしゅつ,Ekspor,yushutsu,KANJI
+476,10,451–500,輸入,ゆにゅう,Impor,yunyuu,KANJI
+477,10,451–500,会話,かいわ,Percakapan,kaiwa,KANJI
+478,10,451–500,形,かたち,Bentuk,katachi,KANJI
+479,10,451–500,漢字,かんじ,Kanji,kanji,KANJI
+480,10,451–500,答え,こたえ,Jawaban,kotae,KANJI
+481,10,451–500,質問,しつもん,Pertanyaan,shitsuもn,KANJI
+482,10,451–500,正しい,ただしい,Benar,tadashii,KANJI
+483,10,451–500,読解,どっかい,Bacaan,dokkai,KANJI
+484,10,451–500,表現,ひょうげん,Pengucapan,hyougen,KANJI
+485,10,451–500,文,ぶん,Kalimat,bun,KANJI
+486,10,451–500,文型,ぶんけい,Pola kalimat,bunkei,KANJI
+487,10,451–500,文法,ぶんぽう,Tata Bahasa,bunpou,KANJI
+488,10,451–500,もう一度,もういちど,Sekali lagi,もuichido,KANJI
+489,10,451–500,例,れい,Contoh,rei,KANJI
+490,10,451–500,練習,れんしゅう,latihan,renshuu,KANJI
+491,10,451–500,～枚,～まい,~lembar,~mai,KANJI
+492,10,451–500,今週,こんしゅう,Minggu ini,konshuu,KANJI
+493,10,451–500,今度,こんど,"Lain kali, yang akan datang",kondo,KANJI
+494,10,451–500,横,よこ,Sebelah,yoko,KANJI
+495,10,451–500,押します,おします,"Menekan, mendorong",oshimasu,KANJI
+496,10,451–500,引きます,ひきます,Menarik,hikimasu,KANJI
+497,10,451–500,温泉,おんせん,Pemandian air panas,onsen,KANJI
+498,10,451–500,来週,らいしゅう,Minggu depan,raishuu,KANJI
+499,10,451–500,犬,いぬ,Anjing,inu,KANJI
+500,10,451–500,夕方,ゆうがた,Sore,yuugata,KANJI
+501,11,501–550,季節,きせつ,Musim,kisetsu,KANJI
+502,11,501–550,昨日,きのう,Kemarin,kinou,KANJI
+503,11,501–550,明日,あした,Besok,ashita,KANJI
+504,11,501–550,食堂,しょくどう,Kantin,shokudou,KANJI
+505,11,501–550,銀行,ぎんこう,Bank,ginkou,KANJI
+506,11,501–550,受付,うけつけ,Resepsionis,uketsuke,KANJI
+507,11,501–550,門,もん,Pintu gerbang,もn,KANJI
+508,11,501–550,登ります,のぼります,Mendaki,noborimasu,KANJI
+509,11,501–550,教科書,きょうかしょ,Buku panduan,kyoukasho,KANJI
+510,11,501–550,教室,きょうしつ,Ruang kelas,kyoushitsu,KANJI
+511,11,501–550,参加します,さんかします,Berpartisipasi,sankashimasu,KANJI
+512,11,501–550,用意します,よういします,Menyiapkan,youishimasu,KANJI
+513,11,501–550,牛肉,ぎゅうにく,Daging sapi,gyuuniku,KANJI
+514,11,501–550,豚肉,ぶたにく,Daging babi,butaniku,KANJI
+515,11,501–550,皿,さら,Piring,sara,KANJI
+516,11,501–550,お湯,おゆ,Air panas,oyu,KANJI
+517,11,501–550,調理方法,ちょうりほうほう,Cara memasak,chourihouhou,KANJI
+518,11,501–550,甘い,あまい,Manis,amai,KANJI
+519,11,501–550,辛い,からい,Pedas,karai,KANJI
+520,11,501–550,数字,すうじ,"Angka, bilangan",suuji,KANJI
+521,11,501–550,机,つくえ,Meja,tsukue,KANJI
+522,11,501–550,都合,つごう,Keadaan,tsugou,KANJI
+523,11,501–550,用事,ようじ,Keperluan,youji,KANJI
+524,11,501–550,氏名,しめい,Nama lengkap,shimei,KANJI
+525,11,501–550,理由,りゆう,Alasan,riyuu,KANJI
+526,11,501–550,別に,べつに,Beda-beda,betsuni,KANJI
+527,11,501–550,連絡先,れんらくさき,Alamat yang dapat dihubungi,renrakusaki,KANJI
+528,11,501–550,吸います,すいます,Menghisap,suimasu,KANJI
+529,11,501–550,取ります,とります,Mengambil,torimasu,KANJI
+530,11,501–550,伝えます,つたえます,Menyampaikan,tsutaemasu,KANJI
+531,11,501–550,熱,ねつ,Demam,netsu,KANJI
+532,11,501–550,薬,くすり,Obat,kusuri,KANJI
+533,11,501–550,医者,いしゃ,Dokter,isha,KANJI
+534,11,501–550,～才,～さい,Bakat～／umur～,~sai,KANJI
+535,11,501–550,眠い,ねむい,Ngantuk,nemui,KANJI
+536,11,501–550,記入します,きにゅうします,Mengisi di kertas,kinyuushimasu,KANJI
+537,11,501–550,顔,かお,Wajah,kao,KANJI
+538,11,501–550,泣きます,なきます,Menangis,nakimasu,KANJI
+539,11,501–550,会計,かいけい,Pembayaran,kaikei,KANJI
+540,11,501–550,電話番号,でんわばんごう,Nomor telepon,denwabangou,KANJI
+541,11,501–550,牛乳,ぎゅうにゅう,Susu sapi,gyuunyuu,KANJI
+542,11,501–550,禁煙,きんえん,Larangan merokok,kinen,KANJI
+543,11,501–550,自由,じゆう,Bebas,jiyuu,KANJI
+544,11,501–550,切ります,きります,Memotong,kirimasu,KANJI
+545,11,501–550,焼きます,やきます,Memanggang,yakimasu,KANJI
+546,11,501–550,旅館,りょかん,Penginapan,ryokan,KANJI
+547,11,501–550,遊びます,あそびます,Bermain,asobimasu,KANJI
+548,11,501–550,調べます,しらべます,Memeriksa,shirabemasu,KANJI
+549,11,501–550,事故,じこ,Kecelakaan,jiko,KANJI
+550,11,501–550,故障,こしょう,Kerusakan,koshou,KANJI
+551,12,551–600,指定席,していせき,Tempat duduk yang ditetapkan,shiteiseki,KANJI
+552,12,551–600,光ります,ひかります,"Bercahaya, bersinar",hikarimasu,KANJI
+553,12,551–600,お知らせ,おしらせ,Pengumuman,oshirase,KANJI
+554,12,551–600,水道,すいどう,Ledeng,suidou,KANJI
+555,12,551–600,工事,こうじ,Konstruksi,kouji,KANJI
+556,12,551–600,場合,ばあい,Kesempatan,baai,KANJI
+557,12,551–600,条件,じょうけん,"Syarat-syarat, kondisi",jouken,KANJI
+558,12,551–600,開きます,ひらきます,Membuka,hirakimasu,KANJI
+559,12,551–600,生産します,せいさんします,Memproduksi,seisanshimasu,KANJI
+560,12,551–600,体験,たいけん,Percobaan,taiken,KANJI
+561,12,551–600,国際交流,こくさいこうりゅう,Pertukaran budaya internasional,kokusaikouryuu,KANJI
+562,12,551–600,申し込みます,もうしこみます,Melamar (pekerjaan),もushikomimasu,KANJI
+563,12,551–600,昨年,さくねん,Tahun lalu,sakunen,KANJI
+564,12,551–600,毎年,まいとし,Setiap tahun,maitoshi,KANJI
+565,12,551–600,袋,ふくろ,Kantong plastik,fukuro,KANJI
+566,12,551–600,店長,てんちょう,Manajer toko,tenchou,KANJI
+567,12,551–600,全員,ぜんいん,Semuanya,zenin,KANJI
+568,12,551–600,習慣,しゅうかん,Kebiasaan,shuukan,KANJI
+569,12,551–600,普通,ふつう,Biasa,futsuu,KANJI
+570,12,551–600,暗い,くらい,Gelap,kurai,KANJI
+571,12,551–600,怒ります,おこります,Marah,okorimasu,KANJI
+572,12,551–600,入院します,にゅういんします,Masuk rumah sakit,nyuuinshimasu,KANJI
+573,12,551–600,退院します,たいいんします,Keluar rumah sakit,taiinshimasu,KANJI
+574,12,551–600,急に,きゅうに,Tiba-tiba,kyuuni,KANJI
+575,12,551–600,営業します,えいぎょうします,Mengusahakan,eigyoushimasu,KANJI
+576,12,551–600,案内します,あんないします,Memandu,annaishimasu,KANJI
+577,12,551–600,値段,ねだん,Harga,nedan,KANJI
+578,12,551–600,価格,かかく,Harga,kakaku,KANJI
+579,12,551–600,消費税,しょうひぜい,Pajak konsumen,shouhizei,KANJI
+580,12,551–600,税別,ぜいべつ,Harga belum termasuk pajak,zeibetsu,KANJI
+581,12,551–600,図書館,としょかん,Perpustakaan,toshokan,KANJI
+582,12,551–600,開きます,あきます,Terbuka,akimasu,KANJI
+583,12,551–600,閉まります,しまります,Tertutup,shimarimasu,KANJI
+584,12,551–600,利用します,りようします,Menggunakan,riyoushimasu,KANJI
+585,12,551–600,窓口,まどぐち,Pintu jendela,madoguchi,KANJI
+586,12,551–600,郵便局,ゆうびんきょく,Kantor pos,yuubinkyoku,KANJI
+587,12,551–600,近所,きんじょ,Tetangga,kinjo,KANJI
+588,12,551–600,自動,じどう,Otomatis,jidou,KANJI
+589,12,551–600,危険,きけん,Bahaya,kiken,KANJI
+590,12,551–600,～種類,～しゅるい,"～macam, jenis",~shurui,KANJI
+591,12,551–600,消します,けします,Memadamkan,keshimasu,KANJI
+592,12,551–600,捨てます,すてます,Membuang,sutemasu,KANJI
+593,12,551–600,分けます,わけます,Membagi,wakemasu,KANJI
+594,12,551–600,燃えます,もえます,Terbakar,もemasu,KANJI
+595,12,551–600,設定します,せっていします,"Mengeset, menyeting",setteishimasu,KANJI
+596,12,551–600,地震,じしん,Gempa,jishin,KANJI
+597,12,551–600,台風,たいふう,Angin topan,taifuu,KANJI
+598,12,551–600,声,こえ,Suara (benda hidup),koe,KANJI
+599,12,551–600,大切な,たいせつな,Penting,taisetsuna,KANJI
+600,12,551–600,進みます,すすみます,Rekomendasi,susumimasu,KANJI
+601,13,601–613,授業,じゅぎょう,Pelajaran,jiyugyou,KANJI
+602,13,601–613,大変な,たいへんな,Berat (perasaan),taihenna,KANJI
+603,13,601–613,困ります,こまります,Susah,komarimasu,KANJI
+604,13,601–613,違います,ちがいます,"Salah, berbeda",chigaimasu,KANJI
+605,13,601–613,慣れます,なれます,terbiasa,naremasu,KANJI
+606,13,601–613,増えます,ふえます,Bertambah,fuemasu,KANJI
+607,13,601–613,笑います,わらいます,Tertawa,waraimasu,KANJI
+608,13,601–613,苦労します,くろうします,Bersakit-sakit ( dalam usaha),kuroushimasu,KANJI
+609,13,601–613,希望,きぼう,"Harapan, keinginan",kibou,KANJI
+610,13,601–613,特に,とくに,Terutama,tokuni,KANJI
+611,13,601–613,建てます,たてます,Mendirikan,tatemasu,KANJI
+612,13,601–613,続けます,つづけます,Melanjutkan,tsuzukemasu,KANJI
+613,13,601–613,役に立ちます,やくにたちます,Bermanfaat,yakunitachimasu,KANJI

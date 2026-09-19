@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Kotoba Classic Palette (kotoba-1.apk Night Theme) -->
+    <color name="colorBackground">#121016</color>
+    <color name="colorSurface">#1c1822</color>
+    <color name="colorSurfaceBase">#1c1822</color>
+    <color name="colorSurfaceElevated">#272230</color>
+    <color name="colorBorderOutline">#2e2838</color>
+    <color name="colorCardBg">#1c1822</color>
+    <color name="colorCardStroke">#2e2838</color>
+
+    <color name="colorTextPrimary">#f8f6fa</color>
+    <color name="colorTextSecondary">#a89fb3</color>
+    <color name="colorTextTertiary">#736a80</color>
+
+    <!-- Soft Lavender Accent (Night Variant) -->
+    <color name="colorPrimary">#a78bfa</color>
+    <color name="colorPrimaryVariant">#8b5cf6</color>
+    <color name="colorSecondary">#c4b5fd</color>
+    <color name="colorSecondaryVariant">#a78bfa</color>
+    <color name="colorOnPrimary">#121016</color>
+    <color name="colorOnSecondary">#121016</color>
+    <color name="colorOnSurface">#f8f6fa</color>
+    <color name="colorRipple">#25a78bfa</color>
+
+    <!-- Badges & Chips -->
+    <color name="colorBadgeBg">#2e1065</color>
+    <color name="colorBadgeText">#ddd6fe</color>
+    <color name="colorActiveChip">#8b5cf6</color>
+    <color name="colorActiveChipText">#121016</color>
+    <color name="colorInactiveChip">#272230</color>
+    <color name="colorInactiveChipText">#a89fb3</color>
+
+    <!-- Ruby / Furigana Accent -->
+    <color name="colorFuriganaRuby">#c4b5fd</color>
+
+    <!-- Functional States -->
+    <color name="colorSuccess">#22c55e</color>
+    <color name="colorError">#ef4444</color>
+    <color name="colorWarning">#f59e0b</color>
+</resources>

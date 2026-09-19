@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Kotoba Classic Palette (kotoba-1.apk Light Theme) -->
+    <color name="colorBackground">#faf7f2</color>
+    <color name="colorBackgroundDark">#121016</color>
+    <color name="colorSurface">#ffffff</color>
+    <color name="colorSurfaceBase">#ffffff</color>
+    <color name="colorSurfaceBaseDark">#1c1822</color>
+    <color name="colorSurfaceDark">#1c1822</color>
+    <color name="colorSurfaceElevated">#f3ece2</color>
+    <color name="colorSurfaceElevatedDark">#272230</color>
+    <color name="colorBorderOutline">#e8e0d5</color>
+    <color name="colorBorderOutlineDark">#2e2838</color>
+    <color name="colorCardBg">#ffffff</color>
+    <color name="colorCardStroke">#e8e0d5</color>
+
+    <color name="colorTextPrimary">#1a161e</color>
+    <color name="colorTextPrimaryDark">#f8f6fa</color>
+    <color name="colorTextSecondary">#574f60</color>
+    <color name="colorTextSecondaryDark">#a89fb3</color>
+    <color name="colorTextTertiary">#82788d</color>
+
+    <!-- Signature Royal Violet Accent -->
+    <color name="colorPrimary">#6d28d9</color>
+    <color name="colorPrimaryVariant">#5b21b6</color>
+    <color name="colorSecondary">#7c3aed</color>
+    <color name="colorSecondaryVariant">#6d28d9</color>
+    <color name="colorOnPrimary">#ffffff</color>
+    <color name="colorOnSecondary">#ffffff</color>
+    <color name="colorOnSurface">#1a161e</color>
+    <color name="colorRipple">#256d28d9</color>
+
+    <!-- Badges & Chips -->
+    <color name="colorBadgeBg">#ede9fe</color>
+    <color name="colorBadgeBgDark">#2e1065</color>
+    <color name="colorBadgeText">#5b21b6</color>
+    <color name="colorBadgeTextDark">#ddd6fe</color>
+    <color name="colorActiveChip">#6d28d9</color>
+    <color name="colorActiveChipText">#ffffff</color>
+    <color name="colorInactiveChip">#f3ece2</color>
+    <color name="colorInactiveChipText">#574f60</color>
+
+    <!-- Ruby / Furigana Accent -->
+    <color name="colorFuriganaRuby">#6d28d9</color>
+    <color name="colorFuriganaRubyDark">#c4b5fd</color>
+
+    <!-- Functional States -->
+    <color name="colorSuccess">#15803d</color>
+    <color name="colorError">#b91c1c</color>
+    <color name="colorWarning">#b45309</color>
+</resources>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_library_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_dialog_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="@string/title_library"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_dialog_voice_settings"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Pengaturan Suara"
+            android:src="@drawable/ic_settings" />
+
+        <ImageButton
+            android:id="@+id/btn_dialog_close"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/btn_close"
+            android:src="@drawable/ic_close" />
+    </LinearLayout>
+
+    <!-- Summary Text -->
+    <TextView
+        android:id="@+id/txt_dialog_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="2,244 kata ditemukan"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="13sp" />
+
+    <!-- Live Search Input -->
+    <EditText
+        android:id="@+id/dialog_search_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_button_secondary"
+        android:drawableStart="@drawable/ic_filter"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif"
+        android:hint="Cari kosakata, arti..."
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/colorTextPrimary"
+        android:textColorHint="@color/colorTextTertiary"
+        android:textSize="13sp" />
+
+    <!-- Horizontal Jenis Kata Chips (NO LEVEL FILTER) -->
+    <HorizontalScrollView
+        android:id="@+id/scroll_type_chips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/container_type_chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/chip_type_semua"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_segmented_active"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Semua"
+                android:textAllCaps="false"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/chip_type_noun"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_button_secondary"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Kata Benda"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/chip_type_verb"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_button_secondary"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Kata Kerja"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/chip_type_adj"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_button_secondary"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/chip_type_adj"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/chip_type_adj_i"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_button_secondary"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Kata Sifat - い"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/chip_type_adj_na"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_button_secondary"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Kata Sifat - な"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/chip_type_adverb"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_button_secondary"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Kata Keterangan"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/chip_type_conjunction"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_button_secondary"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Kata Sambung"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/chip_type_particle"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_button_secondary"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Partikel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/chip_type_expr"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_button_secondary"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Ungkapan"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/chip_type_other"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_button_secondary"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Lainnya"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/chip_filter_weak"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/bg_button_secondary"
+                android:fontFamily="sans-serif-bold"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Lemah"
+                android:textAllCaps="false"
+                android:textColor="@color/colorError"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Sub-section selector for Kanji Mode: [ 613 Formal ] vs [ Tambahan ] -->
+    <LinearLayout
+        android:id="@+id/container_kanji_sub_chips"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_segmented_container"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/chip_kanji_sub_613"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_segmented_active"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/kanji_sub_613"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/chip_kanji_sub_additional"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/kanji_sub_additional"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Horizontal Bab Chips (Bab 1–25) or Kanji Groups -->
+    <HorizontalScrollView
+        android:id="@+id/scroll_bab_chips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/container_bab_chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <!-- Real Filterable Vocabulary List & Empty State Container -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/bg_button_secondary"
+        android:padding="4dp">
+
+        <ListView
+            android:id="@+id/list_library_vocab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            android:padding="6dp"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:id="@+id/layout_empty_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_empty_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/msg_empty_pustaka_title"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_empty_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/msg_empty_pustaka_desc"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Bottom Apply / Practice Button -->
+    <Button
+        android:id="@+id/btn_dialog_apply"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_button_primary"
+        android:fontFamily="sans-serif-medium"
+        android:minHeight="48dp"
+        android:text="@string/btn_apply_filter"
+        android:textColor="@color/colorOnPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>
