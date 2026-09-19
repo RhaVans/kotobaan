@@ -3,6 +3,8 @@ name: Build iOS App (.ipa)
 on:
   push:
     branches: [ main, master ]
+    tags:
+      - 'v*'
   pull_request:
     branches: [ main, master ]
   workflow_dispatch:
@@ -16,12 +18,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Xcode
+      - name: Inspect Xcode Environment
         run: |
-          echo "Available Xcode versions:"
+          echo "=== Available Xcode Versions ==="
           ls -d /Applications/Xcode* || true
-          xcrun --version
+          echo "=== Active Developer Directory ==="
+          xcode-select -p
+          echo "=== Xcodebuild Version ==="
           xcodebuild -version
+          echo "=== Available SDKs ==="
+          xcodebuild -showsdks
 
       - name: Build Xcode Archive
         run: |
@@ -42,11 +48,26 @@ jobs:
           cp -r build/Kotoba.xcarchive/Products/Applications/Kotoba.app build/Payload/
           cd build
           zip -r9 "Kotoba.ipa" Payload
-          ls -la "Kotoba.ipa"
+          shasum -a 256 "Kotoba.ipa" > "Kotoba.ipa.sha256"
+          echo "=== Build Artifacts Generated ==="
+          ls -lh Kotoba.ipa Kotoba.ipa.sha256
+          cat Kotoba.ipa.sha256
 
-      - name: Upload IPA Artifact
+      - name: Upload IPA & Checksum Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: Kotoba-iOS-IPA
-          path: 'build/Kotoba.ipa'
-          retention-days: 14
+          path: |
+            build/Kotoba.ipa
+            build/Kotoba.ipa.sha256
+          retention-days: 30
+
+      - name: Upload IPA to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            build/Kotoba.ipa
+            build/Kotoba.ipa.sha256
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

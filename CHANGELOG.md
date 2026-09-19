@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Native iOS SwiftUI Port**: Native iOS client architecture in `ios/Kotoba` sharing the identical SQLite schema and database contract (`kotoba.db`).
 - **Triple Front-Display Modes on iOS**: Added support for Kanji, Hiragana, and Indonesian meaning front card projections in SwiftUI.
 - **Automated Data & Behavioral Test Suites**: Added `DataIntegrityAuditTest.java`, `FlashcardRepresentationIntegrityTest.java`, `PustakaCardLayoutContractTest.java`, and `test_ios_behavior_contract.py`.
+- **Automated iOS Cloud CI Pipeline**: Added `.github/workflows/build-ios.yml` on Apple Silicon macOS runners to automatically compile, package, and publish `Kotoba.ipa` artifacts.
+- **Shared Xcode Build Scheme**: Configured `Kotoba.xcscheme` under `xcshareddata` for headless CI build execution.
+- **iOS Sideloading Guide**: Added `docs/IOS_SIDELOAD_GUIDE.md` covering installation via Sideloadly and AltStore with standard free Apple IDs.
 
 ### Changed
 - **Pustaka Card Geometry**: Redesigned library list items into a 3-row floating card architecture with independent padding and transparent dividers, eliminating awkward romaji line wrapping (`kir`/`ei`) and vertically displaced badges.

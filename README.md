@@ -42,6 +42,14 @@ The primary release artifact is **`KOTOBAAN.apk`**, a self-contained package wit
 4. If prompted, grant permission to install from unknown sources for your file manager.
 5. Ensure that a Japanese text-to-speech engine (such as Google Speech Services) is enabled in your device system settings (`Settings → System → Languages & input → Text-to-speech output`).
 
+### iOS (iPhone / iPad)
+
+Because Apple restricts direct browser-based app installations, iOS packages (`Kotoba.ipa`) are compiled via automated GitHub Actions cloud builds and installed using standard sideloading tools:
+
+1. Download `Kotoba.ipa` from the [GitHub Actions](https://github.com/RhaVans/kotobaan/actions) tab under the latest **Build iOS App (.ipa)** run artifacts.
+2. Install the IPA to your iPhone using **Sideloadly** (Windows / macOS) or **AltStore / SideStore**.
+3. Follow the complete step-by-step instructions in the [iOS Sideloading Guide](docs/IOS_SIDELOAD_GUIDE.md).
+
 ## Development
 
 ### Prerequisites
