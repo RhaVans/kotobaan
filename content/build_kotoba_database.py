@@ -295,17 +295,6 @@ for entry in kanji_data:
             "group": entry.get("group", 1),
             "group_label": group_lbl,
             "section": "KANJI",
-            "primary_onyomi": entry.get("primary_onyomi"),
-            "primary_onyomi_romaji": entry.get("primary_onyomi_romaji"),
-            "primary_kunyomi": entry.get("primary_kunyomi"),
-            "primary_kunyomi_romaji": entry.get("primary_kunyomi_romaji"),
-            "primary_kunyomi_example": entry.get("primary_kunyomi_example"),
-            "onyomi": entry.get("onyomi", []),
-            "onyomi_romaji": entry.get("onyomi_romaji", []),
-            "kunyomi": entry.get("kunyomi", []),
-            "kunyomi_romaji": entry.get("kunyomi_romaji", []),
-            "dual_reading": entry.get("dual_reading", ""),
-            "vocab_examples": entry.get("vocab_examples", [])
         }, ensure_ascii=False)
     ))
 
@@ -697,16 +686,17 @@ assert k701 is not None and k701[0] == '釣' and k701[1] == 'つり' and k701[2]
 
 print("   -> Data Integrity Assertions: PASSED (0 empty readings, 0 corrupt romaji, 701 verified).")
 
-# 11. Dual Reading Integrity Assertions
-cursor.execute("SELECT count(*) FROM learning_objects WHERE type = 'KANJI' AND details_json LIKE '%\"onyomi\":%'")
+# Canonical kanji (kanji_0001–kanji_0613) no longer carry onyomi/kunyomi fields.
+# Only additional kanji (kanji_add_*) have dual reading metadata.
+cursor.execute("SELECT count(*) FROM learning_objects WHERE id LIKE 'kanji_add_%' AND details_json LIKE '%\"onyomi\":%'")
 dual_kanji_count = cursor.fetchone()[0]
-assert dual_kanji_count == 2732, f"Expected 2732 kanji with dual reading metadata, found {dual_kanji_count}"
+assert dual_kanji_count == 2119, f"Expected 2119 additional kanji with dual reading metadata, found {dual_kanji_count}"
 
 cursor.execute("SELECT count(*) FROM learning_objects WHERE id LIKE 'kanji_add_%' AND details_json LIKE '%\"kunyomi\": []%'")
 no_kun_count = cursor.fetchone()[0]
 assert no_kun_count == 407, f"Expected 407 additional kanji with empty kunyomi (393 on-only + 14 radicals), found {no_kun_count}"
 
-print(f"   -> Dual Reading Assertions: PASSED ({dual_kanji_count} kanji enriched, {no_kun_count} authentic On'yomi-only).")
+print(f"   -> Dual Reading Assertions: PASSED ({dual_kanji_count} additional kanji enriched, {no_kun_count} authentic On'yomi-only).")
 
 conn.close()
 
