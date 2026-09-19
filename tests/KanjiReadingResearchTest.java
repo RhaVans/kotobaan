@@ -186,16 +186,23 @@ public class KanjiReadingResearchTest {
     }
 
     private static void testCanonicalKanjiDatasetDualReadings() throws Exception {
-        System.out.println("  Testing kanji_dataset.json (613 canonical kanji) dual readings...");
+        System.out.println("  Testing kanji_dataset.json (613 canonical kanji) restored state...");
         File file = new File("app/src/main/assets/kanji_dataset.json");
         assert file.exists() : "kanji_dataset.json not found";
 
         String json = readFile(file);
-        assert json.contains("\"onyomi\":") : "Canonical dataset missing onyomi field";
-        assert json.contains("\"kunyomi\":") : "Canonical dataset missing kunyomi field";
-        assert json.contains("\"dual_reading\":") : "Canonical dataset missing dual_reading field";
+        // Canonical kanji restored to HTML source-of-truth state.
+        // Synthetic dual-reading fields removed; only core fields remain.
+        assert json.contains("\"kanji\":") : "Canonical dataset missing kanji field";
+        assert json.contains("\"reading\":") : "Canonical dataset missing reading field";
+        assert json.contains("\"indonesian\":") : "Canonical dataset missing indonesian field";
+        assert json.contains("\"romaji\":") : "Canonical dataset missing romaji field";
+        // Synthetic fields must NOT be present after restoration
+        assert !json.contains("\"onyomi\":") : "Canonical dataset must not contain synthetic onyomi after restoration";
+        assert !json.contains("\"kunyomi\":") : "Canonical dataset must not contain synthetic kunyomi after restoration";
+        assert !json.contains("\"dual_reading\":") : "Canonical dataset must not contain synthetic dual_reading after restoration";
 
-        System.out.println("  [PASS] 613 canonical kanji dual readings confirmed in JSON asset.");
+        System.out.println("  [PASS] 613 canonical kanji verified as restored (no synthetic reading fields).");
     }
 
     private static void testAdditionalKanjiDatasetDualReadings() throws Exception {
