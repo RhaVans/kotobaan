@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Screen Paddings & Margins -->
+    <dimen name="screen_padding_horizontal">16dp</dimen>
+    <dimen name="screen_padding_top">14dp</dimen>
+    <dimen name="screen_padding_bottom">12dp</dimen>
+
+    <!-- Card Tokens -->
+    <dimen name="card_padding_all">16dp</dimen>
+    <dimen name="card_margin_horizontal">16dp</dimen>
+    <dimen name="card_margin_vertical">6dp</dimen>
+    <dimen name="card_divider_default_width">120dp</dimen>
+    <dimen name="card_divider_margin_vertical">10dp</dimen>
+
+    <!-- Component Heights -->
+    <dimen name="height_section_switcher">36dp</dimen>
+    <dimen name="height_kanji_sub_switcher">32dp</dimen>
+    <dimen name="height_segmented_mode_bar">42dp</dimen>
+    <dimen name="height_bottom_toolbar">48dp</dimen>
+    <dimen name="height_nav_dock_button">44dp</dimen>
+    <dimen name="height_recall_dock_button">46dp</dimen>
+
+    <!-- Dock Spacing -->
+    <dimen name="dock_margin_bottom">6dp</dimen>
+    <dimen name="dock_margin_bottom_large">8dp</dimen>
+
+    <!-- Touch Targets -->
+    <dimen name="min_touch_target">44dp</dimen>
+
+    <!-- Dialog Dimensions -->
+    <dimen name="dialog_padding">16dp</dimen>
+    <dimen name="dialog_bab_scroll_height">280dp</dimen>
+    <dimen name="dialog_library_list_height">260dp</dimen>
+</resources>

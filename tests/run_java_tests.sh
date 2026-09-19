@@ -5,12 +5,14 @@ PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 TESTS_DIR="$PROJECT_ROOT/tests"
 BUILD_DIR="$PROJECT_ROOT/build/test_classes"
 
+ANDROID_JAR="${ANDROID_JAR:-/root/.android_tools/android.jar}"
+
 rm -rf "$BUILD_DIR"
 mkdir -p "$BUILD_DIR"
 
 echo "Compiling Java sources and test files..."
 javac -source 8 -target 8 \
-    -cp "$PROJECT_ROOT/app/src/main/java" \
+    -cp "$ANDROID_JAR:$PROJECT_ROOT/app/src/main/java" \
     -d "$BUILD_DIR" \
     "$PROJECT_ROOT/app/src/main/java/com/kotoba/app/data/model/LearningObject.java" \
     "$PROJECT_ROOT/app/src/main/java/com/kotoba/app/data/model/UserProgress.java" \
@@ -34,8 +36,10 @@ javac -source 8 -target 8 \
     "$TESTS_DIR/JapaneseTtsSystemTest.java" \
     "$TESTS_DIR/SageTtsKanaPhonemizerTest.java" \
     "$TESTS_DIR/FlashcardRepresentationIntegrityTest.java" \
+    "$PROJECT_ROOT/app/src/main/java/com/kotoba/app/ui/responsive/ResponsiveLayoutSystem.java" \
     "$TESTS_DIR/PustakaCardLayoutContractTest.java" \
-    "$TESTS_DIR/DataIntegrityAuditTest.java"
+    "$TESTS_DIR/DataIntegrityAuditTest.java" \
+    "$TESTS_DIR/ResponsiveLayoutSystemTest.java"
 
 echo "Executing Java Test Suites (with -ea assertions enabled)..."
 java -ea -cp "$BUILD_DIR" tests.SrsSchedulerTest
@@ -51,6 +55,7 @@ java -ea -cp "$BUILD_DIR" tests.SageTtsKanaPhonemizerTest
 java -ea -cp "$BUILD_DIR" tests.FlashcardRepresentationIntegrityTest
 java -ea -cp "$BUILD_DIR" tests.PustakaCardLayoutContractTest
 java -ea -cp "$BUILD_DIR" tests.DataIntegrityAuditTest
+java -ea -cp "$BUILD_DIR:$ANDROID_JAR" tests.ResponsiveLayoutSystemTest
 
 echo "============================================================"
 echo "ALL JAVA UNIT TESTS PASSED CLEANLY"

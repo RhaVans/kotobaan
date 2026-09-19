@@ -21,6 +21,7 @@ import com.kotoba.app.data.model.LearningObject;
 import com.kotoba.app.engine.IngatLupaEngine;
 import com.kotoba.app.ui.FlashcardView;
 import com.kotoba.app.ui.library.LibraryFilterDialog;
+import com.kotoba.app.ui.responsive.ResponsiveLayoutSystem;
 import com.kotoba.app.ui.voice.VoiceSettingsDialog;
 
 import java.util.ArrayList;
@@ -122,6 +123,7 @@ public class MainActivity extends Activity {
         mSpeech = JapaneseSpeechHelper.getInstance(this);
 
         initViews();
+        applyResponsiveLayout();
         setupListeners();
         restoreSavedPreferences();
 
@@ -685,6 +687,60 @@ public class MainActivity extends Activity {
             }
             outState.putStringArrayList("saved_deck_ids", ids);
         }
+    }
+
+    private void applyResponsiveLayout() {
+        ResponsiveLayoutSystem rls = ResponsiveLayoutSystem.from(this);
+
+        // Scale typography for headers & buttons
+        rls.applyToTextView(mTxtTitle, rls.getAppTitleSizeSp());
+        rls.applyToTextView(mTxtCardCounter, rls.getCounterSizeSp());
+        rls.applyToTextView(mBtnSectionKotoba, rls.getSegmentedTextSizeSp());
+        rls.applyToTextView(mBtnSectionKanji, rls.getSegmentedTextSizeSp());
+        rls.applyToTextView(mBtnKanjiSub613, rls.getSegmentedTextSizeSp());
+        rls.applyToTextView(mBtnKanjiSubAdditional, rls.getSegmentedTextSizeSp());
+        rls.applyToTextView(mBtnModeKanji, rls.getSegmentedTextSizeSp());
+        rls.applyToTextView(mBtnModeHiragana, rls.getSegmentedTextSizeSp());
+        rls.applyToTextView(mBtnModeArti, rls.getSegmentedTextSizeSp());
+        rls.applyToTextView(mBtnPrev, rls.getNavButtonTextSizeSp());
+        rls.applyToTextView(mBtnFlip, rls.getNavButtonTextSizeSp() + 1.0f);
+        rls.applyToTextView(mBtnNext, rls.getNavButtonTextSizeSp());
+
+        // Dynamic Vertical Compaction for constrained heights (< 680dp)
+        View sectionSwitcher = findViewById(R.id.section_switcher_container);
+        rls.setViewHeight(sectionSwitcher, rls.getSectionSwitcherHeightPx());
+
+        if (mKanjiSubContainer != null) {
+            rls.setViewHeight(mKanjiSubContainer, rls.getKanjiSubSwitcherHeightPx());
+        }
+
+        View segmentedMode = findViewById(R.id.segmented_mode_container);
+        rls.setViewHeight(segmentedMode, rls.getModeBarHeightPx());
+        rls.setViewMarginBottom(segmentedMode, rls.getDockMarginBottomPx());
+
+        View bottomToolbar = findViewById(R.id.bottom_toolbar);
+        rls.setViewHeight(bottomToolbar, rls.getToolbarHeightPx());
+        rls.setViewMarginBottom(bottomToolbar, rls.getDockMarginBottomPx());
+
+        View navDock = findViewById(R.id.bottom_nav_dock);
+        rls.setViewMarginBottom(navDock, rls.getDockMarginBottomPx());
+        rls.setViewHeight(mBtnPrev, rls.getNavButtonHeightPx());
+        rls.setViewHeight(mBtnFlip, rls.getNavButtonHeightPx());
+        rls.setViewHeight(mBtnNext, rls.getNavButtonHeightPx());
+
+        View recallDock = findViewById(R.id.layout_ingat_lupa_dock);
+        rls.setViewHeight(recallDock, rls.getRecallButtonHeightPx());
+
+        // Notify flashcard view
+        if (mFlashcardView != null) {
+            mFlashcardView.applyResponsiveTokens();
+        }
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        applyResponsiveLayout();
     }
 
     @Override

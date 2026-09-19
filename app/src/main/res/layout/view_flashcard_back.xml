@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_back_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_card_surface"
-    android:padding="24dp">
+    android:orientation="vertical"
+    android:padding="@dimen/card_padding_all">
 
-    <!-- Card Header -->
+    <!-- Region 1: Card Header Row -->
     <LinearLayout
+        android:id="@+id/card_back_header_row"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="top"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -20,9 +21,13 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bg_badge"
             android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
             android:text="Bab 1"
             android:textColor="@color/colorBadgeText"
-            android:textSize="12sp" />
+            android:textSize="11sp" />
 
         <View
             android:layout_width="0dp"
@@ -31,46 +36,39 @@
 
         <ImageButton
             android:id="@+id/card_btn_speech_back"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="@dimen/min_touch_target"
+            android:layout_height="@dimen/min_touch_target"
             android:background="?android:attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_volume_up"
-            android:tint="@color/colorPrimary"
             android:contentDescription="Lafal"
-            android:layout_marginEnd="8dp" />
-
-        <TextView
-            android:id="@+id/txt_back_hint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="@string/card_tap_to_flip"
-            android:textColor="@color/colorTextTertiary"
-            android:textSize="12sp" />
+            android:src="@drawable/ic_volume_up"
+            android:tint="@color/colorPrimary" />
     </LinearLayout>
 
-    <!-- Card Body Center -->
+    <!-- Region 2: Card Content Container (Takes remaining space, centered, never collides) -->
     <LinearLayout
+        android:id="@+id/card_back_body"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:gravity="center"
         android:orientation="vertical">
 
+        <!-- Reference Furigana / Kanji -->
         <TextView
             android:id="@+id/txt_back_furigana"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="あのひと"
             android:textColor="@color/colorFuriganaRuby"
-            android:textSize="18sp" />
+            android:textSize="17sp" />
 
+        <!-- Japanese / Reading -->
         <TextView
             android:id="@+id/txt_back_japanese"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="serif"
             android:gravity="center"
@@ -79,36 +77,57 @@
             android:textSize="32sp"
             android:textStyle="bold" />
 
+        <!-- Romaji -->
         <TextView
             android:id="@+id/txt_back_romaji"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="anohito"
             android:textColor="@color/colorTextTertiary"
-            android:textSize="14sp"
+            android:textSize="13sp"
             android:visibility="gone" />
 
-        <!-- 140dp divider from old APK -->
+        <!-- Proportional / Responsive Divider -->
         <View
             android:id="@+id/divider_back"
-            android:layout_width="140dp"
+            android:layout_width="@dimen/card_divider_default_width"
             android:layout_height="1dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="@dimen/card_divider_margin_vertical"
+            android:layout_marginBottom="@dimen/card_divider_margin_vertical"
             android:background="@color/colorBorderOutline" />
 
+        <!-- Indonesian Translation (Wraps cleanly, never clips) -->
         <TextView
             android:id="@+id/txt_back_indonesian"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="orang itu"
             android:textColor="@color/colorTextPrimary"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
-</FrameLayout>
+
+    <!-- Region 3: Footer Hint Region (Constrained, isolated bottom zone) -->
+    <LinearLayout
+        android:id="@+id/card_back_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/txt_back_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/card_tap_to_flip"
+            android:textColor="@color/colorTextTertiary"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>

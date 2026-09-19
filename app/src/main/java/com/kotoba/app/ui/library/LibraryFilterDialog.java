@@ -25,6 +25,7 @@ import com.kotoba.app.audio.SoundManager;
 import com.kotoba.app.data.KotobaDatabase;
 import com.kotoba.app.data.PreferencesManager;
 import com.kotoba.app.data.model.LearningObject;
+import com.kotoba.app.ui.responsive.ResponsiveLayoutSystem;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -172,6 +173,17 @@ public class LibraryFilterDialog extends Dialog {
 
         mAdapter = new LibraryVocabAdapter();
         mListVocab.setAdapter(mAdapter);
+
+        ResponsiveLayoutSystem rls = ResponsiveLayoutSystem.from(getContext());
+        View frameContainer = (View) mListVocab.getParent();
+        if (frameContainer != null) {
+            int listH = rls.isExtraCompactHeight() ? rls.dpToPx(150) : (rls.isCompactHeight() ? rls.dpToPx(180) : rls.dpToPx(260));
+            ViewGroup.LayoutParams lp = frameContainer.getLayoutParams();
+            if (lp != null) {
+                lp.height = listH;
+                frameContainer.setLayoutParams(lp);
+            }
+        }
 
         if (mIsKanjiMode) {
             mTxtTitle.setText(R.string.title_select_kanji_group);

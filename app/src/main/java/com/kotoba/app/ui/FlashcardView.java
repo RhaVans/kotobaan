@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ import com.kotoba.app.audio.JapaneseSpeechHelper;
 import com.kotoba.app.audio.PronunciationTarget;
 import com.kotoba.app.audio.SoundManager;
 import com.kotoba.app.data.model.LearningObject;
+import com.kotoba.app.ui.responsive.ResponsiveLayoutSystem;
 
 public class FlashcardView extends FrameLayout {
 
@@ -53,6 +55,7 @@ public class FlashcardView extends FrameLayout {
     private TextView mTxtBackRomaji;
     private TextView mTxtBackIndonesian;
     private ImageButton mBtnBackSpeech;
+    private View mDividerBack;
 
     private boolean mIsShowingBack = false;
     private boolean mIsFlipping = false;
@@ -105,6 +108,7 @@ public class FlashcardView extends FrameLayout {
         mTxtBackRomaji = mBackView.findViewById(R.id.txt_back_romaji);
         mTxtBackIndonesian = mBackView.findViewById(R.id.txt_back_indonesian);
         mBtnBackSpeech = mBackView.findViewById(R.id.card_btn_speech_back);
+        mDividerBack = mBackView.findViewById(R.id.divider_back);
 
         // Set camera distance for clean 3D perspective
         float scale = getResources().getDisplayMetrics().density;
@@ -343,6 +347,8 @@ public class FlashcardView extends FrameLayout {
             }
             mTxtBackIndonesian.setText(item.getIndonesian());
         }
+
+        applyResponsiveTokens();
     }
 
     private void bindEmpty() {
@@ -358,6 +364,60 @@ public class FlashcardView extends FrameLayout {
         mTxtBackJapanese.setText("Tidak ada data");
         mTxtBackRomaji.setVisibility(View.GONE);
         mTxtBackIndonesian.setText("Pilih Bab atau Materi melalui tombol Filter.");
+
+        applyResponsiveTokens();
+    }
+
+    @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+        if (w > 0 && h > 0 && (w != oldw || h != oldh)) {
+            applyResponsiveTokens();
+        }
+    }
+
+    public void applyResponsiveTokens() {
+        ResponsiveLayoutSystem rls = ResponsiveLayoutSystem.from(getContext());
+        int cardPadding = rls.getCardPaddingPx();
+        mFrontView.setPadding(cardPadding, cardPadding, cardPadding, cardPadding);
+        mBackView.setPadding(cardPadding, cardPadding, cardPadding, cardPadding);
+
+        // Badge & Hint
+        float badgeSp = rls.getBadgeTextSizeSp();
+        float hintSp = rls.getHintTextSizeSp();
+        rls.applyToTextView(mTxtFrontBadge, badgeSp);
+        rls.applyToTextView(mTxtBackBadge, badgeSp);
+        rls.applyToTextView(mTxtFrontHint, hintSp);
+        rls.applyToTextView(mTxtBackHint, hintSp);
+
+        // Front typography
+        int frontLen = mTxtFrontJapanese.getText() != null ? mTxtFrontJapanese.getText().length() : 0;
+        rls.applyToTextView(mTxtFrontJapanese, rls.getCardJapaneseSizeSp(true, frontLen));
+        rls.applyToTextView(mTxtFrontFurigana, rls.getCardFuriganaSizeSp());
+        rls.applyToTextView(mTxtFrontRomaji, rls.getCardRomajiSizeSp());
+
+        // Back typography
+        int backJapLen = mTxtBackJapanese.getText() != null ? mTxtBackJapanese.getText().length() : 0;
+        int meaningLen = mTxtBackIndonesian.getText() != null ? mTxtBackIndonesian.getText().length() : 0;
+        rls.applyToTextView(mTxtBackJapanese, rls.getCardJapaneseSizeSp(false, backJapLen));
+        rls.applyToTextView(mTxtBackFurigana, rls.getCardFuriganaSizeSp());
+        rls.applyToTextView(mTxtBackRomaji, rls.getCardRomajiSizeSp());
+        rls.applyToTextView(mTxtBackIndonesian, rls.getCardMeaningSizeSp(meaningLen));
+
+        // Back divider width & vertical margins
+        if (mDividerBack != null) {
+            int cardW = getWidth() > 0 ? getWidth() : rls.dpToPx(rls.getScreenWidthDp() - 32);
+            int dividerW = rls.getDividerWidthPx(cardW);
+            int vMargin = rls.getDividerVerticalMarginPx();
+            ViewGroup.LayoutParams lp = mDividerBack.getLayoutParams();
+            if (lp instanceof ViewGroup.MarginLayoutParams) {
+                ViewGroup.MarginLayoutParams mlp = (ViewGroup.MarginLayoutParams) lp;
+                mlp.width = dividerW;
+                mlp.topMargin = vMargin;
+                mlp.bottomMargin = vMargin;
+                mDividerBack.setLayoutParams(mlp);
+            }
+        }
     }
 
     public void playAudio() {

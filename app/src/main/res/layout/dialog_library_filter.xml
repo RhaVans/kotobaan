@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bg_dialog"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/dialog_padding">
 
     <!-- Header Row -->
     <LinearLayout
@@ -315,7 +315,7 @@
     <!-- Real Filterable Vocabulary List & Empty State Container -->
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="@dimen/dialog_library_list_height"
         android:background="@drawable/bg_button_secondary"
         android:padding="4dp">
 

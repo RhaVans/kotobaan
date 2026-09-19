@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding_horizontal">12dp</dimen>
+    <dimen name="screen_padding_top">10dp</dimen>
+    <dimen name="screen_padding_bottom">8dp</dimen>
+    <dimen name="card_padding_all">12dp</dimen>
+    <dimen name="card_margin_horizontal">10dp</dimen>
+    <dimen name="card_margin_vertical">4dp</dimen>
+    <dimen name="card_divider_default_width">90dp</dimen>
+    <dimen name="card_divider_margin_vertical">6dp</dimen>
+    <dimen name="height_section_switcher">32dp</dimen>
+    <dimen name="height_kanji_sub_switcher">28dp</dimen>
+    <dimen name="height_segmented_mode_bar">36dp</dimen>
+    <dimen name="height_bottom_toolbar">44dp</dimen>
+    <dimen name="height_nav_dock_button">42dp</dimen>
+    <dimen name="height_recall_dock_button">44dp</dimen>
+    <dimen name="dock_margin_bottom">4dp</dimen>
+    <dimen name="dock_margin_bottom_large">6dp</dimen>
+    <dimen name="dialog_padding">12dp</dimen>
+    <dimen name="dialog_bab_scroll_height">200dp</dimen>
+    <dimen name="dialog_library_list_height">180dp</dimen>
+</resources>

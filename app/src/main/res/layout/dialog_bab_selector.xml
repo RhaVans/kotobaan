@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@color/colorCardBg"
-    android:padding="16dp">
+    android:padding="@dimen/dialog_padding">
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="320dp"
+        android:layout_height="@dimen/dialog_bab_scroll_height"
         android:layout_marginTop="12dp">
 
         <LinearLayout
@@ -39,7 +39,7 @@
     <Button
         android:id="@+id/dialog_btn_close"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/min_touch_target"
         android:layout_marginTop="12dp"
         android:text="Tutup"
         android:fontFamily="sans-serif-medium"

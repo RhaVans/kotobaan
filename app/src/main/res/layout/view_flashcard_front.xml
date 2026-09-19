@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_front_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_card_surface"
-    android:padding="24dp">
+    android:orientation="vertical"
+    android:padding="@dimen/card_padding_all">
 
-    <!-- Card Header -->
+    <!-- Region 1: Card Header Row -->
     <LinearLayout
+        android:id="@+id/card_front_header_row"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="top"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -20,9 +21,13 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bg_badge"
             android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
             android:text="Bab 1"
             android:textColor="@color/colorBadgeText"
-            android:textSize="12sp" />
+            android:textSize="11sp" />
 
         <View
             android:layout_width="0dp"
@@ -31,64 +36,77 @@
 
         <ImageButton
             android:id="@+id/card_btn_speech_front"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="@dimen/min_touch_target"
+            android:layout_height="@dimen/min_touch_target"
             android:background="?android:attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_volume_up"
-            android:tint="@color/colorPrimary"
             android:contentDescription="Lafal"
-            android:layout_marginEnd="8dp" />
+            android:src="@drawable/ic_volume_up"
+            android:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <!-- Region 2: Card Content Container (Takes remaining space, centered, never collides) -->
+    <LinearLayout
+        android:id="@+id/card_front_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Reading / Furigana Region -->
+        <TextView
+            android:id="@+id/txt_front_furigana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="あのひと"
+            android:textColor="@color/colorFuriganaRuby"
+            android:textSize="17sp" />
+
+        <!-- Japanese Kanji / Ideograph Region -->
+        <TextView
+            android:id="@+id/txt_front_japanese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="あの人"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <!-- Romaji Region -->
+        <TextView
+            android:id="@+id/txt_front_romaji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="anohito"
+            android:textColor="@color/colorTextTertiary"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Region 3: Footer Hint Region (Constrained, isolated bottom zone) -->
+    <LinearLayout
+        android:id="@+id/card_front_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="4dp">
 
         <TextView
             android:id="@+id/txt_front_hint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
+            android:gravity="center"
             android:text="@string/card_tap_to_flip"
             android:textColor="@color/colorTextTertiary"
-            android:textSize="12sp" />
+            android:textSize="11sp" />
     </LinearLayout>
-
-    <!-- Card Body Center -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/txt_front_furigana"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:text="あのひと"
-            android:textColor="@color/colorFuriganaRuby"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/txt_front_japanese"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="serif"
-            android:gravity="center"
-            android:text="あの人"
-            android:textColor="@color/colorTextPrimary"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txt_front_romaji"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:text="anohito"
-            android:textColor="@color/colorTextTertiary"
-            android:textSize="14sp"
-            android:visibility="gone" />
-    </LinearLayout>
-</FrameLayout>
+</LinearLayout>

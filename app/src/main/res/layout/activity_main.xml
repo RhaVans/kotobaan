@@ -13,10 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="20dp"
-        android:paddingTop="16dp"
-        android:paddingRight="20dp"
-        android:paddingBottom="8dp">
+        android:paddingLeft="@dimen/screen_padding_horizontal"
+        android:paddingTop="@dimen/screen_padding_top"
+        android:paddingRight="@dimen/screen_padding_horizontal"
+        android:paddingBottom="6dp">
 
         <!-- Title and Counter Row -->
         <LinearLayout
@@ -63,8 +63,8 @@
         <LinearLayout
             android:id="@+id/section_switcher_container"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="@dimen/height_section_switcher"
+            android:layout_marginTop="6dp"
             android:layout_marginBottom="4dp"
             android:background="@drawable/bg_segmented_container"
             android:orientation="horizontal"
@@ -101,7 +101,7 @@
         <LinearLayout
             android:id="@+id/kanji_subsection_container"
             android:layout_width="match_parent"
-            android:layout_height="32dp"
+            android:layout_height="@dimen/height_kanji_sub_switcher"
             android:layout_marginTop="2dp"
             android:layout_marginBottom="4dp"
             android:background="@drawable/bg_segmented_container"
@@ -158,7 +158,7 @@
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="4dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="6dp"
             android:max="100"
             android:progress="1"
             android:progressTint="@color/colorPrimary" />
@@ -169,10 +169,10 @@
         android:id="@+id/card_wrapper"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="@dimen/card_margin_horizontal"
+        android:layout_marginTop="@dimen/card_margin_vertical"
+        android:layout_marginRight="@dimen/card_margin_horizontal"
+        android:layout_marginBottom="@dimen/card_margin_vertical"
         android:layout_weight="1">
 
         <com.kotoba.app.ui.FlashcardView
@@ -187,16 +187,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="16dp">
+        android:paddingLeft="@dimen/screen_padding_horizontal"
+        android:paddingRight="@dimen/screen_padding_horizontal"
+        android:paddingBottom="@dimen/screen_padding_bottom">
 
         <!-- Segmented Front Mode Bar -->
         <LinearLayout
             android:id="@+id/segmented_mode_container"
             android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:layout_marginBottom="8dp"
+            android:layout_height="@dimen/height_segmented_mode_bar"
+            android:layout_marginBottom="@dimen/dock_margin_bottom"
             android:background="@drawable/bg_segmented_container"
             android:gravity="center_vertical"
             android:orientation="horizontal"
@@ -243,8 +243,8 @@
         <LinearLayout
             android:id="@+id/bottom_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="@dimen/height_bottom_toolbar"
+            android:layout_marginBottom="@dimen/dock_margin_bottom"
             android:background="@drawable/bg_button_secondary"
             android:gravity="center"
             android:orientation="horizontal"
@@ -254,67 +254,67 @@
             <ImageButton
                 android:id="@+id/btn_furigana_toggle"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/action_furigana"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
+                android:minWidth="@dimen/min_touch_target"
+                android:minHeight="@dimen/min_touch_target"
                 android:src="@drawable/ic_furigana" />
 
             <ImageButton
                 android:id="@+id/btn_romaji_toggle"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/action_romaji"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
+                android:minWidth="@dimen/min_touch_target"
+                android:minHeight="@dimen/min_touch_target"
                 android:src="@drawable/ic_romaji" />
 
             <ImageButton
                 android:id="@+id/btn_filter_bab"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/action_filter"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
+                android:minWidth="@dimen/min_touch_target"
+                android:minHeight="@dimen/min_touch_target"
                 android:src="@drawable/ic_filter" />
 
             <ImageButton
                 android:id="@+id/btn_shuffle"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/action_shuffle"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
+                android:minWidth="@dimen/min_touch_target"
+                android:minHeight="@dimen/min_touch_target"
                 android:src="@drawable/ic_shuffle" />
 
             <ImageButton
                 android:id="@+id/btn_theme_toggle"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/action_theme"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
+                android:minWidth="@dimen/min_touch_target"
+                android:minHeight="@dimen/min_touch_target"
                 android:src="@drawable/ic_theme_toggle" />
 
             <ImageButton
                 android:id="@+id/btn_sound_toggle"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/action_sound"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
+                android:minWidth="@dimen/min_touch_target"
+                android:minHeight="@dimen/min_touch_target"
                 android:src="@drawable/ic_volume_up" />
         </LinearLayout>
 
@@ -323,20 +323,20 @@
             android:id="@+id/bottom_nav_dock"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/dock_margin_bottom"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_prev"
                 android:layout_width="0dp"
-                android:layout_height="46dp"
+                android:layout_height="@dimen/height_nav_dock_button"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg_button_secondary"
                 android:fontFamily="sans-serif-medium"
-                android:minWidth="48dp"
-                android:minHeight="46dp"
+                android:minWidth="@dimen/min_touch_target"
+                android:minHeight="@dimen/min_touch_target"
                 android:text="Prev"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="15sp" />
@@ -344,13 +344,13 @@
             <Button
                 android:id="@+id/btn_flip"
                 android:layout_width="0dp"
-                android:layout_height="46dp"
+                android:layout_height="@dimen/height_nav_dock_button"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1.3"
                 android:background="@drawable/bg_button_primary"
                 android:fontFamily="sans-serif-medium"
-                android:minWidth="48dp"
-                android:minHeight="46dp"
+                android:minWidth="@dimen/min_touch_target"
+                android:minHeight="@dimen/min_touch_target"
                 android:text="@string/action_flip"
                 android:textColor="@color/colorOnPrimary"
                 android:textSize="16sp"
@@ -359,12 +359,12 @@
             <Button
                 android:id="@+id/btn_next"
                 android:layout_width="0dp"
-                android:layout_height="46dp"
+                android:layout_height="@dimen/height_nav_dock_button"
                 android:layout_weight="1"
                 android:background="@drawable/bg_button_secondary"
                 android:fontFamily="sans-serif-medium"
-                android:minWidth="48dp"
-                android:minHeight="46dp"
+                android:minWidth="@dimen/min_touch_target"
+                android:minHeight="@dimen/min_touch_target"
                 android:text="Next"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="15sp" />
@@ -374,7 +374,7 @@
         <LinearLayout
             android:id="@+id/layout_ingat_lupa_dock"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="@dimen/height_recall_dock_button"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -389,6 +389,7 @@
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:gravity="center"
+                android:minHeight="@dimen/min_touch_target"
                 android:orientation="horizontal"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp">
@@ -420,6 +421,7 @@
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:gravity="center"
+                android:minHeight="@dimen/min_touch_target"
                 android:orientation="horizontal"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp">
