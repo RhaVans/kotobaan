@@ -39,7 +39,9 @@ javac -source 8 -target 8 \
     "$PROJECT_ROOT/app/src/main/java/com/kotoba/app/ui/responsive/ResponsiveLayoutSystem.java" \
     "$TESTS_DIR/PustakaCardLayoutContractTest.java" \
     "$TESTS_DIR/DataIntegrityAuditTest.java" \
-    "$TESTS_DIR/ResponsiveLayoutSystemTest.java"
+    "$TESTS_DIR/ResponsiveLayoutSystemTest.java" \
+    "$TESTS_DIR/KanjiReadingResearchTest.java" \
+    "$TESTS_DIR/DualReadingSystemTest.java"
 
 echo "Executing Java Test Suites (with -ea assertions enabled)..."
 java -ea -cp "$BUILD_DIR" tests.SrsSchedulerTest
@@ -56,6 +58,8 @@ java -ea -cp "$BUILD_DIR" tests.FlashcardRepresentationIntegrityTest
 java -ea -cp "$BUILD_DIR" tests.PustakaCardLayoutContractTest
 java -ea -cp "$BUILD_DIR" tests.DataIntegrityAuditTest
 java -ea -cp "$BUILD_DIR:$ANDROID_JAR" tests.ResponsiveLayoutSystemTest
+java -ea -cp "$BUILD_DIR" tests.KanjiReadingResearchTest
+java -ea -cp "$BUILD_DIR" tests.DualReadingSystemTest
 
 echo "============================================================"
 echo "ALL JAVA UNIT TESTS PASSED CLEANLY"

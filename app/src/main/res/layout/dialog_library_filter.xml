@@ -296,6 +296,57 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+    <!-- Reading Mode selector for Kanji Mode: [ On'yomi ] | [ Kun'yomi ] | [ Keduanya ] -->
+    <LinearLayout
+        android:id="@+id/container_kanji_reading_mode"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_segmented_container"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_kanji_mode_onyomi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/kanji_reading_mode_onyomi"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_kanji_mode_kunyomi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/kanji_reading_mode_kunyomi"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_kanji_mode_both"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_segmented_active"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/kanji_reading_mode_both"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
     <!-- Horizontal Bab Chips (Bab 1–25) or Kanji Groups -->
     <HorizontalScrollView
         android:id="@+id/scroll_bab_chips"

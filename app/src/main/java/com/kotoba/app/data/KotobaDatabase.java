@@ -27,7 +27,7 @@ import java.util.Map;
 public class KotobaDatabase extends SQLiteOpenHelper {
     private static final String TAG = "KotobaDatabase";
     private static final String DATABASE_NAME = "kotoba.db";
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
 
     private static final String LO_COLUMNS =
             "id, type, bab, level, japanese, reading, romaji, indonesian, badge_label, group_label, sort_order, details_json, word_type";
@@ -61,18 +61,29 @@ public class KotobaDatabase extends SQLiteOpenHelper {
             try {
                 checkDb = SQLiteDatabase.openDatabase(mDbPath, null, SQLiteDatabase.OPEN_READONLY);
                 int userVersion = checkDb.getVersion();
-                if (userVersion < 3) {
+                if (userVersion < 4) {
                     needsDeploy = true;
-                    Log.i(TAG, "Existing database is older version (" + userVersion + " < 3), redeploying clean Indonesian database...");
+                    Log.i(TAG, "Existing database is older version (" + userVersion + " < 4), redeploying clean dual-reading database...");
                 } else {
-                    // Verify if the deployed database contains stale English definitions or lacks Additional Kanji
-                    Cursor cAdd = checkDb.rawQuery("SELECT count(*) FROM learning_objects WHERE id LIKE 'kanji_add_%'", null);
-                    if (cAdd != null) {
-                        if (cAdd.moveToFirst() && cAdd.getInt(0) < 2119) {
+                    // Verify if the deployed database contains dual reading metadata
+                    Cursor cDual = checkDb.rawQuery("SELECT count(*) FROM learning_objects WHERE type = 'KANJI' AND details_json LIKE '%\"onyomi\":%'", null);
+                    if (cDual != null) {
+                        if (cDual.moveToFirst() && cDual.getInt(0) < 2732) {
                             needsDeploy = true;
-                            Log.i(TAG, "Existing database lacks Additional Kanji, redeploying...");
+                            Log.i(TAG, "Existing database lacks dual reading metadata, redeploying...");
                         }
-                        cAdd.close();
+                        cDual.close();
+                    }
+
+                    if (!needsDeploy) {
+                        Cursor cAdd = checkDb.rawQuery("SELECT count(*) FROM learning_objects WHERE id LIKE 'kanji_add_%'", null);
+                        if (cAdd != null) {
+                            if (cAdd.moveToFirst() && cAdd.getInt(0) < 2119) {
+                                needsDeploy = true;
+                                Log.i(TAG, "Existing database lacks Additional Kanji, redeploying...");
+                            }
+                            cAdd.close();
+                        }
                     }
 
                     if (!needsDeploy) {

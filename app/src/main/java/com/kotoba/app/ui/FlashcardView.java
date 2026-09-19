@@ -268,7 +268,13 @@ public class FlashcardView extends FrameLayout {
             }
 
             // BACK: Answer face (Reading + Meaning must NEVER disappear)
-            if (item.hasKanji()) {
+            if (item.getType() == LearningObject.Type.KANJI) {
+                // Prominently show the dual reading (On'yomi / Kun'yomi) as the primary answer to the kanji
+                mTxtBackJapanese.setText(item.getDualReadingDisplay());
+                // Show the kanji ideograph above as reference
+                mTxtBackFurigana.setVisibility(View.VISIBLE);
+                mTxtBackFurigana.setText(item.getJapanese());
+            } else if (item.hasKanji()) {
                 // Prominently show the reading as the primary answer to the kanji
                 mTxtBackJapanese.setText(item.getReading());
                 // Show the kanji ideograph above as reference
@@ -309,7 +315,10 @@ public class FlashcardView extends FrameLayout {
 
             // BACK: Kanji + Meaning
             mTxtBackJapanese.setText(item.getJapanese());
-            if (item.hasKanji()) {
+            if (item.getType() == LearningObject.Type.KANJI) {
+                mTxtBackFurigana.setVisibility(View.VISIBLE);
+                mTxtBackFurigana.setText(item.getDualReadingDisplay());
+            } else if (item.hasKanji()) {
                 mTxtBackFurigana.setVisibility(View.VISIBLE);
                 mTxtBackFurigana.setText(item.getReading());
             } else {
@@ -332,7 +341,10 @@ public class FlashcardView extends FrameLayout {
 
             // BACK: Kanji + Reading + Meaning
             mTxtBackJapanese.setText(item.getJapanese());
-            if (item.hasKanji() || (item.getReading() != null && !item.getReading().isEmpty())) {
+            if (item.getType() == LearningObject.Type.KANJI) {
+                mTxtBackFurigana.setVisibility(View.VISIBLE);
+                mTxtBackFurigana.setText(item.getDualReadingDisplay());
+            } else if (item.hasKanji() || (item.getReading() != null && !item.getReading().isEmpty())) {
                 mTxtBackFurigana.setVisibility(View.VISIBLE);
                 mTxtBackFurigana.setText(item.getReading());
             } else {

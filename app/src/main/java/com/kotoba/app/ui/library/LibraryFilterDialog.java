@@ -71,6 +71,12 @@ public class LibraryFilterDialog extends Dialog {
     private Button mChipKanjiSubAdditional;
     private String mSelectedKanjiSub = "613"; // "613" or "ADDITIONAL"
 
+    private View mContainerKanjiReadingMode;
+    private Button mBtnKanjiModeOnyomi;
+    private Button mBtnKanjiModeKunyomi;
+    private Button mBtnKanjiModeBoth;
+    private String mKanjiReadingMode = "BOTH"; // "ONYOMI", "KUNYOMI", "BOTH"
+
     private LinearLayout mContainerBabChips;
     private ListView mListVocab;
     private LinearLayout mLayoutEmptyState;
@@ -166,6 +172,11 @@ public class LibraryFilterDialog extends Dialog {
         mChipKanjiSub613 = findViewById(R.id.chip_kanji_sub_613);
         mChipKanjiSubAdditional = findViewById(R.id.chip_kanji_sub_additional);
 
+        mContainerKanjiReadingMode = findViewById(R.id.container_kanji_reading_mode);
+        mBtnKanjiModeOnyomi = findViewById(R.id.btn_kanji_mode_onyomi);
+        mBtnKanjiModeKunyomi = findViewById(R.id.btn_kanji_mode_kunyomi);
+        mBtnKanjiModeBoth = findViewById(R.id.btn_kanji_mode_both);
+
         mContainerBabChips = findViewById(R.id.container_bab_chips);
         mListVocab = findViewById(R.id.list_library_vocab);
         mLayoutEmptyState = findViewById(R.id.layout_empty_state);
@@ -192,11 +203,18 @@ public class LibraryFilterDialog extends Dialog {
                 mContainerKanjiSubChips.setVisibility(View.VISIBLE);
                 updateKanjiSubChipsVisuals();
             }
+            if (mContainerKanjiReadingMode != null) {
+                mContainerKanjiReadingMode.setVisibility(View.VISIBLE);
+                updateKanjiReadingModeVisuals();
+            }
         } else {
             mTxtTitle.setText(R.string.title_library);
             mScrollTypeChips.setVisibility(View.VISIBLE);
             if (mContainerKanjiSubChips != null) {
                 mContainerKanjiSubChips.setVisibility(View.GONE);
+            }
+            if (mContainerKanjiReadingMode != null) {
+                mContainerKanjiReadingMode.setVisibility(View.GONE);
             }
         }
     }
@@ -245,6 +263,40 @@ public class LibraryFilterDialog extends Dialog {
                     populateSubChips();
                     updateSubChipsVisuals();
                     refreshResults();
+                }
+            });
+        }
+
+        if (mBtnKanjiModeOnyomi != null) {
+            mBtnKanjiModeOnyomi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mKanjiReadingMode = "ONYOMI";
+                    if (mSound != null) mSound.playToggle();
+                    updateKanjiReadingModeVisuals();
+                    if (mAdapter != null) mAdapter.notifyDataSetChanged();
+                }
+            });
+        }
+        if (mBtnKanjiModeKunyomi != null) {
+            mBtnKanjiModeKunyomi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mKanjiReadingMode = "KUNYOMI";
+                    if (mSound != null) mSound.playToggle();
+                    updateKanjiReadingModeVisuals();
+                    if (mAdapter != null) mAdapter.notifyDataSetChanged();
+                }
+            });
+        }
+        if (mBtnKanjiModeBoth != null) {
+            mBtnKanjiModeBoth.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mKanjiReadingMode = "BOTH";
+                    if (mSound != null) mSound.playToggle();
+                    updateKanjiReadingModeVisuals();
+                    if (mAdapter != null) mAdapter.notifyDataSetChanged();
                 }
             });
         }
@@ -301,6 +353,32 @@ public class LibraryFilterDialog extends Dialog {
 
         mChipKanjiSubAdditional.setBackgroundResource(!is613 ? R.drawable.bg_segmented_active : android.R.color.transparent);
         mChipKanjiSubAdditional.setTextColor(getContext().getColor(!is613 ? R.color.colorOnPrimary : R.color.colorTextSecondary));
+    }
+
+    private void updateKanjiReadingModeVisuals() {
+        if (mBtnKanjiModeOnyomi == null || mBtnKanjiModeKunyomi == null || mBtnKanjiModeBoth == null) return;
+        boolean isOnyomi = "ONYOMI".equals(mKanjiReadingMode);
+        boolean isKunyomi = "KUNYOMI".equals(mKanjiReadingMode);
+        boolean isBoth = "BOTH".equals(mKanjiReadingMode);
+
+        mBtnKanjiModeOnyomi.setBackgroundResource(isOnyomi ? R.drawable.bg_segmented_active : android.R.color.transparent);
+        mBtnKanjiModeOnyomi.setTextColor(getContext().getColor(isOnyomi ? R.color.colorOnPrimary : R.color.colorTextSecondary));
+
+        mBtnKanjiModeKunyomi.setBackgroundResource(isKunyomi ? R.drawable.bg_segmented_active : android.R.color.transparent);
+        mBtnKanjiModeKunyomi.setTextColor(getContext().getColor(isKunyomi ? R.color.colorOnPrimary : R.color.colorTextSecondary));
+
+        mBtnKanjiModeBoth.setBackgroundResource(isBoth ? R.drawable.bg_segmented_active : android.R.color.transparent);
+        mBtnKanjiModeBoth.setTextColor(getContext().getColor(isBoth ? R.color.colorOnPrimary : R.color.colorTextSecondary));
+    }
+
+    private static String joinStrings(List<String> list, String delimiter) {
+        if (list == null || list.isEmpty()) return "";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < list.size(); i++) {
+            if (i > 0) sb.append(delimiter);
+            sb.append(list.get(i));
+        }
+        return sb.toString();
     }
 
     private void setupChipListener(Button chip, final String type) {
@@ -686,23 +764,54 @@ public class LibraryFilterDialog extends Dialog {
             final LearningObject item = getItem(position);
             holder.txtJapanese.setText(item.getJapanese() != null ? item.getJapanese() : "");
 
-            // Hide reading if identical to Japanese (e.g. Katakana/Hiragana words like ハンサム (な) or きれい (な))
-            // Only show reading when Kanji has a distinct reading (e.g. 親切 (な) -> しんせつ (な))
-            String reading = item.getReading();
-            if (reading != null && !reading.trim().isEmpty() && !reading.trim().equals("—")
-                    && !reading.trim().equals(item.getJapanese() != null ? item.getJapanese().trim() : "")) {
-                holder.txtReading.setVisibility(View.VISIBLE);
-                holder.txtReading.setText(reading.trim());
-            } else {
-                holder.txtReading.setVisibility(View.GONE);
-            }
+            if (mIsKanjiMode || item.getType() == LearningObject.Type.KANJI) {
+                String displayReading;
+                String displayRomaji;
+                if ("ONYOMI".equals(mKanjiReadingMode)) {
+                    displayReading = item.getOnyomiDisplay();
+                    List<String> rList = item.getOnyomiRomajiList();
+                    displayRomaji = (rList != null && !rList.isEmpty()) ? joinStrings(rList, ", ") : "";
+                } else if ("KUNYOMI".equals(mKanjiReadingMode)) {
+                    displayReading = item.getKunyomiDisplay();
+                    List<String> rList = item.getKunyomiRomajiList();
+                    displayRomaji = (rList != null && !rList.isEmpty()) ? joinStrings(rList, ", ") : "";
+                } else {
+                    displayReading = item.getDualReadingDisplay();
+                    displayRomaji = item.getRomaji();
+                }
 
-            String romaji = item.getRomaji();
-            if (romaji != null && !romaji.trim().isEmpty() && !romaji.trim().equals("—")) {
-                holder.txtRomaji.setVisibility(View.VISIBLE);
-                holder.txtRomaji.setText(romaji.trim());
+                if (displayReading != null && !displayReading.trim().isEmpty() && !displayReading.trim().equals("—")) {
+                    holder.txtReading.setVisibility(View.VISIBLE);
+                    holder.txtReading.setText(displayReading.trim());
+                } else {
+                    holder.txtReading.setVisibility(View.GONE);
+                }
+
+                if (displayRomaji != null && !displayRomaji.trim().isEmpty() && !displayRomaji.trim().equals("—")) {
+                    holder.txtRomaji.setVisibility(View.VISIBLE);
+                    holder.txtRomaji.setText(displayRomaji.trim());
+                } else {
+                    holder.txtRomaji.setVisibility(View.GONE);
+                }
             } else {
-                holder.txtRomaji.setVisibility(View.GONE);
+                // Hide reading if identical to Japanese (e.g. Katakana/Hiragana words like ハンサム (な) or きれい (な))
+                // Only show reading when Kanji has a distinct reading (e.g. 親切 (な) -> しんせつ (な))
+                String reading = item.getReading();
+                if (reading != null && !reading.trim().isEmpty() && !reading.trim().equals("—")
+                        && !reading.trim().equals(item.getJapanese() != null ? item.getJapanese().trim() : "")) {
+                    holder.txtReading.setVisibility(View.VISIBLE);
+                    holder.txtReading.setText(reading.trim());
+                } else {
+                    holder.txtReading.setVisibility(View.GONE);
+                }
+
+                String romaji = item.getRomaji();
+                if (romaji != null && !romaji.trim().isEmpty() && !romaji.trim().equals("—")) {
+                    holder.txtRomaji.setVisibility(View.VISIBLE);
+                    holder.txtRomaji.setText(romaji.trim());
+                } else {
+                    holder.txtRomaji.setVisibility(View.GONE);
+                }
             }
 
             holder.txtMeaning.setText(item.getIndonesian() != null ? item.getIndonesian() : "");
@@ -756,7 +865,17 @@ public class LibraryFilterDialog extends Dialog {
             };
 
             holder.btnSpeak.setOnClickListener(speakAction);
-            convertView.setOnClickListener(speakAction);
+
+            if (mIsKanjiMode || item.getType() == LearningObject.Type.KANJI) {
+                convertView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        new com.kotoba.app.ui.kanji.KanjiDetailDialog(getContext(), item, mSpeech).show();
+                    }
+                });
+            } else {
+                convertView.setOnClickListener(speakAction);
+            }
 
             return convertView;
         }

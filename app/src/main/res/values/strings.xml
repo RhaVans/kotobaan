@@ -67,4 +67,7 @@
     <string name="label_group_all">Semua Group</string>
     <string name="kanji_sub_613">613 Formal</string>
     <string name="kanji_sub_additional">Tambahan</string>
+    <string name="kanji_reading_mode_onyomi">On\'yomi</string>
+    <string name="kanji_reading_mode_kunyomi">Kun\'yomi</string>
+    <string name="kanji_reading_mode_both">Keduanya</string>
 </resources>

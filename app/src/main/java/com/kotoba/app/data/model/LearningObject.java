@@ -1,6 +1,9 @@
 package com.kotoba.app.data.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class LearningObject implements Serializable {
     public enum Type {
@@ -139,6 +142,158 @@ public class LearningObject implements Serializable {
 
     public String getExplanation() {
         return extractJsonString(detailsJson, "explanation");
+    }
+
+    public static class KanjiVocabExample implements Serializable {
+        private final String word;
+        private final String reading;
+        private final String romaji;
+        private final String meaning;
+        private final String readingType; // "ONYOMI" or "KUNYOMI"
+
+        public KanjiVocabExample(String word, String reading, String romaji, String meaning, String readingType) {
+            this.word = word != null ? word : "";
+            this.reading = reading != null ? reading : "";
+            this.romaji = romaji != null ? romaji : "";
+            this.meaning = meaning != null ? meaning : "";
+            this.readingType = readingType != null ? readingType : "";
+        }
+
+        public String getWord() { return word; }
+        public String getReading() { return reading; }
+        public String getRomaji() { return romaji; }
+        public String getMeaning() { return meaning; }
+        public String getReadingType() { return readingType; }
+    }
+
+    public List<String> getOnyomiList() {
+        return extractJsonStringList(detailsJson, "onyomi");
+    }
+
+    public List<String> getKunyomiList() {
+        return extractJsonStringList(detailsJson, "kunyomi");
+    }
+
+    public List<String> getOnyomiRomajiList() {
+        return extractJsonStringList(detailsJson, "onyomi_romaji");
+    }
+
+    public List<String> getKunyomiRomajiList() {
+        return extractJsonStringList(detailsJson, "kunyomi_romaji");
+    }
+
+    public boolean hasOnyomi() {
+        List<String> list = getOnyomiList();
+        return list != null && !list.isEmpty();
+    }
+
+    public boolean hasKunyomi() {
+        List<String> list = getKunyomiList();
+        return list != null && !list.isEmpty();
+    }
+
+    public String getOnyomiDisplay() {
+        List<String> list = getOnyomiList();
+        if (list == null || list.isEmpty()) return "—";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < list.size(); i++) {
+            if (i > 0) sb.append("、");
+            sb.append(list.get(i));
+        }
+        return sb.toString();
+    }
+
+    public String getKunyomiDisplay() {
+        List<String> list = getKunyomiList();
+        if (list == null || list.isEmpty()) return "—";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < list.size(); i++) {
+            if (i > 0) sb.append("、");
+            sb.append(list.get(i));
+        }
+        return sb.toString();
+    }
+
+    public String getDualReadingDisplay() {
+        String dual = extractJsonString(detailsJson, "dual_reading");
+        if (dual != null && !dual.trim().isEmpty()) {
+            return dual;
+        }
+        boolean hasOn = hasOnyomi();
+        boolean hasKun = hasKunyomi();
+        if (hasOn && hasKun) {
+            return "音: " + getOnyomiDisplay() + " / 訓: " + getKunyomiDisplay();
+        } else if (hasOn) {
+            return "音: " + getOnyomiDisplay();
+        } else if (hasKun) {
+            return "訓: " + getKunyomiDisplay();
+        }
+        return reading != null ? reading : "—";
+    }
+
+    public List<KanjiVocabExample> getVocabExamples() {
+        List<KanjiVocabExample> result = new ArrayList<KanjiVocabExample>();
+        if (detailsJson == null || detailsJson.isEmpty()) return result;
+        String needle = "\"vocab_examples\":";
+        int start = detailsJson.indexOf(needle);
+        if (start < 0) return result;
+        start = detailsJson.indexOf('[', start + needle.length());
+        if (start < 0) return result;
+        int end = detailsJson.indexOf(']', start);
+        if (end < 0) return result;
+        String arrayContent = detailsJson.substring(start + 1, end).trim();
+        if (arrayContent.isEmpty()) return result;
+
+        int idx = 0;
+        while (idx < arrayContent.length()) {
+            int oStart = arrayContent.indexOf('{', idx);
+            if (oStart < 0) break;
+            int oEnd = arrayContent.indexOf('}', oStart);
+            if (oEnd < 0) break;
+            String objStr = arrayContent.substring(oStart, oEnd + 1);
+            String word = extractJsonString(objStr, "word");
+            String rd = extractJsonString(objStr, "reading");
+            String rm = extractJsonString(objStr, "example_romaji");
+            if (rm.isEmpty()) {
+                rm = extractJsonString(objStr, "romaji");
+            }
+            String meaning = extractJsonString(objStr, "meaning");
+            String type = extractJsonString(objStr, "reading_type");
+            if (!word.isEmpty()) {
+                result.add(new KanjiVocabExample(word, rd, rm, meaning, type));
+            }
+            idx = oEnd + 1;
+        }
+        return result;
+    }
+
+    public static List<String> extractJsonStringList(String json, String key) {
+        List<String> list = new ArrayList<String>();
+        if (json == null || json.isEmpty() || key == null) return list;
+        String needle = "\"" + key + "\":";
+        int start = json.indexOf(needle);
+        if (start < 0) return list;
+        start = json.indexOf('[', start + needle.length());
+        if (start < 0) return list;
+        int end = json.indexOf(']', start);
+        if (end < 0) return list;
+        String arrayContent = json.substring(start + 1, end).trim();
+        if (arrayContent.isEmpty()) return list;
+
+        int i = 0;
+        while (i < arrayContent.length()) {
+            int qStart = arrayContent.indexOf('\"', i);
+            if (qStart < 0) break;
+            int qEnd = arrayContent.indexOf('\"', qStart + 1);
+            while (qEnd > 0 && arrayContent.charAt(qEnd - 1) == '\\') {
+                qEnd = arrayContent.indexOf('\"', qEnd + 1);
+            }
+            if (qEnd < 0) break;
+            String item = arrayContent.substring(qStart + 1, qEnd);
+            list.add(item.replace("\\\"", "\"").replace("\\\\", "\\"));
+            i = qEnd + 1;
+        }
+        return list;
     }
 
     private static String extractJsonString(String json, String key) {

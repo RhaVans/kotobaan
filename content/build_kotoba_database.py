@@ -31,7 +31,7 @@ cursor = conn.cursor()
 print("1. Creating SQLite schema...")
 cursor.executescript("""
 PRAGMA foreign_keys = ON;
-PRAGMA user_version = 3;
+PRAGMA user_version = 4;
 
 CREATE TABLE chapters (
     bab_number INTEGER PRIMARY KEY,
@@ -294,7 +294,13 @@ for entry in kanji_data:
         json.dumps({
             "group": entry.get("group", 1),
             "group_label": group_lbl,
-            "section": "KANJI"
+            "section": "KANJI",
+            "onyomi": entry.get("onyomi", []),
+            "onyomi_romaji": entry.get("onyomi_romaji", []),
+            "kunyomi": entry.get("kunyomi", []),
+            "kunyomi_romaji": entry.get("kunyomi_romaji", []),
+            "dual_reading": entry.get("dual_reading", ""),
+            "vocab_examples": entry.get("vocab_examples", [])
         }, ensure_ascii=False)
     ))
 
@@ -367,7 +373,13 @@ if add_kanji_file.exists():
                 "batch_index": entry["batch_index"],
                 "source": entry["source"],
                 "page": entry["page"],
-                "occurrences": entry["occurrences"]
+                "occurrences": entry["occurrences"],
+                "onyomi": entry.get("onyomi", []),
+                "onyomi_romaji": entry.get("onyomi_romaji", []),
+                "kunyomi": entry.get("kunyomi", []),
+                "kunyomi_romaji": entry.get("kunyomi_romaji", []),
+                "dual_reading": entry.get("dual_reading", ""),
+                "vocab_examples": entry.get("vocab_examples", [])
             }, ensure_ascii=False)
         ))
     cursor.executemany("""
@@ -674,6 +686,17 @@ k701 = cursor.fetchone()
 assert k701 is not None and k701[0] == '釣' and k701[1] == 'つり' and k701[2] == 'tsuri', f"Integrity Failure: Kanji 701 mismatch: {k701}"
 
 print("   -> Data Integrity Assertions: PASSED (0 empty readings, 0 corrupt romaji, 701 verified).")
+
+# 11. Dual Reading Integrity Assertions
+cursor.execute("SELECT count(*) FROM learning_objects WHERE type = 'KANJI' AND details_json LIKE '%\"onyomi\":%'")
+dual_kanji_count = cursor.fetchone()[0]
+assert dual_kanji_count == 2732, f"Expected 2732 kanji with dual reading metadata, found {dual_kanji_count}"
+
+cursor.execute("SELECT count(*) FROM learning_objects WHERE id LIKE 'kanji_add_%' AND details_json LIKE '%\"kunyomi\": []%'")
+no_kun_count = cursor.fetchone()[0]
+assert no_kun_count == 407, f"Expected 407 additional kanji with empty kunyomi (393 on-only + 14 radicals), found {no_kun_count}"
+
+print(f"   -> Dual Reading Assertions: PASSED ({dual_kanji_count} kanji enriched, {no_kun_count} authentic On'yomi-only).")
 
 conn.close()
 
