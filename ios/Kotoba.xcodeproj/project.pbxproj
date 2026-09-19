@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50FCDD82B81E8EA6D7F44DDC /* KotobaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AEE11BECBF07C915058697 /* KotobaApp.swift */; };
+		15FD1BCA98BEEDD498DA1D57 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2C6737EE1C8189C295C5AE /* AppState.swift */; };
+		C0DF545DE1F7E88FCBCFAE39 /* WordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B71246FB9B82F18411167B /* WordType.swift */; };
+		67133D00092C170E2E575F7B /* PronunciationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B3238AF3BCD8C6E99A01D /* PronunciationTarget.swift */; };
+		B9B9D3F85206B2BCF9A9A3D6 /* LearningObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA39039C163DFC2CAFF341C /* LearningObject.swift */; };
+		E006D854AD358EA67BA7511D /* UserProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D493764DFF1D04A512AB52E /* UserProgress.swift */; };
+		783F2A3EAD236B0E76E7D92F /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94190DF37C602BB407FDFDE3 /* Chapter.swift */; };
+		1C2066F323562AC132E57884 /* LearningCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB27C8F956E32317DB1C248 /* LearningCycle.swift */; };
+		48FE06BBA4D7A630A612070C /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513FDB170D891EEC79D038 /* DatabaseService.swift */; };
+		BCE75AE8E288B960FDBD1A38 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3214BE6172B3B1386DE5FB99 /* SpeechService.swift */; };
+		82240A831E90879BC42B4CD7 /* SrsScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632971052BE7368A31A646B /* SrsScheduler.swift */; };
+		62B059128DC22A069F3EE427 /* IngatLupaEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18EEBECE524F6CF9D85CEAB /* IngatLupaEngine.swift */; };
+		054A2941C35927E7CFA17F79 /* WeaknessDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1732E6A0875BACEA97221B /* WeaknessDetector.swift */; };
+		27E980A777B4E77CD374B0A1 /* FlashcardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFF2A1066AD62EB537F6BE0 /* FlashcardViewModel.swift */; };
+		3D7A42CC89A84DC59A1EE9A1 /* PustakaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B6D1FBE2EA74D68D324925 /* PustakaViewModel.swift */; };
+		A77247BC7FA424FB288E94C0 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C033A354913819FA55EB4 /* ReviewViewModel.swift */; };
+		B2E2B799B5C553BFB83C171C /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207F45393FC2176E52E5C342 /* SettingsViewModel.swift */; };
+		0C77DC79BEDE2644041BAB97 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D9CEF754940C274F82798D /* MainTabView.swift */; };
+		61293CE377C245A3637D9153 /* CardFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDA6AB3EF681628B49480C /* CardFaceView.swift */; };
+		5FD403F2A3FB2578E6BF44FC /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563FB129F2CEC10F309EE555 /* FlashcardView.swift */; };
+		70BCE7E97700AC275EFF23D8 /* PustakaCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C204B9701E96A628AEE08 /* PustakaCardRow.swift */; };
+		9FE2E07A73F421C5EA168F4A /* MultiBabSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A56A4A979C0BC592AD8DB /* MultiBabSheetView.swift */; };
+		9B6D04011EBA32DC97CEDFCD /* PustakaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5B1272EDB1CA528128C57 /* PustakaView.swift */; };
+		EFDEB87741229BE6B95FA320 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497AA64232C3260B6B0641FA /* ReviewView.swift */; };
+		AF60A7CD42BCE76A71D91F6F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271469DB73046C3CFBDBB07A /* SettingsView.swift */; };
+		B76EAF56E88C4986CE97A39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F8E1C9DA08E487C9C523F04 /* Assets.xcassets */; };
+		1A5BD03C0BE3E65284D7689A /* kotoba.db in Resources */ = {isa = PBXBuildFile; fileRef = 23CDCEAAB8AF8A08616DBF9B /* kotoba.db */; };
+		CA561F09D663BAA6A932183B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B877D84EEC272051C56139 /* AVFoundation.framework */; };
+		FB496085CB75C8EA15E63B51 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66170E15A4D7C77EBF3ECDB /* AudioToolbox.framework */; };
+		DEDBF5D928B1B71BF119CEC1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A2B55D54385AC1ABA03C20 /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4AEE11BECBF07C915058697 /* KotobaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotobaApp.swift; sourceTree = "<group>"; };
+		AE2C6737EE1C8189C295C5AE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		93B71246FB9B82F18411167B /* WordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordType.swift; sourceTree = "<group>"; };
+		945B3238AF3BCD8C6E99A01D /* PronunciationTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationTarget.swift; sourceTree = "<group>"; };
+		2DA39039C163DFC2CAFF341C /* LearningObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningObject.swift; sourceTree = "<group>"; };
+		9D493764DFF1D04A512AB52E /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
+		94190DF37C602BB407FDFDE3 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		BBB27C8F956E32317DB1C248 /* LearningCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCycle.swift; sourceTree = "<group>"; };
+		BF513FDB170D891EEC79D038 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		3214BE6172B3B1386DE5FB99 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		4632971052BE7368A31A646B /* SrsScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SrsScheduler.swift; sourceTree = "<group>"; };
+		B18EEBECE524F6CF9D85CEAB /* IngatLupaEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngatLupaEngine.swift; sourceTree = "<group>"; };
+		6A1732E6A0875BACEA97221B /* WeaknessDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaknessDetector.swift; sourceTree = "<group>"; };
+		5BFF2A1066AD62EB537F6BE0 /* FlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewModel.swift; sourceTree = "<group>"; };
+		44B6D1FBE2EA74D68D324925 /* PustakaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PustakaViewModel.swift; sourceTree = "<group>"; };
+		EA9C033A354913819FA55EB4 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
+		207F45393FC2176E52E5C342 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		31D9CEF754940C274F82798D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		FACDA6AB3EF681628B49480C /* CardFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFaceView.swift; sourceTree = "<group>"; };
+		563FB129F2CEC10F309EE555 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
+		948C204B9701E96A628AEE08 /* PustakaCardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PustakaCardRow.swift; sourceTree = "<group>"; };
+		8D3A56A4A979C0BC592AD8DB /* MultiBabSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiBabSheetView.swift; sourceTree = "<group>"; };
+		A1E5B1272EDB1CA528128C57 /* PustakaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PustakaView.swift; sourceTree = "<group>"; };
+		497AA64232C3260B6B0641FA /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		271469DB73046C3CFBDBB07A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6F8E1C9DA08E487C9C523F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23CDCEAAB8AF8A08616DBF9B /* kotoba.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = kotoba.db; sourceTree = "<group>"; };
+		7A980057F3FBAD93B3758915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B877D84EEC272051C56139 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.framework"; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E66170E15A4D7C77EBF3ECDB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.framework"; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		83A2B55D54385AC1ABA03C20 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		42F5BB9A46ADFA422E96ABB6 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97328721E66B0722900C50C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA561F09D663BAA6A932183B /* AVFoundation.framework in Frameworks */,
+				FB496085CB75C8EA15E63B51 /* AudioToolbox.framework in Frameworks */,
+				DEDBF5D928B1B71BF119CEC1 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		579684E97C209B159B91A38C = {
+			isa = PBXGroup;
+			children = (
+				0DC3FC022853FF4EC253E364 /* Kotoba */,
+				C946554FE1C2C099E3209C4D /* Frameworks */,
+				A3E89F8433CF2D7E61CA74BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0DC3FC022853FF4EC253E364 /* Kotoba */ = {
+			isa = PBXGroup;
+			children = (
+				6E91E962F271651E5DB63502 /* App */,
+				791DB8710C9B711EEDC3A50F /* Models */,
+				71BEE56A7AB2A21372CEF785 /* Services */,
+				C121D22B070D5FB13DA40E26 /* Engines */,
+				9A2A754AEFB850701D04FA0B /* ViewModels */,
+				CD024875B3057A968077CEE8 /* Views */,
+				E5791EE4C00AC76680CE3FAA /* Resources */,
+			);
+			path = Kotoba;
+			sourceTree = "<group>";
+		};
+		6E91E962F271651E5DB63502 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F4AEE11BECBF07C915058697 /* KotobaApp.swift */,
+				AE2C6737EE1C8189C295C5AE /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		791DB8710C9B711EEDC3A50F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93B71246FB9B82F18411167B /* WordType.swift */,
+				945B3238AF3BCD8C6E99A01D /* PronunciationTarget.swift */,
+				2DA39039C163DFC2CAFF341C /* LearningObject.swift */,
+				9D493764DFF1D04A512AB52E /* UserProgress.swift */,
+				94190DF37C602BB407FDFDE3 /* Chapter.swift */,
+				BBB27C8F956E32317DB1C248 /* LearningCycle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71BEE56A7AB2A21372CEF785 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BF513FDB170D891EEC79D038 /* DatabaseService.swift */,
+				3214BE6172B3B1386DE5FB99 /* SpeechService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C121D22B070D5FB13DA40E26 /* Engines */ = {
+			isa = PBXGroup;
+			children = (
+				4632971052BE7368A31A646B /* SrsScheduler.swift */,
+				B18EEBECE524F6CF9D85CEAB /* IngatLupaEngine.swift */,
+				6A1732E6A0875BACEA97221B /* WeaknessDetector.swift */,
+			);
+			path = Engines;
+			sourceTree = "<group>";
+		};
+		9A2A754AEFB850701D04FA0B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5BFF2A1066AD62EB537F6BE0 /* FlashcardViewModel.swift */,
+				44B6D1FBE2EA74D68D324925 /* PustakaViewModel.swift */,
+				EA9C033A354913819FA55EB4 /* ReviewViewModel.swift */,
+				207F45393FC2176E52E5C342 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E5791EE4C00AC76680CE3FAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F8E1C9DA08E487C9C523F04 /* Assets.xcassets */,
+				23CDCEAAB8AF8A08616DBF9B /* kotoba.db */,
+				7A980057F3FBAD93B3758915 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD024875B3057A968077CEE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31D9CEF754940C274F82798D /* MainTabView.swift */,
+				00AB5AC937140A9251544DB6 /* Flashcard */,
+				B6BD22A0DBE7555D00B283B6 /* Pustaka */,
+				F774973810D31AFA2E92C257 /* Review */,
+				7DC408E434E9469C683E5BA3 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00AB5AC937140A9251544DB6 /* Flashcard */ = {
+			isa = PBXGroup;
+			children = (
+				FACDA6AB3EF681628B49480C /* CardFaceView.swift */,
+				563FB129F2CEC10F309EE555 /* FlashcardView.swift */,
+			);
+			path = Flashcard;
+			sourceTree = "<group>";
+		};
+		B6BD22A0DBE7555D00B283B6 /* Pustaka */ = {
+			isa = PBXGroup;
+			children = (
+				948C204B9701E96A628AEE08 /* PustakaCardRow.swift */,
+				8D3A56A4A979C0BC592AD8DB /* MultiBabSheetView.swift */,
+				A1E5B1272EDB1CA528128C57 /* PustakaView.swift */,
+			);
+			path = Pustaka;
+			sourceTree = "<group>";
+		};
+		F774973810D31AFA2E92C257 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				497AA64232C3260B6B0641FA /* ReviewView.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		7DC408E434E9469C683E5BA3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				271469DB73046C3CFBDBB07A /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C946554FE1C2C099E3209C4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5B877D84EEC272051C56139 /* AVFoundation.framework */,
+				E66170E15A4D7C77EBF3ECDB /* AudioToolbox.framework */,
+				83A2B55D54385AC1ABA03C20 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3E89F8433CF2D7E61CA74BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42F5BB9A46ADFA422E96ABB6 /* Kotoba.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		205E9CC67EE1EC5555AED183 /* Kotoba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5BF1EAA6DB6ECD379C8DB62 /* Build configuration list for PBXNativeTarget "Kotoba" */;
+			buildPhases = (
+				6EC45C7645391D40E21054AF /* Sources */,
+				97328721E66B0722900C50C4 /* Frameworks */,
+				AB9694D623B220AB2887FCD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kotoba;
+			productName = Kotoba;
+			productReference = 42F5BB9A46ADFA422E96ABB6 /* Kotoba.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1781F676DEDF5767F3243DB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					205E9CC67EE1EC5555AED183 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 0D49F7F16DC2D795E647236D /* Build configuration list for PBXProject "Kotoba" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 579684E97C209B159B91A38C;
+			productRefGroup = A3E89F8433CF2D7E61CA74BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				205E9CC67EE1EC5555AED183 /* Kotoba */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB9694D623B220AB2887FCD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76EAF56E88C4986CE97A39D /* Assets.xcassets in Resources */,
+				1A5BD03C0BE3E65284D7689A /* kotoba.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EC45C7645391D40E21054AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FCDD82B81E8EA6D7F44DDC /* KotobaApp.swift in Sources */,
+				15FD1BCA98BEEDD498DA1D57 /* AppState.swift in Sources */,
+				C0DF545DE1F7E88FCBCFAE39 /* WordType.swift in Sources */,
+				67133D00092C170E2E575F7B /* PronunciationTarget.swift in Sources */,
+				B9B9D3F85206B2BCF9A9A3D6 /* LearningObject.swift in Sources */,
+				E006D854AD358EA67BA7511D /* UserProgress.swift in Sources */,
+				783F2A3EAD236B0E76E7D92F /* Chapter.swift in Sources */,
+				1C2066F323562AC132E57884 /* LearningCycle.swift in Sources */,
+				48FE06BBA4D7A630A612070C /* DatabaseService.swift in Sources */,
+				BCE75AE8E288B960FDBD1A38 /* SpeechService.swift in Sources */,
+				82240A831E90879BC42B4CD7 /* SrsScheduler.swift in Sources */,
+				62B059128DC22A069F3EE427 /* IngatLupaEngine.swift in Sources */,
+				054A2941C35927E7CFA17F79 /* WeaknessDetector.swift in Sources */,
+				27E980A777B4E77CD374B0A1 /* FlashcardViewModel.swift in Sources */,
+				3D7A42CC89A84DC59A1EE9A1 /* PustakaViewModel.swift in Sources */,
+				A77247BC7FA424FB288E94C0 /* ReviewViewModel.swift in Sources */,
+				B2E2B799B5C553BFB83C171C /* SettingsViewModel.swift in Sources */,
+				0C77DC79BEDE2644041BAB97 /* MainTabView.swift in Sources */,
+				61293CE377C245A3637D9153 /* CardFaceView.swift in Sources */,
+				5FD403F2A3FB2578E6BF44FC /* FlashcardView.swift in Sources */,
+				70BCE7E97700AC275EFF23D8 /* PustakaCardRow.swift in Sources */,
+				9FE2E07A73F421C5EA168F4A /* MultiBabSheetView.swift in Sources */,
+				9B6D04011EBA32DC97CEDFCD /* PustakaView.swift in Sources */,
+				EFDEB87741229BE6B95FA320 /* ReviewView.swift in Sources */,
+				AF60A7CD42BCE76A71D91F6F /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AC2BF1911B8C061B5D76E70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E10CA6A108079244E3DBD216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = "wholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2672D41866B890189EA4D168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Kotoba/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Kotoba;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotoba.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF419746B51A97135B3CE667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Kotoba/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Kotoba;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotoba.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D49F7F16DC2D795E647236D /* Build configuration list for PBXProject "Kotoba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC2BF1911B8C061B5D76E70B /* Debug */,
+				E10CA6A108079244E3DBD216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5BF1EAA6DB6ECD379C8DB62 /* Build configuration list for PBXNativeTarget "Kotoba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2672D41866B890189EA4D168 /* Debug */,
+				AF419746B51A97135B3CE667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1781F676DEDF5767F3243DB0 /* Project object */;
+}

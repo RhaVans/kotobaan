@@ -1,0 +1,52 @@
+name: Build iOS App (.ipa)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-ios:
+    name: Build & Package Kotoba iOS (.ipa)
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Xcode
+        run: |
+          echo "Available Xcode versions:"
+          ls -d /Applications/Xcode* || true
+          xcrun --version
+          xcodebuild -version
+
+      - name: Build Xcode Archive
+        run: |
+          mkdir -p build
+          xcodebuild archive \
+            -project ios/Kotoba.xcodeproj \
+            -scheme Kotoba \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath build/Kotoba.xcarchive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+
+      - name: Package Payload to .ipa
+        run: |
+          mkdir -p build/Payload
+          cp -r build/Kotoba.xcarchive/Products/Applications/Kotoba.app build/Payload/
+          cd build
+          zip -r9 "Kotoba.ipa" Payload
+          ls -la "Kotoba.ipa"
+
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Kotoba-iOS-IPA
+          path: 'build/Kotoba.ipa'
+          retention-days: 14

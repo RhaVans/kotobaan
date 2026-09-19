@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>Katalog Kanji — JFT A2 / Irodori</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,500;0,600;0,700;1,500&family=Noto+Serif+JP:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment: #EFE6D2;
+    --parchment-deep: #E4D8BC;
+    --card: #FBF6E9;
+    --ink: #241C13;
+    --ink-soft: #5B5040;
+    --ink-faint: #8B8069;
+    --violet: #6B4C9A;
+    --violet-deep: #4C3572;
+    --violet-pale: #E9E1F4;
+    --rule: #CBB98D;
+    --stamp: #A13F2E;
+    --green: #4A6B4E;
+    --shadow: 0 1px 0 rgba(36,28,19,0.06), 0 8px 24px -12px rgba(36,28,19,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;height:100%;}
+  body{
+    background:
+      radial-gradient(1200px 600px at 10% -10%, #F5EEDC 0%, transparent 60%),
+      var(--parchment);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:22px 16px 40px;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .wrap{ width:100%; max-width:440px; }
+
+  /* ---- Header: catalog ledger strip ---- */
+  header{
+    display:flex; align-items:baseline; justify-content:space-between;
+    border-bottom:1px solid var(--rule);
+    padding-bottom:10px; margin-bottom:16px;
+  }
+  .title{
+    font-family:'Source Serif 4',serif;
+    font-weight:700; font-size:19px; letter-spacing:0.01em; color:var(--ink);
+  }
+  .title small{
+    display:block; font-family:'Inter',sans-serif; font-weight:500;
+    font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--ink-faint); margin-top:2px;
+  }
+  .count-badge{
+    font-family:'Source Serif 4',serif; font-style:italic; font-size:13px;
+    color:var(--violet-deep); white-space:nowrap;
+  }
+
+  /* ---- Section select ---- */
+  .section-row{
+    display:flex; align-items:center; gap:10px; margin-bottom:12px;
+  }
+  .section-label{
+    font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--ink-faint); flex-shrink:0;
+  }
+  .section-select{
+    flex:1; appearance:none; -webkit-appearance:none;
+    background:var(--card) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M0 0l5 6 5-6z" fill="%235B5040"/></svg>') no-repeat right 12px center;
+    border:1px solid var(--rule); border-radius:8px;
+    padding:9px 30px 9px 12px;
+    font-family:'Source Serif 4',serif; font-weight:600; font-size:13.5px; color:var(--ink);
+    cursor:pointer;
+  }
+
+  /* ---- Filter chips ---- */
+  .filters{ display:flex; gap:6px; margin-bottom:14px; }
+  .chip{
+    flex:1; text-align:center; padding:7px 6px; border-radius:20px;
+    border:1px solid var(--rule); background:transparent;
+    font-family:'Inter',sans-serif; font-size:11.5px; font-weight:600;
+    color:var(--ink-soft); cursor:pointer; transition:all .15s ease;
+  }
+  .chip.active{ background:var(--violet); border-color:var(--violet); color:#fff; }
+
+  /* ---- Progress ---- */
+  .progress-row{ display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .progress-track{
+    flex:1; height:3px; background:var(--rule); border-radius:2px; overflow:hidden;
+  }
+  .progress-fill{ height:100%; background:var(--violet); transition:width .25s ease; }
+  .progress-label{
+    font-size:11px; font-variant-numeric:tabular-nums; color:var(--ink-faint); white-space:nowrap;
+  }
+
+  /* ---- Card stage ---- */
+  .stage{ perspective:1600px; margin-bottom:18px; }
+  .card{
+    position:relative; width:100%; height:340px;
+    transform-style:preserve-3d; transition:transform .5s cubic-bezier(.22,.68,.29,1.15);
+    cursor:pointer;
+  }
+  .card.flipped{ transform:rotateY(180deg); }
+  .face{
+    position:absolute; inset:0; backface-visibility:hidden;
+    background:var(--card);
+    border-radius:6px;
+    box-shadow:var(--shadow);
+    border:1px solid rgba(36,28,19,0.08);
+    display:flex; flex-direction:column;
+    overflow:hidden;
+  }
+  /* catalog notch tab */
+  .face::before{
+    content:''; position:absolute; top:0; left:22px; width:64px; height:9px;
+    background:var(--parchment); border-radius:0 0 5px 5px;
+  }
+  .face-top{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:16px 16px 0 16px;
+  }
+  .catalog-no{
+    font-family:'Source Serif 4',serif; font-style:italic; font-size:12px; color:var(--ink-faint);
+  }
+  .status-dot{ width:8px; height:8px; border-radius:50%; background:var(--rule); }
+  .status-dot.known{ background:var(--green); }
+
+  .face-body{
+    flex:1; display:flex; align-items:center; justify-content:center;
+    padding:10px 24px;
+  }
+  .kanji-glyph{
+    font-family:'Noto Serif JP',serif; font-weight:500;
+    font-size:clamp(56px, 17vw, 88px);
+    line-height:1.15; color:var(--ink); text-align:center;
+  }
+  .kanji-glyph rt{
+    font-family:'Inter',sans-serif; font-weight:600; font-size:0.28em;
+    color:var(--violet-deep); letter-spacing:0.02em;
+  }
+  .kanji-glyph.hide-furigana rt{ visibility:hidden; }
+
+  .face-bottom{
+    text-align:center; padding:0 20px 18px;
+    font-size:11px; color:var(--ink-faint); letter-spacing:0.06em;
+  }
+
+  .back{ transform:rotateY(180deg); background:var(--violet-pale); border-color:rgba(76,53,114,0.18); align-items:center; justify-content:center; text-align:center; padding:28px 24px; }
+  .back .reading{
+    font-family:'Noto Serif JP',serif; font-weight:700; font-size:30px; color:var(--violet-deep);
+    margin-bottom:14px;
+  }
+  .back .rule{ width:36px; height:1px; background:var(--violet-deep); opacity:.35; margin-bottom:14px; }
+  .back .meaning{
+    font-family:'Source Serif 4',serif; font-weight:600; font-style:italic; font-size:22px; color:var(--ink);
+    line-height:1.3;
+  }
+  .back .hint{
+    margin-top:18px; font-family:'Inter',sans-serif; font-size:10.5px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--violet-deep); opacity:.6;
+  }
+
+  /* ---- Controls ---- */
+  .toggle-row{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-bottom:16px; padding:0 2px;
+  }
+  .toggle-label{ font-size:12.5px; font-weight:600; color:var(--ink-soft); }
+  .switch{
+    width:40px; height:23px; border-radius:20px; background:var(--rule);
+    position:relative; cursor:pointer; transition:background .2s ease; flex-shrink:0;
+  }
+  .switch.on{ background:var(--violet); }
+  .switch::after{
+    content:''; position:absolute; top:2px; left:2px; width:19px; height:19px;
+    border-radius:50%; background:#fff; transition:transform .2s ease;
+    box-shadow:0 1px 2px rgba(0,0,0,0.25);
+  }
+  .switch.on::after{ transform:translateX(17px); }
+
+  .nav-row{ display:flex; gap:8px; margin-bottom:10px; }
+  .btn{
+    flex:1; padding:13px 10px; border-radius:8px; border:1px solid var(--rule);
+    background:var(--card); color:var(--ink); font-family:'Inter',sans-serif;
+    font-weight:600; font-size:13.5px; cursor:pointer; display:flex; align-items:center;
+    justify-content:center; gap:6px; transition:transform .1s ease, background .15s ease;
+  }
+  .btn:active{ transform:scale(0.96); }
+  .btn.primary{ background:var(--violet); border-color:var(--violet); color:#fff; }
+  .btn.ghost{ flex:0 0 52px; }
+  .btn.known-btn.marked{ background:var(--green); border-color:var(--green); color:#fff; }
+
+  .shuffle-row{ display:flex; gap:8px; }
+
+  footer{
+    margin-top:22px; text-align:center; font-size:10.5px; color:var(--ink-faint);
+    letter-spacing:0.05em;
+  }
+
+  .empty-state{
+    text-align:center; padding:60px 20px; color:var(--ink-faint);
+    font-family:'Source Serif 4',serif; font-style:italic; font-size:15px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .card, .switch, .switch::after, .progress-fill, .btn{ transition:none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="title">Katalog Kanji<small>JFT A2 · Tambahan Irodori</small></div>
+    <div class="count-badge" id="countBadge">613 kartu</div>
+  </header>
+
+  <div class="section-row">
+    <label class="section-label" for="sectionSelect">Bagian</label>
+    <select id="sectionSelect" class="section-select"></select>
+  </div>
+
+  <div class="filters">
+    <div class="chip active" data-filter="all">Semua</div>
+    <div class="chip" data-filter="unknown">Belum hafal</div>
+    <div class="chip" data-filter="known">Hafal</div>
+  </div>
+
+  <div class="progress-row">
+    <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <div class="progress-label" id="progressLabel">0 / 0</div>
+  </div>
+
+  <div class="stage">
+    <div class="card" id="card">
+      <div class="face face-front">
+        <div class="face-top">
+          <span class="catalog-no" id="catNo">№ —</span>
+          <span class="status-dot" id="statusDot"></span>
+        </div>
+        <div class="face-body">
+          <div class="kanji-glyph hide-furigana" id="kanjiGlyph"></div>
+        </div>
+        <div class="face-bottom">Ketuk kartu untuk lihat arti</div>
+      </div>
+      <div class="face back">
+        <div class="reading" id="backReading"></div>
+        <div class="rule"></div>
+        <div class="meaning" id="backMeaning"></div>
+        <div class="hint">Ketuk untuk kembali</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toggle-row">
+    <span class="toggle-label">Tampilkan furigana</span>
+    <div class="switch" id="furiganaSwitch"></div>
+  </div>
+
+  <div class="nav-row">
+    <button class="btn ghost" id="prevBtn">◀</button>
+    <button class="btn known-btn" id="knownBtn">✓ Tandai hafal</button>
+    <button class="btn ghost" id="nextBtn">▶</button>
+  </div>
+  <div class="shuffle-row">
+    <button class="btn primary" id="shuffleBtn">🔀 Acak kartu</button>
+    <button class="btn" id="resetBtn">↺ Reset urutan</button>
+  </div>
+
+  <footer>Progres tersimpan otomatis di perangkat ini</footer>
+</div>
+
+<script>
+const KANJI_DATA = [{"no": 1, "kanji": "魚", "reading": "さかな", "meaning": "Ikan"}, {"no": 2, "kanji": "肉", "reading": "にく", "meaning": "Daging"}, {"no": 3, "kanji": "卵", "reading": "たまご", "meaning": "Telur"}, {"no": 4, "kanji": "水", "reading": "みず", "meaning": "Air"}, {"no": 5, "kanji": "食べます", "reading": "たべます", "meaning": "Makan"}, {"no": 6, "kanji": "飲みます", "reading": "のみます", "meaning": "Minum"}, {"no": 7, "kanji": "大きい", "reading": "おおきい", "meaning": "Besar"}, {"no": 8, "kanji": "小さい", "reading": "ちいさい", "meaning": "Kecil"}, {"no": 9, "kanji": "新しい", "reading": "あたらしい", "meaning": "Baru"}, {"no": 10, "kanji": "古い", "reading": "ふるい", "meaning": "Lama, usang"}, {"no": 11, "kanji": "～時", "reading": "～じ", "meaning": "~ jam"}, {"no": 12, "kanji": "～分", "reading": "～ふん、ぷん、ぶん", "meaning": "~ menit"}, {"no": 13, "kanji": "～半", "reading": "～はん", "meaning": "~ setengah"}, {"no": 14, "kanji": "月曜日", "reading": "げつようび", "meaning": "Senin"}, {"no": 15, "kanji": "火曜日", "reading": "かようび", "meaning": "Selasa"}, {"no": 16, "kanji": "水曜日", "reading": "すいようび", "meaning": "Rabo"}, {"no": 17, "kanji": "木曜日", "reading": "もくようび", "meaning": "Kamis"}, {"no": 18, "kanji": "金曜日", "reading": "きんようび", "meaning": "Jumat"}, {"no": 19, "kanji": "土曜日", "reading": "どようび", "meaning": "Sabtu"}, {"no": 20, "kanji": "日曜日", "reading": "にちようび", "meaning": "Minggu"}, {"no": 21, "kanji": "言います", "reading": "いいます", "meaning": "Berkata"}, {"no": 22, "kanji": "話します", "reading": "はなします", "meaning": "Berbicara"}, {"no": 23, "kanji": "読みます", "reading": "よみます", "meaning": "Membaca"}, {"no": 24, "kanji": "見ます", "reading": "みます", "meaning": "Melihat"}, {"no": 25, "kanji": "聞きます", "reading": "ききます", "meaning": "Mendengarkan"}, {"no": 26, "kanji": "書きます", "reading": "かきます", "meaning": "Menulis"}, {"no": 27, "kanji": "一", "reading": "いち", "meaning": "Satu"}, {"no": 28, "kanji": "二", "reading": "に", "meaning": "Dua"}, {"no": 29, "kanji": "三", "reading": "さん", "meaning": "Tiga"}, {"no": 30, "kanji": "四", "reading": "よん、し", "meaning": "Empat"}, {"no": 31, "kanji": "五", "reading": "ご", "meaning": "Lima"}, {"no": 32, "kanji": "六", "reading": "ろく", "meaning": "Enam"}, {"no": 33, "kanji": "七", "reading": "なな、しち", "meaning": "Tujuh"}, {"no": 34, "kanji": "八", "reading": "はち", "meaning": "Delapan"}, {"no": 35, "kanji": "九", "reading": "きゅう", "meaning": "Sembilan"}, {"no": 36, "kanji": "十", "reading": "じゅう", "meaning": "Sepuluh"}, {"no": 37, "kanji": "～年", "reading": "～ねん", "meaning": "~ tahun"}, {"no": 38, "kanji": "～月", "reading": "～がつ", "meaning": "~ bulan"}, {"no": 39, "kanji": "～日", "reading": "～にち", "meaning": "~ tanggal"}, {"no": 40, "kanji": "東", "reading": "ひがし", "meaning": "Timur"}, {"no": 41, "kanji": "西", "reading": "にし", "meaning": "Barat"}, {"no": 42, "kanji": "南", "reading": "みなみ", "meaning": "Selatan"}, {"no": 43, "kanji": "北", "reading": "きた", "meaning": "Utara"}, {"no": 44, "kanji": "～口", "reading": "～ぐち", "meaning": "~ pintu"}, {"no": 45, "kanji": "東口", "reading": "ひがしぐち", "meaning": "Pintu timur"}, {"no": 46, "kanji": "西口", "reading": "にしぐち", "meaning": "Pintu barat"}, {"no": 47, "kanji": "南口", "reading": "みなみぐち", "meaning": "Pintu selatan"}, {"no": 48, "kanji": "北口", "reading": "きたぐち", "meaning": "Pintu utara"}, {"no": 49, "kanji": "買います", "reading": "かいます", "meaning": "Membeli"}, {"no": 50, "kanji": "買い物", "reading": "かいもの", "meaning": "Belanja"}, {"no": 51, "kanji": "お金", "reading": "おかね", "meaning": "Uang"}, {"no": 52, "kanji": "～円", "reading": "～えん", "meaning": "~ yen"}, {"no": 53, "kanji": "百", "reading": "ひゃく", "meaning": "100"}, {"no": 54, "kanji": "千", "reading": "せん", "meaning": "1000"}, {"no": 55, "kanji": "万", "reading": "まん", "meaning": "10000"}, {"no": 56, "kanji": "百円", "reading": "ひゃくえん", "meaning": "100 yen"}, {"no": 57, "kanji": "千円", "reading": "せんえん", "meaning": "1000 yen"}, {"no": 58, "kanji": "一万円", "reading": "いちまんえん", "meaning": "10000 yen"}, {"no": 59, "kanji": "行きます", "reading": "いきます", "meaning": "Pergi"}, {"no": 60, "kanji": "来ます", "reading": "きます", "meaning": "Datang"}, {"no": 61, "kanji": "会います", "reading": "あいます", "meaning": "Bertemu"}, {"no": 62, "kanji": "休みます", "reading": "やすみます", "meaning": "Libur,istirahat"}, {"no": 63, "kanji": "日本", "reading": "にほん", "meaning": "Jepang"}, {"no": 64, "kanji": "東京", "reading": "とうきょう", "meaning": "Tokyo"}, {"no": 65, "kanji": "私", "reading": "わたし", "meaning": "Saya"}, {"no": 66, "kanji": "父", "reading": "ちち", "meaning": "Ayah"}, {"no": 67, "kanji": "母", "reading": "はは", "meaning": "Ibu"}, {"no": 68, "kanji": "子供", "reading": "こども", "meaning": "Anak"}, {"no": 69, "kanji": "男", "reading": "おとこ", "meaning": "Laki-laki"}, {"no": 70, "kanji": "女", "reading": "おんな", "meaning": "Perempuan"}, {"no": 71, "kanji": "人", "reading": "ひと", "meaning": "Orang"}, {"no": 72, "kanji": "お父さん", "reading": "おとうさん", "meaning": "Ayah (orang lain)"}, {"no": 73, "kanji": "お母さん", "reading": "おかあさん", "meaning": "Ibu (orang lain)"}, {"no": 74, "kanji": "何人", "reading": "なんにん", "meaning": "Berapa orang?"}, {"no": 75, "kanji": "国", "reading": "くに", "meaning": "Negara"}, {"no": 76, "kanji": "外国", "reading": "がいこく", "meaning": "Luar negri"}, {"no": 77, "kanji": "～語", "reading": "～ご", "meaning": "~ Bahasa"}, {"no": 78, "kanji": "日本語", "reading": "にほんご", "meaning": "Bahasa jepang"}, {"no": 79, "kanji": "英語", "reading": "えいご", "meaning": "Bahasa inggris"}, {"no": 80, "kanji": "中国語", "reading": "ちゅうごくご", "meaning": "Bahasa china"}, {"no": 81, "kanji": "～人", "reading": "～じん／～にん", "meaning": "~ orang"}, {"no": 82, "kanji": "日本人", "reading": "にほんじん", "meaning": "Orang jepang"}, {"no": 83, "kanji": "好き", "reading": "すき", "meaning": "Suka"}, {"no": 84, "kanji": "本", "reading": "ほん", "meaning": "Buku"}, {"no": 85, "kanji": "読書", "reading": "どくしょ", "meaning": "Bacaan"}, {"no": 86, "kanji": "何", "reading": "なに", "meaning": "Apa?"}, {"no": 87, "kanji": "春", "reading": "はる", "meaning": "Musim semi"}, {"no": 88, "kanji": "夏", "reading": "なつ", "meaning": "Musim panas"}, {"no": 89, "kanji": "秋", "reading": "あき", "meaning": "Musim gugur"}, {"no": 90, "kanji": "冬", "reading": "ふゆ", "meaning": "Musim dingin"}, {"no": 91, "kanji": "今", "reading": "いま", "meaning": "Sekarang"}, {"no": 92, "kanji": "花", "reading": "はな", "meaning": "Bunga"}, {"no": 93, "kanji": "海", "reading": "うみ", "meaning": "Laut"}, {"no": 94, "kanji": "山", "reading": "やま", "meaning": "Gunung"}, {"no": 95, "kanji": "川", "reading": "かわ", "meaning": "Sungai"}, {"no": 96, "kanji": "今日", "reading": "きょう", "meaning": "Hari ini"}, {"no": 97, "kanji": "天気", "reading": "てんき", "meaning": "Cuaca"}, {"no": 98, "kanji": "晴れ", "reading": "はれ", "meaning": "Cerah"}, {"no": 99, "kanji": "雨", "reading": "あめ", "meaning": "Hujan"}, {"no": 100, "kanji": "雪", "reading": "ゆき", "meaning": "Salju"}, {"no": 101, "kanji": "雲", "reading": "くも", "meaning": "Mendung"}, {"no": 102, "kanji": "風", "reading": "かぜ", "meaning": "Angin"}, {"no": 103, "kanji": "空", "reading": "そら", "meaning": "Langit"}, {"no": 104, "kanji": "町", "reading": "まち", "meaning": "Kota"}, {"no": 105, "kanji": "店", "reading": "みせ", "meaning": "Toko"}, {"no": 106, "kanji": "人気", "reading": "にんき", "meaning": "Popularitas, ketenaran"}, {"no": 107, "kanji": "多い", "reading": "おおい", "meaning": "Banyak"}, {"no": 108, "kanji": "少ない", "reading": "すくない", "meaning": "Sedikit"}, {"no": 109, "kanji": "高い", "reading": "たかい", "meaning": "Mahal"}, {"no": 110, "kanji": "安い", "reading": "やすい", "meaning": "Murah"}, {"no": 111, "kanji": "広い", "reading": "ひろい", "meaning": "Luas"}, {"no": 112, "kanji": "道", "reading": "みち", "meaning": "Jalan"}, {"no": 113, "kanji": "通り", "reading": "とおり", "meaning": "Jalan"}, {"no": 114, "kanji": "右", "reading": "みぎ", "meaning": "Kanan"}, {"no": 115, "kanji": "左", "reading": "ひだり", "meaning": "Kiri"}, {"no": 116, "kanji": "一つ", "reading": "ひとつ", "meaning": "Satu buah"}, {"no": 117, "kanji": "二つ", "reading": "ふたつ", "meaning": "Dua buah"}, {"no": 118, "kanji": "赤い", "reading": "あかい", "meaning": "Merah"}, {"no": 119, "kanji": "青い", "reading": "あおい", "meaning": "Biru"}, {"no": 120, "kanji": "黒い", "reading": "くろい", "meaning": "Hitam"}, {"no": 121, "kanji": "白い", "reading": "しろい", "meaning": "Putih"}, {"no": 122, "kanji": "時間", "reading": "じかん", "meaning": "Waktu"}, {"no": 123, "kanji": "場所", "reading": "ばしょ", "meaning": "Tempat"}, {"no": 124, "kanji": "駅", "reading": "えき", "meaning": "Stasiun"}, {"no": 125, "kanji": "日", "reading": "ひ", "meaning": "Matahari"}, {"no": 126, "kanji": "出かけます", "reading": "でかけます", "meaning": "Meninggalkan rumah"}, {"no": 127, "kanji": "待ちます", "reading": "まちます", "meaning": "Menunggu"}, {"no": 128, "kanji": "止まります", "reading": "とまります", "meaning": "Berhenti"}, {"no": 129, "kanji": "食事", "reading": "しょくじ", "meaning": "Makan bersama"}, {"no": 130, "kanji": "仕事", "reading": "しごと", "meaning": "Pekerjaan"}, {"no": 131, "kanji": "前", "reading": "まえ", "meaning": "Sebelum"}, {"no": 132, "kanji": "後", "reading": "あと", "meaning": "Setelah"}, {"no": 133, "kanji": "朝", "reading": "あさ", "meaning": "Pagi"}, {"no": 134, "kanji": "昼", "reading": "ひる", "meaning": "Siang"}, {"no": 135, "kanji": "夜", "reading": "よる", "meaning": "Malam"}, {"no": 136, "kanji": "乗ります", "reading": "のります", "meaning": "Naik"}, {"no": 137, "kanji": "学校", "reading": "がっこう", "meaning": "Sekolahan"}, {"no": 138, "kanji": "小学校", "reading": "しょうがっこう", "meaning": "SD"}, {"no": 139, "kanji": "中学校", "reading": "ちゅうがっこう", "meaning": "SMP"}, {"no": 140, "kanji": "高校", "reading": "こうこう", "meaning": "SMA"}, {"no": 141, "kanji": "大学", "reading": "だいがく", "meaning": "Universitas"}, {"no": 142, "kanji": "先生", "reading": "せんせい", "meaning": "Guru"}, {"no": 143, "kanji": "学生", "reading": "がくせい", "meaning": "Murid, siswa"}, {"no": 144, "kanji": "～年生", "reading": "～ねんせい", "meaning": "Kelas ~"}, {"no": 145, "kanji": "勉強", "reading": "べんきょう", "meaning": "Pelajaran"}, {"no": 146, "kanji": "文化", "reading": "ぶんか", "meaning": "Kebudayaan"}, {"no": 147, "kanji": "音楽", "reading": "おんがく", "meaning": "Musik"}, {"no": 148, "kanji": "旅行", "reading": "りょこう", "meaning": "Wisata"}, {"no": 149, "kanji": "留学", "reading": "りゅうがく", "meaning": "Belajar di luar negri"}, {"no": 150, "kanji": "友達", "reading": "ともだち", "meaning": "Teman"}, {"no": 151, "kanji": "楽しい", "reading": "たのしい", "meaning": "Gembira"}, {"no": 152, "kanji": "週", "reading": "しゅう", "meaning": "Minggu"}, {"no": 153, "kanji": "～回", "reading": "～かい", "meaning": "~kali"}, {"no": 154, "kanji": "食べ物", "reading": "たべもの", "meaning": "Makanan"}, {"no": 155, "kanji": "飲物", "reading": "のみもの", "meaning": "Minuman"}, {"no": 156, "kanji": "お茶", "reading": "おちゃ", "meaning": "Teh hijau"}, {"no": 157, "kanji": "お酒", "reading": "おさけ", "meaning": "Sake"}, {"no": 158, "kanji": "作ります", "reading": "つくります", "meaning": "Membuat"}, {"no": 159, "kanji": "持っていきます", "reading": "もっていきます", "meaning": "Membawa pergi"}, {"no": 160, "kanji": "お願いします", "reading": "おねがいします", "meaning": "Tolong"}, {"no": 161, "kanji": "料理", "reading": "りょうり", "meaning": "Masakan"}, {"no": 162, "kanji": "味", "reading": "あじ", "meaning": "Rasa"}, {"no": 163, "kanji": "色", "reading": "いろ", "meaning": "Warna"}, {"no": 164, "kanji": "野菜", "reading": "やさい", "meaning": "Sayuran"}, {"no": 165, "kanji": "少し", "reading": "すこし", "meaning": "Sedikit"}, {"no": 166, "kanji": "中", "reading": "なか", "meaning": "Dalam"}, {"no": 167, "kanji": "入っています", "reading": "はいっています", "meaning": "Masuk"}, {"no": 168, "kanji": "会社", "reading": "かいしゃ", "meaning": "Perusahaan"}, {"no": 169, "kanji": "本社", "reading": "ほんしゃ", "meaning": "Kantor pusat"}, {"no": 170, "kanji": "支社", "reading": "ししゃ", "meaning": "Kantor cabang"}, {"no": 171, "kanji": "出張", "reading": "しゅっちょう", "meaning": "Dinas luar kota"}, {"no": 172, "kanji": "空港", "reading": "くうこう", "meaning": "Bandara"}, {"no": 173, "kanji": "出発", "reading": "しゅっぱつ", "meaning": "Keberangkatan"}, {"no": 174, "kanji": "到着", "reading": "とうちゃく", "meaning": "Kedatangan"}, {"no": 175, "kanji": "午前", "reading": "ごぜん", "meaning": "AM"}, {"no": 176, "kanji": "午後", "reading": "ごご", "meaning": "PM"}, {"no": 177, "kanji": "自分", "reading": "じぶん", "meaning": "Sendiri"}, {"no": 178, "kanji": "電話", "reading": "でんわ", "meaning": "Telepon"}, {"no": 179, "kanji": "電気", "reading": "でんき", "meaning": "Listrik"}, {"no": 180, "kanji": "電車", "reading": "でんしゃ", "meaning": "Kereta"}, {"no": 181, "kanji": "車", "reading": "くるま", "meaning": "Mobil"}, {"no": 182, "kanji": "送ります", "reading": "おくります", "meaning": "Mengirim"}, {"no": 183, "kanji": "使います", "reading": "つかいます", "meaning": "Menggunakan"}, {"no": 184, "kanji": "借ります", "reading": "かります", "meaning": "Meminjam"}, {"no": 185, "kanji": "体", "reading": "からだ", "meaning": "Badan"}, {"no": 186, "kanji": "頭", "reading": "あたま", "meaning": "Kepala"}, {"no": 187, "kanji": "目", "reading": "め", "meaning": "Mata"}, {"no": 188, "kanji": "口", "reading": "くち", "meaning": "Mulut"}, {"no": 189, "kanji": "耳", "reading": "みみ", "meaning": "Telinga"}, {"no": 190, "kanji": "手", "reading": "て", "meaning": "Tangan"}, {"no": 191, "kanji": "足", "reading": "あし", "meaning": "Kaki"}, {"no": 192, "kanji": "上", "reading": "うえ", "meaning": "Atas"}, {"no": 193, "kanji": "下", "reading": "した", "meaning": "Bawah"}, {"no": 194, "kanji": "毎～", "reading": "まい～", "meaning": "~ setiap"}, {"no": 195, "kanji": "毎朝", "reading": "まいあさ", "meaning": "setiap pagi"}, {"no": 196, "kanji": "毎日", "reading": "まいにち", "meaning": "Setiap hari"}, {"no": 197, "kanji": "週末", "reading": "しゅうまつ", "meaning": "Akhir pekan"}, {"no": 198, "kanji": "元気", "reading": "げんき", "meaning": "Sehat"}, {"no": 199, "kanji": "外", "reading": "そと", "meaning": "Luar"}, {"no": 200, "kanji": "起きます", "reading": "おきます", "meaning": "Bangun tidur"}, {"no": 201, "kanji": "歩きます", "reading": "あるきます", "meaning": "Berjalan"}, {"no": 202, "kanji": "走ります", "reading": "はしります", "meaning": "Berlari"}, {"no": 203, "kanji": "泳ぎます", "reading": "およぎます", "meaning": "Berenang"}, {"no": 204, "kanji": "お祝い", "reading": "おいわい", "meaning": "Perayaan"}, {"no": 205, "kanji": "誕生日", "reading": "たんじょうび", "meaning": "Ulang tahun"}, {"no": 206, "kanji": "結婚", "reading": "けっこん", "meaning": "Pernikahan"}, {"no": 207, "kanji": "絵", "reading": "え", "meaning": "Gambar, lukisan"}, {"no": 208, "kanji": "写真", "reading": "しゃしん", "meaning": "Foto"}, {"no": 209, "kanji": "時計", "reading": "とけい", "meaning": "Jam"}, {"no": 210, "kanji": "着ます", "reading": "きます", "meaning": "Memakai pakaian"}, {"no": 211, "kanji": "先～", "reading": "せん～", "meaning": "~lalu"}, {"no": 212, "kanji": "先週", "reading": "せんしゅう", "meaning": "Minggu lalu"}, {"no": 213, "kanji": "今月", "reading": "こんげつ", "meaning": "Bulan ini"}, {"no": 214, "kanji": "来年", "reading": "らいねん", "meaning": "Tahun depan"}, {"no": 215, "kanji": "今年", "reading": "ことし", "meaning": "Tahun ini"}, {"no": 216, "kanji": "去年", "reading": "きょねん", "meaning": "Tahun lalu"}, {"no": 217, "kanji": "家", "reading": "いえ", "meaning": "Rumah"}, {"no": 218, "kanji": "思います", "reading": "おもいます", "meaning": "Mengira"}, {"no": 219, "kanji": "自己紹介", "reading": "じこしょうかい", "meaning": "Perkenalan"}, {"no": 220, "kanji": "名前", "reading": "なまえ", "meaning": "Nama"}, {"no": 221, "kanji": "意味", "reading": "いみ", "meaning": "Arti"}, {"no": 222, "kanji": "本屋", "reading": "ほんや", "meaning": "Toko buku"}, {"no": 223, "kanji": "近く", "reading": "ちかく", "meaning": "Dekat"}, {"no": 224, "kanji": "住みます", "reading": "すみます", "meaning": "Tinggal"}, {"no": 225, "kanji": "働きます", "reading": "はたらきます", "meaning": "Bekerja"}, {"no": 226, "kanji": "～番目", "reading": "～ばんめ", "meaning": "Urutan yang ~"}, {"no": 227, "kanji": "兄", "reading": "あに", "meaning": "Kakak laki2 (sendiri)"}, {"no": 228, "kanji": "兄いさん", "reading": "おにいさん", "meaning": "Kakak laki2 (orang lain)"}, {"no": 229, "kanji": "姉", "reading": "あね", "meaning": "Kakak perempuan (sendiri)"}, {"no": 230, "kanji": "お姉さん", "reading": "おねえさん", "meaning": "Kakak perempuan (orang lain)"}, {"no": 231, "kanji": "弟", "reading": "おとうと", "meaning": "Adik laki2 (sendiri)"}, {"no": 232, "kanji": "妹", "reading": "いもうと", "meaning": "Adik perempuan (sendiri)"}, {"no": 233, "kanji": "家族", "reading": "かぞく", "meaning": "Keluarga"}, {"no": 234, "kanji": "長い", "reading": "ながい", "meaning": "Panjang"}, {"no": 235, "kanji": "短い", "reading": "みじかい", "meaning": "Pendek"}, {"no": 236, "kanji": "低い", "reading": "ひくい", "meaning": "Rendah"}, {"no": 237, "kanji": "上手", "reading": "じょうず", "meaning": "Pandai"}, {"no": 238, "kanji": "歌", "reading": "うた", "meaning": "Lagu"}, {"no": 239, "kanji": "歌います", "reading": "うたいます", "meaning": "Menyanyi"}, {"no": 240, "kanji": "客", "reading": "きゃく", "meaning": "Tamu"}, {"no": 241, "kanji": "注文", "reading": "ちゅうもん", "meaning": "Pesanan"}, {"no": 242, "kanji": "洋食", "reading": "ようしょく", "meaning": "Makanan barat"}, {"no": 243, "kanji": "和食", "reading": "わしょく", "meaning": "Makanan jepang"}, {"no": 244, "kanji": "牛肉", "reading": "ぎゅうにく", "meaning": "Daging sapi"}, {"no": 245, "kanji": "地方", "reading": "ちほう", "meaning": "Daerah, wilayah"}, {"no": 246, "kanji": "有名", "reading": "ゆうめい", "meaning": "Terkenal"}, {"no": 247, "kanji": "生", "reading": "なま", "meaning": "Mentah"}, {"no": 248, "kanji": "冷たい", "reading": "つめたい", "meaning": "Dingin (benda)"}, {"no": 249, "kanji": "ご飯", "reading": "ごはん", "meaning": "Nasi"}, {"no": 250, "kanji": "塩", "reading": "しお", "meaning": "Garam"}, {"no": 251, "kanji": "全部", "reading": "ぜんぶ", "meaning": "Semua"}, {"no": 252, "kanji": "～方", "reading": "～かた", "meaning": "Cara~"}, {"no": 253, "kanji": "食べ方", "reading": "たべかた", "meaning": "Cara makan"}, {"no": 254, "kanji": "熱い", "reading": "あつい", "meaning": "Panas"}, {"no": 255, "kanji": "苦手", "reading": "にがて", "meaning": "Susah, berat, tidak begitu suka"}, {"no": 256, "kanji": "入れます", "reading": "いれます", "meaning": "Memasukkan"}, {"no": 257, "kanji": "木", "reading": "き", "meaning": "Pohon"}, {"no": 258, "kanji": "森", "reading": "もり", "meaning": "Hutan"}, {"no": 259, "kanji": "島", "reading": "しま", "meaning": "Pulau"}, {"no": 260, "kanji": "自然", "reading": "しぜん", "meaning": "Alam"}, {"no": 261, "kanji": "船", "reading": "ふね", "meaning": "Kapal"}, {"no": 262, "kanji": "暑い", "reading": "あつい", "meaning": "Panas"}, {"no": 263, "kanji": "帰ります", "reading": "かえります", "meaning": "Pulang"}, {"no": 264, "kanji": "予約します", "reading": "よやくします", "meaning": "Memesan"}, {"no": 265, "kanji": "運転します", "reading": "うんてんします", "meaning": "Menyetir"}, {"no": 266, "kanji": "～中", "reading": "～ちゅう／～じゅう", "meaning": "Sedang/dalam ~"}, {"no": 267, "kanji": "旅行中", "reading": "りょこうちゅう", "meaning": "Sedang wisata"}, {"no": 268, "kanji": "観光地", "reading": "かんこうち", "meaning": "Tempat wisata"}, {"no": 269, "kanji": "女性", "reading": "じょせい", "meaning": "Wanita"}, {"no": 270, "kanji": "男性", "reading": "だんせい", "meaning": "Pria"}, {"no": 271, "kanji": "動物", "reading": "どうぶつ", "meaning": "Hewan"}, {"no": 272, "kanji": "空気", "reading": "くうき", "meaning": "Udara"}, {"no": 273, "kanji": "料金", "reading": "りょうきん", "meaning": "Biaya / tarif"}, {"no": 274, "kanji": "無料", "reading": "むりょう", "meaning": "Gratis"}, {"no": 275, "kanji": "明るい", "reading": "あかるい", "meaning": "Terang"}, {"no": 276, "kanji": "便利", "reading": "べんり", "meaning": "Praktis"}, {"no": 277, "kanji": "一年中", "reading": "いちねんじゅう", "meaning": "Dalam satu tahun"}, {"no": 278, "kanji": "受付", "reading": "うけつけ", "meaning": "Penerima tamu"}, {"no": 279, "kanji": "広場", "reading": "ひろば", "meaning": "Lapangan"}, {"no": 280, "kanji": "問題", "reading": "もんだい", "meaning": "Soal, masalah"}, {"no": 281, "kanji": "同じ", "reading": "おなじ", "meaning": "Sama"}, {"no": 282, "kanji": "集まります", "reading": "あつまります", "meaning": "Berkumpul"}, {"no": 283, "kanji": "始まります", "reading": "はじまります", "meaning": "Mulai"}, {"no": 284, "kanji": "終わります", "reading": "おわります", "meaning": "Selesai"}, {"no": 285, "kanji": "中止します", "reading": "ちゅうししします", "meaning": "Mengurungkan, membatalkan"}, {"no": 286, "kanji": "教えます", "reading": "おしえます", "meaning": "Memberitahu"}, {"no": 287, "kanji": "祭り", "reading": "まつり", "meaning": "Perayaan"}, {"no": 288, "kanji": "日本祭り", "reading": "にほんまつり", "meaning": "Perayaan jepang"}, {"no": 289, "kanji": "会場", "reading": "かいじょう", "meaning": "Ruang pertemuan"}, {"no": 290, "kanji": "入場料", "reading": "にゅうじょうりょう", "meaning": "Tarif masuk"}, {"no": 291, "kanji": "参加者", "reading": "さんかしゃ", "meaning": "Peserta"}, {"no": 292, "kanji": "急ぎます", "reading": "いそぎます", "meaning": "Buru-buru"}, {"no": 293, "kanji": "決めます", "reading": "きめます", "meaning": "Menentukan"}, {"no": 294, "kanji": "知ります", "reading": "しります", "meaning": "Kenal, tahu"}, {"no": 295, "kanji": "正月", "reading": "しょうがつ", "meaning": "Tahun baru"}, {"no": 296, "kanji": "年末", "reading": "ねんまつ", "meaning": "Akhir tahun"}, {"no": 297, "kanji": "年始", "reading": "ねんし", "meaning": "Awal tahun"}, {"no": 298, "kanji": "親", "reading": "おや", "meaning": "Orang tua"}, {"no": 299, "kanji": "忙しい", "reading": "いそがしい", "meaning": "Sibuk"}, {"no": 300, "kanji": "特別", "reading": "とくべつ", "meaning": "Istimewa, special"}, {"no": 301, "kanji": "帰国", "reading": "きこく", "meaning": "Pulang ke negara"}, {"no": 302, "kanji": "喜びます", "reading": "よろこびます", "meaning": "Merasa senang/gembira"}, {"no": 303, "kanji": "幸せ", "reading": "しあわせ", "meaning": "Bahagia"}, {"no": 304, "kanji": "成長", "reading": "せいちょう", "meaning": "Pertumbuhan, perkembangan"}, {"no": 305, "kanji": "長生き", "reading": "ながいき", "meaning": "Umur panjang, hidup lama"}, {"no": 306, "kanji": "願い事", "reading": "ねがいこと", "meaning": "Keinginan, kemauan, harapan"}, {"no": 307, "kanji": "合格", "reading": "ごうかく", "meaning": "Lulus"}, {"no": 308, "kanji": "試験", "reading": "しけん", "meaning": "Ujian"}, {"no": 309, "kanji": "大人", "reading": "おとな", "meaning": "Orang Dewasa"}, {"no": 310, "kanji": "～式（成人式）", "reading": "～しき（せいじんしき）", "meaning": "Upacara ~(upacara kedewasaan)"}, {"no": 311, "kanji": "～市（さいたま市）", "reading": "～し（さいたまし）", "meaning": "Kota~(kota saitama)"}, {"no": 312, "kanji": "商品", "reading": "しょうひん", "meaning": "Barang dagangan"}, {"no": 313, "kanji": "電気製品", "reading": "でんきせいひん", "meaning": "Peralatan listrik"}, {"no": 314, "kanji": "電子レンジ", "reading": "でんしレンジ", "meaning": "Oven"}, {"no": 315, "kanji": "～機（そうじ機）", "reading": "～き（そうじき）", "meaning": "Mesin~(mesin penghisap debu)"}, {"no": 316, "kanji": "店員", "reading": "てんいん", "meaning": "Penjaga toko"}, {"no": 317, "kanji": "調子", "reading": "ちょうし", "meaning": "Keadaan, kondisi"}, {"no": 318, "kanji": "悪い", "reading": "わるい", "meaning": "Jelek"}, {"no": 319, "kanji": "動きます", "reading": "うごきます", "meaning": "Bergerak"}, {"no": 320, "kanji": "考えます", "reading": "かんがえます", "meaning": "Berfikir"}, {"no": 321, "kanji": "音", "reading": "おと", "meaning": "Suara"}, {"no": 322, "kanji": "出ます", "reading": "でます", "meaning": "Keluar"}, {"no": 323, "kanji": "機能", "reading": "きのう", "meaning": "Fungsi"}, {"no": 324, "kanji": "省エネ", "reading": "しょうエネ", "meaning": "Penghematan energy"}, {"no": 325, "kanji": "日本製", "reading": "にほんせい", "meaning": "Produk/buatan jepang"}, {"no": 326, "kanji": "重い", "reading": "おもい", "meaning": "Berat"}, {"no": 327, "kanji": "軽い", "reading": "かるい", "meaning": "Ringan"}, {"no": 328, "kanji": "静か", "reading": "しずか", "meaning": "Tenang"}, {"no": 329, "kanji": "早く", "reading": "はやく", "meaning": "Cepat"}, {"no": 330, "kanji": "方（こっちの方）", "reading": "ほう（こっちのほう）", "meaning": "Arah(arah disini)"}, {"no": 331, "kanji": "洗います", "reading": "あらいます", "meaning": "Mencuci"}, {"no": 332, "kanji": "満足します", "reading": "まんぞくします", "meaning": "Puas, merasa puas"}, {"no": 333, "kanji": "京都", "reading": "きょうと", "meaning": "Kyoto"}, {"no": 334, "kanji": "神社", "reading": "じんじゃ", "meaning": "Kuil sinto"}, {"no": 335, "kanji": "お寺", "reading": "おてら", "meaning": "Kuil"}, {"no": 336, "kanji": "仏教", "reading": "ぶっきょう", "meaning": "Agama budha"}, {"no": 337, "kanji": "歴史", "reading": "れきし", "meaning": "Sejarah"}, {"no": 338, "kanji": "世界", "reading": "せかい", "meaning": "Dunia"}, {"no": 339, "kanji": "中心", "reading": "ちゅうしん", "meaning": "Pusat"}, {"no": 340, "kanji": "～世紀（８世紀）", "reading": "～せいき（はっせいき）", "meaning": "Abad~"}, {"no": 341, "kanji": "～的", "reading": "～てき", "meaning": "Berbau~ / ke~ an"}, {"no": 342, "kanji": "日本的", "reading": "にほんてき", "meaning": "Berbau jepang"}, {"no": 343, "kanji": "歴史的", "reading": "れきしてき", "meaning": "Bersejarah"}, {"no": 344, "kanji": "飲食", "reading": "いんしょく", "meaning": "Makan minum"}, {"no": 345, "kanji": "禁止", "reading": "きんし", "meaning": "Larangan"}, {"no": 346, "kanji": "説明", "reading": "せつめい", "meaning": "Penjelasan"}, {"no": 347, "kanji": "道具", "reading": "どうぐ", "meaning": "Peralatan"}, {"no": 348, "kanji": "博物館", "reading": "はくぶつかん", "meaning": "Museum"}, {"no": 349, "kanji": "必要", "reading": "ひつよう", "meaning": "Keperluan, kebutuhan"}, {"no": 350, "kanji": "～階（２階）", "reading": "～かい（にかい）", "meaning": "Lantai ~ ( lantai 2 )"}, {"no": 351, "kanji": "油", "reading": "あぶら", "meaning": "Minyak, oli"}, {"no": 352, "kanji": "紙", "reading": "かみ", "meaning": "Kertas"}, {"no": 353, "kanji": "温度", "reading": "おんど", "meaning": "Suhu, derajat"}, {"no": 354, "kanji": "活動", "reading": "かつどう", "meaning": "Kegiatan, aktivitas"}, {"no": 355, "kanji": "会議室", "reading": "かいぎしつ", "meaning": "Ruang rapat"}, {"no": 356, "kanji": "寒い", "reading": "さむい", "meaning": "Dingin ( suhu )"}, {"no": 357, "kanji": "出します", "reading": "だします", "meaning": "Mengeluarkan, mengirim (surat)"}, {"no": 358, "kanji": "～度（２８度）", "reading": "～ど（にじゅうはちど）", "meaning": "~derajat ( 28 derajat )"}, {"no": 359, "kanji": "～点（１００点）", "reading": "～てん（１００てん）", "meaning": "Nilai ~ ( nilai 100 )"}, {"no": 360, "kanji": "服", "reading": "ふく", "meaning": "Baju, pakaian"}, {"no": 361, "kanji": "自転車", "reading": "じてんしゃ", "meaning": "Sepeda"}, {"no": 362, "kanji": "自動車", "reading": "じどうしゃ", "meaning": "Mobil"}, {"no": 363, "kanji": "売ります", "reading": "うります", "meaning": "Menjual"}, {"no": 364, "kanji": "貸します", "reading": "かします", "meaning": "Meminjamkan"}, {"no": 365, "kanji": "返します", "reading": "かえします", "meaning": "Mengembalikan"}, {"no": 366, "kanji": "変わります", "reading": "かわります", "meaning": "Mengganti"}, {"no": 367, "kanji": "～用", "reading": "～よう", "meaning": "Urusan, keperluan ~"}, {"no": 368, "kanji": "子供用", "reading": "こどもよう", "meaning": "Urusan anak"}, {"no": 369, "kanji": "人生", "reading": "じんせい", "meaning": "Kehidupan"}, {"no": 370, "kanji": "歌手", "reading": "かしゅ", "meaning": "Penyanyi"}, {"no": 371, "kanji": "選手", "reading": "せんしゅ", "meaning": "Atlit, pemain"}, {"no": 372, "kanji": "画家", "reading": "がか", "meaning": "Pelukis"}, {"no": 373, "kanji": "作家", "reading": "さっか", "meaning": "Pengarang"}, {"no": 374, "kanji": "入学", "reading": "にゅうがく", "meaning": "Masuk sekolah"}, {"no": 375, "kanji": "卒業", "reading": "そつぎょう", "meaning": "Lulus"}, {"no": 376, "kanji": "病気", "reading": "びょうき", "meaning": "Sakit"}, {"no": 377, "kanji": "若い", "reading": "わかい", "meaning": "Muda"}, {"no": 378, "kanji": "生まれます", "reading": "うまれます", "meaning": "Lahir"}, {"no": 379, "kanji": "思い出", "reading": "おもいで", "meaning": "Kenang-kenangan, kenangan"}, {"no": 380, "kanji": "生活", "reading": "せいかつ", "meaning": "Kehidupan"}, {"no": 381, "kanji": "映画", "reading": "えいが", "meaning": "Film"}, {"no": 382, "kanji": "夫", "reading": "おっと", "meaning": "Suami ( sendiri )"}, {"no": 383, "kanji": "妻", "reading": "つま", "meaning": "Istri ( sendiri )"}, {"no": 384, "kanji": "両親", "reading": "りょうしん", "meaning": "Orang tua"}, {"no": 385, "kanji": "不便", "reading": "ふべん", "meaning": "Tidak praktis"}, {"no": 386, "kanji": "選びます", "reading": "えらびます", "meaning": "Memilih"}, {"no": 387, "kanji": "寝ます", "reading": "ねます", "meaning": "Tidur"}, {"no": 388, "kanji": "サッカー場", "reading": "サッカーじょう", "meaning": "Lapangan sepak bola"}, {"no": 389, "kanji": "試合", "reading": "しあい", "meaning": "Pertandingan"}, {"no": 390, "kanji": "日曜日", "reading": "にちようび", "meaning": "Minggu"}, {"no": 391, "kanji": "強い", "reading": "つよい", "meaning": "Kuat"}, {"no": 392, "kanji": "弱い", "reading": "よわい", "meaning": "Lemah"}, {"no": 393, "kanji": "勝ちます", "reading": "かちます", "meaning": "Menang"}, {"no": 394, "kanji": "負けます", "reading": "まけます", "meaning": "Kalah"}, {"no": 395, "kanji": "～対～（２対１）", "reading": "～たい～（にたいいち）", "meaning": "~lawan~ ( 2 lawan 1 )"}, {"no": 396, "kanji": "庭", "reading": "にわ", "meaning": "Halaman"}, {"no": 397, "kanji": "公園", "reading": "こうえん", "meaning": "Taman"}, {"no": 398, "kanji": "病院", "reading": "びょういん", "meaning": "Rumah sakit"}, {"no": 399, "kanji": "交通", "reading": "こうつう", "meaning": "Lalu lintas"}, {"no": 400, "kanji": "通勤", "reading": "つうきん", "meaning": "Perjalanan ke kantor"}, {"no": 401, "kanji": "安全", "reading": "あんぜん", "meaning": "Keselamatan"}, {"no": 402, "kanji": "危ない", "reading": "あぶない", "meaning": "Bahaya"}, {"no": 403, "kanji": "遠い", "reading": "とおい", "meaning": "Jauh"}, {"no": 404, "kanji": "努めます", "reading": "つとめます", "meaning": "Bekerja"}, {"no": 405, "kanji": "～以上（２時間以上）", "reading": "～いじょう（にじかんいじょう）", "meaning": "~ lebih ( 2 jam lebih )"}, {"no": 406, "kanji": "～以下（６万円以下）", "reading": "～いか（ろくまんえんいか）", "meaning": "~kurang ( kurang dari 6 man yen )"}, {"no": 407, "kanji": "海外", "reading": "かいがい", "meaning": "Luar negri"}, {"no": 408, "kanji": "食生活", "reading": "しょくせいかつ", "meaning": "Susunan makanan"}, {"no": 409, "kanji": "健康", "reading": "けんこう", "meaning": "Kesehatan"}, {"no": 410, "kanji": "家庭料理", "reading": "かていりょうり", "meaning": "Masakan rumah tangga"}, {"no": 411, "kanji": "材料", "reading": "ざいりょう", "meaning": "Bahan"}, {"no": 412, "kanji": "量", "reading": "りょう", "meaning": "Jumlah, kuantitas, banyaknya"}, {"no": 413, "kanji": "米", "reading": "こめ", "meaning": "Beras"}, {"no": 414, "kanji": "～食", "reading": "～しょく", "meaning": "Makan ~"}, {"no": 415, "kanji": "朝食", "reading": "ちょうしょく", "meaning": "Makan pagi"}, {"no": 416, "kanji": "昼食", "reading": "ちゅうしょく", "meaning": "Makan siang"}, {"no": 417, "kanji": "夕食", "reading": "ゆうしょく", "meaning": "Makan malam"}, {"no": 418, "kanji": "外食", "reading": "がいしょく", "meaning": "Makan di luar"}, {"no": 419, "kanji": "定食", "reading": "ていしょく", "meaning": "Makanan dengan menu tetap"}, {"no": 420, "kanji": "住所", "reading": "じゅうしょ", "meaning": "Alamat"}, {"no": 421, "kanji": "訪問", "reading": "ほうもん", "meaning": "Kunjungan"}, {"no": 422, "kanji": "経験", "reading": "けいけん", "meaning": "Pengalaman"}, {"no": 423, "kanji": "親切", "reading": "しんせつ", "meaning": "Ramah"}, {"no": 424, "kanji": "座ります", "reading": "すわります", "meaning": "Duduk"}, {"no": 425, "kanji": "立ちます", "reading": "たちます", "meaning": "Berdiri"}, {"no": 426, "kanji": "～観（人生観）", "reading": "～かん（じんせいかん）", "meaning": "Pandangan ~ ( pandangan hidup )"}, {"no": 427, "kanji": "約～（約６年間）", "reading": "やく～（やくろくねんかん）", "meaning": "Kira2, sekitar ( sekitar 6 tahun )"}, {"no": 428, "kanji": "計画", "reading": "けいかく", "meaning": "Rencana, program"}, {"no": 429, "kanji": "自信", "reading": "じしん", "meaning": "Percaya diri"}, {"no": 430, "kanji": "方法", "reading": "ほうほう", "meaning": "Cara"}, {"no": 431, "kanji": "目的", "reading": "もくてき", "meaning": "Tujuan"}, {"no": 432, "kanji": "難しい", "reading": "むずかしい", "meaning": "Sulit"}, {"no": 433, "kanji": "通じます", "reading": "つうじます", "meaning": "Mengalirkan, menguasai, berhubungan"}, {"no": 434, "kanji": "習います", "reading": "ならいます", "meaning": "Belajar kepada"}, {"no": 435, "kanji": "学びます", "reading": "まなびます", "meaning": "Belajar"}, {"no": 436, "kanji": "～級", "reading": "～きゅう", "meaning": "Kelas, tingkat ~"}, {"no": 437, "kanji": "初級", "reading": "しょきゅう", "meaning": "Kelas dasar"}, {"no": 438, "kanji": "中級", "reading": "ちゅうきゅう", "meaning": "Kelas menengah"}, {"no": 439, "kanji": "上級", "reading": "じょうきゅう", "meaning": "Kelas atas"}, {"no": 440, "kanji": "相手", "reading": "あいて", "meaning": "Pasangan, lawan"}, {"no": 441, "kanji": "気持ち", "reading": "きもち", "meaning": "Perasaan enak"}, {"no": 442, "kanji": "恋人", "reading": "こいびと", "meaning": "Pacar"}, {"no": 443, "kanji": "出会い", "reading": "であい", "meaning": "Pertemuan"}, {"no": 444, "kanji": "最近", "reading": "さいきん", "meaning": "Akhir-akhir ini"}, {"no": 445, "kanji": "最高", "reading": "さいこう", "meaning": "Teratas, tertinggi"}, {"no": 446, "kanji": "出席", "reading": "しゅっせき", "meaning": "Kehadiran"}, {"no": 447, "kanji": "招待", "reading": "しょうたい", "meaning": "Undangan"}, {"no": 448, "kanji": "～合う（知り合う）", "reading": "～あう（しりあう）", "meaning": "Cocok ~ ( kenal mengenal )"}, {"no": 449, "kanji": "社会人", "reading": "しゃかいじん", "meaning": "Anggota masyarakat"}, {"no": 450, "kanji": "職場", "reading": "しょくば", "meaning": "Tempat kerja"}, {"no": 451, "kanji": "給料", "reading": "きゅうりょう", "meaning": "Gaji"}, {"no": 452, "kanji": "人間関係", "reading": "にんげんかんけい", "meaning": "Hubungan antar manusia"}, {"no": 453, "kanji": "親友", "reading": "しんゆう", "meaning": "Teman karib"}, {"no": 454, "kanji": "恋愛", "reading": "れんあい", "meaning": "Percintaan, asmara"}, {"no": 455, "kanji": "相談", "reading": "そうだん", "meaning": "Musyawarah"}, {"no": 456, "kanji": "心", "reading": "こころ", "meaning": "Hati"}, {"no": 457, "kanji": "心配", "reading": "しんぱい", "meaning": "Khawatir"}, {"no": 458, "kanji": "不安", "reading": "ふあん", "meaning": "Kegelisahan, kekhawatiran"}, {"no": 459, "kanji": "お客様", "reading": "おきゃくさま", "meaning": "Tamu"}, {"no": 460, "kanji": "手続き", "reading": "てつづき", "meaning": "Prosedur"}, {"no": 461, "kanji": "飛行機", "reading": "ひこうき", "meaning": "Pesawat terbang"}, {"no": 462, "kanji": "変更", "reading": "へんこう", "meaning": "Perubahan"}, {"no": 463, "kanji": "予定", "reading": "よてい", "meaning": "Rencana"}, {"no": 464, "kanji": "利用", "reading": "りよう", "meaning": "Penggunaan, pemakaian"}, {"no": 465, "kanji": "忘れ物", "reading": "わすれもの", "meaning": "Benda yang tertinggal"}, {"no": 466, "kanji": "助けます", "reading": "たすけます", "meaning": "Menolong"}, {"no": 467, "kanji": "～航空（ＪＦ航空）", "reading": "～こうくう（ＪＦこうくう）", "meaning": "Penerbangan ~ ( penerbangan JF )"}, {"no": 468, "kanji": "～便（１１５便）", "reading": "～びん（いちいちごびん）", "meaning": "Penerbangan, pos ( pos 115 )"}, {"no": 469, "kanji": "体力", "reading": "たいりょく", "meaning": "Kekuatan"}, {"no": 470, "kanji": "協力", "reading": "きょうりょく", "meaning": "Kerjasama"}, {"no": 471, "kanji": "担当", "reading": "たんとう", "meaning": "Petugas"}, {"no": 472, "kanji": "報告", "reading": "ほうこく", "meaning": "Melapor"}, {"no": 473, "kanji": "連絡", "reading": "れんらく", "meaning": "Menghubungi"}, {"no": 474, "kanji": "募集", "reading": "ぼしゅう", "meaning": "Penerimaan, perekrutan"}, {"no": 475, "kanji": "輸出", "reading": "ゆしゅつ", "meaning": "Ekspor"}, {"no": 476, "kanji": "輸入", "reading": "ゆにゅう", "meaning": "Impor"}, {"no": 477, "kanji": "会話", "reading": "かいわ", "meaning": "Percakapan"}, {"no": 478, "kanji": "形", "reading": "かたち", "meaning": "Bentuk"}, {"no": 479, "kanji": "漢字", "reading": "かんじ", "meaning": "Kanji"}, {"no": 480, "kanji": "答え", "reading": "こたえ", "meaning": "Jawaban"}, {"no": 481, "kanji": "質問", "reading": "しつもん", "meaning": "Pertanyaan"}, {"no": 482, "kanji": "正しい", "reading": "ただしい", "meaning": "Benar"}, {"no": 483, "kanji": "読解", "reading": "どっかい", "meaning": "Bacaan"}, {"no": 484, "kanji": "表現", "reading": "ひょうげん", "meaning": "Pengucapan"}, {"no": 485, "kanji": "文", "reading": "ぶん", "meaning": "Kalimat"}, {"no": 486, "kanji": "文型", "reading": "ぶんけい", "meaning": "Pola kalimat"}, {"no": 487, "kanji": "文法", "reading": "ぶんぽう", "meaning": "Tata Bahasa"}, {"no": 488, "kanji": "もう一度", "reading": "もういちど", "meaning": "Sekali lagi"}, {"no": 489, "kanji": "例", "reading": "れい", "meaning": "Contoh"}, {"no": 490, "kanji": "練習", "reading": "れんしゅう", "meaning": "latihan"}, {"no": 491, "kanji": "～枚", "reading": "～まい", "meaning": "~lembar"}, {"no": 492, "kanji": "今週", "reading": "こんしゅう", "meaning": "Minggu ini"}, {"no": 493, "kanji": "今度", "reading": "こんど", "meaning": "Lain kali, yang akan datang"}, {"no": 494, "kanji": "横", "reading": "よこ", "meaning": "Sebelah"}, {"no": 495, "kanji": "押します", "reading": "おします", "meaning": "Menekan, mendorong"}, {"no": 496, "kanji": "引きます", "reading": "ひきます", "meaning": "Menarik"}, {"no": 497, "kanji": "温泉", "reading": "おんせん", "meaning": "Pemandian air panas"}, {"no": 498, "kanji": "来週", "reading": "らいしゅう", "meaning": "Minggu depan"}, {"no": 499, "kanji": "犬", "reading": "いぬ", "meaning": "Anjing"}, {"no": 500, "kanji": "夕方", "reading": "ゆうがた", "meaning": "Sore"}, {"no": 501, "kanji": "季節", "reading": "きせつ", "meaning": "Musim"}, {"no": 502, "kanji": "昨日", "reading": "きのう", "meaning": "Kemarin"}, {"no": 503, "kanji": "明日", "reading": "あした", "meaning": "Besok"}, {"no": 504, "kanji": "食堂", "reading": "しょくどう", "meaning": "Kantin"}, {"no": 505, "kanji": "銀行", "reading": "ぎんこう", "meaning": "Bank"}, {"no": 506, "kanji": "受付", "reading": "うけつけ", "meaning": "Resepsionis"}, {"no": 507, "kanji": "門", "reading": "もん", "meaning": "Pintu gerbang"}, {"no": 508, "kanji": "登ります", "reading": "のぼります", "meaning": "Mendaki"}, {"no": 509, "kanji": "教科書", "reading": "きょうかしょ", "meaning": "Buku panduan"}, {"no": 510, "kanji": "教室", "reading": "きょうしつ", "meaning": "Ruang kelas"}, {"no": 511, "kanji": "参加します", "reading": "さんかします", "meaning": "Berpartisipasi"}, {"no": 512, "kanji": "用意します", "reading": "よういします", "meaning": "Menyiapkan"}, {"no": 513, "kanji": "牛肉", "reading": "ぎゅうにく", "meaning": "Daging sapi"}, {"no": 514, "kanji": "豚肉", "reading": "ぶたにく", "meaning": "Daging babi"}, {"no": 515, "kanji": "皿", "reading": "さら", "meaning": "Piring"}, {"no": 516, "kanji": "お湯", "reading": "おゆ", "meaning": "Air panas"}, {"no": 517, "kanji": "調理方法", "reading": "ちょうりほうほう", "meaning": "Cara memasak"}, {"no": 518, "kanji": "甘い", "reading": "あまい", "meaning": "Manis"}, {"no": 519, "kanji": "辛い", "reading": "からい", "meaning": "Pedas"}, {"no": 520, "kanji": "数字", "reading": "すうじ", "meaning": "Angka, bilangan"}, {"no": 521, "kanji": "机", "reading": "つくえ", "meaning": "Meja"}, {"no": 522, "kanji": "都合", "reading": "つごう", "meaning": "Keadaan"}, {"no": 523, "kanji": "用事", "reading": "ようじ", "meaning": "Keperluan"}, {"no": 524, "kanji": "氏名", "reading": "しめい", "meaning": "Nama lengkap"}, {"no": 525, "kanji": "理由", "reading": "りゆう", "meaning": "Alasan"}, {"no": 526, "kanji": "別に", "reading": "べつに", "meaning": "Beda-beda"}, {"no": 527, "kanji": "連絡先", "reading": "れんらくさき", "meaning": "Alamat yang dapat dihubungi"}, {"no": 528, "kanji": "吸います", "reading": "すいます", "meaning": "Menghisap"}, {"no": 529, "kanji": "取ります", "reading": "とります", "meaning": "Mengambil"}, {"no": 530, "kanji": "伝えます", "reading": "つたえます", "meaning": "Menyampaikan"}, {"no": 531, "kanji": "熱", "reading": "ねつ", "meaning": "Demam"}, {"no": 532, "kanji": "薬", "reading": "くすり", "meaning": "Obat"}, {"no": 533, "kanji": "医者", "reading": "いしゃ", "meaning": "Dokter"}, {"no": 534, "kanji": "～才", "reading": "～さい", "meaning": "Bakat～／umur～"}, {"no": 535, "kanji": "眠い", "reading": "ねむい", "meaning": "Ngantuk"}, {"no": 536, "kanji": "記入します", "reading": "きにゅうします", "meaning": "Mengisi di kertas"}, {"no": 537, "kanji": "顔", "reading": "かお", "meaning": "Wajah"}, {"no": 538, "kanji": "泣きます", "reading": "なきます", "meaning": "Menangis"}, {"no": 539, "kanji": "会計", "reading": "かいけい", "meaning": "Pembayaran"}, {"no": 540, "kanji": "電話番号", "reading": "でんわばんごう", "meaning": "Nomor telepon"}, {"no": 541, "kanji": "牛乳", "reading": "ぎゅうにゅう", "meaning": "Susu sapi"}, {"no": 542, "kanji": "禁煙", "reading": "きんえん", "meaning": "Larangan merokok"}, {"no": 543, "kanji": "自由", "reading": "じゆう", "meaning": "Bebas"}, {"no": 544, "kanji": "切ります", "reading": "きります", "meaning": "Memotong"}, {"no": 545, "kanji": "焼きます", "reading": "やきます", "meaning": "Memanggang"}, {"no": 546, "kanji": "旅館", "reading": "りょかん", "meaning": "Penginapan"}, {"no": 547, "kanji": "遊びます", "reading": "あそびます", "meaning": "Bermain"}, {"no": 548, "kanji": "調べます", "reading": "しらべます", "meaning": "Memeriksa"}, {"no": 549, "kanji": "事故", "reading": "じこ", "meaning": "Kecelakaan"}, {"no": 550, "kanji": "故障", "reading": "こしょう", "meaning": "Kerusakan"}, {"no": 551, "kanji": "指定席", "reading": "していせき", "meaning": "Tempat duduk yang ditetapkan"}, {"no": 552, "kanji": "光ります", "reading": "ひかります", "meaning": "Bercahaya, bersinar"}, {"no": 553, "kanji": "お知らせ", "reading": "おしらせ", "meaning": "Pengumuman"}, {"no": 554, "kanji": "水道", "reading": "すいどう", "meaning": "Ledeng"}, {"no": 555, "kanji": "工事", "reading": "こうじ", "meaning": "Konstruksi"}, {"no": 556, "kanji": "場合", "reading": "ばあい", "meaning": "Kesempatan"}, {"no": 557, "kanji": "条件", "reading": "じょうけん", "meaning": "Syarat-syarat, kondisi"}, {"no": 558, "kanji": "開きます", "reading": "ひらきます", "meaning": "Membuka"}, {"no": 559, "kanji": "生産します", "reading": "せいさんします", "meaning": "Memproduksi"}, {"no": 560, "kanji": "体験", "reading": "たいけん", "meaning": "Percobaan"}, {"no": 561, "kanji": "国際交流", "reading": "こくさいこうりゅう", "meaning": "Pertukaran budaya internasional"}, {"no": 562, "kanji": "申し込みます", "reading": "もうしこみます", "meaning": "Melamar (pekerjaan)"}, {"no": 563, "kanji": "昨年", "reading": "さくねん", "meaning": "Tahun lalu"}, {"no": 564, "kanji": "毎年", "reading": "まいとし", "meaning": "Setiap tahun"}, {"no": 565, "kanji": "袋", "reading": "ふくろ", "meaning": "Kantong plastik"}, {"no": 566, "kanji": "店長", "reading": "てんちょう", "meaning": "Manajer toko"}, {"no": 567, "kanji": "全員", "reading": "ぜんいん", "meaning": "Semuanya"}, {"no": 568, "kanji": "習慣", "reading": "しゅうかん", "meaning": "Kebiasaan"}, {"no": 569, "kanji": "普通", "reading": "ふつう", "meaning": "Biasa"}, {"no": 570, "kanji": "暗い", "reading": "くらい", "meaning": "Gelap"}, {"no": 571, "kanji": "怒ります", "reading": "おこります", "meaning": "Marah"}, {"no": 572, "kanji": "入院します", "reading": "にゅういんします", "meaning": "Masuk rumah sakit"}, {"no": 573, "kanji": "退院します", "reading": "たいいんします", "meaning": "Keluar rumah sakit"}, {"no": 574, "kanji": "急に", "reading": "きゅうに", "meaning": "Tiba-tiba"}, {"no": 575, "kanji": "営業します", "reading": "えいぎょうします", "meaning": "Mengusahakan"}, {"no": 576, "kanji": "案内します", "reading": "あんないします", "meaning": "Memandu"}, {"no": 577, "kanji": "値段", "reading": "ねだん", "meaning": "Harga"}, {"no": 578, "kanji": "価格", "reading": "かかく", "meaning": "Harga"}, {"no": 579, "kanji": "消費税", "reading": "しょうひぜい", "meaning": "Pajak konsumen"}, {"no": 580, "kanji": "税別", "reading": "ぜいべつ", "meaning": "Harga belum termasuk pajak"}, {"no": 581, "kanji": "図書館", "reading": "としょかん", "meaning": "Perpustakaan"}, {"no": 582, "kanji": "開きます", "reading": "あきます", "meaning": "Terbuka"}, {"no": 583, "kanji": "閉まります", "reading": "しまります", "meaning": "Tertutup"}, {"no": 584, "kanji": "利用します", "reading": "りようします", "meaning": "Menggunakan"}, {"no": 585, "kanji": "窓口", "reading": "まどぐち", "meaning": "Pintu jendela"}, {"no": 586, "kanji": "郵便局", "reading": "ゆうびんきょく", "meaning": "Kantor pos"}, {"no": 587, "kanji": "近所", "reading": "きんじょ", "meaning": "Tetangga"}, {"no": 588, "kanji": "自動", "reading": "じどう", "meaning": "Otomatis"}, {"no": 589, "kanji": "危険", "reading": "きけん", "meaning": "Bahaya"}, {"no": 590, "kanji": "～種類", "reading": "～しゅるい", "meaning": "～macam, jenis"}, {"no": 591, "kanji": "消します", "reading": "けします", "meaning": "Memadamkan"}, {"no": 592, "kanji": "捨てます", "reading": "すてます", "meaning": "Membuang"}, {"no": 593, "kanji": "分けます", "reading": "わけます", "meaning": "Membagi"}, {"no": 594, "kanji": "燃えます", "reading": "もえます", "meaning": "Terbakar"}, {"no": 595, "kanji": "設定します", "reading": "せっていします", "meaning": "Mengeset, menyeting"}, {"no": 596, "kanji": "地震", "reading": "じしん", "meaning": "Gempa"}, {"no": 597, "kanji": "台風", "reading": "たいふう", "meaning": "Angin topan"}, {"no": 598, "kanji": "声", "reading": "こえ", "meaning": "Suara (benda hidup)"}, {"no": 599, "kanji": "大切な", "reading": "たいせつな", "meaning": "Penting"}, {"no": 600, "kanji": "進みます", "reading": "すすみます", "meaning": "Rekomendasi"}, {"no": 601, "kanji": "授業", "reading": "じゅぎょう", "meaning": "Pelajaran"}, {"no": 602, "kanji": "大変な", "reading": "たいへんな", "meaning": "Berat (perasaan)"}, {"no": 603, "kanji": "困ります", "reading": "こまります", "meaning": "Susah"}, {"no": 604, "kanji": "違います", "reading": "ちがいます", "meaning": "Salah, berbeda"}, {"no": 605, "kanji": "慣れます", "reading": "なれます", "meaning": "terbiasa"}, {"no": 606, "kanji": "増えます", "reading": "ふえます", "meaning": "Bertambah"}, {"no": 607, "kanji": "笑います", "reading": "わらいます", "meaning": "Tertawa"}, {"no": 608, "kanji": "苦労します", "reading": "くろうします", "meaning": "Bersakit-sakit ( dalam usaha)"}, {"no": 609, "kanji": "希望", "reading": "きぼう", "meaning": "Harapan, keinginan"}, {"no": 610, "kanji": "特に", "reading": "とくに", "meaning": "Terutama"}, {"no": 611, "kanji": "建てます", "reading": "たてます", "meaning": "Mendirikan"}, {"no": 612, "kanji": "続けます", "reading": "つづけます", "meaning": "Melanjutkan"}, {"no": 613, "kanji": "役に立ちます", "reading": "やくにたちます", "meaning": "Bermanfaat"}];
+
+const STORAGE_KEY = 'known_ids';
+const SECTION_SIZE = 50;
+let known = new Set();
+let order = KANJI_DATA.map((_, i) => i);
+let filter = 'all';
+let section = 'all'; // 'all' or 'start-end' string
+let pos = 0;
+let flipped = false;
+let showFurigana = false;
+
+function buildSections(){
+  const total = KANJI_DATA.length; // 613
+  const sections = [{ key: 'all', label: 'Semua (№1–' + total + ')' }];
+  for(let start = 1; start <= total; start += SECTION_SIZE){
+    const end = Math.min(start + SECTION_SIZE - 1, total);
+    sections.push({ key: start + '-' + end, label: '№ ' + start + '–' + end });
+  }
+  return sections;
+}
+const SECTIONS = buildSections();
+
+const sectionSelect = document.getElementById('sectionSelect');
+SECTIONS.forEach(s => {
+  const opt = document.createElement('option');
+  opt.value = s.key;
+  opt.textContent = s.label;
+  sectionSelect.appendChild(opt);
+});
+sectionSelect.addEventListener('change', () => {
+  section = sectionSelect.value;
+  pos = 0; flipped = false;
+  render();
+});
+
+const card = document.getElementById('card');
+const kanjiGlyph = document.getElementById('kanjiGlyph');
+const backReading = document.getElementById('backReading');
+const backMeaning = document.getElementById('backMeaning');
+const catNo = document.getElementById('catNo');
+const statusDot = document.getElementById('statusDot');
+const progressFill = document.getElementById('progressFill');
+const progressLabel = document.getElementById('progressLabel');
+const countBadge = document.getElementById('countBadge');
+const furiganaSwitch = document.getElementById('furiganaSwitch');
+const knownBtn = document.getElementById('knownBtn');
+
+async function loadKnown(){
+  try{
+    const res = await window.storage.get(STORAGE_KEY, false);
+    if(res && res.value){
+      known = new Set(JSON.parse(res.value));
+    }
+  }catch(e){ /* no saved data yet */ }
+  render();
+}
+
+async function saveKnown(){
+  try{
+    await window.storage.set(STORAGE_KEY, JSON.stringify(Array.from(known)), false);
+  }catch(e){ console.error('gagal menyimpan progres', e); }
+}
+
+function currentDeck(){
+  let list = order;
+  if(section !== 'all'){
+    const [start, end] = section.split('-').map(Number);
+    list = list.filter(i => KANJI_DATA[i].no >= start && KANJI_DATA[i].no <= end);
+  }
+  if(filter === 'known') list = list.filter(i => known.has(KANJI_DATA[i].no));
+  if(filter === 'unknown') list = list.filter(i => !known.has(KANJI_DATA[i].no));
+  return list;
+}
+
+function render(){
+  const deck = currentDeck();
+  countBadge.textContent = deck.length + ' kartu';
+
+  if(deck.length === 0){
+    card.style.display = 'none';
+    document.querySelector('.toggle-row').style.display='none';
+    document.querySelector('.nav-row').style.display='none';
+    document.querySelector('.shuffle-row').style.display='none';
+    progressLabel.textContent = '0 / 0';
+    progressFill.style.width = '0%';
+    if(!document.getElementById('emptyMsg')){
+      const div = document.createElement('div');
+      div.id = 'emptyMsg';
+      div.className = 'empty-state';
+      div.textContent = filter === 'known' ? 'Belum ada kartu yang ditandai hafal di bagian ini.' : 'Semua kartu di bagian ini sudah hafal 🎉';
+      card.parentElement.appendChild(div);
+    }
+    return;
+  }else{
+    const em = document.getElementById('emptyMsg');
+    if(em) em.remove();
+    card.style.display='';
+    document.querySelector('.toggle-row').style.display='';
+    document.querySelector('.nav-row').style.display='';
+    document.querySelector('.shuffle-row').style.display='';
+  }
+
+  if(pos >= deck.length) pos = 0;
+  if(pos < 0) pos = deck.length - 1;
+
+  const item = KANJI_DATA[deck[pos]];
+  catNo.textContent = '№ ' + String(item.no).padStart(3,'0');
+  kanjiGlyph.innerHTML = '<ruby>' + item.kanji + '<rt>' + item.reading + '</rt></ruby>';
+  kanjiGlyph.classList.toggle('hide-furigana', !showFurigana);
+  backReading.textContent = item.reading;
+  backMeaning.textContent = item.meaning;
+  statusDot.classList.toggle('known', known.has(item.no));
+  knownBtn.classList.toggle('marked', known.has(item.no));
+  knownBtn.textContent = known.has(item.no) ? '✓ Sudah hafal' : '✓ Tandai hafal';
+
+  progressLabel.textContent = (pos+1) + ' / ' + deck.length;
+  progressFill.style.width = ((pos+1)/deck.length*100) + '%';
+
+  card.classList.toggle('flipped', flipped);
+}
+
+card.addEventListener('click', () => {
+  flipped = !flipped;
+  card.classList.toggle('flipped', flipped);
+});
+
+document.getElementById('prevBtn').addEventListener('click', (e) => {
+  e.stopPropagation();
+  flipped = false;
+  pos -= 1;
+  render();
+});
+document.getElementById('nextBtn').addEventListener('click', (e) => {
+  e.stopPropagation();
+  flipped = false;
+  pos += 1;
+  render();
+});
+
+document.getElementById('knownBtn').addEventListener('click', (e) => {
+  e.stopPropagation();
+  const deck = currentDeck();
+  const item = KANJI_DATA[deck[pos]];
+  if(known.has(item.no)) known.delete(item.no);
+  else known.add(item.no);
+  saveKnown();
+  render();
+});
+
+furiganaSwitch.addEventListener('click', (e) => {
+  e.stopPropagation();
+  showFurigana = !showFurigana;
+  furiganaSwitch.classList.toggle('on', showFurigana);
+  kanjiGlyph.classList.toggle('hide-furigana', !showFurigana);
+});
+
+document.getElementById('shuffleBtn').addEventListener('click', (e) => {
+  e.stopPropagation();
+  for(let i = order.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i+1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  pos = 0; flipped = false;
+  render();
+});
+
+document.getElementById('resetBtn').addEventListener('click', (e) => {
+  e.stopPropagation();
+  order = KANJI_DATA.map((_, i) => i);
+  pos = 0; flipped = false;
+  render();
+});
+
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    filter = chip.dataset.filter;
+    pos = 0; flipped = false;
+    render();
+  });
+});
+
+document.addEventListener('keydown', (e) => {
+  if(e.code === 'Space'){ e.preventDefault(); flipped = !flipped; card.classList.toggle('flipped', flipped); }
+  if(e.code === 'ArrowRight'){ flipped=false; pos += 1; render(); }
+  if(e.code === 'ArrowLeft'){ flipped=false; pos -= 1; render(); }
+});
+
+loadKnown();
+</script>
+</body>
+</html>
