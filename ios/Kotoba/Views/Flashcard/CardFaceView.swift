@@ -3,6 +3,7 @@ import SwiftUI
 public struct CardFaceView: View {
     public let item: LearningObject
     public let isBack: Bool
+    public let frontMode: CardFrontMode
     public let showFurigana: Bool
     public let showRomaji: Bool
     public let onFrontSpeakerTap: () -> Void
@@ -11,21 +12,7 @@ public struct CardFaceView: View {
     public init(
         item: LearningObject,
         isBack: Bool,
-        showFurigana: Bool,
-        showRomaji: Bool,
-        onSpeakerTap: @escaping () -> Void
-    ) {
-        self.item = item
-        self.isBack = isBack
-        self.showFurigana = showFurigana
-        self.showRomaji = showRomaji
-        self.onFrontSpeakerTap = onSpeakerTap
-        self.onBackSpeakerTap = onSpeakerTap
-    }
-
-    public init(
-        item: LearningObject,
-        isBack: Bool,
+        frontMode: CardFrontMode = .kanji,
         showFurigana: Bool,
         showRomaji: Bool,
         onFrontSpeakerTap: @escaping () -> Void,
@@ -33,6 +20,7 @@ public struct CardFaceView: View {
     ) {
         self.item = item
         self.isBack = isBack
+        self.frontMode = frontMode
         self.showFurigana = showFurigana
         self.showRomaji = showRomaji
         self.onFrontSpeakerTap = onFrontSpeakerTap
@@ -75,24 +63,48 @@ public struct CardFaceView: View {
                 Spacer()
 
                 if !isBack {
-                    // FRONT FACE: Kanji / Primary Ideograph
+                    // FRONT FACE
                     VStack(spacing: 12) {
-                        if showFurigana && item.hasKanji && !item.reading.isEmpty {
-                            Text(item.reading)
-                                .font(.title3)
-                                .foregroundColor(.secondary)
-                        }
+                        switch frontMode {
+                        case .kanji:
+                            if showFurigana && item.hasKanji && !item.reading.isEmpty {
+                                Text(item.reading)
+                                    .font(.title3)
+                                    .foregroundColor(.secondary)
+                            }
 
-                        Text(item.japanese)
-                            .font(.system(size: item.japanese.count > 6 ? 36 : 48, weight: .bold, design: .serif))
-                            .foregroundColor(.primary)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 16)
+                            Text(item.japanese)
+                                .font(.system(size: item.japanese.count > 6 ? 36 : 48, weight: .bold, design: .serif))
+                                .foregroundColor(.primary)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, 16)
 
-                        if showRomaji && !item.romaji.isEmpty {
-                            Text(item.romaji)
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
+                            if showRomaji && !item.romaji.isEmpty {
+                                Text(item.romaji)
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+
+                        case .hiragana:
+                            let readingText = item.reading.isEmpty ? item.japanese : item.reading
+                            Text(readingText)
+                                .font(.system(size: readingText.count > 6 ? 36 : 48, weight: .bold, design: .serif))
+                                .foregroundColor(.primary)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, 16)
+
+                            if showRomaji && !item.romaji.isEmpty {
+                                Text(item.romaji)
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+
+                        case .arti:
+                            Text(item.indonesian)
+                                .font(.system(size: 28, weight: .bold))
+                                .foregroundColor(.primary)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, 20)
                         }
                     }
 
@@ -104,41 +116,98 @@ public struct CardFaceView: View {
                     .padding(.top, 8)
 
                 } else {
-                    // BACK FACE: Answer face (Reading + Meaning NEVER disappear)
+                    // BACK FACE: Answer face
                     VStack(spacing: 12) {
-                        if item.hasKanji {
-                            // Prominently display the reading as the primary answer
-                            Text(item.reading)
+                        switch frontMode {
+                        case .kanji:
+                            if item.hasKanji {
+                                Text(item.reading)
+                                    .font(.system(size: 36, weight: .bold, design: .serif))
+                                    .foregroundColor(.primary)
+                                    .multilineTextAlignment(.center)
+
+                                Text(item.japanese)
+                                    .font(.title3)
+                                    .foregroundColor(.secondary)
+                            } else {
+                                Text(item.japanese)
+                                    .font(.system(size: 36, weight: .bold, design: .serif))
+                                    .foregroundColor(.primary)
+                                    .multilineTextAlignment(.center)
+                            }
+
+                            if showRomaji && !item.romaji.isEmpty {
+                                Text(item.romaji)
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+
+                            Divider()
+                                .frame(width: 140)
+                                .padding(.vertical, 4)
+
+                            Text(item.indonesian)
+                                .font(.system(size: 24, weight: .semibold, design: .default))
+                                .foregroundColor(.primary)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, 20)
+
+                        case .hiragana:
+                            Text(item.japanese)
                                 .font(.system(size: 36, weight: .bold, design: .serif))
                                 .foregroundColor(.primary)
                                 .multilineTextAlignment(.center)
 
-                            // Kanji ideograph shown as reference
-                            Text(item.japanese)
-                                .font(.title3)
-                                .foregroundColor(.secondary)
-                        } else {
+                            if item.hasKanji && !item.reading.isEmpty {
+                                Text(item.reading)
+                                    .font(.title3)
+                                    .foregroundColor(.secondary)
+                            }
+
+                            if showRomaji && !item.romaji.isEmpty {
+                                Text(item.romaji)
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+
+                            Divider()
+                                .frame(width: 140)
+                                .padding(.vertical, 4)
+
+                            Text(item.indonesian)
+                                .font(.system(size: 24, weight: .semibold, design: .default))
+                                .foregroundColor(.primary)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, 20)
+
+                        case .arti:
                             Text(item.japanese)
                                 .font(.system(size: 36, weight: .bold, design: .serif))
                                 .foregroundColor(.primary)
                                 .multilineTextAlignment(.center)
-                        }
 
-                        if showRomaji && !item.romaji.isEmpty {
-                            Text(item.romaji)
-                                .font(.subheadline)
+                            if !item.reading.isEmpty {
+                                Text(item.reading)
+                                    .font(.title3)
+                                    .foregroundColor(.secondary)
+                            }
+
+                            if showRomaji && !item.romaji.isEmpty {
+                                Text(item.romaji)
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+
+                            Divider()
+                                .frame(width: 140)
+                                .padding(.vertical, 4)
+
+                            Text(item.indonesian)
+                                .font(.system(size: 18, weight: .medium))
                                 .foregroundColor(.secondary)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, 20)
                         }
-
-                        Divider()
-                            .frame(width: 140)
-                            .padding(.vertical, 4)
-
-                        Text(item.indonesian)
-                            .font(.system(size: 24, weight: .semibold, design: .default))
-                            .foregroundColor(.primary)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 20)
 
                         if !item.formula.isEmpty {
                             VStack(alignment: .leading, spacing: 4) {

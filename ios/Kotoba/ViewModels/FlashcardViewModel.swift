@@ -75,8 +75,8 @@ public final class FlashcardViewModel: ObservableObject {
 
     public func playFrontAudio() {
         guard let item = engine?.currentItem else { return }
-        let targetText = item.japanese
-        let target: PronunciationTarget = item.isKatakana ? .katakana : (item.hasKanji ? .kanji : .reading)
+        let targetText = item.reading.isEmpty ? item.japanese : item.reading
+        let target: PronunciationTarget = item.isKatakana ? .katakana : .reading
         SpeechService.shared.speak(
             targetText,
             target: target,
@@ -89,9 +89,10 @@ public final class FlashcardViewModel: ObservableObject {
     public func playBackAudio() {
         guard let item = engine?.currentItem else { return }
         let targetText = item.reading.isEmpty ? item.japanese : item.reading
+        let target: PronunciationTarget = item.isKatakana ? .katakana : .reading
         SpeechService.shared.speak(
             targetText,
-            target: .reading,
+            target: target,
             displayedText: targetText,
             cardMode: "KANJI_BACK",
             itemId: item.id

@@ -28,7 +28,7 @@ The application operates completely offline without network access, third-party 
 | Build Target | Platform | Binary Size | Runtime Audio Engine | Status |
 |---|---|---|---|---|
 | **KOTOBAAN (Release)** | Android (API 26+) | ~837 KB | System TextToSpeech | Stable (v2.0.0) |
-| **Kotoba iOS** | iOS (iOS 16.0+) | Shared SQLite contract | System AVSpeechSynthesizer | Experimental port |
+| **KOTOBAAN (iOS)** | iOS (iOS 16.0+) | Shared SQLite contract | System AVSpeechSynthesizer | Native SwiftUI (v2.0.0) |
 
 The primary release artifact is **`KOTOBAAN.apk`**, a self-contained package with zero external binary dependencies.
 
@@ -77,10 +77,11 @@ Execute the automated test suite covering SRS scheduling, active recall recovery
 bash tests/run_java_tests.sh
 ```
 
-To run the iOS SQLite database contract and structure tests:
+To run the iOS SQLite database contract, behavioral invariants, and structure tests:
 
 ```bash
 python3 tests/test_ios_db_contract.py
+python3 tests/test_ios_behavior_contract.py
 python3 tests/validate_xcode_project.py
 ```
 

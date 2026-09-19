@@ -12,13 +12,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Multi-Bab Selection**: Support for selecting multiple chapters simultaneously in Pustaka and flashcard sessions.
 - **50-Word Batches**: Chunked study sessions into 50-item groups for JFT verbs, adjectives, and kanji.
 - **Bidirectional Navigation**: Added Previous (`← Prev`) navigation button enabling learners to step backward through the active queue without state loss.
-- **Native iOS SwiftUI Port**: Native iOS client architecture in `ios/Kotoba` sharing the identical SQLite schema and database contract.
-- **Automated Data Integrity Test Suites**: Added `DataIntegrityAuditTest.java`, `FlashcardRepresentationIntegrityTest.java`, and `PustakaCardLayoutContractTest.java`.
+- **Native iOS SwiftUI Port**: Native iOS client architecture in `ios/Kotoba` sharing the identical SQLite schema and database contract (`kotoba.db`).
+- **Triple Front-Display Modes on iOS**: Added support for Kanji, Hiragana, and Indonesian meaning front card projections in SwiftUI.
+- **Automated Data & Behavioral Test Suites**: Added `DataIntegrityAuditTest.java`, `FlashcardRepresentationIntegrityTest.java`, `PustakaCardLayoutContractTest.java`, and `test_ios_behavior_contract.py`.
 
 ### Changed
 - **Pustaka Card Geometry**: Redesigned library list items into a 3-row floating card architecture with independent padding and transparent dividers, eliminating awkward romaji line wrapping (`kir`/`ei`) and vertically displaced badges.
 - **Kanji Reading Selector**: Refactored `content/process_additional_kanji.py` to prioritize high-frequency Kun-yomi over uncommon On-yomi marked with `!` in dictionary sources.
-- **Flashcard TTS Audio Contract**: Standardized front and back audio synthesis in `FlashcardView.java` to strictly pronounce the authoritative reading string (`item.getReading()`), eliminating phonetic guessing discrepancies upon card flips.
+- **Cross-Platform TTS Audio Contract**: Standardized front and back audio synthesis across both Android (`FlashcardView.java`) and iOS (`FlashcardViewModel.swift`) to strictly pronounce the authoritative reading string (`item.reading`), eliminating phonetic guessing discrepancies upon card flips.
 - **Furigana Preservation**: Ensured reading answer fields on the back face of flashcards remain permanently visible regardless of front-face furigana toggle state.
 
 ### Fixed

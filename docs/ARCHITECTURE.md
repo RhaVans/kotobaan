@@ -89,3 +89,35 @@ $$\text{Materi Asli} \longrightarrow \text{Kurikulum IM JAPAN} \longrightarrow \
 - Canvas: Warm paper `#faf7f2` (Light) / `#121016` (Dark).
 - Typography: High-contrast `serif` for Japanese characters; clean `sans-serif` for Indonesian explanations.
 - Footer Attribution: `Made by RhaVans`.
+
+---
+
+## 6. Cross-Platform Architecture: Option C (Shared Core & Data Engine)
+
+```text
+                     KOTOBAAN CANONICAL CORE
+     (Single Source of Truth: SQLite Schema, Lexicons, SRS Algorithms)
+                               │
+            ┌──────────────────┴──────────────────┐
+            ▼                                     ▼
+     Android Platform                      iOS Platform
+     • Java / Android SDK                  • Swift / SwiftUI
+     • Android Views & SoundPool           • Native SwiftUI & Haptics
+     • android.speech.tts.TextToSpeech     • AVFoundation AVSpeechSynthesizer
+     • SQLiteOpenHelper                    • SQLite3 C-API Service
+```
+
+### Principles & Guarantees:
+1. **One Product, One Canonical Database:**
+   Both platforms consume the identical pre-compiled SQLite database (`kotoba.db`, 1,904,640 bytes, 4,363 entries) generated deterministically by `content/build_kotoba_database.py`. Zero data duplication exists between platforms.
+2. **Behavioral & Mathematical Parity:**
+   - **SRS Intervals:** Leitner 5-box intervals (1, 6, 17, 49+ days) and latency response penalties (<800ms impulsive, 800–4000ms fluent, >10s struggling) are mathematically identical in `SrsScheduler.java` and `SrsScheduler.swift`.
+   - **Active-Recall Recovery Loop:** Both `IngatLupaEngine.java` and `IngatLupaEngine.swift` enforce strict session closure: any forgotten item (`LUPA`) is isolated into recovery passes until 100% mastery is achieved.
+   - **TTS Audio Symmetry:** Both platforms pass `item.reading` (not raw kanji ideographs) to system speech synthesizers (`TextToSpeech` on Android, `AVSpeechSynthesizer` on iOS), eliminating phonetic guessing discrepancies.
+   - **Triple Front-Display Modes:** Both platforms support Kanji front, Hiragana/Katakana front, and Indonesian Meaning front display projections.
+3. **Automated Cross-Platform Verification:**
+   - Android Java test suite: `tests/run_java_tests.sh` (13 suites)
+   - iOS SQLite database contract: `tests/test_ios_db_contract.py` (7 tests)
+   - iOS behavioral and algorithm contract: `tests/test_ios_behavior_contract.py` (8 tests)
+   - iOS Xcode project integrity: `tests/validate_xcode_project.py` (5 tests)
+

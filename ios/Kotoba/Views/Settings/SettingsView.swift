@@ -18,6 +18,12 @@ public struct SettingsView: View {
                     }
                     .pickerStyle(.segmented)
 
+                    Picker("Sisi Depan Kartu", selection: $appState.frontModeRaw) {
+                        ForEach(CardFrontMode.allCases) { mode in
+                            Text(mode.rawValue).tag(mode.rawValue)
+                        }
+                    }
+
                     Toggle("Tampilkan Furigana", isOn: $appState.showFurigana)
                     Toggle("Tampilkan Romaji", isOn: $appState.showRomaji)
                 }
@@ -111,19 +117,19 @@ public struct SettingsView: View {
                     HStack {
                         Text("Aplikasi")
                         Spacer()
-                        Text("Kotoba iOS")
+                        Text("KOTOBAAN (iOS)")
                             .foregroundColor(.secondary)
                     }
                     HStack {
                         Text("Versi")
                         Spacer()
-                        Text("1.0 (SwiftUI Native)")
+                        Text("2.0.0 (SwiftUI Native)")
                             .foregroundColor(.secondary)
                     }
                     HStack {
                         Text("Basis Referensi")
                         Spacer()
-                        Text("KOTOBA BEFORE TTS UPDATE")
+                        Text("KOTOBAAN (v2.0.0)")
                             .foregroundColor(.secondary)
                     }
                     HStack {

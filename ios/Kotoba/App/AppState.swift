@@ -44,11 +44,20 @@ public enum TabItem: Int, CaseIterable, Identifiable {
     }
 }
 
+public enum CardFrontMode: String, CaseIterable, Identifiable {
+    case kanji = "Kanji"
+    case hiragana = "Hiragana"
+    case arti = "Arti (ID)"
+
+    public var id: String { rawValue }
+}
+
 public final class AppState: ObservableObject {
     public static let shared = AppState()
 
     @Published public var selectedTab: TabItem = .belajar
     @AppStorage("app_theme") public var currentTheme: String = AppTheme.system.rawValue
+    @AppStorage("front_display_mode") public var frontModeRaw: String = CardFrontMode.kanji.rawValue
     @AppStorage("show_furigana") public var showFurigana: Bool = true
     @AppStorage("show_romaji") public var showRomaji: Bool = true
     @AppStorage("speech_speed") public var speechSpeed: Double = 0.90
@@ -56,6 +65,11 @@ public final class AppState: ObservableObject {
 
     @Published public var activeBab: Int = 1
     @Published public var activeDeckTitle: String = "Bab 1"
+
+    public var frontMode: CardFrontMode {
+        get { CardFrontMode(rawValue: frontModeRaw) ?? .kanji }
+        set { frontModeRaw = newValue.rawValue }
+    }
 
     public var theme: AppTheme {
         get { AppTheme(rawValue: currentTheme) ?? .system }

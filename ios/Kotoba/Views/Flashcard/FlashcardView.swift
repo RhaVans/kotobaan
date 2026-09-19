@@ -92,6 +92,7 @@ public struct FlashcardView: View {
                     CardFaceView(
                         item: item,
                         isBack: viewModel.isFlipped,
+                        frontMode: appState.frontMode,
                         showFurigana: appState.showFurigana,
                         showRomaji: appState.showRomaji,
                         onFrontSpeakerTap: {
@@ -263,6 +264,36 @@ public struct FlashcardView: View {
             .navigationTitle("Belajar")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Menu {
+                        ForEach(CardFrontMode.allCases) { mode in
+                            Button(action: {
+                                withAnimation {
+                                    appState.frontMode = mode
+                                }
+                            }) {
+                                HStack {
+                                    Text(mode.rawValue)
+                                    if appState.frontMode == mode {
+                                        Image(systemName: "checkmark")
+                                    }
+                                }
+                            }
+                        }
+                    } label: {
+                        HStack(spacing: 4) {
+                            Image(systemName: "rectangle.stack.badge.play")
+                            Text(appState.frontMode.rawValue)
+                                .font(.caption)
+                                .fontWeight(.medium)
+                        }
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(Color(.secondarySystemFill))
+                        .clipShape(Capsule())
+                    }
+                }
+
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: { showBabPickerSheet = true }) {
                         Label("Pilih Bab", systemImage: "list.bullet.rectangle.portrait")
